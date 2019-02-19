@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orderbackground_f4f4f4"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dd_dimen_130px"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dd_dimen_180px"
+                    android:layout_height="@dimen/dd_dimen_180px"
+                    android:src="@mipmap/wallet_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dd_dimen_40px"
+                    android:text="我的零钱"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dd_dimen_30px" />
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dd_dimen_20px"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dd_dimen_72px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_recharge"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dd_dimen_100px"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:layout_marginRight="@dimen/dd_dimen_30px"
+                android:layout_marginTop="@dimen/dd_dimen_90px"
+                android:background="@drawable/btn_orange_selector"
+                android:text="充值"
+                android:textSize="@dimen/dd_dimen_34px" />
+
+            <Button
+                android:id="@+id/btn_withdraw"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dd_dimen_100px"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:layout_marginRight="@dimen/dd_dimen_30px"
+                android:layout_marginTop="@dimen/dd_dimen_36px"
+                android:background="@drawable/btn_white_selector"
+                android:text="提现"
+                android:textSize="@dimen/dd_dimen_34px" />
+
+            <TextView
+                android:id="@+id/tv_manage_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dd_dimen_70px"
+                android:text="密码管理"
+                android:textColor="@color/ac_title_bg_color"
+                android:textSize="@dimen/dd_dimen_30px"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

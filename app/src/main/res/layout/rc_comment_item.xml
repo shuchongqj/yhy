@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/live_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_marginLeft="@dimen/yhy_size_15px"
+        android:layout_marginTop="@dimen/yhy_size_12px"
+        android:layout_width="@dimen/yhy_size_30px"
+        android:layout_height="@dimen/yhy_size_30px"
+        android:src="@mipmap/head_protriat_default"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:text="爱丽丝梦游"
+        android:textSize="@dimen/yhy_size_14px"
+        android:textColor="@color/live_text_color"
+        android:layout_toRightOf="@+id/iv_head"
+        android:layout_marginTop="@dimen/yhy_size_12px"
+        android:layout_marginLeft="@dimen/yhy_size_11px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="1分钟前"
+        android:id="@+id/tv_comment_time"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/yhy_size_12px"
+        android:layout_marginRight="@dimen/yhy_size_20px"
+        android:textColor="#ff696969"
+        android:textSize="@dimen/yhy_size_11px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_comment_content"
+        android:text="今天，我去买东西，看见一个人，我不爽，就打了他一顿，同城代打，便宜，没有中间商赚差价！"
+        android:textColor="@color/tab_unselect"
+        android:textSize="@dimen/yhy_size_14px"
+        android:layout_marginTop="@dimen/yhy_size_42px"
+        android:layout_marginLeft="@dimen/yhy_size_56px"
+        android:layout_width="@dimen/yhy_size_340px"
+        android:layout_marginBottom="@dimen/yhy_size_12px"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

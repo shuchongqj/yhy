@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_six"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="2dip"
+                    android:text="¥"
+                    android:textColor="@color/title_right_btn_text_color"
+                    android:textSize="@dimen/dd_dimen_28px" />
+
+                <TextView
+                    android:id="@+id/payprice_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/title_right_btn_text_color"
+                    android:textSize="@dimen/dd_dimen_36px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="3dip"
+                    android:text="起"
+                    android:textColor="@color/color_norm_bebebe"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@color/ac_title_bg_color">
+
+            <Button
+                android:id="@+id/order_config_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/scenic_top_translate_selector"
+                android:text="立即支付"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dd_dimen_36px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_above="@id/bottom_layout"
+        android:background="@color/gray_D" />
+
+    <LinearLayout
+        android:id="@+id/payway_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageLine"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_marginLeft="15dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="请选择支付方式"
+                android:textColor="@color/neu_666666"
+                android:textSize="@dimen/dd_dimen_24px" />
+
+            <RelativeLayout
+                android:id="@+id/order_bottom_config_layout"
+                android:layout_width="60dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/scenic_top_translate_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="关闭"
+                    android:textColor="@color/main"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/tc_e1e1e1" />
+
+        <ListView
+            android:id="@+id/payway_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/tc_e1e1e1"
+            android:dividerHeight="1dip"
+            android:footerDividersEnabled="false"
+            android:listSelector="#00000000"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/payway_layout"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

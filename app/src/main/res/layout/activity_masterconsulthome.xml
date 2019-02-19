@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.quanyan.base.view.customview.pulltorefresh.PullToRefreshObserableScrollView android:id="@+id/ps_master_scroll_view"
+                                                                               xmlns:android="http://schemas.android.com/apk/res/android"
+                                                                               android:layout_width="match_parent"
+                                                                               android:layout_height="match_parent"
+                                                                               android:background="@color/neu_f4f4f4">
+
+    <LinearLayout
+        android:id="@+id/ll_master_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.quanyan.base.view.customview.imgpager.ImgPagerView
+            android:id="@+id/iv_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/ll_master_consult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_more_consult"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_90px"
+            android:background="@android:color/white"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="更多咨询服务"
+                    android:textColor="#666"
+                    android:textSize="@dimen/dd_dimen_30px"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dd_dimen_10px"
+                    android:src="@mipmap/arrow_go"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_service_flow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+</com.quanyan.base.view.customview.pulltorefresh.PullToRefreshObserableScrollView>

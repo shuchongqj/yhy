@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dd_dimen_180px"
+    android:orientation="vertical"
+    android:padding="@dimen/dd_dimen_20px">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/dd_dimen_150px"
+            android:layout_height="@dimen/dd_dimen_150px"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_auth_fail" />
+
+        <TextView
+            android:id="@+id/tv_commentgoods_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dd_dimen_10px"
+            android:layout_toRightOf="@id/image"
+            android:textColor="@color/neu_666666"
+            android:textSize="@dimen/text_size_30px" />
+
+        <TextView
+            android:id="@+id/tv_goto_comments"
+            android:layout_width="@dimen/dd_dimen_140px"
+            android:layout_height="@dimen/dd_dimen_54px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_more_item_ability_bg"
+            android:gravity="center"
+            android:text="去评价"
+            android:textColor="@color/main"
+            android:textSize="@dimen/dd_dimen_24px" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/common_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_split_line_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_20px" />
+
+</LinearLayout>

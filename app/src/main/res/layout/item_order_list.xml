@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/click_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neu_f4f4f4"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/order_list_status_merchant_layout"/>
+
+    <include
+        layout="@layout/common_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_split_line_height"
+        android:layout_marginLeft="@dimen/dd_dimen_30px" />
+
+</LinearLayout>

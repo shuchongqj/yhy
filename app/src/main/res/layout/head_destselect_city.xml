@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_hot_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dd_dimen_50px"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="@dimen/dd_dimen_100px"
+                android:layout_height="@dimen/dd_dimen_2px"
+                android:layout_centerVertical="true"
+                android:background="@color/dest_divider"/>
+
+            <TextView
+                android:id="@+id/tv_dest_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/view3"
+                android:layout_marginLeft="@dimen/dd_dimen_40px"
+                android:layout_marginRight="@dimen/dd_dimen_40px"
+                android:textColor="@color/neu_666666"
+                android:text="@string/city_select_dest_top1"/>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="@dimen/dd_dimen_100px"
+                android:layout_height="@dimen/dd_dimen_2px"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_dest_title1"
+                android:background="@color/dest_divider"/>
+
+        </RelativeLayout>
+
+        <com.quanyan.yhy.view.HomeMenu_GridView
+            android:id="@+id/hg_dest_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:listSelector="@color/transparent"
+            android:numColumns="4"
+            android:layout_marginTop="@dimen/dd_dimen_50px"
+            android:layout_marginBottom="@dimen/dd_dimen_50px"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dd_dimen_30px"
+            android:layout_marginBottom="@dimen/dd_dimen_30px"
+            android:gravity="center">
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="@dimen/dd_dimen_100px"
+                android:layout_height="@dimen/dd_dimen_2px"
+                android:layout_centerVertical="true"
+                android:background="@color/dest_divider"/>
+
+            <TextView
+                android:id="@+id/tv_dest_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/view1"
+                android:layout_marginLeft="@dimen/dd_dimen_40px"
+                android:layout_marginRight="@dimen/dd_dimen_40px"
+                android:textColor="@color/neu_666666"
+                android:text="@string/city_select_dest_top"/>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="@dimen/dd_dimen_100px"
+                android:layout_height="@dimen/dd_dimen_2px"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_dest_title"
+                android:background="@color/dest_divider"/>
+
+        </RelativeLayout>
+
+        <!--<ListView-->
+            <!--android:id="@+id/lv_destcity"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:listSelector="@color/transparent"-->
+            <!--android:cacheColorHint="@color/transparent"-->
+            <!--android:divider="@color/transparent">-->
+        <!--</ListView>-->
+
+
+    </LinearLayout>
+
+</LinearLayout>

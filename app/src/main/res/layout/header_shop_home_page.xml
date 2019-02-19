@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ac_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_shop_backgroud"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_260px"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_shop_backgroud"
+            android:background="@drawable/bg_gradient_white_black"
+            android:paddingBottom="@dimen/dd_dimen_20px"
+            android:paddingLeft="@dimen/dd_dimen_30px"
+            android:paddingRight="@dimen/dd_dimen_30px">
+
+            <TextView
+                android:id="@+id/tv_start_im"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:background="@drawable/white_shape_drawable"
+                android:drawableLeft="@mipmap/ic_jx_custom_service"
+                android:drawablePadding="@dimen/dd_dimen_10px"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dd_dimen_10px"
+                android:paddingLeft="@dimen/dd_dimen_30px"
+                android:paddingRight="@dimen/dd_dimen_30px"
+                android:paddingTop="@dimen/dd_dimen_10px"
+                android:text="@string/label_tv_start_im"
+                android:textColor="#ffaf00"
+                android:textSize="@dimen/dd_dimen_26px"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_shop_head_icon"
+                android:layout_width="@dimen/dd_dimen_82px"
+                android:layout_height="@dimen/dd_dimen_82px"
+                android:layout_marginRight="@dimen/dd_dimen_20px"
+                android:src="@mipmap/ic_shop_default_logo" />
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv_start_im"
+                android:layout_toRightOf="@+id/iv_shop_head_icon"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_30px" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingTop="@dimen/dd_dimen_20px"
+        android:paddingBottom="@dimen/dd_dimen_20px"
+        android:scrollbars="none"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/dd_dimen_20px">
+
+        <LinearLayout
+            android:id="@+id/sgv_coupon_list"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <!--<com.quanyan.base.view.customview.NoScrollGridView
+                android:id="@+id/sgv_coupon_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:listSelector="@color/transparent"
+                android:numColumns="auto_fit"
+                android:visibility="gone"
+                android:stretchMode="spacingWidthUniform">
+            </com.quanyan.base.view.customview.NoScrollGridView>-->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <com.quanyan.yhy.ui.views.MasterTitleTopLineView
+        android:id="@+id/mtv_all_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dd_dimen_20px"
+        android:paddingTop="@dimen/dd_dimen_20px" />
+
+</LinearLayout>

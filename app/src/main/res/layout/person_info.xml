@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_norm_f4f4f4"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_420px">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:id="@+id/person_info_user_head_layout"
+            android:layout_width="@dimen/dd_dimen_188px"
+            android:layout_height="@dimen/dd_dimen_188px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dd_dimen_42px">
+
+            <ImageView
+                android:id="@+id/person_user_head"
+                android:layout_width="@dimen/dd_dimen_180px"
+                android:layout_height="@dimen/dd_dimen_180px"
+                android:src="@mipmap/icon_default_128_128"/>
+
+            <ImageView
+                android:id="@+id/person_info_user_sex"
+                android:layout_width="@dimen/dd_dimen_54px"
+                android:layout_height="@dimen/dd_dimen_54px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/cell_live_topic_label_bg"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/person_info_user_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/person_info_user_head_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dd_dimen_27px"
+            android:text="火前留名"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dd_dimen_32px"/>
+
+        <TextView
+            android:id="@+id/person_info_user_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/person_info_user_nickname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dd_dimen_15px"
+            android:background="@drawable/person_info_address_bg"
+            android:padding="@dimen/dd_dimen_10px"
+            android:text="云南昆明"
+            android:textColor="@color/tv_color_gray3"
+            android:textSize="@dimen/dd_dimen_24px"/>
+
+        <TextView
+            android:id="@+id/person_info_user_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/person_info_user_address"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dd_dimen_30px"
+            android:text="个性签名：天生我才必有用，一直不知怎么用"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dd_dimen_24px"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/dd_dimen_21px"
+        android:paddingLeft="@dimen/dd_dimen_40px"
+        android:paddingRight="@dimen/dd_dimen_40px"
+        android:paddingTop="@dimen/dd_dimen_25px">
+
+        <TextView
+            android:id="@+id/person_info_club_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="她的俱乐部（6）"
+            android:textColor="@color/tv_color_gray6"
+            android:textSize="@dimen/dd_dimen_30px"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/person_info_club_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_169px"
+
+        android:paddingLeft="@dimen/dd_dimen_40px"
+        android:paddingRight="@dimen/dd_dimen_40px">
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/person_info_dynamic_state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/dd_dimen_21px"
+        android:paddingLeft="@dimen/dd_dimen_40px"
+        android:paddingRight="@dimen/dd_dimen_40px"
+        android:paddingTop="@dimen/dd_dimen_25px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="她的动态"
+            android:textColor="@color/tv_color_gray6"
+            android:textSize="@dimen/dd_dimen_30px"/>
+
+        <ImageView
+            android:id="@+id/person_info_dynamic_state_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow_go"/>
+
+        <TextView
+            android:id="@+id/person_info_dynamic_state_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dd_dimen_20px"
+            android:layout_toLeftOf="@id/person_info_dynamic_state_right"
+            android:text="23"
+            android:textColor="@color/tv_color_gray6"
+            android:textSize="@dimen/dd_dimen_30px"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/person_info_live_num_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/dd_dimen_21px"
+        android:paddingLeft="@dimen/dd_dimen_40px"
+        android:paddingRight="@dimen/dd_dimen_40px"
+        android:paddingTop="@dimen/dd_dimen_25px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/label_her_dynamic"
+            android:textColor="@color/tv_color_gray6"
+            android:textSize="@dimen/dd_dimen_30px"/>
+
+        <ImageView
+            android:id="@+id/person_info_live_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow_go"/>
+
+        <TextView
+            android:id="@+id/person_info_live_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dd_dimen_20px"
+            android:layout_toLeftOf="@id/person_info_live_right"
+            android:text="23"
+            android:textColor="@color/tv_color_gray6"
+            android:textSize="@dimen/dd_dimen_30px"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/person_info_travelnotes_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/dd_dimen_21px"
+        android:paddingLeft="@dimen/dd_dimen_40px"
+        android:paddingRight="@dimen/dd_dimen_40px"
+        android:paddingTop="@dimen/dd_dimen_25px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="她的游记"
+            android:textColor="@color/tv_color_gray6"
+            android:textSize="@dimen/dd_dimen_30px"/>
+
+        <ImageView
+            android:id="@+id/person_info_travelnote_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow_go"/>
+
+        <TextView
+            android:id="@+id/person_info_travelnote_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dd_dimen_20px"
+            android:layout_toLeftOf="@id/person_info_travelnote_right"
+            android:text="23"
+            android:textColor="@color/tv_color_gray6"
+            android:textSize="@dimen/dd_dimen_30px"/>
+    </RelativeLayout>
+</LinearLayout>

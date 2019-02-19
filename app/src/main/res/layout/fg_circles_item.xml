@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/yhy_size_15px"
+    android:paddingLeft="@dimen/yhy_size_15px"
+    android:paddingRight="@dimen/yhy_size_15px"
+    android:paddingTop="@dimen/yhy_size_15px">
+
+    <ImageView
+        android:id="@+id/fg_topic_item_img"
+        android:layout_width="@dimen/yhy_size_70px"
+        android:layout_height="@dimen/yhy_size_70px"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_default_215_150" />
+
+    <RelativeLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/yhy_size_81px"
+        android:layout_marginLeft="@dimen/yhy_size_20px"
+        android:layout_toRightOf="@id/fg_topic_item_img"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dd_dimen_5px">
+
+        <TextView
+            android:id="@+id/fg_topic_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textColor="@color/neu_4a4a4a"
+            android:textSize="@dimen/yhy_size_16px" />
+
+        <TextView
+            android:id="@+id/fg_topic_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fg_topic_item_title"
+            android:layout_marginTop="@dimen/yhy_size_4px"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/neu_666666"
+            android:textSize="@dimen/yhy_size_13px" />
+
+        <TextView
+            android:id="@+id/fg_topic_item_participate_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="参与20.6万"
+            android:textColor="@color/neu_999999"
+            android:textSize="@dimen/yhy_size_11px" />
+
+        <TextView
+            android:id="@+id/fg_topic_item_read_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/fg_topic_item_participate_count"
+            android:layout_below="@id/fg_topic_item_title"
+            android:layout_marginLeft="@dimen/yhy_size_10px"
+            android:layout_toRightOf="@id/fg_topic_item_participate_count"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="阅读80万"
+            android:textColor="@color/neu_999999"
+            android:textSize="@dimen/yhy_size_11px" />
+    </RelativeLayout>
+</LinearLayout>

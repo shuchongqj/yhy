@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_110px"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:text="姓        名"
+            android:textColor="@color/order_666666"
+            android:textSize="@dimen/dd_dimen_30px" />
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dd_dimen_230px"
+            android:layout_marginRight="@dimen/dd_dimen_15px"
+            android:textCursorDrawable="@null"
+            android:background="@null"
+            android:hint="请填写姓名"
+            android:maxLength="10"
+            android:textColor="@color/order_666666"
+            android:textColorHint="@color/order_999999"
+            android:textSize="@dimen/dd_dimen_28px" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_2px"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:background="@color/orderline_e1e1e1" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_110px"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="英  文  姓"
+                android:textColor="@color/order_666666"
+                android:textSize="@dimen/dd_dimen_30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dd_dimen_5px"
+                android:text="last  name"
+                android:textColor="@color/order_666666"
+                android:textSize="@dimen/dd_dimen_20px" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/et_head_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:textCursorDrawable="@null"
+            android:layout_marginLeft="@dimen/dd_dimen_230px"
+            android:layout_marginRight="@dimen/dd_dimen_15px"
+            android:background="@null"
+            android:hint="请填写英文姓"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:digits="abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:textColor="@color/order_666666"
+            android:textColorHint="@color/order_999999"
+            android:textSize="@dimen/dd_dimen_28px" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_2px"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:background="@color/orderline_e1e1e1" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_110px"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="英  文  名"
+                android:textColor="@color/order_666666"
+                android:textSize="@dimen/dd_dimen_30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dd_dimen_5px"
+                android:text="first  name"
+                android:textColor="@color/order_666666"
+                android:textSize="@dimen/dd_dimen_20px" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/et_last_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dd_dimen_230px"
+            android:textCursorDrawable="@null"
+            android:layout_marginRight="@dimen/dd_dimen_15px"
+            android:background="@null"
+            android:hint="请填写英文名"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:digits="abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:textColor="@color/order_666666"
+            android:textColorHint="@color/order_999999"
+            android:textSize="@dimen/dd_dimen_28px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_2px"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:background="@color/orderline_e1e1e1" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_110px"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:text="电话号码"
+            android:textColor="@color/order_666666"
+            android:textSize="@dimen/dd_dimen_30px" />
+
+
+        <EditText
+            android:id="@+id/et_tel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dd_dimen_230px"
+            android:layout_marginRight="@dimen/dd_dimen_15px"
+            android:textCursorDrawable="@null"
+            android:background="@null"
+            android:hint="请填写联系电话"
+            android:maxLength="11"
+            android:inputType="number"
+            android:textColor="@color/order_666666"
+            android:textColorHint="@color/order_999999"
+            android:textSize="@dimen/dd_dimen_28px" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_20px"
+        android:background="@color/orderbackground_f4f4f4" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_110px"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:text="证        件"
+            android:textColor="@color/order_666666"
+            android:textSize="@dimen/dd_dimen_28px" />
+
+        <TextView
+            android:id="@+id/tv_add_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:background="@drawable/club_join_color_stroke_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dd_dimen_10px"
+            android:paddingLeft="@dimen/dd_dimen_20px"
+            android:paddingRight="@dimen/dd_dimen_20px"
+            android:paddingTop="@dimen/dd_dimen_10px"
+            android:text="添加证件" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_2px"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:background="@color/orderline_e1e1e1" />
+
+</LinearLayout>

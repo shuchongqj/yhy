@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_custom_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_black_75">
+
+    <RelativeLayout
+        android:id="@+id/rlyt_center_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:id="@+id/llyt_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/integral_dlg_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_10dp"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:paddingRight="@dimen/margin_10dp"
+            android:paddingTop="@dimen/margin_10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/icon_dlg_custom">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/msg_dlg_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView16"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dd_dimen_20px"
+                        android:text="+100"
+                        android:textColor="@color/main"
+                        android:textSize="@dimen/dd_dimen_44px" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="奖励积分"
+                        android:textColor="@color/main"
+                        android:textSize="@dimen/dd_dimen_30px" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/integral_dlg_white_bg"
+            android:layout_below="@+id/llyt_top"
+            android:layout_alignLeft="@+id/llyt_top"
+            android:layout_alignRight="@+id/llyt_top"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_10dp"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:paddingRight="@dimen/margin_10dp"
+            android:paddingTop="@dimen/margin_10dp">
+
+            <TextView
+                android:id="@+id/msg_dlg_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="粉丝人数达到100人奖励"
+                android:textColor="@color/red_ying"
+                android:textSize="@dimen/dd_dimen_26px" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

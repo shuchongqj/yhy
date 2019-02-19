@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_norm_f4f4f4"
+    android:orientation="vertical">
+
+    <com.quanyan.yhy.ui.views.AppSettingItem
+        android:id="@+id/settings_noti_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.quanyan.yhy.ui.views.AppSettingItem
+        android:id="@+id/settings_sound_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

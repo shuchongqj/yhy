@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/my_healthy_funciotn_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.quanyan.yhy.ui.views.MineMenuItem
+                    android:id="@+id/order_travel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.quanyan.yhy.ui.views.MineMenuItem
+                    android:id="@+id/order_hotel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.quanyan.yhy.ui.views.MineMenuItem
+                    android:id="@+id/order_scenic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.quanyan.yhy.ui.views.MineMenuItem
+                    android:id="@+id/order_souvenir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <com.quanyan.yhy.ui.views.MineMenuItem
+                    android:id="@+id/order_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

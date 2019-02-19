@@ -1,0 +1,5 @@
+<resources>  
+    <integer name="transition_animation_time">500</integer>
+    <!-- 列表的店铺头像大小 -->
+    <integer name="list_user_head_radius">60</integer>
+</resources>

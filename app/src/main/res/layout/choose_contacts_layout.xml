@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:background="@color/color_norm_f4f4f4"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/click_selector"
+            android:paddingBottom="@dimen/dd_dimen_20px"
+            android:paddingLeft="@dimen/dd_dimen_40px"
+            android:paddingRight="@dimen/dd_dimen_40px"
+            android:paddingTop="@dimen/dd_dimen_20px">
+
+            <View
+                android:id="@+id/club_apply_choose_contact_layout_left"
+                android:layout_width="3dp"
+                android:layout_height="15dp"
+                android:layout_alignParentLeft="true"
+                android:background="@color/main"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dd_dimen_15px"
+                android:layout_toRightOf="@id/club_apply_choose_contact_layout_left"
+                android:text="联系人信息"
+                android:textColor="@color/tv_color_gray9"
+                android:textSize="@dimen/dd_dimen_24px"/>
+
+            <TextView
+                android:id="@+id/club_apply_choose_contact_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dd_dimen_15px"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/arrow_go"
+                android:text="选择联系人"
+                android:textColor="@color/main"
+                android:textSize="@dimen/dd_dimen_24px"/>
+        </RelativeLayout>
+
+        <!--<RelativeLayout
+            android:id="@+id/choose_contacts_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dd_dimen_20px"
+            android:paddingLeft="@dimen/dd_dimen_60px"
+            android:paddingRight="@dimen/dd_dimen_60px"
+            android:paddingTop="@dimen/dd_dimen_20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:textColor="@color/tv_color_gray6"
+                android:textSize="@dimen/dd_dimen_30px"/>
+
+            <TextView
+                android:id="@+id/club_apply_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dd_dimen_70px"
+                android:text="韩梅梅"
+                android:textColor="@color/tv_color_gray6"
+                android:textSize="@dimen/dd_dimen_30px"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/choose_contacts_phone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dd_dimen_20px"
+            android:paddingLeft="@dimen/dd_dimen_60px"
+            android:paddingRight="@dimen/dd_dimen_60px"
+            android:paddingTop="@dimen/dd_dimen_20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机"
+                android:textColor="@color/tv_color_gray6"
+                android:textSize="@dimen/dd_dimen_30px"/>
+
+            <TextView
+                android:id="@+id/club_apply_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dd_dimen_70px"
+                android:text="13256987452"
+                android:textColor="@color/tv_color_gray6"
+                android:textSize="@dimen/dd_dimen_30px"/>
+        </RelativeLayout>-->
+
+
+        <RelativeLayout
+            android:id="@+id/home_listview_rl_remark"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dd_dimen_90px"
+            android:paddingLeft="@dimen/dd_dimen_40px"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@color/white">
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="3dp"
+                android:layout_height="15dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:background="@color/main"/>
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dd_dimen_20px"
+                android:layout_toEndOf="@+id/view5"
+                android:layout_toRightOf="@+id/view5"
+                android:gravity="center"
+                android:minHeight="@dimen/dd_dimen_80px"
+                android:paddingRight="@dimen/dd_dimen_20px"
+                android:text="其他要求"
+                android:textColor="@color/color_norm_636363"
+                android:textSize="@dimen/dd_dimen_24px" />
+
+            <TextView
+                android:id="@+id/home_listview_hv_tv_title8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/view5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView6"
+                android:layout_toRightOf="@+id/textView6"
+                android:text=""
+                android:textColor="@color/color_norm_bebebe"
+                android:textSize="@dimen/dd_dimen_26px"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:paddingLeft="@dimen/dd_dimen_45px"
+            android:background="@color/color_norm_ffffff"
+            android:gravity="top"
+            android:hint="备注信息"
+            android:paddingTop="3dip"
+            android:maxLength="50"
+            android:id="@+id/et_other_request"
+            android:textColor="@color/color_norm_636363"
+            android:textSize="@dimen/dd_dimen_30px" />
+
+
+        <!--<RelativeLayout
+            android:id="@+id/choose_contacts_remark_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dd_dimen_20px"
+            android:paddingLeft="@dimen/dd_dimen_60px"
+            android:paddingRight="@dimen/dd_dimen_60px"
+            android:paddingTop="@dimen/dd_dimen_20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备注"
+                android:textColor="@color/tv_color_gray6"
+                android:textSize="@dimen/dd_dimen_30px"/>
+
+            <TextView
+                android:id="@+id/club_apply_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dd_dimen_70px"
+                android:text="妈妈和孩子两个人参加活动"
+                android:textColor="@color/tv_color_gray6"
+                android:textSize="@dimen/dd_dimen_30px"/>
+        </RelativeLayout>-->
+    </LinearLayout>
+</merge>

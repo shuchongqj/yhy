@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_masterline_hasdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dd_dimen_360px">
+
+                <ImageView
+                    android:id="@+id/iv_topic_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_default_310_180" />
+
+
+                <TextView
+                    android:id="@+id/tv_topic_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dd_dimen_24px"
+                    android:layout_marginLeft="@dimen/dd_dimen_30px"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=". 蜜月之旅 . 深度游"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dd_dimen_24px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dd_dimen_20px"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:layout_marginRight="@dimen/dd_dimen_30px"
+                android:layout_marginTop="@dimen/dd_dimen_20px">
+
+                <TextView
+                    android:id="@+id/tv_master_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/main"
+                    android:textSize="@dimen/dd_dimen_30px" />
+
+                <TextView
+                    android:id="@+id/tv_topic_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dd_dimen_24px"
+                    android:layout_toLeftOf="@+id/tv_master_price"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dd_dimen_30px" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dd_dimen_20px"
+            android:background="@color/orderline_e1e1e1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_live_nodata_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dd_dimen_100px"
+        android:paddingLeft="@dimen/dd_dimen_40px"
+        android:paddingRight="@dimen/dd_dimen_40px"
+        android:paddingTop="@dimen/dd_dimen_100px"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/item_live_nodata_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/error_empty_icon" />
+
+        <TextView
+            android:id="@+id/item_live_nodata_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dd_dimen_20px"
+            android:textColor="@color/neu_999999"
+            android:textSize="@dimen/text_size_30px" />
+    </LinearLayout>
+
+</LinearLayout>

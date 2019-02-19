@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/wonderful_play_detail_right_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dd_dimen_530px"
+        android:gravity="center"
+        android:textSize="@dimen/dd_dimen_24px"
+        android:background="@mipmap/wonderfull_play_detail_date_bg"
+        android:text="出发日期"/>
+</merge>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/dd_dimen_20px"
+              android:paddingLeft="@dimen/dd_dimen_40px"
+              android:paddingRight="@dimen/dd_dimen_40px"
+              android:paddingTop="@dimen/dd_dimen_20px">
+
+    <ImageView
+        android:id="@+id/cell_live_detail_appraise_user_head"
+        android:layout_width="@dimen/dd_dimen_75px"
+        android:scaleType="centerCrop"
+        android:layout_height="@dimen/dd_dimen_75px"
+        android:src="@mipmap/icon_default_128_128"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dd_dimen_20px"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/cell_live_detail_appraise_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main"
+            android:textSize="@dimen/dd_dimen_30px"/>
+        <TextView
+            android:id="@+id/cell_live_detail_appraise_user_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dd_dimen_20px"
+            android:layout_marginTop="5dp"
+            android:text="0"
+            android:paddingRight="3dp"
+            android:gravity="center_vertical|right"
+            android:background="@mipmap/icon_sex_man"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dd_dimen_20px"/>
+    </LinearLayout>
+
+</LinearLayout>

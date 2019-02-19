@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/icon_default_310_180"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.quanyan.yhy.ui.base.views.WrapContentHeightViewPager
+            android:id="@+id/banner_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.quanyan.base.view.customview.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/banner_dot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:padding="@dimen/margin_10dp"
+            vp:strokeWidth="0dp"
+            vp:intervalDot="@dimen/dd_dimen_18px"
+            vp:fillColor="@color/ac_title_bg_color"
+            vp:pageColor="@color/translucent_80_white" />
+    </FrameLayout>
+
+</RelativeLayout>

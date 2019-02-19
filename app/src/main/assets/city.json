@@ -1,0 +1,3137 @@
+﻿[{
+    "cityCode": "110100",
+    "hot": false,
+    "name": "北京",
+    "pinyin": "BEIJING",
+    "seq": -1,
+    "shortPinyin": "BJ"
+},
+{
+    "cityCode": "120100",
+    "hot": false,
+    "name": "天津",
+    "pinyin": "TIANJIN",
+    "seq": -1,
+    "shortPinyin": "TJ"
+},
+{
+    "cityCode": "130100",
+    "hot": false,
+    "name": "石家庄",
+    "pinyin": "SHIJIAZHUANG",
+    "seq": -1,
+    "shortPinyin": "SJZ"
+},
+{
+    "cityCode": "130200",
+    "hot": false,
+    "name": "唐山",
+    "pinyin": "TANGSHAN",
+    "seq": -1,
+    "shortPinyin": "TS"
+},
+{
+    "cityCode": "130300",
+    "hot": false,
+    "name": "秦皇岛",
+    "pinyin": "QINHUANGDAO",
+    "seq": -1,
+    "shortPinyin": "QHD"
+},
+{
+    "cityCode": "130400",
+    "hot": false,
+    "name": "邯郸",
+    "pinyin": "HANDAN",
+    "seq": -1,
+    "shortPinyin": "HD"
+},
+{
+    "cityCode": "130500",
+    "hot": false,
+    "name": "邢台",
+    "pinyin": "XINGTAI",
+    "seq": -1,
+    "shortPinyin": "XT"
+},
+{
+    "cityCode": "130600",
+    "hot": false,
+    "name": "保定",
+    "pinyin": "BAODING",
+    "seq": -1,
+    "shortPinyin": "BD"
+},
+{
+    "cityCode": "130700",
+    "hot": false,
+    "name": "张家口",
+    "pinyin": "ZHANGJIAKOU",
+    "seq": -1,
+    "shortPinyin": "ZJK"
+},
+{
+    "cityCode": "130800",
+    "hot": false,
+    "name": "承德",
+    "pinyin": "CHENGDE",
+    "seq": -1,
+    "shortPinyin": "CD"
+},
+{
+    "cityCode": "130900",
+    "hot": false,
+    "name": "沧州",
+    "pinyin": "CANGZHOU",
+    "seq": -1,
+    "shortPinyin": "CZ"
+},
+{
+    "cityCode": "131000",
+    "hot": false,
+    "name": "廊坊",
+    "pinyin": "LANGFANG",
+    "seq": -1,
+    "shortPinyin": "LF"
+},
+{
+    "cityCode": "131100",
+    "hot": false,
+    "name": "衡水",
+    "pinyin": "HENGSHUI",
+    "seq": -1,
+    "shortPinyin": "HS"
+},
+{
+    "cityCode": "140100",
+    "hot": false,
+    "name": "太原",
+    "pinyin": "TAIYUAN",
+    "seq": -1,
+    "shortPinyin": "TY"
+},
+{
+    "cityCode": "140200",
+    "hot": false,
+    "name": "大同",
+    "pinyin": "DATONG",
+    "seq": -1,
+    "shortPinyin": "DT"
+},
+{
+    "cityCode": "140300",
+    "hot": false,
+    "name": "阳泉",
+    "pinyin": "YANGQUAN",
+    "seq": -1,
+    "shortPinyin": "YQ"
+},
+{
+    "cityCode": "140400",
+    "hot": false,
+    "name": "长治",
+    "pinyin": "CHANGZHI",
+    "seq": -1,
+    "shortPinyin": "CZ"
+},
+{
+    "cityCode": "140500",
+    "hot": false,
+    "name": "晋城",
+    "pinyin": "JINCHENG",
+    "seq": -1,
+    "shortPinyin": "JC"
+},
+{
+    "cityCode": "140600",
+    "hot": false,
+    "name": "朔州",
+    "pinyin": "SHUOZHOU",
+    "seq": -1,
+    "shortPinyin": "SZ"
+},
+{
+    "cityCode": "140700",
+    "hot": false,
+    "name": "晋中",
+    "pinyin": "JINZHONG",
+    "seq": -1,
+    "shortPinyin": "JZ"
+},
+{
+    "cityCode": "140800",
+    "hot": false,
+    "name": "运城",
+    "pinyin": "YUNCHENG",
+    "seq": -1,
+    "shortPinyin": "YC"
+},
+{
+    "cityCode": "140900",
+    "hot": false,
+    "name": "忻州",
+    "pinyin": "XINZHOU",
+    "seq": -1,
+    "shortPinyin": "XZ"
+},
+{
+    "cityCode": "141000",
+    "hot": false,
+    "name": "临汾",
+    "pinyin": "LINFEN",
+    "seq": -1,
+    "shortPinyin": "LF"
+},
+{
+    "cityCode": "141100",
+    "hot": false,
+    "name": "吕梁",
+    "pinyin": "LVLIANG",
+    "seq": -1,
+    "shortPinyin": "LL"
+},
+{
+    "cityCode": "150100",
+    "hot": false,
+    "name": "呼和浩特",
+    "pinyin": "HUHEHAOTE",
+    "seq": -1,
+    "shortPinyin": "HHHT"
+},
+{
+    "cityCode": "150200",
+    "hot": false,
+    "name": "包头",
+    "pinyin": "BAOTOU",
+    "seq": -1,
+    "shortPinyin": "BT"
+},
+{
+    "cityCode": "150300",
+    "hot": false,
+    "name": "乌海",
+    "pinyin": "WUHAI",
+    "seq": -1,
+    "shortPinyin": "WH"
+},
+{
+    "cityCode": "150400",
+    "hot": false,
+    "name": "赤峰",
+    "pinyin": "CHIFENG",
+    "seq": -1,
+    "shortPinyin": "CF"
+},
+{
+    "cityCode": "150500",
+    "hot": false,
+    "name": "通辽",
+    "pinyin": "TONGLIAO",
+    "seq": -1,
+    "shortPinyin": "TL"
+},
+{
+    "cityCode": "150600",
+    "hot": false,
+    "name": "鄂尔多斯",
+    "pinyin": "EERDUOSI",
+    "seq": -1,
+    "shortPinyin": "EEDS"
+},
+{
+    "cityCode": "150700",
+    "hot": false,
+    "name": "呼伦贝尔",
+    "pinyin": "HULUNBEIER",
+    "seq": -1,
+    "shortPinyin": "HLBE"
+},
+{
+    "cityCode": "150800",
+    "hot": false,
+    "name": "巴彦淖尔",
+    "pinyin": "BAYANNAOER",
+    "seq": -1,
+    "shortPinyin": "BYNE"
+},
+{
+    "cityCode": "150900",
+    "hot": false,
+    "name": "乌兰察布",
+    "pinyin": "WULANCHABU",
+    "seq": -1,
+    "shortPinyin": "WLCB"
+},
+{
+    "cityCode": "152200",
+    "hot": false,
+    "name": "兴安盟",
+    "pinyin": "XINGANMENG",
+    "seq": -1,
+    "shortPinyin": "XAM"
+},
+{
+    "cityCode": "152500",
+    "hot": false,
+    "name": "锡林郭勒盟",
+    "pinyin": "XILINGUOLEMENG",
+    "seq": -1,
+    "shortPinyin": "XLGLM"
+},
+{
+    "cityCode": "152900",
+    "hot": false,
+    "name": "阿拉善盟",
+    "pinyin": "ALASHANMENG",
+    "seq": -1,
+    "shortPinyin": "ALSM"
+},
+{
+    "cityCode": "210100",
+    "hot": false,
+    "name": "沈阳",
+    "pinyin": "SHENYANG",
+    "seq": -1,
+    "shortPinyin": "SY"
+},
+{
+    "cityCode": "210200",
+    "hot": false,
+    "name": "大连",
+    "pinyin": "DALIAN",
+    "seq": -1,
+    "shortPinyin": "DL"
+},
+{
+    "cityCode": "210300",
+    "hot": false,
+    "name": "鞍山",
+    "pinyin": "ANSHAN",
+    "seq": -1,
+    "shortPinyin": "AS"
+},
+{
+    "cityCode": "210400",
+    "hot": false,
+    "name": "抚顺",
+    "pinyin": "FUSHUN",
+    "seq": -1,
+    "shortPinyin": "FS"
+},
+{
+    "cityCode": "210500",
+    "hot": false,
+    "name": "本溪",
+    "pinyin": "BENXI",
+    "seq": -1,
+    "shortPinyin": "BX"
+},
+{
+    "cityCode": "210600",
+    "hot": false,
+    "name": "丹东",
+    "pinyin": "DANDONG",
+    "seq": -1,
+    "shortPinyin": "DD"
+},
+{
+    "cityCode": "210700",
+    "hot": false,
+    "name": "锦州",
+    "pinyin": "JINZHOU",
+    "seq": -1,
+    "shortPinyin": "JZ"
+},
+{
+    "cityCode": "210800",
+    "hot": false,
+    "name": "营口",
+    "pinyin": "YINGKOU",
+    "seq": -1,
+    "shortPinyin": "YK"
+},
+{
+    "cityCode": "210900",
+    "hot": false,
+    "name": "阜新",
+    "pinyin": "FUXIN",
+    "seq": -1,
+    "shortPinyin": "FX"
+},
+{
+    "cityCode": "211000",
+    "hot": false,
+    "name": "辽阳",
+    "pinyin": "LIAOYANG",
+    "seq": -1,
+    "shortPinyin": "LY"
+},
+{
+    "cityCode": "211100",
+    "hot": false,
+    "name": "盘锦",
+    "pinyin": "PANJIN",
+    "seq": -1,
+    "shortPinyin": "PJ"
+},
+{
+    "cityCode": "211200",
+    "hot": false,
+    "name": "铁岭",
+    "pinyin": "TIELING",
+    "seq": -1,
+    "shortPinyin": "TL"
+},
+{
+    "cityCode": "211300",
+    "hot": false,
+    "name": "朝阳",
+    "pinyin": "CHAOYANG",
+    "seq": -1,
+    "shortPinyin": "CY"
+},
+{
+    "cityCode": "211400",
+    "hot": false,
+    "name": "葫芦岛",
+    "pinyin": "HULUDAO",
+    "seq": -1,
+    "shortPinyin": "HLD"
+},
+{
+    "cityCode": "220100",
+    "hot": false,
+    "name": "长春",
+    "pinyin": "CHANGCHUN",
+    "seq": -1,
+    "shortPinyin": "CC"
+},
+{
+    "cityCode": "220200",
+    "hot": false,
+    "name": "吉林",
+    "pinyin": "JILIN",
+    "seq": -1,
+    "shortPinyin": "JL"
+},
+{
+    "cityCode": "220300",
+    "hot": false,
+    "name": "四平",
+    "pinyin": "SIPING",
+    "seq": -1,
+    "shortPinyin": "SP"
+},
+{
+    "cityCode": "220400",
+    "hot": false,
+    "name": "辽源",
+    "pinyin": "LIAOYUAN",
+    "seq": -1,
+    "shortPinyin": "LY"
+},
+{
+    "cityCode": "220500",
+    "hot": false,
+    "name": "通化",
+    "pinyin": "TONGHUA",
+    "seq": -1,
+    "shortPinyin": "TH"
+},
+{
+    "cityCode": "220600",
+    "hot": false,
+    "name": "白山",
+    "pinyin": "BAISHAN",
+    "seq": -1,
+    "shortPinyin": "BS"
+},
+{
+    "cityCode": "220700",
+    "hot": false,
+    "name": "松原",
+    "pinyin": "SONGYUAN",
+    "seq": -1,
+    "shortPinyin": "SY"
+},
+{
+    "cityCode": "220800",
+    "hot": false,
+    "name": "白城",
+    "pinyin": "BAICHENG",
+    "seq": -1,
+    "shortPinyin": "BC"
+},
+{
+    "cityCode": "222400",
+    "hot": false,
+    "name": "延边州",
+    "pinyin": "YANBIANZHOU",
+    "seq": -1,
+    "shortPinyin": "YBZ"
+},
+{
+    "cityCode": "230100",
+    "hot": false,
+    "name": "哈尔滨",
+    "pinyin": "HAERBIN",
+    "seq": -1,
+    "shortPinyin": "HEB"
+},
+{
+    "cityCode": "230200",
+    "hot": false,
+    "name": "齐齐哈尔",
+    "pinyin": "QIQIHAER",
+    "seq": -1,
+    "shortPinyin": "QQHE"
+},
+{
+    "cityCode": "230300",
+    "hot": false,
+    "name": "鸡西",
+    "pinyin": "JIXI",
+    "seq": -1,
+    "shortPinyin": "JX"
+},
+{
+    "cityCode": "230400",
+    "hot": false,
+    "name": "鹤岗",
+    "pinyin": "HEGANG",
+    "seq": -1,
+    "shortPinyin": "HG"
+},
+{
+    "cityCode": "230500",
+    "hot": false,
+    "name": "双鸭山",
+    "pinyin": "SHUANGYASHAN",
+    "seq": -1,
+    "shortPinyin": "SYS"
+},
+{
+    "cityCode": "230600",
+    "hot": false,
+    "name": "大庆",
+    "pinyin": "DAQING",
+    "seq": -1,
+    "shortPinyin": "DQ"
+},
+{
+    "cityCode": "230700",
+    "hot": false,
+    "name": "伊春",
+    "pinyin": "YICHUN",
+    "seq": -1,
+    "shortPinyin": "YC"
+},
+{
+    "cityCode": "230800",
+    "hot": false,
+    "name": "佳木斯",
+    "pinyin": "JIAMUSI",
+    "seq": -1,
+    "shortPinyin": "JMS"
+},
+{
+    "cityCode": "230900",
+    "hot": false,
+    "name": "七台河",
+    "pinyin": "QITAIHE",
+    "seq": -1,
+    "shortPinyin": "QTH"
+},
+{
+    "cityCode": "231000",
+    "hot": false,
+    "name": "牡丹江",
+    "pinyin": "MUDANJIANG",
+    "seq": -1,
+    "shortPinyin": "MDJ"
+},
+{
+    "cityCode": "231100",
+    "hot": false,
+    "name": "黑河",
+    "pinyin": "HEIHE",
+    "seq": -1,
+    "shortPinyin": "HH"
+},
+{
+    "cityCode": "231200",
+    "hot": false,
+    "name": "绥化",
+    "pinyin": "SUIHUA",
+    "seq": -1,
+    "shortPinyin": "SH"
+},
+{
+    "cityCode": "232700",
+    "hot": false,
+    "name": "大兴安岭",
+    "pinyin": "DAXINGANLING",
+    "seq": -1,
+    "shortPinyin": "DXAL"
+},
+{
+    "cityCode": "310100",
+    "hot": false,
+    "name": "上海",
+    "pinyin": "SHANGHAI",
+    "seq": -1,
+    "shortPinyin": "SH"
+},
+{
+    "cityCode": "320100",
+    "hot": false,
+    "name": "南京",
+    "pinyin": "NANJING",
+    "seq": -1,
+    "shortPinyin": "NJ"
+},
+{
+    "cityCode": "320200",
+    "hot": false,
+    "name": "无锡",
+    "pinyin": "WUXI",
+    "seq": -1,
+    "shortPinyin": "WX"
+},
+{
+    "cityCode": "320300",
+    "hot": false,
+    "name": "徐州",
+    "pinyin": "XUZHOU",
+    "seq": -1,
+    "shortPinyin": "XZ"
+},
+{
+    "cityCode": "320400",
+    "hot": false,
+    "name": "常州",
+    "pinyin": "CHANGZHOU",
+    "seq": -1,
+    "shortPinyin": "CZ"
+},
+{
+    "cityCode": "320500",
+    "hot": false,
+    "name": "苏州",
+    "pinyin": "SUZHOU",
+    "seq": -1,
+    "shortPinyin": "SZ"
+},
+{
+    "cityCode": "320600",
+    "hot": false,
+    "name": "南通",
+    "pinyin": "NANTONG",
+    "seq": -1,
+    "shortPinyin": "NT"
+},
+{
+    "cityCode": "320700",
+    "hot": false,
+    "name": "连云港",
+    "pinyin": "LIANYUNGANG",
+    "seq": -1,
+    "shortPinyin": "LYG"
+},
+{
+    "cityCode": "320800",
+    "hot": false,
+    "name": "淮安",
+    "pinyin": "HUAIAN",
+    "seq": -1,
+    "shortPinyin": "HA"
+},
+{
+    "cityCode": "320900",
+    "hot": false,
+    "name": "盐城",
+    "pinyin": "YANCHENG",
+    "seq": -1,
+    "shortPinyin": "YC"
+},
+{
+    "cityCode": "321000",
+    "hot": false,
+    "name": "扬州",
+    "pinyin": "YANGZHOU",
+    "seq": -1,
+    "shortPinyin": "YZ"
+},
+{
+    "cityCode": "321100",
+    "hot": false,
+    "name": "镇江",
+    "pinyin": "ZHENJIANG",
+    "seq": -1,
+    "shortPinyin": "ZJ"
+},
+{
+    "cityCode": "321200",
+    "hot": false,
+    "name": "泰州",
+    "pinyin": "TAIZHOU",
+    "seq": -1,
+    "shortPinyin": "TZ"
+},
+{
+    "cityCode": "321300",
+    "hot": false,
+    "name": "宿迁",
+    "pinyin": "SUQIAN",
+    "seq": -1,
+    "shortPinyin": "SQ"
+},
+{
+    "cityCode": "330100",
+    "hot": false,
+    "name": "杭州",
+    "pinyin": "HANGZHOU",
+    "seq": -1,
+    "shortPinyin": "HZ"
+},
+{
+    "cityCode": "330200",
+    "hot": false,
+    "name": "宁波",
+    "pinyin": "NINGBO",
+    "seq": -1,
+    "shortPinyin": "NB"
+},
+{
+    "cityCode": "330300",
+    "hot": false,
+    "name": "温州",
+    "pinyin": "WENZHOU",
+    "seq": -1,
+    "shortPinyin": "WZ"
+},
+{
+    "cityCode": "330400",
+    "hot": false,
+    "name": "嘉兴",
+    "pinyin": "JIAXING",
+    "seq": -1,
+    "shortPinyin": "JX"
+},
+{
+    "cityCode": "330500",
+    "hot": false,
+    "name": "湖州",
+    "pinyin": "HUZHOU",
+    "seq": -1,
+    "shortPinyin": "HZ"
+},
+{
+    "cityCode": "330600",
+    "hot": false,
+    "name": "绍兴",
+    "pinyin": "SHAOXING",
+    "seq": -1,
+    "shortPinyin": "SX"
+},
+{
+    "cityCode": "330700",
+    "hot": false,
+    "name": "金华",
+    "pinyin": "JINHUA",
+    "seq": -1,
+    "shortPinyin": "JH"
+},
+{
+    "cityCode": "330800",
+    "hot": false,
+    "name": "衢州",
+    "pinyin": "QUZHOU",
+    "seq": -1,
+    "shortPinyin": "QZ"
+},
+{
+    "cityCode": "330900",
+    "hot": false,
+    "name": "舟山",
+    "pinyin": "ZHOUSHAN",
+    "seq": -1,
+    "shortPinyin": "ZS"
+},
+{
+    "cityCode": "331000",
+    "hot": false,
+    "name": "台州",
+    "pinyin": "TAIZHOU",
+    "seq": -1,
+    "shortPinyin": "TZ"
+},
+{
+    "cityCode": "331100",
+    "hot": false,
+    "name": "丽水",
+    "pinyin": "LISHUI",
+    "seq": -1,
+    "shortPinyin": "LS"
+},
+{
+    "cityCode": "340100",
+    "hot": false,
+    "name": "合肥",
+    "pinyin": "HEFEI",
+    "seq": -1,
+    "shortPinyin": "HF"
+},
+{
+    "cityCode": "340200",
+    "hot": false,
+    "name": "芜湖",
+    "pinyin": "WUHU",
+    "seq": -1,
+    "shortPinyin": "WH"
+},
+{
+    "cityCode": "340300",
+    "hot": false,
+    "name": "蚌埠",
+    "pinyin": "BANGBU",
+    "seq": -1,
+    "shortPinyin": "BB"
+},
+{
+    "cityCode": "340400",
+    "hot": false,
+    "name": "淮南",
+    "pinyin": "HUAINAN",
+    "seq": -1,
+    "shortPinyin": "HN"
+},
+{
+    "cityCode": "340500",
+    "hot": false,
+    "name": "马鞍山",
+    "pinyin": "MAANSHAN",
+    "seq": -1,
+    "shortPinyin": "MAS"
+},
+{
+    "cityCode": "340600",
+    "hot": false,
+    "name": "淮北",
+    "pinyin": "HUAIBEI",
+    "seq": -1,
+    "shortPinyin": "HB"
+},
+{
+    "cityCode": "340700",
+    "hot": false,
+    "name": "铜陵",
+    "pinyin": "TONGLING",
+    "seq": -1,
+    "shortPinyin": "TL"
+},
+{
+    "cityCode": "340800",
+    "hot": false,
+    "name": "安庆",
+    "pinyin": "ANQING",
+    "seq": -1,
+    "shortPinyin": "AQ"
+},
+{
+    "cityCode": "341000",
+    "hot": false,
+    "name": "黄山",
+    "pinyin": "HUANGSHAN",
+    "seq": -1,
+    "shortPinyin": "HS"
+},
+{
+    "cityCode": "341100",
+    "hot": false,
+    "name": "滁州",
+    "pinyin": "CHUZHOU",
+    "seq": -1,
+    "shortPinyin": "CZ"
+},
+{
+    "cityCode": "341200",
+    "hot": false,
+    "name": "阜阳",
+    "pinyin": "FUYANG",
+    "seq": -1,
+    "shortPinyin": "FY"
+},
+{
+    "cityCode": "341300",
+    "hot": false,
+    "name": "宿州",
+    "pinyin": "SUZHOU",
+    "seq": -1,
+    "shortPinyin": "SZ"
+},
+{
+    "cityCode": "341400",
+    "hot": false,
+    "name": "巢湖",
+    "pinyin": "CHAOHU",
+    "seq": -1,
+    "shortPinyin": "CH"
+},
+{
+    "cityCode": "341500",
+    "hot": false,
+    "name": "六安",
+    "pinyin": "LIUAN",
+    "seq": -1,
+    "shortPinyin": "LA"
+},
+{
+    "cityCode": "341600",
+    "hot": false,
+    "name": "亳州",
+    "pinyin": "BOZHOU",
+    "seq": -1,
+    "shortPinyin": "BZ"
+},
+{
+    "cityCode": "341700",
+    "hot": false,
+    "name": "池州",
+    "pinyin": "CHIZHOU",
+    "seq": -1,
+    "shortPinyin": "CZ"
+},
+{
+    "cityCode": "341800",
+    "hot": false,
+    "name": "宣城",
+    "pinyin": "XUANCHENG",
+    "seq": -1,
+    "shortPinyin": "XC"
+},
+{
+    "cityCode": "350100",
+    "hot": false,
+    "name": "福州",
+    "pinyin": "FUZHOU",
+    "seq": -1,
+    "shortPinyin": "FZ"
+},
+{
+    "cityCode": "350200",
+    "hot": false,
+    "name": "厦门",
+    "pinyin": "XIAMEN",
+    "seq": -1,
+    "shortPinyin": "XM"
+},
+{
+    "cityCode": "350300",
+    "hot": false,
+    "name": "莆田",
+    "pinyin": "PUTIAN",
+    "seq": -1,
+    "shortPinyin": "PT"
+},
+{
+    "cityCode": "350400",
+    "hot": false,
+    "name": "三明",
+    "pinyin": "SANMING",
+    "seq": -1,
+    "shortPinyin": "SM"
+},
+{
+    "cityCode": "350500",
+    "hot": false,
+    "name": "泉州",
+    "pinyin": "QUANZHOU",
+    "seq": -1,
+    "shortPinyin": "QZ"
+},
+{
+    "cityCode": "350600",
+    "hot": false,
+    "name": "漳州",
+    "pinyin": "ZHANGZHOU",
+    "seq": -1,
+    "shortPinyin": "ZZ"
+},
+{
+    "cityCode": "350700",
+    "hot": false,
+    "name": "南平",
+    "pinyin": "NANPING",
+    "seq": -1,
+    "shortPinyin": "NP"
+},
+{
+    "cityCode": "350800",
+    "hot": false,
+    "name": "龙岩",
+    "pinyin": "LONGYAN",
+    "seq": -1,
+    "shortPinyin": "LY"
+},
+{
+    "cityCode": "350900",
+    "hot": false,
+    "name": "宁德",
+    "pinyin": "NINGDE",
+    "seq": -1,
+    "shortPinyin": "ND"
+},
+{
+    "cityCode": "360100",
+    "hot": false,
+    "name": "南昌",
+    "pinyin": "NANCHANG",
+    "seq": -1,
+    "shortPinyin": "NC"
+},
+{
+    "cityCode": "360200",
+    "hot": false,
+    "name": "景德镇",
+    "pinyin": "JINGDEZHEN",
+    "seq": -1,
+    "shortPinyin": "JDZ"
+},
+{
+    "cityCode": "360300",
+    "hot": false,
+    "name": "萍乡",
+    "pinyin": "PINGXIANG",
+    "seq": -1,
+    "shortPinyin": "PX"
+},
+{
+    "cityCode": "360400",
+    "hot": false,
+    "name": "九江",
+    "pinyin": "JIUJIANG",
+    "seq": -1,
+    "shortPinyin": "JJ"
+},
+{
+    "cityCode": "360500",
+    "hot": false,
+    "name": "新余",
+    "pinyin": "XINYU",
+    "seq": -1,
+    "shortPinyin": "XY"
+},
+{
+    "cityCode": "360600",
+    "hot": false,
+    "name": "鹰潭",
+    "pinyin": "YINGTAN",
+    "seq": -1,
+    "shortPinyin": "YT"
+},
+{
+    "cityCode": "360700",
+    "hot": false,
+    "name": "赣州",
+    "pinyin": "GANZHOU",
+    "seq": -1,
+    "shortPinyin": "GZ"
+},
+{
+    "cityCode": "360800",
+    "hot": false,
+    "name": "吉安",
+    "pinyin": "JIAN",
+    "seq": -1,
+    "shortPinyin": "JA"
+},
+{
+    "cityCode": "360900",
+    "hot": false,
+    "name": "宜春",
+    "pinyin": "YICHUN",
+    "seq": -1,
+    "shortPinyin": "YC"
+},
+{
+    "cityCode": "361000",
+    "hot": false,
+    "name": "抚州",
+    "pinyin": "FUZHOU",
+    "seq": -1,
+    "shortPinyin": "FZ"
+},
+{
+    "cityCode": "361100",
+    "hot": false,
+    "name": "上饶",
+    "pinyin": "SHANGRAO",
+    "seq": -1,
+    "shortPinyin": "SR"
+},
+{
+    "cityCode": "370100",
+    "hot": false,
+    "name": "济南",
+    "pinyin": "JINAN",
+    "seq": -1,
+    "shortPinyin": "JN"
+},
+{
+    "cityCode": "370200",
+    "hot": false,
+    "name": "青岛",
+    "pinyin": "QINGDAO",
+    "seq": -1,
+    "shortPinyin": "QD"
+},
+{
+    "cityCode": "370300",
+    "hot": false,
+    "name": "淄博",
+    "pinyin": "ZIBO",
+    "seq": -1,
+    "shortPinyin": "ZB"
+},
+{
+    "cityCode": "370400",
+    "hot": false,
+    "name": "枣庄",
+    "pinyin": "ZAOZHUANG",
+    "seq": -1,
+    "shortPinyin": "ZZ"
+},
+{
+    "cityCode": "370500",
+    "hot": false,
+    "name": "东营",
+    "pinyin": "DONGYING",
+    "seq": -1,
+    "shortPinyin": "DY"
+},
+{
+    "cityCode": "370600",
+    "hot": false,
+    "name": "烟台",
+    "pinyin": "YANTAI",
+    "seq": -1,
+    "shortPinyin": "YT"
+},
+{
+    "cityCode": "370700",
+    "hot": false,
+    "name": "潍坊",
+    "pinyin": "WEIFANG",
+    "seq": -1,
+    "shortPinyin": "WF"
+},
+{
+    "cityCode": "370800",
+    "hot": false,
+    "name": "济宁",
+    "pinyin": "JINING",
+    "seq": -1,
+    "shortPinyin": "JN"
+},
+{
+    "cityCode": "370900",
+    "hot": false,
+    "name": "泰安",
+    "pinyin": "TAIAN",
+    "seq": -1,
+    "shortPinyin": "TA"
+},
+{
+    "cityCode": "371000",
+    "hot": false,
+    "name": "威海",
+    "pinyin": "WEIHAI",
+    "seq": -1,
+    "shortPinyin": "WH"
+},
+{
+    "cityCode": "371100",
+    "hot": false,
+    "name": "日照",
+    "pinyin": "RIZHAO",
+    "seq": -1,
+    "shortPinyin": "RZ"
+},
+{
+    "cityCode": "371200",
+    "hot": false,
+    "name": "莱芜",
+    "pinyin": "LAIWU",
+    "seq": -1,
+    "shortPinyin": "LW"
+},
+{
+    "cityCode": "371300",
+    "hot": false,
+    "name": "临沂",
+    "pinyin": "LINYI",
+    "seq": -1,
+    "shortPinyin": "LY"
+},
+{
+    "cityCode": "371400",
+    "hot": false,
+    "name": "德州",
+    "pinyin": "DEZHOU",
+    "seq": -1,
+    "shortPinyin": "DZ"
+},
+{
+    "cityCode": "371500",
+    "hot": false,
+    "name": "聊城",
+    "pinyin": "LIAOCHENG",
+    "seq": -1,
+    "shortPinyin": "LC"
+},
+{
+    "cityCode": "371600",
+    "hot": false,
+    "name": "滨州",
+    "pinyin": "BINZHOU",
+    "seq": -1,
+    "shortPinyin": "BZ"
+},
+{
+    "cityCode": "371700",
+    "hot": false,
+    "name": "菏泽",
+    "pinyin": "HEZE",
+    "seq": -1,
+    "shortPinyin": "HZ"
+},
+{
+    "cityCode": "410100",
+    "hot": false,
+    "name": "郑州",
+    "pinyin": "ZHENGZHOU",
+    "seq": -1,
+    "shortPinyin": "ZZ"
+},
+{
+    "cityCode": "410200",
+    "hot": false,
+    "name": "开封",
+    "pinyin": "KAIFENG",
+    "seq": -1,
+    "shortPinyin": "KF"
+},
+{
+    "cityCode": "410300",
+    "hot": false,
+    "name": "洛阳",
+    "pinyin": "LUOYANG",
+    "seq": -1,
+    "shortPinyin": "LY"
+},
+{
+    "cityCode": "410400",
+    "hot": false,
+    "name": "平顶山",
+    "pinyin": "PINGDINGSHAN",
+    "seq": -1,
+    "shortPinyin": "PDS"
+},
+{
+    "cityCode": "410500",
+    "hot": false,
+    "name": "安阳",
+    "pinyin": "ANYANG",
+    "seq": -1,
+    "shortPinyin": "AY"
+},
+{
+    "cityCode": "410600",
+    "hot": false,
+    "name": "鹤壁",
+    "pinyin": "HEBI",
+    "seq": -1,
+    "shortPinyin": "HB"
+},
+{
+    "cityCode": "410700",
+    "hot": false,
+    "name": "新乡",
+    "pinyin": "XINXIANG",
+    "seq": -1,
+    "shortPinyin": "XX"
+},
+{
+    "cityCode": "410800",
+    "hot": false,
+    "name": "焦作",
+    "pinyin": "JIAOZUO",
+    "seq": -1,
+    "shortPinyin": "JZ"
+},
+{
+    "cityCode": "410900",
+    "hot": false,
+    "name": "濮阳",
+    "pinyin": "PUYANG",
+    "seq": -1,
+    "shortPinyin": "PY"
+},
+{
+    "cityCode": "411000",
+    "hot": false,
+    "name": "许昌",
+    "pinyin": "XUCHANG",
+    "seq": -1,
+    "shortPinyin": "XC"
+},
+{
+    "cityCode": "411100",
+    "hot": false,
+    "name": "漯河",
+    "pinyin": "LUOHE",
+    "seq": -1,
+    "shortPinyin": "LH"
+},
+{
+    "cityCode": "411200",
+    "hot": false,
+    "name": "三门峡",
+    "pinyin": "SANMENXIA",
+    "seq": -1,
+    "shortPinyin": "SMX"
+},
+{
+    "cityCode": "411300",
+    "hot": false,
+    "name": "南阳",
+    "pinyin": "NANYANG",
+    "seq": -1,
+    "shortPinyin": "NY"
+},
+{
+    "cityCode": "411400",
+    "hot": false,
+    "name": "商丘",
+    "pinyin": "SHANGQIU",
+    "seq": -1,
+    "shortPinyin": "SQ"
+},
+{
+    "cityCode": "411500",
+    "hot": false,
+    "name": "信阳",
+    "pinyin": "XINYANG",
+    "seq": -1,
+    "shortPinyin": "XY"
+},
+{
+    "cityCode": "411600",
+    "hot": false,
+    "name": "周口",
+    "pinyin": "ZHOUKOU",
+    "seq": -1,
+    "shortPinyin": "ZK"
+},
+{
+    "cityCode": "411700",
+    "hot": false,
+    "name": "驻马店",
+    "pinyin": "ZHUMADIAN",
+    "seq": -1,
+    "shortPinyin": "ZMD"
+},
+{
+    "cityCode": "420100",
+    "hot": false,
+    "name": "武汉",
+    "pinyin": "WUHAN",
+    "seq": -1,
+    "shortPinyin": "WH"
+},
+{
+    "cityCode": "420200",
+    "hot": false,
+    "name": "黄石",
+    "pinyin": "HUANGSHI",
+    "seq": -1,
+    "shortPinyin": "HS"
+},
+{
+    "cityCode": "420300",
+    "hot": false,
+    "name": "十堰",
+    "pinyin": "SHIYAN",
+    "seq": -1,
+    "shortPinyin": "SY"
+},
+{
+    "cityCode": "420500",
+    "hot": false,
+    "name": "宜昌",
+    "pinyin": "YICHANG",
+    "seq": -1,
+    "shortPinyin": "YC"
+},
+{
+    "cityCode": "420600",
+    "hot": false,
+    "name": "襄樊",
+    "pinyin": "XIANGFAN",
+    "seq": -1,
+    "shortPinyin": "XF"
+},
+{
+    "cityCode": "420700",
+    "hot": false,
+    "name": "鄂州",
+    "pinyin": "EZHOU",
+    "seq": -1,
+    "shortPinyin": "EZ"
+},
+{
+    "cityCode": "420800",
+    "hot": false,
+    "name": "荆门",
+    "pinyin": "JINGMEN",
+    "seq": -1,
+    "shortPinyin": "JM"
+},
+{
+    "cityCode": "420900",
+    "hot": false,
+    "name": "孝感",
+    "pinyin": "XIAOGAN",
+    "seq": -1,
+    "shortPinyin": "XG"
+},
+{
+    "cityCode": "421000",
+    "hot": false,
+    "name": "荆州",
+    "pinyin": "JINGZHOU",
+    "seq": -1,
+    "shortPinyin": "JZ"
+},
+{
+    "cityCode": "421100",
+    "hot": false,
+    "name": "黄冈",
+    "pinyin": "HUANGGANG",
+    "seq": -1,
+    "shortPinyin": "HG"
+},
+{
+    "cityCode": "421200",
+    "hot": false,
+    "name": "咸宁",
+    "pinyin": "XIANNING",
+    "seq": -1,
+    "shortPinyin": "XN"
+},
+{
+    "cityCode": "421300",
+    "hot": false,
+    "name": "随州",
+    "pinyin": "SUIZHOU",
+    "seq": -1,
+    "shortPinyin": "SZ"
+},
+{
+    "cityCode": "422800",
+    "hot": false,
+    "name": "恩施州",
+    "pinyin": "ENSHIZHOU",
+    "seq": -1,
+    "shortPinyin": "ESZ"
+},
+{
+    "cityCode": "430100",
+    "hot": false,
+    "name": "长沙",
+    "pinyin": "CHANGSHA",
+    "seq": -1,
+    "shortPinyin": "CS"
+},
+{
+    "cityCode": "430200",
+    "hot": false,
+    "name": "株洲",
+    "pinyin": "ZHUZHOU",
+    "seq": -1,
+    "shortPinyin": "ZZ"
+},
+{
+    "cityCode": "430300",
+    "hot": false,
+    "name": "湘潭",
+    "pinyin": "XIANGTAN",
+    "seq": -1,
+    "shortPinyin": "XT"
+},
+{
+    "cityCode": "430400",
+    "hot": false,
+    "name": "衡阳",
+    "pinyin": "HENGYANG",
+    "seq": -1,
+    "shortPinyin": "HY"
+},
+{
+    "cityCode": "430500",
+    "hot": false,
+    "name": "邵阳",
+    "pinyin": "SHAOYANG",
+    "seq": -1,
+    "shortPinyin": "SY"
+},
+{
+    "cityCode": "430600",
+    "hot": false,
+    "name": "岳阳",
+    "pinyin": "YUEYANG",
+    "seq": -1,
+    "shortPinyin": "YY"
+},
+{
+    "cityCode": "430700",
+    "hot": false,
+    "name": "常德",
+    "pinyin": "CHANGDE",
+    "seq": -1,
+    "shortPinyin": "CD"
+},
+{
+    "cityCode": "430800",
+    "hot": false,
+    "name": "张家界",
+    "pinyin": "ZHANGJIAJIE",
+    "seq": -1,
+    "shortPinyin": "ZJJ"
+},
+{
+    "cityCode": "430900",
+    "hot": false,
+    "name": "益阳",
+    "pinyin": "YIYANG",
+    "seq": -1,
+    "shortPinyin": "YY"
+},
+{
+    "cityCode": "431000",
+    "hot": false,
+    "name": "郴州",
+    "pinyin": "CHENZHOU",
+    "seq": -1,
+    "shortPinyin": "CZ"
+},
+{
+    "cityCode": "431100",
+    "hot": false,
+    "name": "永州",
+    "pinyin": "YONGZHOU",
+    "seq": -1,
+    "shortPinyin": "YZ"
+},
+{
+    "cityCode": "431200",
+    "hot": false,
+    "name": "怀化",
+    "pinyin": "HUAIHUA",
+    "seq": -1,
+    "shortPinyin": "HH"
+},
+{
+    "cityCode": "431300",
+    "hot": false,
+    "name": "娄底",
+    "pinyin": "LOUDI",
+    "seq": -1,
+    "shortPinyin": "LD"
+},
+{
+    "cityCode": "433100",
+    "hot": false,
+    "name": "湘西州",
+    "pinyin": "XIANGXIZHOU",
+    "seq": -1,
+    "shortPinyin": "XXZ"
+},
+{
+    "cityCode": "440100",
+    "hot": false,
+    "name": "广州",
+    "pinyin": "GUANGZHOU",
+    "seq": -1,
+    "shortPinyin": "GZ"
+},
+{
+    "cityCode": "440200",
+    "hot": false,
+    "name": "韶关",
+    "pinyin": "SHAOGUAN",
+    "seq": -1,
+    "shortPinyin": "SG"
+},
+{
+    "cityCode": "440300",
+    "hot": false,
+    "name": "深圳",
+    "pinyin": "SHENZHEN",
+    "seq": -1,
+    "shortPinyin": "SZ"
+},
+{
+    "cityCode": "440400",
+    "hot": false,
+    "name": "珠海",
+    "pinyin": "ZHUHAI",
+    "seq": -1,
+    "shortPinyin": "ZH"
+},
+{
+    "cityCode": "440500",
+    "hot": false,
+    "name": "汕头",
+    "pinyin": "SHANTOU",
+    "seq": -1,
+    "shortPinyin": "ST"
+},
+{
+    "cityCode": "440600",
+    "hot": false,
+    "name": "佛山",
+    "pinyin": "FOSHAN",
+    "seq": -1,
+    "shortPinyin": "FS"
+},
+{
+    "cityCode": "440700",
+    "hot": false,
+    "name": "江门",
+    "pinyin": "JIANGMEN",
+    "seq": -1,
+    "shortPinyin": "JM"
+},
+{
+    "cityCode": "440800",
+    "hot": false,
+    "name": "湛江",
+    "pinyin": "ZHANJIANG",
+    "seq": -1,
+    "shortPinyin": "ZJ"
+},
+{
+    "cityCode": "440900",
+    "hot": false,
+    "name": "茂名",
+    "pinyin": "MAOMING",
+    "seq": -1,
+    "shortPinyin": "MM"
+},
+{
+    "cityCode": "441200",
+    "hot": false,
+    "name": "肇庆",
+    "pinyin": "ZHAOQING",
+    "seq": -1,
+    "shortPinyin": "ZQ"
+},
+{
+    "cityCode": "441300",
+    "hot": false,
+    "name": "惠州",
+    "pinyin": "HUIZHOU",
+    "seq": -1,
+    "shortPinyin": "HZ"
+},
+{
+    "cityCode": "441400",
+    "hot": false,
+    "name": "梅州",
+    "pinyin": "MEIZHOU",
+    "seq": -1,
+    "shortPinyin": "MZ"
+},
+{
+    "cityCode": "441500",
+    "hot": false,
+    "name": "汕尾",
+    "pinyin": "SHANWEI",
+    "seq": -1,
+    "shortPinyin": "SW"
+},
+{
+    "cityCode": "441600",
+    "hot": false,
+    "name": "河源",
+    "pinyin": "HEYUAN",
+    "seq": -1,
+    "shortPinyin": "HY"
+},
+{
+    "cityCode": "441700",
+    "hot": false,
+    "name": "阳江",
+    "pinyin": "YANGJIANG",
+    "seq": -1,
+    "shortPinyin": "YJ"
+},
+{
+    "cityCode": "441800",
+    "hot": false,
+    "name": "清远",
+    "pinyin": "QINGYUAN",
+    "seq": -1,
+    "shortPinyin": "QY"
+},
+{
+    "cityCode": "441900",
+    "hot": false,
+    "name": "东莞",
+    "pinyin": "DONGGUAN",
+    "seq": -1,
+    "shortPinyin": "DG"
+},
+{
+    "cityCode": "442000",
+    "hot": false,
+    "name": "中山",
+    "pinyin": "ZHONGSHAN",
+    "seq": -1,
+    "shortPinyin": "ZS"
+},
+{
+    "cityCode": "445100",
+    "hot": false,
+    "name": "潮州",
+    "pinyin": "CHAOZHOU",
+    "seq": -1,
+    "shortPinyin": "CZ"
+},
+{
+    "cityCode": "445200",
+    "hot": false,
+    "name": "揭阳",
+    "pinyin": "JIEYANG",
+    "seq": -1,
+    "shortPinyin": "JY"
+},
+{
+    "cityCode": "445300",
+    "hot": false,
+    "name": "云浮",
+    "pinyin": "YUNFU",
+    "seq": -1,
+    "shortPinyin": "YF"
+},
+{
+    "cityCode": "450100",
+    "hot": false,
+    "name": "南宁",
+    "pinyin": "NANNING",
+    "seq": -1,
+    "shortPinyin": "NN"
+},
+{
+    "cityCode": "450200",
+    "hot": false,
+    "name": "柳州",
+    "pinyin": "LIUZHOU",
+    "seq": -1,
+    "shortPinyin": "LZ"
+},
+{
+    "cityCode": "450300",
+    "hot": false,
+    "name": "桂林",
+    "pinyin": "GUILIN",
+    "seq": -1,
+    "shortPinyin": "GL"
+},
+{
+    "cityCode": "450400",
+    "hot": false,
+    "name": "梧州",
+    "pinyin": "WUZHOU",
+    "seq": -1,
+    "shortPinyin": "WZ"
+},
+{
+    "cityCode": "450500",
+    "hot": false,
+    "name": "北海",
+    "pinyin": "BEIHAI",
+    "seq": -1,
+    "shortPinyin": "BH"
+},
+{
+    "cityCode": "450600",
+    "hot": false,
+    "name": "防城港",
+    "pinyin": "FANGCHENGGANG",
+    "seq": -1,
+    "shortPinyin": "FCG"
+},
+{
+    "cityCode": "450700",
+    "hot": false,
+    "name": "钦州",
+    "pinyin": "QINZHOU",
+    "seq": -1,
+    "shortPinyin": "QZ"
+},
+{
+    "cityCode": "450800",
+    "hot": false,
+    "name": "贵港",
+    "pinyin": "GUIGANG",
+    "seq": -1,
+    "shortPinyin": "GG"
+},
+{
+    "cityCode": "450900",
+    "hot": false,
+    "name": "玉林",
+    "pinyin": "YULIN",
+    "seq": -1,
+    "shortPinyin": "YL"
+},
+{
+    "cityCode": "451000",
+    "hot": false,
+    "name": "百色",
+    "pinyin": "BAISE",
+    "seq": -1,
+    "shortPinyin": "BS"
+},
+{
+    "cityCode": "451100",
+    "hot": false,
+    "name": "贺州",
+    "pinyin": "HEZHOU",
+    "seq": -1,
+    "shortPinyin": "HZ"
+},
+{
+    "cityCode": "451200",
+    "hot": false,
+    "name": "河池",
+    "pinyin": "HECHI",
+    "seq": -1,
+    "shortPinyin": "HC"
+},
+{
+    "cityCode": "451300",
+    "hot": false,
+    "name": "来宾",
+    "pinyin": "LAIBIN",
+    "seq": -1,
+    "shortPinyin": "LB"
+},
+{
+    "cityCode": "451400",
+    "hot": false,
+    "name": "崇左",
+    "pinyin": "CHONGZUO",
+    "seq": -1,
+    "shortPinyin": "CZ"
+},
+{
+    "cityCode": "460100",
+    "hot": false,
+    "name": "海口",
+    "pinyin": "HAIKOU",
+    "seq": -1,
+    "shortPinyin": "HK"
+},
+{
+    "cityCode": "460200",
+    "hot": false,
+    "name": "三亚",
+    "pinyin": "SANYA",
+    "seq": -1,
+    "shortPinyin": "SY"
+},
+{
+    "cityCode": "500100",
+    "hot": false,
+    "name": "重庆",
+    "pinyin": "CHONGQING",
+    "seq": -1,
+    "shortPinyin": "CQ"
+},
+{
+    "cityCode": "510100",
+    "hot": false,
+    "name": "成都",
+    "pinyin": "CHENGDOU",
+    "seq": -1,
+    "shortPinyin": "CD"
+},
+{
+    "cityCode": "510300",
+    "hot": false,
+    "name": "自贡",
+    "pinyin": "ZIGONG",
+    "seq": -1,
+    "shortPinyin": "ZG"
+},
+{
+    "cityCode": "510400",
+    "hot": false,
+    "name": "攀枝花",
+    "pinyin": "PANZHIHUA",
+    "seq": -1,
+    "shortPinyin": "PZH"
+},
+{
+    "cityCode": "510500",
+    "hot": false,
+    "name": "泸州",
+    "pinyin": "LUZHOU",
+    "seq": -1,
+    "shortPinyin": "LZ"
+},
+{
+    "cityCode": "510600",
+    "hot": false,
+    "name": "德阳",
+    "pinyin": "DEYANG",
+    "seq": -1,
+    "shortPinyin": "DY"
+},
+{
+    "cityCode": "510700",
+    "hot": false,
+    "name": "绵阳",
+    "pinyin": "MIANYANG",
+    "seq": -1,
+    "shortPinyin": "MY"
+},
+{
+    "cityCode": "510800",
+    "hot": false,
+    "name": "广元",
+    "pinyin": "GUANGYUAN",
+    "seq": -1,
+    "shortPinyin": "GY"
+},
+{
+    "cityCode": "510900",
+    "hot": false,
+    "name": "遂宁",
+    "pinyin": "SUINING",
+    "seq": -1,
+    "shortPinyin": "SN"
+},
+{
+    "cityCode": "511000",
+    "hot": false,
+    "name": "内江",
+    "pinyin": "NEIJIANG",
+    "seq": -1,
+    "shortPinyin": "NJ"
+},
+{
+    "cityCode": "511100",
+    "hot": false,
+    "name": "乐山",
+    "pinyin": "LESHAN",
+    "seq": -1,
+    "shortPinyin": "LS"
+},
+{
+    "cityCode": "511300",
+    "hot": false,
+    "name": "南充",
+    "pinyin": "NANCHONG",
+    "seq": -1,
+    "shortPinyin": "NC"
+},
+{
+    "cityCode": "511400",
+    "hot": false,
+    "name": "眉山",
+    "pinyin": "MEISHAN",
+    "seq": -1,
+    "shortPinyin": "MS"
+},
+{
+    "cityCode": "511500",
+    "hot": false,
+    "name": "宜宾",
+    "pinyin": "YIBIN",
+    "seq": -1,
+    "shortPinyin": "YB"
+},
+{
+    "cityCode": "511600",
+    "hot": false,
+    "name": "广安",
+    "pinyin": "GUANGAN",
+    "seq": -1,
+    "shortPinyin": "GA"
+},
+{
+    "cityCode": "511700",
+    "hot": false,
+    "name": "达州",
+    "pinyin": "DAZHOU",
+    "seq": -1,
+    "shortPinyin": "DZ"
+},
+{
+    "cityCode": "511800",
+    "hot": false,
+    "name": "雅安",
+    "pinyin": "YAAN",
+    "seq": -1,
+    "shortPinyin": "YA"
+},
+{
+    "cityCode": "511900",
+    "hot": false,
+    "name": "巴中",
+    "pinyin": "BAZHONG",
+    "seq": -1,
+    "shortPinyin": "BZ"
+},
+{
+    "cityCode": "512000",
+    "hot": false,
+    "name": "资阳",
+    "pinyin": "ZIYANG",
+    "seq": -1,
+    "shortPinyin": "ZY"
+},
+{
+    "cityCode": "513200",
+    "hot": false,
+    "name": "阿坝藏族羌族自治州",
+    "pinyin": "ABAZANGZUQIANGZUZIZHIZHOU",
+    "seq": -1,
+    "shortPinyin": "ABZZQZZZZ"
+},
+{
+    "cityCode": "513300",
+    "hot": false,
+    "name": "甘孜州",
+    "pinyin": "GANZIZHOU",
+    "seq": -1,
+    "shortPinyin": "GZZ"
+},
+{
+    "cityCode": "513400",
+    "hot": false,
+    "name": "凉山",
+    "pinyin": "LIANGSHAN",
+    "seq": -1,
+    "shortPinyin": "LS"
+},
+{
+    "cityCode": "520100",
+    "hot": false,
+    "name": "贵阳",
+    "pinyin": "GUIYANG",
+    "seq": -1,
+    "shortPinyin": "GY"
+},
+{
+    "cityCode": "520200",
+    "hot": false,
+    "name": "六盘水",
+    "pinyin": "LIUPANSHUI",
+    "seq": -1,
+    "shortPinyin": "LPS"
+},
+{
+    "cityCode": "520300",
+    "hot": false,
+    "name": "遵义",
+    "pinyin": "ZUNYI",
+    "seq": -1,
+    "shortPinyin": "ZY"
+},
+{
+    "cityCode": "520400",
+    "hot": false,
+    "name": "安顺",
+    "pinyin": "ANSHUN",
+    "seq": -1,
+    "shortPinyin": "AS"
+},
+{
+    "cityCode": "522200",
+    "hot": false,
+    "name": "铜仁",
+    "pinyin": "TONGREN",
+    "seq": -1,
+    "shortPinyin": "TR"
+},
+{
+    "cityCode": "522300",
+    "hot": false,
+    "name": "黔西南州",
+    "pinyin": "QIANXINANZHOU",
+    "seq": -1,
+    "shortPinyin": "QXNZ"
+},
+{
+    "cityCode": "522400",
+    "hot": false,
+    "name": "毕节",
+    "pinyin": "BIJIE",
+    "seq": -1,
+    "shortPinyin": "BJ"
+},
+{
+    "cityCode": "522600",
+    "hot": false,
+    "name": "黔东南州",
+    "pinyin": "QIANDONGNANZHOU",
+    "seq": -1,
+    "shortPinyin": "QDNZ"
+},
+{
+    "cityCode": "522700",
+    "hot": false,
+    "name": "黔南州",
+    "pinyin": "QIANNANZHOU",
+    "seq": -1,
+    "shortPinyin": "QNZ"
+},
+{
+    "cityCode": "530100",
+    "hot": false,
+    "name": "昆明",
+    "pinyin": "KUNMING",
+    "seq": -1,
+    "shortPinyin": "KM"
+},
+{
+    "cityCode": "530300",
+    "hot": false,
+    "name": "曲靖",
+    "pinyin": "QUJING",
+    "seq": -1,
+    "shortPinyin": "QJ"
+},
+{
+    "cityCode": "530400",
+    "hot": false,
+    "name": "玉溪",
+    "pinyin": "YUXI",
+    "seq": -1,
+    "shortPinyin": "YX"
+},
+{
+    "cityCode": "530500",
+    "hot": false,
+    "name": "保山",
+    "pinyin": "BAOSHAN",
+    "seq": -1,
+    "shortPinyin": "BS"
+},
+{
+    "cityCode": "530600",
+    "hot": false,
+    "name": "昭通",
+    "pinyin": "ZHAOTONG",
+    "seq": -1,
+    "shortPinyin": "ZT"
+},
+{
+    "cityCode": "530700",
+    "hot": false,
+    "name": "丽江",
+    "pinyin": "LIJIANG",
+    "seq": -1,
+    "shortPinyin": "LJ"
+},
+{
+    "cityCode": "530800",
+    "hot": false,
+    "name": "普洱",
+    "pinyin": "PUER",
+    "seq": -1,
+    "shortPinyin": "PE"
+},
+{
+    "cityCode": "530900",
+    "hot": false,
+    "name": "临沧",
+    "pinyin": "LINCANG",
+    "seq": -1,
+    "shortPinyin": "LC"
+},
+{
+    "cityCode": "532300",
+    "hot": false,
+    "name": "威楚",
+    "pinyin": "WEICHU",
+    "seq": -1,
+    "shortPinyin": "WC"
+},
+{
+    "cityCode": "532500",
+    "hot": false,
+    "name": "红河州",
+    "pinyin": "HONGHEZHOU",
+    "seq": -1,
+    "shortPinyin": "HHZ"
+},
+{
+    "cityCode": "532600",
+    "hot": false,
+    "name": "文山州",
+    "pinyin": "WENSHANZHOU",
+    "seq": -1,
+    "shortPinyin": "WSZ"
+},
+{
+    "cityCode": "532800",
+    "hot": false,
+    "name": "西双版纳",
+    "pinyin": "XISHUANGBANNA",
+    "seq": -1,
+    "shortPinyin": "XSBN"
+},
+{
+    "cityCode": "532900",
+    "hot": false,
+    "name": "大理",
+    "pinyin": "DALI",
+    "seq": -1,
+    "shortPinyin": "DL"
+},
+{
+    "cityCode": "533100",
+    "hot": false,
+    "name": "德宏州",
+    "pinyin": "DEHONGZHOU",
+    "seq": -1,
+    "shortPinyin": "DHZ"
+},
+{
+    "cityCode": "533300",
+    "hot": false,
+    "name": "怒江州",
+    "pinyin": "NUJIANGZHOU",
+    "seq": -1,
+    "shortPinyin": "NJZ"
+},
+{
+    "cityCode": "533400",
+    "hot": false,
+    "name": "迪庆",
+    "pinyin": "DIQING",
+    "seq": -1,
+    "shortPinyin": "DQ"
+},
+{
+    "cityCode": "540100",
+    "hot": false,
+    "name": "拉萨",
+    "pinyin": "LASA",
+    "seq": -1,
+    "shortPinyin": "LS"
+},
+{
+    "cityCode": "542100",
+    "hot": false,
+    "name": "昌都",
+    "pinyin": "CHANGDOU",
+    "seq": -1,
+    "shortPinyin": "CD"
+},
+{
+    "cityCode": "542200",
+    "hot": false,
+    "name": "山南",
+    "pinyin": "SHANNAN",
+    "seq": -1,
+    "shortPinyin": "SN"
+},
+{
+    "cityCode": "542300",
+    "hot": false,
+    "name": "日喀则",
+    "pinyin": "RIKAZE",
+    "seq": -1,
+    "shortPinyin": "RKZ"
+},
+{
+    "cityCode": "542400",
+    "hot": false,
+    "name": "那曲",
+    "pinyin": "NEIQU",
+    "seq": -1,
+    "shortPinyin": "NQ"
+},
+{
+    "cityCode": "542500",
+    "hot": false,
+    "name": "阿里",
+    "pinyin": "ALI",
+    "seq": -1,
+    "shortPinyin": "AL"
+},
+{
+    "cityCode": "542600",
+    "hot": false,
+    "name": "林芝",
+    "pinyin": "LINZHI",
+    "seq": -1,
+    "shortPinyin": "LZ"
+},
+{
+    "cityCode": "610100",
+    "hot": false,
+    "name": "西安",
+    "pinyin": "XIAN",
+    "seq": -1,
+    "shortPinyin": "XA"
+},
+{
+    "cityCode": "610200",
+    "hot": false,
+    "name": "铜川",
+    "pinyin": "TONGCHUAN",
+    "seq": -1,
+    "shortPinyin": "TC"
+},
+{
+    "cityCode": "610300",
+    "hot": false,
+    "name": "宝鸡",
+    "pinyin": "BAOJI",
+    "seq": -1,
+    "shortPinyin": "BJ"
+},
+{
+    "cityCode": "610400",
+    "hot": false,
+    "name": "咸阳",
+    "pinyin": "XIANYANG",
+    "seq": -1,
+    "shortPinyin": "XY"
+},
+{
+    "cityCode": "610500",
+    "hot": false,
+    "name": "渭南",
+    "pinyin": "WEINAN",
+    "seq": -1,
+    "shortPinyin": "WN"
+},
+{
+    "cityCode": "610600",
+    "hot": false,
+    "name": "延安",
+    "pinyin": "YANAN",
+    "seq": -1,
+    "shortPinyin": "YA"
+},
+{
+    "cityCode": "610700",
+    "hot": false,
+    "name": "汉中",
+    "pinyin": "HANZHONG",
+    "seq": -1,
+    "shortPinyin": "HZ"
+},
+{
+    "cityCode": "610800",
+    "hot": false,
+    "name": "榆林",
+    "pinyin": "YULIN",
+    "seq": -1,
+    "shortPinyin": "YL"
+},
+{
+    "cityCode": "610900",
+    "hot": false,
+    "name": "安康",
+    "pinyin": "ANKANG",
+    "seq": -1,
+    "shortPinyin": "AK"
+},
+{
+    "cityCode": "611000",
+    "hot": false,
+    "name": "商洛",
+    "pinyin": "SHANGLUO",
+    "seq": -1,
+    "shortPinyin": "SL"
+},
+{
+    "cityCode": "620100",
+    "hot": false,
+    "name": "兰州",
+    "pinyin": "LANZHOU",
+    "seq": -1,
+    "shortPinyin": "LZ"
+},
+{
+    "cityCode": "620200",
+    "hot": false,
+    "name": "嘉峪关",
+    "pinyin": "JIAYUGUAN",
+    "seq": -1,
+    "shortPinyin": "JYG"
+},
+{
+    "cityCode": "620300",
+    "hot": false,
+    "name": "金昌",
+    "pinyin": "JINCHANG",
+    "seq": -1,
+    "shortPinyin": "JC"
+},
+{
+    "cityCode": "620400",
+    "hot": false,
+    "name": "白银",
+    "pinyin": "BAIYIN",
+    "seq": -1,
+    "shortPinyin": "BY"
+},
+{
+    "cityCode": "620500",
+    "hot": false,
+    "name": "天水",
+    "pinyin": "TIANSHUI",
+    "seq": -1,
+    "shortPinyin": "TS"
+},
+{
+    "cityCode": "620600",
+    "hot": false,
+    "name": "武威",
+    "pinyin": "WUWEI",
+    "seq": -1,
+    "shortPinyin": "WW"
+},
+{
+    "cityCode": "620700",
+    "hot": false,
+    "name": "张掖",
+    "pinyin": "ZHANGYE",
+    "seq": -1,
+    "shortPinyin": "ZY"
+},
+{
+    "cityCode": "620800",
+    "hot": false,
+    "name": "平凉",
+    "pinyin": "PINGLIANG",
+    "seq": -1,
+    "shortPinyin": "PL"
+},
+{
+    "cityCode": "620900",
+    "hot": false,
+    "name": "酒泉",
+    "pinyin": "JIUQUAN",
+    "seq": -1,
+    "shortPinyin": "JQ"
+},
+{
+    "cityCode": "621000",
+    "hot": false,
+    "name": "庆阳",
+    "pinyin": "QINGYANG",
+    "seq": -1,
+    "shortPinyin": "QY"
+},
+{
+    "cityCode": "621100",
+    "hot": false,
+    "name": "定西",
+    "pinyin": "DINGXI",
+    "seq": -1,
+    "shortPinyin": "DX"
+},
+{
+    "cityCode": "621200",
+    "hot": false,
+    "name": "陇南",
+    "pinyin": "LONGNAN",
+    "seq": -1,
+    "shortPinyin": "LN"
+},
+{
+    "cityCode": "622900",
+    "hot": false,
+    "name": "夏州",
+    "pinyin": "XIAZHOU",
+    "seq": -1,
+    "shortPinyin": "XZ"
+},
+{
+    "cityCode": "623000",
+    "hot": false,
+    "name": "甘南州",
+    "pinyin": "GANNANZHOU",
+    "seq": -1,
+    "shortPinyin": "GNZ"
+},
+{
+    "cityCode": "630100",
+    "hot": false,
+    "name": "西宁",
+    "pinyin": "XINING",
+    "seq": -1,
+    "shortPinyin": "XN"
+},
+{
+    "cityCode": "632100",
+    "hot": false,
+    "name": "海东地区",
+    "pinyin": "HAIDONGDIQU",
+    "seq": -1,
+    "shortPinyin": "HDDQ"
+},
+{
+    "cityCode": "632200",
+    "hot": false,
+    "name": "海北州",
+    "pinyin": "HAIBEIZHOU",
+    "seq": -1,
+    "shortPinyin": "HBZ"
+},
+{
+    "cityCode": "632300",
+    "hot": false,
+    "name": "黄南州",
+    "pinyin": "HUANGNANZHOU",
+    "seq": -1,
+    "shortPinyin": "HNZ"
+},
+{
+    "cityCode": "632500",
+    "hot": false,
+    "name": "海南州",
+    "pinyin": "HAINANZHOU",
+    "seq": -1,
+    "shortPinyin": "HNZ"
+},
+{
+    "cityCode": "632600",
+    "hot": false,
+    "name": "果洛",
+    "pinyin": "GUOLUO",
+    "seq": -1,
+    "shortPinyin": "GL"
+},
+{
+    "cityCode": "632700",
+    "hot": false,
+    "name": "玉树州",
+    "pinyin": "YUSHUZHOU",
+    "seq": -1,
+    "shortPinyin": "YSZ"
+},
+{
+    "cityCode": "632800",
+    "hot": false,
+    "name": "海西蒙古族藏族自治州",
+    "pinyin": "HAIXIMENGGUZUZANGZUZIZHIZHOU",
+    "seq": -1,
+    "shortPinyin": "HXMGZZZZZZ"
+},
+{
+    "cityCode": "640100",
+    "hot": false,
+    "name": "银川",
+    "pinyin": "YINCHUAN",
+    "seq": -1,
+    "shortPinyin": "YC"
+},
+{
+    "cityCode": "640200",
+    "hot": false,
+    "name": "石嘴山",
+    "pinyin": "SHIZUISHAN",
+    "seq": -1,
+    "shortPinyin": "SZS"
+},
+{
+    "cityCode": "640300",
+    "hot": false,
+    "name": "吴忠",
+    "pinyin": "WUZHONG",
+    "seq": -1,
+    "shortPinyin": "WZ"
+},
+{
+    "cityCode": "640400",
+    "hot": false,
+    "name": "固原",
+    "pinyin": "GUYUAN",
+    "seq": -1,
+    "shortPinyin": "GY"
+},
+{
+    "cityCode": "640500",
+    "hot": false,
+    "name": "中卫",
+    "pinyin": "ZHONGWEI",
+    "seq": -1,
+    "shortPinyin": "ZW"
+},
+{
+    "cityCode": "650100",
+    "hot": false,
+    "name": "乌鲁木齐",
+    "pinyin": "WULUMUQI",
+    "seq": -1,
+    "shortPinyin": "WLMQ"
+},
+{
+    "cityCode": "650200",
+    "hot": false,
+    "name": "克拉玛依",
+    "pinyin": "KELAMAYI",
+    "seq": -1,
+    "shortPinyin": "KLMY"
+},
+{
+    "cityCode": "652100",
+    "hot": false,
+    "name": "吐鲁番",
+    "pinyin": "TULUFAN",
+    "seq": -1,
+    "shortPinyin": "TLF"
+},
+{
+    "cityCode": "652200",
+    "hot": false,
+    "name": "哈密",
+    "pinyin": "HAMI",
+    "seq": -1,
+    "shortPinyin": "HM"
+},
+{
+    "cityCode": "652300",
+    "hot": false,
+    "name": "昌吉",
+    "pinyin": "CHANGJI",
+    "seq": -1,
+    "shortPinyin": "CJ"
+},
+{
+    "cityCode": "652700",
+    "hot": false,
+    "name": "博州",
+    "pinyin": "BOZHOU",
+    "seq": -1,
+    "shortPinyin": "BZ"
+},
+{
+    "cityCode": "652800",
+    "hot": false,
+    "name": "巴州",
+    "pinyin": "BAZHOU",
+    "seq": -1,
+    "shortPinyin": "BZ"
+},
+{
+    "cityCode": "652900",
+    "hot": false,
+    "name": "阿克苏",
+    "pinyin": "AKESU",
+    "seq": -1,
+    "shortPinyin": "AKS"
+},
+{
+    "cityCode": "653000",
+    "hot": false,
+    "name": "克州",
+    "pinyin": "KEZHOU",
+    "seq": -1,
+    "shortPinyin": "KZ"
+},
+{
+    "cityCode": "653100",
+    "hot": false,
+    "name": "喀什",
+    "pinyin": "KASHEN",
+    "seq": -1,
+    "shortPinyin": "KS"
+},
+{
+    "cityCode": "653200",
+    "hot": false,
+    "name": "和田",
+    "pinyin": "HETIAN",
+    "seq": -1,
+    "shortPinyin": "HT"
+},
+{
+    "cityCode": "654000",
+    "hot": false,
+    "name": "伊犁州",
+    "pinyin": "YILIZHOU",
+    "seq": -1,
+    "shortPinyin": "YLZ"
+},
+{
+    "cityCode": "654200",
+    "hot": false,
+    "name": "塔城",
+    "pinyin": "TACHENG",
+    "seq": -1,
+    "shortPinyin": "TC"
+},
+{
+    "cityCode": "654300",
+    "hot": false,
+    "name": "阿勒泰",
+    "pinyin": "ALETAI",
+    "seq": -1,
+    "shortPinyin": "ALT"
+},
+{
+    "cityCode": "410881",
+    "hot": false,
+    "name": "济源",
+    "pinyin": "JIYUAN",
+    "seq": -1,
+    "shortPinyin": "JY"
+},
+{
+    "cityCode": "710200",
+    "hot": false,
+    "name": "高雄",
+    "pinyin": "GAOXIONG",
+    "seq": -1,
+    "shortPinyin": "GX"
+},
+{
+    "cityCode": "429004",
+    "hot": false,
+    "name": "仙桃",
+    "pinyin": "XIANTAO",
+    "seq": -1,
+    "shortPinyin": "XT"
+},
+{
+    "cityCode": "429005",
+    "hot": false,
+    "name": "潜江",
+    "pinyin": "QIANJIANG",
+    "seq": -1,
+    "shortPinyin": "QJ"
+},
+{
+    "cityCode": "429006",
+    "hot": false,
+    "name": "天门",
+    "pinyin": "TIANMEN",
+    "seq": -1,
+    "shortPinyin": "TM"
+},
+{
+    "cityCode": "429021",
+    "hot": false,
+    "name": "神农架林区",
+    "pinyin": "SHENNONGJIALINQU",
+    "seq": -1,
+    "shortPinyin": "SNJLQ"
+},
+{
+    "cityCode": "710100",
+    "hot": false,
+    "name": "台北",
+    "pinyin": "TAIBEI",
+    "seq": -1,
+    "shortPinyin": "TB"
+},
+{
+    "cityCode": "469001",
+    "hot": false,
+    "name": "五指山",
+    "pinyin": "WUZHISHAN",
+    "seq": -1,
+    "shortPinyin": "WZS"
+},
+{
+    "cityCode": "469002",
+    "hot": false,
+    "name": "琼海",
+    "pinyin": "QIONGHAI",
+    "seq": -1,
+    "shortPinyin": "QH"
+},
+{
+    "cityCode": "469003",
+    "hot": false,
+    "name": "儋州",
+    "pinyin": "DANZHOU",
+    "seq": -1,
+    "shortPinyin": "DZ"
+},
+{
+    "cityCode": "469005",
+    "hot": false,
+    "name": "文昌",
+    "pinyin": "WENCHANG",
+    "seq": -1,
+    "shortPinyin": "WC"
+},
+{
+    "cityCode": "469006",
+    "hot": false,
+    "name": "万宁",
+    "pinyin": "WANNING",
+    "seq": -1,
+    "shortPinyin": "WN"
+},
+{
+    "cityCode": "469007",
+    "hot": false,
+    "name": "东方",
+    "pinyin": "DONGFANG",
+    "seq": -1,
+    "shortPinyin": "DF"
+},
+{
+    "cityCode": "469025",
+    "hot": false,
+    "name": "定安县",
+    "pinyin": "DINGANXIAN",
+    "seq": -1,
+    "shortPinyin": "DAX"
+},
+{
+    "cityCode": "469026",
+    "hot": false,
+    "name": "屯昌县",
+    "pinyin": "TUNCHANGXIAN",
+    "seq": -1,
+    "shortPinyin": "TCX"
+},
+{
+    "cityCode": "469027",
+    "hot": false,
+    "name": "澄迈县",
+    "pinyin": "CHENGMAIXIAN",
+    "seq": -1,
+    "shortPinyin": "CMX"
+},
+{
+    "cityCode": "469028",
+    "hot": false,
+    "name": "临高县",
+    "pinyin": "LINGAOXIAN",
+    "seq": -1,
+    "shortPinyin": "LGX"
+},
+{
+    "cityCode": "469030",
+    "hot": false,
+    "name": "白沙黎族自治县",
+    "pinyin": "BAISHALIZUZIZHIXIAN",
+    "seq": -1,
+    "shortPinyin": "BSLZZZX"
+},
+{
+    "cityCode": "469031",
+    "hot": false,
+    "name": "昌江黎族自治县",
+    "pinyin": "CHANGJIANGLIZUZIZHIXIAN",
+    "seq": -1,
+    "shortPinyin": "CJLZZZX"
+},
+{
+    "cityCode": "469033",
+    "hot": false,
+    "name": "乐东黎族自治县",
+    "pinyin": "LEDONGLIZUZIZHIXIAN",
+    "seq": -1,
+    "shortPinyin": "LDLZZZX"
+},
+{
+    "cityCode": "469034",
+    "hot": false,
+    "name": "陵水黎族自治县",
+    "pinyin": "LINGSHUILIZUZIZHIXIAN",
+    "seq": -1,
+    "shortPinyin": "LSLZZZX"
+},
+{
+    "cityCode": "469035",
+    "hot": false,
+    "name": "保亭黎族苗族自治县",
+    "pinyin": "BAOTINGLIZUMIAOZUZIZHIXIAN",
+    "seq": -1,
+    "shortPinyin": "BTLZMZZZX"
+},
+{
+    "cityCode": "469036",
+    "hot": false,
+    "name": "琼中黎族苗族自治县",
+    "pinyin": "QIONGZHONGLIZUMIAOZUZIZHIXIAN",
+    "seq": -1,
+    "shortPinyin": "QZLZMZZZX"
+},
+{
+    "cityCode": "659001",
+    "hot": false,
+    "name": "石河子",
+    "pinyin": "SHIHEZI",
+    "seq": -1,
+    "shortPinyin": "SHZ"
+},
+{
+    "cityCode": "659002",
+    "hot": false,
+    "name": "阿拉尔",
+    "pinyin": "ALAER",
+    "seq": -1,
+    "shortPinyin": "ALE"
+},
+{
+    "cityCode": "659003",
+    "hot": false,
+    "name": "图木舒克",
+    "pinyin": "TUMUSHUKE",
+    "seq": -1,
+    "shortPinyin": "TMSK"
+},
+{
+    "cityCode": "659004",
+    "hot": false,
+    "name": "五家渠",
+    "pinyin": "WUJIAQU",
+    "seq": -1,
+    "shortPinyin": "WJQ"
+},
+{
+    "cityCode": "469037",
+    "hot": false,
+    "name": "西沙群岛",
+    "pinyin": "XISHAQUNDAO",
+    "seq": -1,
+    "shortPinyin": "XSQD"
+},
+{
+    "cityCode": "469038",
+    "hot": false,
+    "name": "南沙群岛",
+    "pinyin": "NANSHAQUNDAO",
+    "seq": -1,
+    "shortPinyin": "NSQD"
+},
+{
+    "cityCode": "469039",
+    "hot": false,
+    "name": "中沙群岛的岛礁及其海域",
+    "pinyin": "ZHONGSHAQUNDAODEDAOJIAOJIQIHAIYU",
+    "seq": -1,
+    "shortPinyin": "ZSQDDDJJQHY"
+},
+{
+    "cityCode": "710300",
+    "hot": false,
+    "name": "台南",
+    "pinyin": "TAINAN",
+    "seq": -1,
+    "shortPinyin": "TN"
+},
+{
+    "cityCode": "710400",
+    "hot": false,
+    "name": "台中",
+    "pinyin": "TAIZHONG",
+    "seq": -1,
+    "shortPinyin": "TZ"
+},
+{
+    "cityCode": "710500",
+    "hot": false,
+    "name": "金门县",
+    "pinyin": "JINMENXIAN",
+    "seq": -1,
+    "shortPinyin": "JMX"
+},
+{
+    "cityCode": "710600",
+    "hot": false,
+    "name": "南投县",
+    "pinyin": "NANTOUXIAN",
+    "seq": -1,
+    "shortPinyin": "NTX"
+},
+{
+    "cityCode": "710700",
+    "hot": false,
+    "name": "基隆",
+    "pinyin": "JILONG",
+    "seq": -1,
+    "shortPinyin": "JL"
+},
+{
+    "cityCode": "710800",
+    "hot": false,
+    "name": "新竹",
+    "pinyin": "XINZHU",
+    "seq": -1,
+    "shortPinyin": "XZ"
+},
+{
+    "cityCode": "710900",
+    "hot": false,
+    "name": "嘉义",
+    "pinyin": "JIAYI",
+    "seq": -1,
+    "shortPinyin": "JY"
+},
+{
+    "cityCode": "711100",
+    "hot": false,
+    "name": "新北",
+    "pinyin": "XINBEI",
+    "seq": -1,
+    "shortPinyin": "XB"
+},
+{
+    "cityCode": "711200",
+    "hot": false,
+    "name": "宜兰县",
+    "pinyin": "YILANXIAN",
+    "seq": -1,
+    "shortPinyin": "YLX"
+},
+{
+    "cityCode": "711300",
+    "hot": false,
+    "name": "新竹县",
+    "pinyin": "XINZHUXIAN",
+    "seq": -1,
+    "shortPinyin": "XZX"
+},
+{
+    "cityCode": "711400",
+    "hot": false,
+    "name": "桃园县",
+    "pinyin": "TAOYUANXIAN",
+    "seq": -1,
+    "shortPinyin": "TYX"
+},
+{
+    "cityCode": "711500",
+    "hot": false,
+    "name": "苗栗县",
+    "pinyin": "MIAOLIXIAN",
+    "seq": -1,
+    "shortPinyin": "MLX"
+},
+{
+    "cityCode": "711700",
+    "hot": false,
+    "name": "彰化县",
+    "pinyin": "ZHANGHUAXIAN",
+    "seq": -1,
+    "shortPinyin": "ZHX"
+},
+{
+    "cityCode": "711900",
+    "hot": false,
+    "name": "嘉义县",
+    "pinyin": "JIAYIXIAN",
+    "seq": -1,
+    "shortPinyin": "JYX"
+},
+{
+    "cityCode": "712100",
+    "hot": false,
+    "name": "云林县",
+    "pinyin": "YUNLINXIAN",
+    "seq": -1,
+    "shortPinyin": "YLX"
+},
+{
+    "cityCode": "712400",
+    "hot": false,
+    "name": "屏东县",
+    "pinyin": "PINGDONGXIAN",
+    "seq": -1,
+    "shortPinyin": "PDX"
+},
+{
+    "cityCode": "712500",
+    "hot": false,
+    "name": "台东县",
+    "pinyin": "TAIDONGXIAN",
+    "seq": -1,
+    "shortPinyin": "TDX"
+},
+{
+    "cityCode": "712600",
+    "hot": false,
+    "name": "花莲县",
+    "pinyin": "HUALIANXIAN",
+    "seq": -1,
+    "shortPinyin": "HLX"
+},
+{
+    "cityCode": "712700",
+    "hot": false,
+    "name": "澎湖县",
+    "pinyin": "PENGHUXIAN",
+    "seq": -1,
+    "shortPinyin": "PHX"
+},
+{
+    "cityCode": "712800",
+    "hot": false,
+    "name": "连江县",
+    "pinyin": "LIANJIANGXIAN",
+    "seq": -1,
+    "shortPinyin": "LJX"
+},
+{
+    "cityCode": "810100",
+    "hot": false,
+    "name": "香港岛",
+    "pinyin": "XIANGGANGDAO",
+    "seq": -1,
+    "shortPinyin": "XGD"
+},
+{
+    "cityCode": "810200",
+    "hot": false,
+    "name": "九龙",
+    "pinyin": "JIULONG",
+    "seq": -1,
+    "shortPinyin": "JL"
+},
+{
+    "cityCode": "810300",
+    "hot": false,
+    "name": "新界",
+    "pinyin": "XINJIE",
+    "seq": -1,
+    "shortPinyin": "XJ"
+},
+{
+    "cityCode": "820100",
+    "hot": false,
+    "name": "澳门半岛",
+    "pinyin": "AOMENBANDAO",
+    "seq": -1,
+    "shortPinyin": "AMBD"
+},
+{
+    "cityCode": "820200",
+    "hot": false,
+    "name": "离岛",
+    "pinyin": "LIDAO",
+    "seq": -1,
+    "shortPinyin": "LD"
+}
+]

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/id_stickynavlayout_innerscrollview"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/ll_souvenir_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/product_spot_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dd_dimen_30px"
+            android:paddingLeft="@dimen/dd_dimen_30px"
+            android:paddingRight="@dimen/dd_dimen_30px"
+            android:paddingTop="@dimen/dd_dimen_30px"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/product_spot_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_wonderful_play_notice_title"
+                android:textColor="@color/neu_666666"
+                android:textSize="@dimen/text_size_30px"/>
+
+            <TextView
+                android:id="@+id/product_spot_info_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dd_dimen_20px"
+                android:lineSpacingExtra="1.5dp"
+                android:textColor="@color/neu_999999"
+                android:textSize="@dimen/text_size_26px"/>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/fr_commodoty_detail_properties_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="1">
+        </TableLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_empty"
+            android:layout_width="match_parent"
+            android:layout_height="570dp"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/default_page_lists"
+                android:layout_centerInParent="true"
+                android:text="暂无详情"
+                android:gravity="center"/>
+        </RelativeLayout>
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dd_dimen_20px"
+            android:paddingLeft="@dimen/dd_dimen_30px"
+            android:paddingRight="@dimen/dd_dimen_30px"
+            android:paddingTop="@dimen/dd_dimen_20px">
+
+            <View
+                android:id="@+id/dash_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dd_dimen_1px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dd_dimen_30px"
+                android:layout_toLeftOf="@+id/dash_textview"
+                android:background="@color/tc_e1e1e1"/>
+
+            <TextView
+                android:id="@+id/dash_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="继续拖动，查看商品评价"
+                android:textColor="@color/neu_999999"
+                android:textSize="@dimen/text_size_24px"/>
+
+            <View
+                android:id="@+id/dash_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dd_dimen_1px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:layout_toRightOf="@id/dash_textview"
+                android:background="@color/tc_e1e1e1"/>
+        </RelativeLayout>-->
+    </LinearLayout>
+
+</ScrollView>

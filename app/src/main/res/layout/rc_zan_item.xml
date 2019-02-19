@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/live_background"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_zan_head"
+        android:layout_marginTop="@dimen/yhy_size_16px"
+        android:layout_marginBottom="@dimen/yhy_size_16px"
+        android:layout_marginLeft="@dimen/yhy_size_15px"
+        android:src="@mipmap/head_protriat_default"
+        android:layout_width="@dimen/yhy_size_30px"
+        android:layout_height="@dimen/yhy_size_30px" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_toRightOf="@+id/iv_zan_head"
+        android:layout_marginLeft="@dimen/yhy_size_13px"
+        android:text="首相维吉尔"
+        android:layout_centerVertical="true"
+        android:textColor="@color/live_text_color"
+        android:textSize="@dimen/yhy_size_14px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

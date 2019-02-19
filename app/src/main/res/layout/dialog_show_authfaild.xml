@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_custom_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_dlg_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_identify_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dd_dimen_34px"
+        android:layout_marginTop="@dimen/dd_dimen_40px"
+        android:src="@mipmap/icon_identi_close" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dd_dimen_15px"
+        android:src="@mipmap/icon_takephoto_agin" />
+
+    <TextView
+        android:id="@+id/tv_authfaild_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dd_dimen_44px"
+        android:layout_marginRight="@dimen/dd_dimen_44px"
+        android:layout_marginTop="@dimen/dd_dimen_37px"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3dp"
+        android:text="请确保照片是本人身份证且照片中身份证边框完整,图像清晰,无局部光线过亮等问题"
+        android:textColor="@color/neu_666666"
+        android:textSize="@dimen/dd_dimen_30px"></TextView>
+
+    <Button
+
+        android:id="@+id/btn_takephoto_agin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_86px"
+        android:layout_marginBottom="@dimen/dd_dimen_50px"
+        android:layout_marginLeft="@dimen/dd_dimen_25px"
+        android:layout_marginRight="@dimen/dd_dimen_25px"
+        android:layout_marginTop="@dimen/dd_dimen_37px"
+        android:background="@drawable/btn_orange_selector"
+
+        android:text="重新拍摄"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dd_dimen_36px" />
+</LinearLayout>

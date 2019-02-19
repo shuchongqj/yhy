@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_norm_ffffff"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ac_bg_color"
+        android:drawablePadding="@dimen/dd_dimen_10px"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dd_dimen_20px"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingTop="@dimen/dd_dimen_20px"
+        android:text="大伽们都是棒棒哒，请至少秀出你的5项能力哟~"
+        android:textColor="@color/color_norm_bebebe" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/transparent"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+
+
+
+</LinearLayout>

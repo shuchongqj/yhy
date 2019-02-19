@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/yhy_size_70px">
+
+        <RelativeLayout
+            android:id="@+id/iv_back"
+            android:padding="@dimen/yhy_size_10px"
+            android:layout_width="@dimen/dd_dimen_90px"
+            android:layout_height="match_parent" >
+            <ImageView
+                android:src="@mipmap/arrow_back_gray"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/yhy_size_13px"
+                android:layout_height="@dimen/yhy_size_22px" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="扫一扫"
+            android:textColor="@color/black"
+            android:textSize="@dimen/yhy_size_20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_open"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/yhy_size_16px"
+            android:text="相册"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/yhy_size_80px"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <com.quanyan.yhy.ui.zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <com.quanyan.yhy.ui.zxing.view.ViewfinderNoNetView
+            android:id="@+id/view_no_net_view"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dd_dimen_400px"
+            android:text="@string/prompt"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_net_notic"
+            android:layout_width="@dimen/dd_dimen_153px"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:gravity="center"
+            android:text="@string/error_recheck_textview_no_network"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_28px"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Scan Barcode"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_cancel_scan"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="75dp"
+            android:text="Cancel"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!-- <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="@string/scan_prompt_info"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout> -->
+        
+    </RelativeLayout>
+
+</RelativeLayout>

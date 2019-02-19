@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_110px"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:text="姓        名"
+            android:textColor="@color/order_666666"
+            android:textSize="@dimen/dd_dimen_30px" />
+
+
+        <EditText
+            android:id="@+id/et_travelout_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dd_dimen_230px"
+            android:layout_marginRight="@dimen/dd_dimen_15px"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/color_cursor_black"
+            android:hint="必填"
+            android:maxLength="20"
+            android:textColor="@color/order_666666"
+            android:textColorHint="@color/order_999999"
+            android:textSize="@dimen/dd_dimen_28px" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_2px"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:background="@color/orderline_e1e1e1" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_110px"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="英  文  姓"
+                android:textColor="@color/order_666666"
+                android:textSize="@dimen/dd_dimen_30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dd_dimen_5px"
+                android:text="last  name"
+                android:textColor="@color/order_666666"
+                android:textSize="@dimen/dd_dimen_20px" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/et_travelout_lasttname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dd_dimen_230px"
+            android:layout_marginRight="@dimen/dd_dimen_15px"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/color_cursor_black"
+            android:hint="例：wang"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:digits="abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:textColor="@color/order_666666"
+            android:textColorHint="@color/order_999999"
+            android:textSize="@dimen/dd_dimen_28px" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_2px"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:background="@color/orderline_e1e1e1" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_110px"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="英  文  名"
+                android:textColor="@color/order_666666"
+                android:textSize="@dimen/dd_dimen_30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dd_dimen_5px"
+                android:text="first  name"
+                android:textColor="@color/order_666666"
+                android:textSize="@dimen/dd_dimen_20px" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_travelout_firstname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dd_dimen_230px"
+            android:textCursorDrawable="@drawable/color_cursor_black"
+            android:layout_marginRight="@dimen/dd_dimen_15px"
+            android:background="@null"
+            android:hint="例：xian"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:digits="abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:textColor="@color/order_666666"
+            android:textColorHint="@color/order_999999"
+            android:textSize="@dimen/dd_dimen_28px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_2px"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:background="@color/orderline_e1e1e1" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_110px"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:text="证件类型"
+            android:textColor="@color/order_666666"
+            android:textSize="@dimen/dd_dimen_30px" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dd_dimen_230px"
+            android:layout_marginRight="@dimen/dd_dimen_15px"
+            android:text="护照"
+            android:textColor="@color/order_666666"
+            android:textSize="@dimen/dd_dimen_28px" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_2px"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:background="@color/orderline_e1e1e1" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_110px"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:text="证件号码"
+            android:textColor="@color/order_666666"
+            android:textSize="@dimen/dd_dimen_30px" />
+
+
+        <EditText
+            android:id="@+id/et_travelout_cardnum"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dd_dimen_230px"
+            android:textCursorDrawable="@drawable/color_cursor_black"
+            android:layout_marginRight="@dimen/dd_dimen_15px"
+            android:background="@null"
+            android:hint="可稍后提供"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/order_666666"
+            android:textColorHint="@color/order_999999"
+            android:textSize="@dimen/dd_dimen_28px" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_2px"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:background="@color/orderline_e1e1e1" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_110px"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:text="手机号码"
+            android:textColor="@color/order_666666"
+            android:textSize="@dimen/dd_dimen_30px" />
+
+
+        <EditText
+            android:id="@+id/et_travelout_tel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dd_dimen_230px"
+            android:layout_marginRight="@dimen/dd_dimen_15px"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/color_cursor_black"
+            android:hint="必填"
+            android:maxLength="11"
+            android:inputType="number"
+            android:textColor="@color/order_666666"
+            android:textColorHint="@color/order_999999"
+            android:textSize="@dimen/dd_dimen_28px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_16px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tips_image"
+            android:layout_width="@dimen/dd_dimen_30px"
+            android:layout_height="@dimen/dd_dimen_30px"
+            android:layout_marginRight="@dimen/dd_dimen_15px"
+            android:src="@mipmap/scenic_tips_image" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dd_dimen_5px"
+            android:layout_marginRight="@dimen/dd_dimen_24px"
+            android:text="为了您能顺利出行，请确保旅行结束日期至少比证件有效日期早6个月，并准确填写真实，有效的证件号码，订单提交后将无法进行修改。"
+            android:textColor="@color/order_666666"
+            android:textSize="@dimen/dd_dimen_26px" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_norm_f4f4f4"
+    android:orientation="vertical">
+
+    <com.quanyan.yhy.ui.views.AppSettingItem
+        android:id="@+id/ac_live_settings_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dd_dimen_20px" />
+
+    <com.quanyan.yhy.ui.views.AppSettingItem
+        android:id="@+id/ac_live_settings_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.quanyan.yhy.ui.views.AppSettingItem
+        android:id="@+id/ac_live_settings_sort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+</LinearLayout>

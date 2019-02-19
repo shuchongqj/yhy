@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" >
+
+    <com.github.ksoichiro.android.observablescrollview.ObservableListView
+        android:id="@id/id_stickynavlayout_innerscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.github.ksoichiro.android.observablescrollview.ObservableListView>
+
+    <TextView
+        android:id="@+id/line_overview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/wonderfull_play_detail_date_bg"
+        android:gravity="center"
+        android:text="出发日期"
+        android:layout_gravity="right"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dd_dimen_24px"/>
+</FrameLayout>

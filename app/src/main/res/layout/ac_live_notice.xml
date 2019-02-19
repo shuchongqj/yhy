@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_150px"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginRight="@dimen/dd_dimen_30px"
+        android:background="@color/white"
+        android:padding="@dimen/dd_dimen_15px">
+
+        <EditText
+            android:id="@+id/ac_live_notice_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="start"
+            android:hint="@string/hint_descrption_of_consulting"
+            android:maxLength="100"
+            android:textColor="@color/neu_666666"
+            android:textColorHint="@color/neu_999999"
+            android:textSize="@dimen/dd_dimen_24px" />
+
+        <TextView
+            android:id="@+id/ac_live_notice_words_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:text="100"
+            android:textColor="@color/tv_color_grayBD"
+            android:textSize="@dimen/dd_dimen_24px" />
+    </RelativeLayout>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="@dimen/dd_dimen_1px"
+          android:background="@color/divider"/>
+
+    <TextView
+        android:id="@+id/ac_live_notice_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_90px"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginRight="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_30px"
+        android:background="@drawable/shape_publish_live_title_bg"
+        android:gravity="center"
+        android:padding="@dimen/dd_dimen_20px"
+        android:text="@string/label_btn_finish"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dd_dimen_32px" />
+
+</LinearLayout>

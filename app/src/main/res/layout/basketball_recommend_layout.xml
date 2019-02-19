@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/divider"
+    android:orientation="vertical">
+
+    <RelativeLayout android:id="@+id/basketball_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_main">
+
+        <TextView
+            style="@style/fontBlack_16"
+            android:text="@string/buy_ticket" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/common_arrow_right" />
+    </RelativeLayout>
+
+    <include android:id="@+id/basket_ticket_item1" layout="@layout/basketball_ticket_layout" />
+    <TextView android:id="@+id/more_ticket"
+        style="@style/fontGrey_14"
+        android:layout_width="match_parent"
+        android:text="@string/more_ticket"
+        android:background="@color/white"
+        android:padding="12dp"
+        android:layout_marginLeft="@dimen/margin_main"
+        android:layout_marginRight="@dimen/margin_main"
+        android:drawableRight="@mipmap/common_arrow_right"/>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="8dp" />
+
+    <include android:id="@+id/basket_ticekt_item2" layout="@layout/basketball_ticket_layout" />
+
+
+</LinearLayout>

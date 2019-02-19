@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dd_dimen_20px"
+    android:paddingLeft="@dimen/dd_dimen_30px"
+    android:paddingRight="@dimen/dd_dimen_30px"
+    android:paddingTop="@dimen/dd_dimen_20px">
+
+    <ImageView
+        android:src="@mipmap/ic_shop_default_logo"
+        android:id="@+id/image_merchant"
+        android:layout_width="@dimen/dd_dimen_45px"
+        android:layout_height="@dimen/dd_dimen_45px"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_merchant"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dd_dimen_18px"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/neu_999999"
+        android:textSize="@dimen/text_size_24px" />
+
+    <TextView
+        android:id="@+id/tv_contact_merchant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:paddingBottom="@dimen/dd_dimen_10px"
+        android:paddingLeft="@dimen/dd_dimen_20px"
+        android:paddingRight="@dimen/dd_dimen_20px"
+        android:paddingTop="@dimen/dd_dimen_10px"
+        android:text="@string/contact_merchant"
+        android:drawableLeft="@mipmap/ic_customer_service"
+        android:drawablePadding="@dimen/dd_dimen_20px"
+        android:visibility="gone"
+        android:textColor="@color/main_tran_20"
+        android:textSize="@dimen/text_size_24px" />
+</LinearLayout>

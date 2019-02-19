@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/home_recommend_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_360px"
+        android:scaleType="centerCrop"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_20px"
+        android:background="@color/neu_f4f4f4"/>
+
+</LinearLayout>

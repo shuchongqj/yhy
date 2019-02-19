@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="live_root_view_error_padding_left">10dp</dimen>
+    <dimen name="live_root_view_error_padding_top">5dp</dimen>
+    <dimen name="live_stream_surface_height">200dp</dimen>
+    <dimen name="live_stream_chat_layout_height_normal">274dp</dimen>
+    <dimen name="live_stream_chat_layout_height_pickup">90dp</dimen>
+    <dimen name="live_stream_chat_layout_width">200dp</dimen>
+</resources>

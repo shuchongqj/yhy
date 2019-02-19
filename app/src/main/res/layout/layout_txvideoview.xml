@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="@color/black"
+    android:id="@+id/rl_controller"
+    android:layout_height="match_parent">
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/tx_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_load_failed"
+        android:background="@drawable/shape_publish_live_title_bg"
+        android:layout_centerInParent="true"
+        android:text="加载失败"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:textSize="@dimen/yhy_size_20px"
+        android:padding="@dimen/yhy_size_5px"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/yhy_size_40px" />
+
+    <ProgressBar
+        android:id="@+id/pb_video_view"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_width="@dimen/yhy_size_50px"
+        android:layout_height="@dimen/yhy_size_50px" />
+
+    <ImageView
+        android:id="@+id/bottom_shadow"
+        android:background="@drawable/shape_shadow_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/yhy_size_100px" />
+
+    <RelativeLayout
+        android:id="@+id/player_function_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/yhy_size_13px"
+        android:layout_marginRight="@dimen/yhy_size_13px"
+        android:layout_marginBottom="@dimen/yhy_size_10px"
+        android:layout_height="@dimen/yhy_size_50px">
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/iv_full_screen"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_live_full_screen"
+            android:layout_width="@dimen/yhy_size_36px"
+            android:layout_height="@dimen/yhy_size_36px" />
+
+    <LinearLayout
+        android:id="@+id/player_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/iv_full_screen"
+        android:layout_marginRight="@dimen/yhy_size_13px"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/playing_time"
+            android:textSize="12dp"
+            android:text="--:--"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/yhy_size_2px"
+            android:maxHeight="@dimen/yhy_size_2px"
+            android:progressDrawable="@drawable/video_seekbar_bg"
+            android:thumb="@drawable/ic_video_play_seek_bound" />
+
+        <TextView
+            android:id="@+id/end_time"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:text="--:--"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/player_state_center"
+        android:layout_width="@dimen/yhy_size_45px"
+        android:layout_height="@dimen/yhy_size_45px"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/ic_video_play"/>
+
+</RelativeLayout>

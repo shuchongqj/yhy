@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/neu_d4d4d4"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dd_dimen_20px"
+                android:paddingLeft="@dimen/dd_dimen_30px"
+                android:paddingRight="@dimen/dd_dimen_30px"
+                android:paddingTop="@dimen/dd_dimen_20px">
+
+    <View
+        android:id="@+id/dash_view1"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/dd_dimen_1px"
+        android:layout_alignLeft="@+id/dash_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/neu_999999"/>
+
+    <TextView
+        android:id="@+id/dash_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="继续拖动，查看详情"
+        android:textColor="@color/neu_999999"
+        android:textSize="@dimen/text_size_24px"/>
+
+    <View
+        android:id="@+id/dash_view2"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/dd_dimen_1px"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/dash_textview"
+        android:layout_centerVertical="true"
+        android:background="@color/neu_999999"/>
+</RelativeLayout>

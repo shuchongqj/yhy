@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/cell_circle_live_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dd_dimen_20px"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingRight="@dimen/dd_dimen_30px"
+        android:paddingTop="@dimen/dd_dimen_20px">
+
+        <include layout="@layout/cell_master_circle_common_top"/>
+
+        <FrameLayout
+            android:id="@+id/cell_circle_live_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_400px">
+            <ImageView
+                android:id="@+id/cell_circle_live_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/cell_circle_live_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_margin="8dp"
+                android:background="@drawable/shape_white_stroke_corner"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:text="直播"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/cell_circle_live_category_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:textColor="@android:color/white"
+                android:layout_margin="8dp"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/cell_circle_live_img_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_live_circle_camera"/>
+        </FrameLayout>
+
+        <include layout="@layout/cell_master_circle_common_bottom"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/cell_circle_live_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_24px"
+        android:background="@color/neu_f4f4f4"
+        android:visibility="gone"/>
+</LinearLayout>

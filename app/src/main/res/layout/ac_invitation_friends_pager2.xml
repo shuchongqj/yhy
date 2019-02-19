@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/fg_invitation_success_layout"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/neu_f4f4f4"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dd_dimen_20px"
+        android:paddingBottom="@dimen/dd_dimen_20px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="@dimen/dd_dimen_5px"
+            android:layout_height="@dimen/dd_dimen_20px"
+            android:background="@color/neu_fa4619"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dd_dimen_20px"
+            android:textColor="@color/neu_666666"
+            android:textSize="@dimen/text_size_26px"
+            android:text="您已成功邀请2位好友"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fg_invitation_success_point_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingRight="@dimen/dd_dimen_30px"
+        android:textSize="@dimen/text_size_24px"
+        android:paddingTop="@dimen/dd_dimen_20px"
+        android:paddingBottom="@dimen/dd_dimen_20px"
+        android:textColor="@color/neu_999999"
+        android:text="邀请成功后的奖金在36小时内到账，每天邀请好友最高奖励2500积分，具体到账情况请查看 积分明细>"/>
+</LinearLayout>

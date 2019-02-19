@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/scenicdetails_youxiaoqi_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:maxWidth="70dip"
+            android:text="有效期"
+            android:textColor="#666"
+            android:textSize="@dimen/dd_dimen_24px" />
+
+        <TextView
+            android:id="@+id/scenicdetails_youxiaoqi_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dip"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#999"
+            android:textSize="@dimen/dd_dimen_24px" />
+    </RelativeLayout>
+
+</LinearLayout>

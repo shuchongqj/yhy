@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/yhy_size_26px"
+    android:paddingBottom="@dimen/yhy_size_13px"
+    android:orientation="vertical">
+
+    <!-- Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/yhy_size_15px"
+        android:layout_marginRight="@dimen/yhy_size_15px"
+        android:orientation="vertical">
+
+        <com.newyhy.views.KeyTextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/yhy_size_17px"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="@dimen/yhy_size_1px"
+            android:maxLines="2"
+            android:breakStrategy="simple"
+            android:ellipsize="end"/>
+
+    </LinearLayout>
+
+    <!-- Item Footer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/yhy_size_28px"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/yhy_size_5px"
+        android:paddingLeft="@dimen/yhy_size_10px">
+
+        <TextView
+            android:id="@+id/stick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:text="置顶"
+            android:textColor="@color/ac_title_bg_color"
+            android:background="@drawable/shape_gray_bg"
+            android:paddingRight="@dimen/yhy_size_3px"
+            android:paddingLeft="@dimen/yhy_size_3px"
+            android:textSize="@dimen/yhy_size_12px"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/yhy_size_5px"
+            android:text="健身小知识"
+            android:textColor="@color/gray_BE"
+            android:textSize="@dimen/yhy_size_12px"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/yhy_size_10px"
+            android:text="100评论"
+            android:textColor="@color/gray_BE"
+            android:textSize="@dimen/yhy_size_12px"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/yhy_size_8px"
+            android:text="一分钟前"
+            android:textColor="@color/gray_BE"
+            android:textSize="@dimen/yhy_size_12px"
+            android:gravity="center_vertical"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/yhy_size_10px">
+
+            <RelativeLayout
+                android:id="@+id/rl_delete"
+                android:layout_width="@dimen/yhy_size_40px"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="@dimen/yhy_size_16px"
+                    android:layout_height="@dimen/yhy_size_16px"
+                    android:background="@drawable/ic_new_close"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

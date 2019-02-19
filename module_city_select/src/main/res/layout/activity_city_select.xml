@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <com.yhy.module_ui_common.YhyTopSearchView
+        android:id="@+id/llyt_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hit_text="城市名、拼音首字母…"/>
+
+    <RelativeLayout
+        android:id="@+id/rlyt_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yhy.cityselect.PinnedHeaderListView
+            android:id="@+id/lv_cities"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="none">
+
+        </com.yhy.cityselect.PinnedHeaderListView>
+
+        <com.yhy.cityselect.CitySelectSideBar
+            android:id="@+id/side_bar"
+            android:layout_width="@dimen/yhy_size_30px"
+            android:layout_height="@dimen/yhy_size_480px"
+            app:citySelectSideBarFontColor="@color/color_999999"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlyt_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <include layout="@layout/ugc_error_view"/>
+
+    </RelativeLayout>
+    <!--<TextView-->
+    <!--android:id="@+id/tv_index_hot"-->
+    <!--android:layout_width="@dimen/yhy_size_30px"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/rv_indexes"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="1"-->
+    <!--app:layout_constraintVertical_bias="1"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--android:textSize="@dimen/yhy_size_11px"-->
+    <!--android:textColor="@color/color_999999"-->
+    <!--android:text="热门"-->
+    <!--android:gravity="center"/>-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/rv_indexes"-->
+    <!--android:layout_width="@dimen/yhy_size_30px"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="1"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--</android.support.v7.widget.RecyclerView>-->
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="8dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/ugc_recycle_item_header"/>
+
+    <com.quanyan.base.view.customview.ClickPreventableTextView
+        android:id="@+id/tv_ugc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:ellipsize="end"
+        android:lineSpacingExtra="@dimen/dd_dimen_10px"
+        android:maxLength="200"
+        android:textColor="@color/neu_333333"
+        android:textColorLink="@color/neu_19a6db"
+        android:textSize="@dimen/text_size_30px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginBottom="5dp"/>
+
+    <FrameLayout
+        android:id="@+id/fr_content_ugc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp">
+
+        <com.newyhy.views.ninelayout.YHYNineGridLayout
+            android:id="@+id/nine_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.newyhy.views.RoundImageView
+                android:id="@+id/iv_single_ugc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:borderRadius="@dimen/yhy_size_2px"/>
+
+            <TextView
+                android:id="@+id/ic_sup_height"
+                android:layout_width="@dimen/yhy_size_30px"
+                android:layout_height="@dimen/yhy_size_15px"
+                android:background="@color/gray9"
+                android:gravity="center"
+                android:text="长图"
+                android:textColor="@color/white"
+                android:textSize="@dimen/yhy_size_10px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </FrameLayout>
+
+    <include layout="@layout/ugc_recycle_item_footer"/>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dd_dimen_24px"
+        android:layout_marginRight="@dimen/dd_dimen_24px"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dd_dimen_55px"
+            android:layout_marginLeft="@dimen/dd_dimen_24px"
+            android:layout_weight="1"
+            android:background="@drawable/bg_strokegray_orangebg_normal">
+
+            <Button
+                android:id="@+id/btn_guess_item1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/scenic_top_translate_selector"
+                android:textColor="@color/order_666666"
+                android:textSize="@dimen/dd_dimen_28px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dd_dimen_55px"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dd_dimen_24px"
+            android:background="@drawable/bg_strokegray_orangebg_normal">
+
+            <Button
+                android:id="@+id/btn_guess_item2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/scenic_top_translate_selector"
+                android:textColor="@color/order_666666"
+                android:textSize="@dimen/dd_dimen_28px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dd_dimen_55px"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dd_dimen_24px"
+            android:background="@drawable/bg_strokegray_orangebg_normal">
+
+            <Button
+                android:id="@+id/btn_guess_item3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/scenic_top_translate_selector"
+                android:textColor="@color/order_666666"
+                android:textSize="@dimen/dd_dimen_28px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dd_dimen_55px"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dd_dimen_24px"
+            android:background="@drawable/bg_strokegray_orangebg_normal">
+
+            <Button
+                android:id="@+id/btn_guess_item4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/scenic_top_translate_selector"
+                android:textColor="@color/order_666666"
+                android:textSize="@dimen/dd_dimen_28px" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

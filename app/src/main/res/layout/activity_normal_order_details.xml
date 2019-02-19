@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.quanyan.base.view.customview.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/base_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/order_details_status_layout" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/public_split_line_height"
+                android:background="@color/divider" />
+
+            <include layout="@layout/item_logistical_detials" />
+
+
+            <include layout="@layout/order_details_receiver_layout" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dd_dimen_20px"
+                android:background="@color/neu_f4f4f4" />
+
+            <include layout="@layout/order_details_merchant_layout" />
+
+
+            <include layout="@layout/base_noscroll_listview" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/dd_dimen_19px">
+
+                <com.quanyan.yhy.ui.views.OrderDetailsItemView
+                    android:id="@+id/tv_order_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.quanyan.yhy.ui.views.OrderDetailsItemView
+                    android:id="@+id/tv_order_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+                <com.quanyan.yhy.ui.views.OrderDetailsItemView
+                    android:id="@+id/tv_order_price_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+                <com.quanyan.yhy.ui.views.OrderDetailsItemView
+                    android:id="@+id/tv_order_price_should"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dd_dimen_20px"
+                android:background="@color/neu_f4f4f4" />
+
+            <include layout="@layout/layoutcustom_service" />
+
+
+            <include layout="@layout/view_order_details_time" />
+
+            <LinearLayout
+                android:id="@+id/ll_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/neu_f4f4f4"
+                android:orientation="vertical">
+
+                <include layout="@layout/item_point_order_recommend"></include>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </com.quanyan.base.view.customview.pulltorefresh.PullToRefreshScrollView>
+
+    <TextView
+        android:id="@+id/tv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_ying"
+        android:gravity="center"
+        android:padding="@dimen/dd_dimen_30px"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+</LinearLayout>

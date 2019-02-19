@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical"
+              android:paddingTop="@dimen/dd_dimen_30px">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/dd_dimen_30px"
+        android:paddingRight="@dimen/dd_dimen_30px"
+        android:paddingTop="@dimen/dd_dimen_30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="票型说明"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_36px"/>
+
+        <LinearLayout
+            android:id="@+id/ac_ticket_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_close"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dd_dimen_2px"
+        android:layout_weight="1"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/ac_ticket_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ac_ticket_info_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dd_dimen_20px"
+                android:paddingLeft="@dimen/dd_dimen_30px"
+                android:paddingRight="@dimen/dd_dimen_30px"
+                android:paddingTop="@dimen/dd_dimen_20px"
+                android:text="八达岭长城"
+                android:textColor="@color/neu_333333"
+                android:textSize="@dimen/text_size_36px"
+                android:typeface="serif"/>
+
+            <RelativeLayout
+                android:id="@+id/ac_ticket_info_agent_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dd_dimen_20px"
+                android:paddingLeft="@dimen/dd_dimen_30px"
+                android:paddingRight="@dimen/dd_dimen_30px"
+                android:paddingTop="@dimen/dd_dimen_20px">
+
+                <TextView
+                    android:id="@+id/ac_ticket_info_agent_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/ac_ticket_info_agent_view"
+                    android:text="代理商"
+                    android:textColor="@color/neu_333333"
+                    android:textSize="@dimen/text_size_30px"
+                    android:typeface="serif"/>
+
+                <TextView
+                    android:id="@+id/ac_ticket_info_agent_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/ac_ticket_info_agent_title"
+                    android:layout_below="@id/ac_ticket_info_agent_title"
+                    android:layout_marginTop="@dimen/dd_dimen_10px"
+                    android:layout_toLeftOf="@+id/ac_ticket_info_agent_view"
+                    android:text="八达岭长城"
+                    android:textColor="@color/neu_333333"
+                    android:textSize="@dimen/text_size_28px"
+                    android:typeface="serif"/>
+
+                <View
+                    android:id="@+id/ac_ticket_info_agent_view"
+                    android:layout_width="@dimen/dd_dimen_2px"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@id/ac_ticket_info_agent_name"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/dd_dimen_20px"
+                    android:layout_marginRight="@dimen/dd_dimen_20px"
+                    android:layout_toLeftOf="@+id/ac_ticket_info_agent_chat"
+                    android:background="@color/neu_d4d4d4"/>
+
+                <ImageView
+                    android:id="@+id/ac_ticket_info_agent_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_scenic_ticket_customer_server"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_2px"
+        android:background="@color/neu_f4f4f4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/ac_ticket_info_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dd_dimen_2px"
+                android:background="@color/neu_d4d4d4"/>
+
+            <TextView
+                android:id="@+id/ac_ticket_info_agent_money_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ac_ticket_info_agent_money"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dd_dimen_20px"
+                android:text="@string/money_symbol"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_28px"/>
+
+            <TextView
+                android:id="@+id/ac_ticket_info_agent_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dd_dimen_10px"
+                android:layout_toRightOf="@id/ac_ticket_info_agent_money_symbol"
+                android:text="900"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_36px"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ac_ticket_info_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/ac_title_bg_color"
+            android:paddingBottom="@dimen/dd_dimen_20px"
+            android:paddingLeft="@dimen/dd_dimen_60px"
+            android:paddingRight="@dimen/dd_dimen_60px"
+            android:paddingTop="@dimen/dd_dimen_20px"
+            android:text="立即预订"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_36px"/>
+    </LinearLayout>
+</LinearLayout>

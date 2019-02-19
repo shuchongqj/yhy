@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/club_detail_member_header_layout"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/color_norm_f4f4f4"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dd_dimen_20px"
+        android:paddingLeft="@dimen/dd_dimen_40px"
+        android:paddingRight="@dimen/dd_dimen_40px"
+        android:paddingTop="@dimen/dd_dimen_20px"
+        android:textSize="@dimen/dd_dimen_21px"
+        android:textColor="@color/tv_color_gray6"
+        android:text="部长"/>
+
+    <include layout="@layout/cell_club_detail_member"/>
+
+    <TextView
+        android:id="@+id/cell_club_detail_member_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dd_dimen_20px"
+        android:paddingLeft="@dimen/dd_dimen_40px"
+        android:paddingRight="@dimen/dd_dimen_40px"
+        android:paddingTop="@dimen/dd_dimen_20px"
+        android:textSize="@dimen/dd_dimen_21px"
+        android:textColor="@color/tv_color_gray6"
+        android:text="小伙伴"/>
+</LinearLayout>

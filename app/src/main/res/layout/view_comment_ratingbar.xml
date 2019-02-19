@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_120px">
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:paddingLeft="@dimen/dd_dimen_30px"
+            android:paddingRight="@dimen/dd_dimen_30px"
+            android:text="服务态度"
+            android:textColor="@color/neu_999999"
+            android:textSize="@dimen/text_size_28px"
+            android:gravity="center_vertical"/>
+
+        <!--<RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/roomRatingBar"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dd_dimen_120px"/>-->
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="分"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/ac_title_bg_color"
+            android:textSize="@dimen/text_size_32px" />
+
+        <TextView
+            android:id="@+id/tv_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="4"
+            android:layout_marginLeft="@dimen/dd_dimen_50px"
+            android:layout_toLeftOf="@+id/tv_text"
+            android:gravity="center_vertical"
+            android:textColor="@color/ac_title_bg_color"
+            android:textSize="@dimen/text_size_32px" />
+
+        <com.quanyan.yhy.view.RatingBarView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ratingbar"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:starCount="5"
+            android:layout_toLeftOf="@+id/tv_grade"
+            app:starEmpty="@mipmap/ic_write_star_normal"
+            app:starFill="@mipmap/ic_write_star_selected"
+            app:starImageSize="@dimen/dd_dimen_40px"
+            app:starPaddingSize="@dimen/dd_dimen_10px"/>
+
+        <View
+            android:id="@+id/view_div"
+            android:layout_marginLeft="@dimen/text_size_30px"
+            android:layout_marginRight="@dimen/text_size_30px"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_1px"
+            android:background="@color/bg_grey"/>
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>

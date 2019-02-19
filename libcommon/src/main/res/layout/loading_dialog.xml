@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="@dimen/dd_dimen_40px">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/iv_waiting"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+        <FrameLayout
+            android:visibility="gone"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+        </FrameLayout>
+        <TextView android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:textColor="@android:color/black"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--<TextView android:id="@+id/location"-->
+        <!--style="@style/fontBlack_14"-->
+
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_margin="@dimen/margin_main"-->
+        <!--android:drawablePadding="6dp"-->
+        <!--android:drawableRight="@mipmap/classify_icon_choose_black"-->
+        <!--/>-->
+
+        <com.newyhy.views.PopupButton
+            xmlns:popupbtn="http://schemas.android.com/tools"
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:background="#fff"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/popup_btn_arrow_black"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:text=""
+            android:textColor="#333"
+            android:textSize="14sp"
+            popupbtn:normalBg="@drawable/shape2_right_angle"
+            popupbtn:normalIcon="@mipmap/classify_icon_choose_black"
+            popupbtn:pressBg="@drawable/shape2_right_angle"
+            popupbtn:pressIcon="@mipmap/icon_arrow_up_red" />
+
+        <RelativeLayout
+            android:id="@+id/message_layout"
+            android:layout_width="26dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/location"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/margin_main"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/im_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:src="@mipmap/icon_message" />
+
+            <TextView
+                android:id="@+id/court_message_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/background_ying_red_circle_fill"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="8sp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/neu_f4f4f4"
+        app:srlEnablePreviewInEditMode="true">
+        <!--srlAccentColor srlPrimaryColor 将会改变 Header 和 Footer 的主题颜色-->
+        <!--srlEnablePreviewInEditMode 可以开启和关闭预览功能-->
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:srlTextSizeTitle="12sp"
+            app:srlTextSizeTime="10sp"
+            app:srlDrawableProgressSize="14dp"
+            app:srlDrawableArrowSize="14dp"
+            android:background="@color/neu_f4f4f4"/>
+
+        <com.newyhy.views.UgcScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:popupbtn="http://schemas.android.com/tools"
+            android:id="@+id/scroll_parent"
+            android:overScrollMode="never"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_main"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/home_court_scan"
+                        style="@style/fontBlack_14"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@mipmap/home_icon_scan"
+                        android:text="@string/scan" />
+
+                    <TextView
+                        android:id="@+id/home_court_member_sqcode"
+                        style="@style/fontBlack_14"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@mipmap/home_icon_pay_code"
+                        android:text="@string/member_sqcode" />
+
+                    <TextView
+                        android:id="@+id/home_court_charge"
+                        style="@style/fontBlack_14"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@mipmap/home_icon_recharge"
+                        android:text="@string/charge" />
+
+                    <TextView
+                        android:id="@+id/home_court_card_package"
+                        style="@style/fontBlack_14"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@mipmap/home_icon_card"
+                        android:text="@string/card_package" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_main">
+
+                    <TextView
+                        android:id="@+id/find_venue"
+                        style="@style/fontBlack_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/background_ying_red_corner_round"
+                        android:padding="12dp"
+                        android:text="@string/fast_find_venue"
+                        android:textColor="@color/white" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_main"
+                        android:layout_toLeftOf="@id/find_venue"
+                        android:background="@drawable/background_ying_gray_corner_round"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/choose_date"
+                            style="@style/fontBlack_14"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:paddingLeft="25dp"
+                            android:text="12/23(今天)" />
+
+                        <TextView
+                            android:id="@+id/choose_time"
+                            style="@style/fontBlack_14"
+                            android:layout_toRightOf="@id/choose_date"
+                            android:gravity="center_vertical|left"
+                            android:paddingBottom="12dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="12dp"
+                            android:text="18:00-18:30" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="23dp"
+                            android:src="@mipmap/classify_icon_choose_gray" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <include layout="@layout/common_divider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_main"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/broadcast_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/notice_pic_notification" />
+
+                    <ImageView
+                        android:id="@+id/arrow_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/common_arrow_right" />
+
+                    <LinearLayout
+                        android:id="@+id/notification_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_toLeftOf="@id/arrow_right"
+                        android:layout_toRightOf="@id/broadcast_icon"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/notice1"
+                                style="@style/fontBlack_14"
+
+                                android:text="fdsa" />
+
+                            <TextView
+                                android:id="@+id/update_time1"
+                                style="@style/fontGrey_14"
+                                android:layout_marginLeft="6dp"
+                                android:text="fdsa" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/notice2"
+                                style="@style/fontBlack_14"
+
+                                android:text="fdsa" />
+
+                            <TextView
+                                android:id="@+id/update_time2"
+                                style="@style/fontGrey_14"
+                                android:layout_marginLeft="6dp"
+                                android:text="fdsa" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/interest_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/neu_f0f0f0" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_main">
+
+                        <RelativeLayout
+                            android:id="@+id/interest_relayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/interest_text"
+                                style="@style/fontBlack_14"
+                                android:layout_marginLeft="@dimen/margin_main"
+                                android:layout_centerVertical="true"
+                                android:text="@string/please_choose_interest" />
+
+                            <ImageView
+                                android:id="@+id/close"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/margin_main"
+                                android:src="@mipmap/icon_close" />
+                        </RelativeLayout>
+
+
+                        <RadioGroup
+                            android:id="@+id/interest_group"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/interest_relayout"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/badminton_radio"
+                                style="@style/radioButton_interest"
+                                android:text="@string/badminton" />
+
+                            <RadioButton
+                                android:id="@+id/football_radio"
+                                style="@style/radioButton_interest"
+                                android:layout_marginLeft="26dp"
+                                android:text="@string/football" />
+
+                            <RadioButton
+                                android:id="@+id/basketball_radio"
+                                style="@style/radioButton_interest"
+                                android:layout_marginLeft="26dp"
+                                android:text="@string/basketball" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/just_see"
+                            style="@style/fontGrey_14"
+                            android:layout_below="@id/interest_group"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/just_see" />
+                    </RelativeLayout>
+
+                    <!--<View android:background="@color/divider"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="10dp"/>-->
+                </LinearLayout>
+
+                <!--篮球购票 -->
+                <!--<include layout="@layout/basketball_recommend_layout"/>-->
+                <!-- 推荐场馆 -->
+                <include layout="@layout/common_recommend_layout" />
+                <!-- 活动场馆 -->
+                <include
+                    android:id="@+id/home_activity_recommend_layout"
+                    layout="@layout/activity_recommend_layout" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/neu_f0f0f0" />
+
+                <LinearLayout
+                    android:id="@+id/home_live_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="20dp"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:id="@+id/fragment_home_ivLiveList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/margin_20dp"
+                        android:paddingBottom="15dp"
+                        android:paddingRight="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="直播视频"
+                            android:textColor="@color/black"
+                            android:layout_centerVertical="true"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="15dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="15dp"
+                            android:src="@mipmap/common_arrow_right" />
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/fragment_home_live_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        />
+
+                </LinearLayout>
+
+                <!--课程推荐-->
+                <LinearLayout
+                    android:id="@+id/home_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:id="@+id/fragment_home_ivCourseList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/margin_20dp"
+                        android:paddingBottom="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="课程推荐"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="15dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="15dp"
+                            android:paddingLeft="15dp"
+                            android:src="@mipmap/common_arrow_right" />
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/fragment_home_course_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-15dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/neu_f0f0f0" />
+
+                </LinearLayout>
+
+                <!--课程培训机构-->
+                <LinearLayout
+                    android:id="@+id/home_train"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:id="@+id/fragment_home_train"
+
+                        android:paddingTop="@dimen/margin_20dp"
+                        android:paddingBottom="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="驻场培训机构"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="15dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="15dp"
+                            android:paddingLeft="15dp"
+                            android:src="@mipmap/common_arrow_right" />
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/fragment_home_train_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:paddingLeft="7dp"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/neu_f0f0f0" />
+
+                </LinearLayout>
+
+                <!--<RelativeLayout
+                    android:id="@+id/videoList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_main">
+
+                    <TextView
+                        style="@style/fontBlack_16"
+                        android:text="@string/wonderful_video" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/common_arrow_right" />
+                </RelativeLayout>
+    -->
+                <!--<android.support.v7.widget.RecyclerView
+                    android:id="@+id/wonderful_video_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp" />-->
+
+                <RelativeLayout
+                    android:id="@+id/club_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_main">
+
+                    <TextView
+                        style="@style/fontBlack_16"
+                        android:textStyle="bold"
+                        android:text="@string/local_clubs" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/common_arrow_right" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/local_club_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/neu_f0f0f0" />
+
+                <TextView
+                    android:id="@+id/dynamic_refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#dfecf6"
+                    android:gravity="center"
+                    android:text="点击查看最新动态"
+                    android:textColor="#639dd3" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/dynamic_info_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:descendantFocusability="blocksDescendants"
+                    android:background="@color/neu_f4f4f4"/>
+
+                <LinearLayout
+                    android:id="@+id/dynamic_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="12dp"
+                        android:text="@string/home_court_dynamic"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/default_dynamic" />
+
+                    <TextView
+                        style="@style/fontGrey_14"
+
+                        android:text="@string/create_dynamic_text" />
+
+                    <TextView
+                        android:id="@+id/create_dynamic"
+                        style="@style/fontRed_14"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/background_ying_red_circle_round"
+                        android:text="@string/create_dynamic" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.newyhy.views.UgcScrollView>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            app:srlTextSizeTitle="12sp"
+            app:srlDrawableProgressSize="14dp"
+            app:srlDrawableArrowSize="14dp"
+            android:background="@color/neu_f4f4f4"/>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

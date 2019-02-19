@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/cell_pop_around_list_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_300px"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/cell_pop_around_list_vip_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dd_dimen_200px"
+        android:background="#99000000"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dd_dimen_24px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingRight="@dimen/dd_dimen_30px"
+        android:paddingTop="@dimen/dd_dimen_250px">
+
+        <ImageView
+            android:id="@+id/cell_pop_around_list_user_head"
+            android:layout_width="@dimen/dd_dimen_100px"
+            android:layout_height="@dimen/dd_dimen_100px"
+            android:src="@mipmap/icon_default_128_128" />
+
+        <TextView
+            android:id="@+id/cell_pop_around_list_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/cell_pop_around_list_user_head"
+            android:layout_marginLeft="@dimen/dd_dimen_20px"
+            android:layout_marginTop="@dimen/dd_dimen_200px"
+            android:layout_toRightOf="@id/cell_pop_around_list_user_head"
+            android:text="Sam"
+            android:textColor="@color/tv_color_gray63"
+            android:textSize="@dimen/dd_dimen_24px" />
+
+        <TextView
+            android:id="@+id/cell_pop_around_list_label_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/cell_pop_around_list_user_head"
+            android:layout_marginLeft="@dimen/dd_dimen_20px"
+            android:layout_marginTop="@dimen/dd_dimen_200px"
+            android:layout_toRightOf="@id/cell_pop_around_list_user_name"
+            android:text=""
+            android:textColor="@color/tv_color_gray63"
+            android:textSize="@dimen/dd_dimen_24px" />
+
+        <TextView
+            android:id="@+id/cell_pop_around_list_label_type2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/cell_pop_around_list_user_head"
+            android:layout_marginLeft="@dimen/dd_dimen_20px"
+            android:layout_marginTop="@dimen/dd_dimen_200px"
+            android:layout_toRightOf="@id/cell_pop_around_list_label_type"
+            android:text=""
+            android:textColor="@color/tv_color_gray63"
+            android:textSize="@dimen/dd_dimen_24px" />
+
+        <TextView
+            android:id="@+id/cell_pop_around_list_brief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cell_pop_around_list_user_head"
+            android:paddingLeft="@dimen/dd_dimen_60px"
+            android:paddingRight="@dimen/dd_dimen_60px"
+            android:paddingTop="@dimen/dd_dimen_30px"
+            android:text=""
+            android:textColor="@color/tv_color_gray63"
+            android:textSize="@dimen/dd_dimen_24px" />
+    </RelativeLayout>
+</RelativeLayout>

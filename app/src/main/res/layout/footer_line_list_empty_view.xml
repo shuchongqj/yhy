@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@android:color/white"
+              android:paddingBottom="@dimen/dd_dimen_40px"
+              android:paddingTop="@dimen/dd_dimen_40px"
+              android:gravity="center"
+              android:layout_height="400dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/error_empty_icon"/>
+
+    <TextView
+        android:id="@+id/footer_line_list_empty_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前没有数据"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:textSize="@dimen/text_size_30px"
+        android:textColor="@color/neu_999999"/>
+</LinearLayout>

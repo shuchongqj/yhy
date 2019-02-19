@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title_line"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/ac_title_bg_color">
+
+        <ImageView
+            android:id="@+id/tv_left_cancle"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_back_gray"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:layout_alignParentLeft="true"
+            />
+
+        <com.quanyan.yhy.view.SearchEditText
+            android:id="@+id/et_search_box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dd_dimen_20px"
+            android:layout_marginBottom="@dimen/dd_dimen_20px"
+            android:layout_marginLeft="@dimen/dd_dimen_20px"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_cancle"
+            android:background="@drawable/master_top_bar_search"
+            android:drawableLeft="@mipmap/search"
+            android:paddingLeft="@dimen/dd_dimen_10px"
+            android:drawablePadding="@dimen/dd_dimen_20px"
+            android:textSize="@dimen/dd_dimen_30px"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/top_bar_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@+id/tv_cancle"
+            android:background="@drawable/master_top_bar_search"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/dd_dimen_20px"
+            android:layout_marginBottom="@dimen/dd_dimen_20px"
+            android:layout_marginTop="@dimen/dd_dimen_20px"
+            android:paddingBottom="@dimen/dd_dimen_10px"
+            android:paddingTop="@dimen/dd_dimen_10px">
+
+            <ImageView
+                android:id="@+id/top_bar_search_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dd_dimen_10px"
+                android:src="@mipmap/search" />
+
+            <TextView
+                android:id="@+id/tv_search_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dd_dimen_20px"
+                android:text="@string/text_top_search_go_hint"
+                android:textColor="@color/neu_666666"
+                android:textSize="@dimen/dd_dimen_24px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/title_bar_btn_selector"
+            android:gravity="center"
+            android:minHeight="@dimen/margin_48dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="@dimen/dd_dimen_30px"
+            android:paddingRight="@dimen/dd_dimen_30px"
+            android:paddingTop="0dp"
+            android:text="@string/label_title_bar_cancel"
+            android:textColor="@color/main"
+            android:textSize="@dimen/text_size_30px"
+            android:layout_alignParentRight="true"
+             />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_2px"
+            android:background="@color/divider"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

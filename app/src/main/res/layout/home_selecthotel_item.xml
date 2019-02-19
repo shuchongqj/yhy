@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_norm_ffffff">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/eventitem_iv_user"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dd_dimen_360px"
+            android:layout_marginBottom="@dimen/dd_dimen_5px"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:layout_marginTop="@dimen/dd_dimen_20px"
+            android:background="@mipmap/icon_default_310_180"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/eventitem_iv_user"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="26dp"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:alpha="0.5"
+            android:background="@drawable/shape_travevity_title_bg"
+
+            android:orientation="horizontal"
+            android:padding="@dimen/dd_dimen_10px">
+
+
+            <TextView
+                android:id="@+id/eventitem_tv_pice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="0"
+                android:textColor="@color/color_norm_ffffff"
+                android:textSize="@dimen/dd_dimen_34px" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dd_dimen_10px"
+
+                android:text="起"
+                android:textColor="@color/color_norm_ffffff"
+                android:textSize="@dimen/dd_dimen_20px" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/eventitem_iv_user"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/eventitem_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/dd_dimen_20px"
+                android:textColor="@color/color_norm_636363"
+                android:textSize="@dimen/dd_dimen_30px" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/eventitem_tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:layout_marginTop="@dimen/dd_dimen_20px"
+            android:textColor="@color/color_norm_bebebe"
+            android:textSize="@dimen/dd_dimen_30px" />
+
+        <TextView
+            android:id="@+id/eventitem_tv_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/eventitem_tv_message"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:drawableLeft="@mipmap/icon_love"
+            android:drawablePadding="@dimen/dd_dimen_10px"
+            android:text="0"
+            android:textColor="@color/color_norm_bebebe"
+            android:textSize="@dimen/dd_dimen_30px" />
+
+        <com.quanyan.yhy.ui.views.CustomerRatingBarGo
+            android:id="@+id/eventitem_tv_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/eventitem_tv_message"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:layout_toEndOf="@+id/eventitem_tv_message"
+            android:layout_toRightOf="@+id/eventitem_tv_message"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+</LinearLayout>

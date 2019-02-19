@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/line_overview_layout"
+        android:layout_width="@dimen/dd_dimen_375px"
+        android:background="@color/transparent_black_35"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|right"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_line_overview"/>
+
+        <include layout="@layout/base_listview"/>
+    </LinearLayout>
+
+</merge>

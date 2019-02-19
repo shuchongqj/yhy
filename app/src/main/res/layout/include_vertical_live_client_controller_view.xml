@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vertical_live_client_controller"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_440px"
+        android:background="@drawable/live_shade_down"
+        android:layout_alignParentBottom="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="50dp"
+            android:focusableInTouchMode="false"
+            android:background="@color/transparent"/>
+
+    <Button
+        android:id="@+id/btn_live_chart_open"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dd_dimen_20px"
+        android:layout_marginLeft="@dimen/dd_dimen_20px"
+        android:background="@drawable/live_icon_chat"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_chart_box"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/iv_edit_box"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_live_create_title_edit" />
+
+        <EditText
+            android:id="@+id/et_chat_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:hint="说点什么"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:maxLength="40"
+            android:maxLines="1"
+            android:textColor="@color/neu_333333"
+            android:textColorHint="@color/neu_999999"
+            android:textCursorDrawable="@drawable/default_et"
+            android:layout_marginRight="@dimen/dd_dimen_100px"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/send_message"
+            android:layout_width="@dimen/dd_dimen_100px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="发送" />
+    </RelativeLayout>
+
+</RelativeLayout>

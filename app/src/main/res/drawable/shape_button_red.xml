@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 圆角背景 白色 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <corners android:radius="@dimen/yhy_size_30px" />
+    <solid android:color="@color/white" />
+    <stroke
+        android:width="@dimen/yhy_size_0.5px"
+        android:color="@color/tab_unselect" />
+
+</shape>

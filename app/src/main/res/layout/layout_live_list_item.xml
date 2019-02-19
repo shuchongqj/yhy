@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_video"
+    android:layout_width="250dp"
+    android:layout_height="140dp"
+    android:background="@drawable/live_list_item_bg">
+
+    <com.newyhy.views.RoundImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/live_list_item_ivCover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:borderRadius="3dp"/>
+    
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@drawable/shadow"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/live_list_item_tvVideoType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@mipmap/commant_tag_video_yellow"
+        android:text="直播"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/live_list_item_tvAudienceNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/live_list_item_ivPlayVideo"
+        android:layout_alignLeft="@+id/live_list_item_tvVideoType"
+        android:drawableLeft="@mipmap/icon_read"
+        android:drawablePadding="6dp"
+        android:text="10712"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/live_list_item_tvVideoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/live_list_item_tvAudienceNum"
+        android:layout_alignLeft="@id/live_list_item_tvAudienceNum"
+        android:text="视频名称"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/live_list_item_ivPlayVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:src="@mipmap/video_icon_play_small" />
+</RelativeLayout>

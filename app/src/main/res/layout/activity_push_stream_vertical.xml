@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <com.videolibrary.widget.HorizontalVideoRootView
+        android:id="@+id/push_stream_root_view"
+        app:liveScreenStyle="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.videolibrary.widget.HorizontalVideoRootView>
+
+    <RelativeLayout
+        android:id="@+id/ac_push_stream_start_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/ac_push_stream_start"
+            android:layout_width="@dimen/dd_dimen_340px"
+            android:layout_height="@dimen/dd_dimen_80px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dd_dimen_56px"
+            android:background="@drawable/shape_publish_live_title_bg"
+            android:gravity="center"
+            android:text="发起直播"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dd_dimen_32px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ac_push_stream_start"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:background="@color/translucent_20_dark"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dd_dimen_30px"
+            android:paddingLeft="@dimen/dd_dimen_56px"
+            android:paddingRight="@dimen/dd_dimen_56px"
+            android:paddingTop="@dimen/dd_dimen_30px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="邀请好友看我直播"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dd_dimen_32px" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dd_dimen_54px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ac_push_stream_share_wx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_live_share_wechat_selector" />
+
+                <ImageView
+                    android:id="@+id/ac_push_stream_share_wx_friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dimen_30px"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_live_share_wechat_friends_selector" />
+
+                <ImageView
+                    android:id="@+id/ac_push_stream_share_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dimen_30px"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_live_share_qq_selector" />
+
+                <ImageView
+                    android:id="@+id/ac_push_stream_share_wb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dimen_30px"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_live_share_sina_selector" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ac_push_stream_close_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ac_push_stream_close_layout_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent_black_20"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/ac_push_stream_live_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="直播已结束"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/yhy_size_151px"
+                android:textSize="@dimen/yhy_size_30px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ac_push_stream_person_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/yhy_size_24px"
+                android:text="234"
+                android:textColor="@color/neu_ffaa00"
+                android:textSize="@dimen/dd_dimen_30px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ac_push_stream_view_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/yhy_size_12px"
+                android:text="观看人数"
+                android:textColor="@color/neu_999999"
+                android:textSize="@dimen/dd_dimen_24px" />
+
+            <TextView
+                android:id="@+id/tv_live_time_lower_3"
+                android:drawableLeft="@mipmap/attentiongray"
+                android:layout_width="@dimen/yhy_size_235px"
+                android:layout_marginTop="@dimen/yhy_size_37px"
+                android:text="  时长小于3分钟的直播暂不生成回放视频"
+                android:textColor="#999999"
+                android:visibility="invisible"
+                android:textSize="@dimen/yhy_size_12px"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/ac_push_stream_share_record"
+                android:layout_width="@dimen/dd_dimen_340px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/yhy_size_190px"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_marginRight="@dimen/dd_dimen_20px"
+                    android:layout_weight="1"
+                    android:background="@color/neu_666666" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分享回放"
+                    android:textColor="@color/neu_999999"
+                    android:textSize="@dimen/dd_dimen_24px" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/dd_dimen_20px"
+                    android:layout_weight="1"
+                    android:background="@color/neu_666666" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ac_push_stream_share_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dd_dimen_30px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ac_push_stream_close_share_wx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_live_share_wechat_selector_close" />
+
+                <ImageView
+                    android:id="@+id/ac_push_stream_close_share_wx_friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dimen_44px"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_live_share_wechat_friends_selector_close" />
+
+                <ImageView
+                    android:id="@+id/ac_push_stream_close_share_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dimen_44px"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_live_share_qq_selector_close" />
+
+                <ImageView
+                    android:id="@+id/ac_push_stream_close_share_wb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dimen_44px"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_live_share_sina_selector_close" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ac_push_stream_close"
+                android:layout_width="@dimen/dd_dimen_340px"
+                android:layout_height="@dimen/yhy_size_40px"
+                android:layout_marginTop="@dimen/dd_dimen_50px"
+                android:background="@drawable/shape_publish_live_title_bg"
+                android:gravity="center"
+                android:text="关闭"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dd_dimen_32px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

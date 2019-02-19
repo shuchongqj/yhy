@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/dd_dimen_30px"
+        android:paddingTop="@dimen/dd_dimen_30px">
+
+        <TextView
+            android:id="@+id/tv_master_consult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="蜜月之旅"
+            android:textColor="@color/neu_333333"
+            android:textSize="@dimen/text_size_30px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/view_master_consult_people_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1231"
+                android:textColor="@color/neu_ff9900"
+                android:textSize="@dimen/text_size_24px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人已咨询 >"
+                android:textColor="@color/neu_999999"
+                android:textSize="@dimen/text_size_24px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/dd_dimen_30px"
+        android:orientation="horizontal">
+
+        <com.quanyan.base.view.customview.NoScrollGridView
+            android:id="@+id/nsg_dest_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:cacheColorHint="#00000000"
+            android:gravity="left"
+            android:horizontalSpacing="@dimen/dd_dimen_20px"
+            android:listSelector="#00000000"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/dd_dimen_20px" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/select_linkman_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_100px"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:background="@android:color/white"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="更多咨询服务"
+                android:textColor="#666"
+                android:textSize="@dimen/dd_dimen_30px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dd_dimen_10px"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/arrow_go" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

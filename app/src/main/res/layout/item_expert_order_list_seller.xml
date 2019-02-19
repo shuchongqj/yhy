@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_expert_pic"
+            android:layout_width="@dimen/dd_dimen_60px"
+            android:layout_height="@dimen/dd_dimen_60px"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_default_avatar" />
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="商家名称"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/right_direct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/arrow_go" />
+
+        <TextView
+            android:id="@+id/tv_item_order_state_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="待确认"
+            android:textColor="@color/tomato"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <include layout="@layout/lin_expert_info_view"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50dp"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:background="@color/white"
+        android:gravity="right"
+
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/item_config_button"
+            android:layout_width="@dimen/margin_70dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/number_reduce_bg"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/label_btn_comment_list"
+            android:textColor="@color/tomato"
+            android:textSize="12dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</LinearLayout>

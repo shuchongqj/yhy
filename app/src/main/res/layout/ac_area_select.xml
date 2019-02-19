@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    
+     <!--<View style="@style/split_line"
+         android:id="@+id/tb_divider"></View>-->
+
+    <LinearLayout
+        android:id="@+id/ll_common_procnive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_common_address_province"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/neu_cccccc"
+            android:gravity="center_vertical"
+            android:minHeight="50dp"
+            android:paddingLeft="10dp"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_common_address_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/neu_999999"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:minHeight="50dp"
+            android:paddingLeft="10dp"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_commom_loading_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_common_procnive"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_loading_icon_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_loading_message_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="加载中..." />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_common_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_commom_loading_address"
+        android:divider="@color/view"
+        android:listSelector="@color/transparent"
+        android:dividerHeight="0.1px"
+        android:gravity="center_vertical" />
+</RelativeLayout>

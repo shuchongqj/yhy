@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/neu_f0f0f0" />
+
+    <RelativeLayout
+        android:id="@+id/badminton_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_main">
+
+        <TextView
+            style="@style/fontBlack_16"
+            android:text="@string/recommend_venue"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/common_arrow_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/common_divider" />
+
+    <LinearLayout
+        android:id="@+id/fragment_home_llVenue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.quanyan.base.view.customview.imgpager.ImgPagerView
+        android:id="@+id/home_court_banner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="996:240"
+        android:clickable="true" />
+    </android.support.constraint.ConstraintLayout>
+
+    <!--约战广场-->
+    <LinearLayout
+        android:id="@+id/llyt_invite_fight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:descendantFocusability="blocksDescendants">
+        <RelativeLayout
+            android:id="@+id/rlyt_invite_fight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_main">
+
+            <TextView
+                style="@style/fontBlack_16"
+                android:text="@string/invite_fight"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/common_arrow_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/common_divider" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rycv_invite_fight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/neu_f0f0f0" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/venue_sport_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_main">
+
+        <TextView
+            style="@style/fontBlack_16"
+            android:text="@string/venue_sport"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/common_arrow_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/common_divider" />
+
+    <LinearLayout
+        android:id="@+id/recomment_empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/start_sport_default_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@mipmap/sport_default_img" />
+
+        <TextView
+            style="@style/fontGrey_14"
+
+            android:text="@string/create_default_ind" />
+
+        <TextView
+            android:id="@+id/create_sport"
+            style="@style/fontRed_14"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/background_ying_red_circle_round"
+            android:text="@string/create_sport" />
+
+    </LinearLayout>
+</LinearLayout>

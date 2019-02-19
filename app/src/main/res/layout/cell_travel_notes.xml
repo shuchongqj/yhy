@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/dd_dimen_30px"
+              android:paddingRight="@dimen/dd_dimen_30px"
+              android:paddingTop="@dimen/dd_dimen_20px">
+
+    <com.quanyan.yhy.view.JustifyTextView
+        android:id="@+id/cell_travel_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:layout_marginBottom="@dimen/dd_dimen_20px"
+        android:textColor="@color/neu_999999"
+        android:textSize="@dimen/text_size_28px"
+        android:typeface="serif"/>
+
+    <include layout="@layout/no_scroll_gridview"/>
+
+    <TextView
+        android:id="@+id/cell_travel_detail_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dd_dimen_30px"
+        android:layout_marginBottom="@dimen/dd_dimen_24px"
+        android:drawableLeft="@mipmap/icon_startcity_label"
+        android:drawablePadding="@dimen/dd_dimen_10px"
+        android:textColor="@color/neu_999999"
+        android:textSize="@dimen/text_size_22px"/>
+</LinearLayout>

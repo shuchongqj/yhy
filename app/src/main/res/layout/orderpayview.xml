@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/order_pay_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dd_dimen_24px"
+        android:layout_marginTop="@dimen/dd_dimen_30px"
+        android:text="@string/order_paytitle"
+        android:textColor="@color/order_666666"
+        android:textSize="@dimen/dd_dimen_30px" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_2px"
+        android:layout_marginLeft="@dimen/dd_dimen_24px"
+        android:layout_marginTop="@dimen/dd_dimen_25px"
+        android:background="@color/orderline_e1e1e1" />
+
+    <LinearLayout
+        android:id="@+id/ll_paycontent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dd_dimen_90px" />
+
+</LinearLayout>

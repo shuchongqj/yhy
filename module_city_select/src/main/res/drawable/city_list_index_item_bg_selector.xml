@@ -1,0 +1,3 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/city_list_index_item_bg" android:state_selected="true" />
+</selector>

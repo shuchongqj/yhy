@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_guide_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="false"
+        android:scaleType="centerCrop"
+        android:focusable="true" />
+
+    <!--<TextView-->
+        <!--android:layout_width="180dp"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:id="@+id/go_btn"-->
+        <!--android:text="立即体验"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="88dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:gravity="center"-->
+        <!--android:background="@drawable/guide_go_bg"-->
+        <!--android:textColor="@color/red_ying"-->
+        <!--android:textSize="17sp"/>-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/go_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/go_btn"/>
+    <!--android:text="@string/label_btn_exp_now"-->
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/dd_dimen_20px"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:layout_marginBottom="@dimen/dd_dimen_20px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_word_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_50px"
+            android:background="@color/ac_bg_color"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/dd_dimen_20px"
+            android:text="@string/label_tag_hot_destination"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/dd_dimen_20px"
+            android:textColor="@color/neu_333333"
+            android:textSize="@dimen/text_size_28px" />
+
+        <com.quanyan.base.view.customview.NoScrollGridView
+            android:id="@+id/gv_hot_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:verticalSpacing="@dimen/dd_dimen_20px"
+            android:horizontalSpacing="@dimen/dd_dimen_10px"
+            android:scrollbars="none"
+            android:listSelector="@color/transparent">
+        </com.quanyan.base.view.customview.NoScrollGridView>
+
+    </LinearLayout>
+
+</LinearLayout>

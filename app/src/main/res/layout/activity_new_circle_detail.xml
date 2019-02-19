@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!--<com.quanyan.base.view.customview.pulltorefresh.PullToRefreshSticyView-->
+    <!--android:id="@+id/live_detail_sticklayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@id/id_stickynavlayout_topview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:descendantFocusability="blocksDescendants"-->
+    <!--android:orientation="vertical">-->
+
+    <!--&lt;!&ndash; <include layout="@layout/cell_live" />&ndash;&gt;-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dd_dimen_20px"-->
+    <!--android:background="@color/neu_f4f4f4" />-->
+    <!--</LinearLayout>-->
+
+    <!--<com.quanyan.base.view.customview.tabscrollindicator.SlidingTabLayout--><!--android:id="@id/id_stickynavlayout_indicator"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:background="#ffffffff"/>-->
+
+    <!--<android.support.v4.view.ViewPager--><!--android:id="@id/id_stickynavlayout_viewpager"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:background="@android:color/white"/>--><!--</com.quanyan.base.view.customview.pulltorefresh.PullToRefreshSticyView>-->
+    <com.quanyan.base.view.BaseNavView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+    </com.quanyan.base.view.BaseNavView>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/live_detail_bottom_comment_layout"
+        android:layout_below="@+id/title_view"
+        android:background="@color/white">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:elevation="0dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <LinearLayout
+                android:id="@+id/llyt_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:contentScrim="@color/white"
+                app:layout_scrollFlags="scroll">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/yhy_size_6px"
+                    android:layout_marginTop="@dimen/yhy_size_16px"
+                    android:background="@color/neu_f0f0f0" />
+            </LinearLayout>
+            <!--<android.support.design.widget.CollapsingToolbarLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:contentScrim="@color/white"-->
+                <!--app:layout_scrollFlags="scroll">-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/llyt_detail"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/dd_dimen_20px"-->
+                        <!--android:background="@color/neu_f4f4f4" />-->
+                <!--</LinearLayout>-->
+
+            <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tablayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/yhy_size_44px"
+                    android:background="@color/white"
+                    app:tabGravity="fill"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabMinWidth="@dimen/yhy_size_80px"
+                    app:tabMode="fixed">
+
+                </android.support.design.widget.TabLayout>
+
+                <TextView
+                    android:id="@+id/tv_browse_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:layout_marginRight="@dimen/yhy_size_15px"
+                    android:text="12345人浏览"
+                    android:textColor="@color/neu_999999"
+                    android:textSize="@dimen/yhy_size_13px"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/neu_e0e0e0" />
+
+            <!--ViewPager的fragment内必须有支持滚动的控件-->
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!--底部发送评论-->
+    <LinearLayout
+        android:id="@+id/live_detail_bottom_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/neu_e0e0e0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="@dimen/yhy_size_8px"
+            android:paddingLeft="@dimen/yhy_size_15px"
+            android:paddingRight="@dimen/yhy_size_15px"
+            android:paddingTop="@dimen/yhy_size_8px">
+
+            <LinearLayout
+                android:id="@+id/llyt_go_comment"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/yhy_size_31px"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/neu_f0f0f0">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/yhy_size_8px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_edit_text"
+                    android:layout_width="@dimen/yhy_size_16px"
+                    android:layout_height="@dimen/yhy_size_16px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/yhy_size_8px"
+                    android:drawablePadding="@dimen/yhy_size_13px"
+                    android:gravity="center_vertical"
+                    android:text="想说点什么？"
+                    android:textColor="@color/neu_cccccc"
+                    android:textSize="@dimen/yhy_size_14px" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llyt_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/yhy_size_35px"
+                android:paddingRight="@dimen/yhy_size_22px">
+
+                <ImageView
+                    android:layout_width="@dimen/yhy_size_18px"
+                    android:layout_height="@dimen/yhy_size_18px"
+                    android:src="@drawable/ic_show_comment_sv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="评论"
+                    android:textColor="@color/neu_696969"
+                    android:textSize="@dimen/yhy_size_12px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llyt_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/yhy_size_22px"
+                android:paddingRight="@dimen/yhy_size_18px">
+
+                <ImageView
+                    android:id="@+id/iv_praise"
+                    android:layout_width="@dimen/yhy_size_18px"
+                    android:layout_height="@dimen/yhy_size_18px"
+                    android:src="@drawable/bg_cell_live_like_selector" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点赞"
+                    android:textColor="@color/neu_696969"
+                    android:textSize="@dimen/yhy_size_12px" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_norm_f4f4f4"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/title_normal_item">
+
+    </include>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_360px"
+        android:background="@drawable/feedback_stroke_bg"
+        android:padding="@dimen/dd_dimen_2px"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginRight="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_60px">
+
+        <LinearLayout
+            android:id="@+id/ll_textlength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="@dimen/dd_dimen_10px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/add_feed_num_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0/300字"
+                android:background="@color/white"
+                android:textColor="@color/tv_color_grayBD"
+                android:textSize="@dimen/dd_dimen_24px" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/add_feed_content"
+            android:layout_above="@+id/ll_textlength"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="top"
+            android:padding="@dimen/dd_dimen_10px"
+            android:hint="请告诉我们你遇到的问题及想反馈的意见"
+            android:inputType="textMultiLine"
+            android:maxLength="300"
+            android:textColor="@color/tv_color_gray6"
+            android:textColorHint="@color/neu_999999"
+            android:textSize="@dimen/dd_dimen_30px" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/add_live_addlocation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_80px"
+        android:layout_marginTop="@dimen/dd_dimen_60px"
+        android:background="@drawable/feedback_stroke_bg"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dd_dimen_10px"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/dd_dimen_20px"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginRight="@dimen/dd_dimen_30px"
+        >
+
+        <EditText
+            android:id="@+id/add_feed_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:singleLine="true"
+            android:maxLength="40"
+            android:textColorHint="@color/neu_999999"
+            android:hint="请输入您的手机号或邮箱，以便我们与您联系"
+            android:textColor="@color/tv_color_gray6"
+            android:textSize="@dimen/dd_dimen_30px" />
+    </LinearLayout>
+
+</LinearLayout>

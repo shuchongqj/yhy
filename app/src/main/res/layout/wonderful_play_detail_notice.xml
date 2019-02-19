@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_20px"
+        android:background="@color/color_norm_f4f4f4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dd_dimen_30px">
+
+        <TextView
+            android:id="@+id/plane_hotel_set_detail_buyinfo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dd_dimen_20px"
+            android:text="@string/label_text_line_scenic_needknow"
+            android:textColor="@color/neu_666666"
+            android:textSize="@dimen/text_size_32px" />
+
+        <TableLayout
+            android:id="@+id/wonderful_play_detail_needknow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/plan_hotel_set_detail_purchase_notes_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dd_dimen_45px"
+            android:background="@drawable/bg_look_more"
+            android:paddingBottom="@dimen/dd_dimen_18px"
+            android:paddingLeft="@dimen/dd_dimen_45px"
+            android:paddingRight="@dimen/dd_dimen_45px"
+            android:paddingTop="@dimen/dd_dimen_18px"
+            android:text="查看更多"
+            android:textColor="@color/neu_666666"
+            android:textSize="@dimen/dd_dimen_24px" />
+    </LinearLayout>
+</LinearLayout>

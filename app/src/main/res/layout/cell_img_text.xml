@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_around_clubtype"
+              android:paddingTop="8dp"
+              android:paddingBottom="8dp"
+              android:paddingLeft="@dimen/dd_dimen_60px"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+    <View
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/cell_around_club_type_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/cell_around_club_type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="80dp"
+            android:layout_marginLeft="@dimen/dd_dimen_10px"
+            android:singleLine="true"
+            android:textColor="@color/tv_color_gray6"
+            android:textSize="@dimen/text_size_28px"/>
+    </LinearLayout>
+
+</LinearLayout>

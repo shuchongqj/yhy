@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_hall"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_norm_f4f4f4"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/sm_action_bar_panel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/ac_title_bg_color">
+
+            <!-- 左边的button区域 -->
+
+            <LinearLayout
+                android:id="@+id/sm_title_bar_left_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <!-- 左边的文本button -->
+
+
+                <!-- 左边的图片button -->
+
+                <ImageView
+                    android:id="@+id/sm_titile_bar_left_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:background="@drawable/title_bar_btn_selector"
+                    android:paddingLeft="@dimen/title_bar_left_icon_padding_left"
+                    android:paddingRight="@dimen/title_bar_left_icon_padding_right"
+                    android:scaleType="center"
+                    android:src="@mipmap/arrow_back_gray"
+                    />
+
+
+            </LinearLayout>
+
+            <!-- 右边的button区域 -->
+
+            <LinearLayout
+                android:id="@+id/sm_title_bar_right_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- 右边的文本button -->
+
+                <TextView
+                    android:id="@+id/bh_title_bar_btn_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="48dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="取消"
+                    android:textColor="@color/title_right_btn_text_color"
+                    android:textSize="18sp" />
+
+                <!-- 右边的图片button -->
+
+
+            </LinearLayout>
+
+            <!-- 中间的文本标题 -->
+
+            <LinearLayout
+                android:id="@+id/sm_title_content_panel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+android:layout_marginLeft="@dimen/dd_dimen_10px"
+                android:layout_toLeftOf="@+id/sm_title_bar_right_panel"
+                android:layout_toRightOf="@+id/sm_title_bar_left_panel"
+
+
+                android:gravity="center">
+
+
+                <EditText
+                    android:id="@+id/bh_title_bar_searchbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_80px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@mipmap/acm_inputbox"
+                    android:completionThreshold="1"
+                    android:drawableLeft="@mipmap/search"
+                    android:drawablePadding="10dp"
+
+                    android:dropDownVerticalOffset="1.0dip"
+                    android:editable="false"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="输入您感兴趣的目的地"
+
+
+                    android:inputType="text|textAutoComplete"
+                    android:maxLength="20"
+
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scaleType="centerInside"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dd_dimen_30px"
+
+                    />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View style="@style/split_line" />
+
+
+    </LinearLayout>
+
+    <ListView
+
+        android:id="@+id/plv_sample"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#00000000"
+
+        android:focusable="true"
+        android:listSelector="#00000000"
+
+        android:scrollbars="none" />
+
+</LinearLayout>

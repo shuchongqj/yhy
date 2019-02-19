@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_custom_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_dlg_bg"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_10dp"
+        android:paddingLeft="@dimen/dd_dimen_35px"
+        android:paddingRight="@dimen/dd_dimen_35px"
+        android:paddingTop="@dimen/margin_20dp">
+        <ImageView
+            android:id="@+id/iv_identify_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_identi_close" />
+
+        <TextView
+            android:id="@+id/msg_dlg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="请完善身份信息"
+            android:textColor="@color/neu_333333"
+            android:textSize="18sp"></TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dd_dimen_20px"
+            android:src="@mipmap/icon_indentify" />
+
+        <TextView
+            android:id="@+id/msg_dlg_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/dd_dimen_15px"
+            android:lineSpacingExtra="3dp"
+            android:text="请上传身份证照片 完善您的个人信息 以便于您更好的使用钱包功能。"
+            android:textColor="@color/neu_333333"
+            android:textSize="16sp"></TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_split_line_height"
+        android:background="@color/neu_ffaa00" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_5dp"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:divider="@drawable/divider_yellow"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/iv_identify_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="center"
+            android:minWidth="150dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="暂不升级"
+
+            android:textColor="@color/neu_ffaa00"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/iv_identify_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="center"
+            android:minWidth="150dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="前往升级"
+            android:textColor="@color/neu_ffaa00"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

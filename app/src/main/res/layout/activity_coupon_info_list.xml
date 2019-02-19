@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neu_f4f4f4"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.quanyan.yhy.ui.discovery.view.SimpleViewPagerIndicator
+            android:id="@+id/coupon_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_88px"
+            android:background="#ffffffff"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/coupon_tab_bar"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+        <FrameLayout
+            android:id="@+id/frame_layout_merchant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"></FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

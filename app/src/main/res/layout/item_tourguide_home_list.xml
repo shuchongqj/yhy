@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_recommend_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_tourguide_home_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dd_dimen_360px"
+                android:background="@mipmap/icon_default_750_420"
+                android:scaleType="centerCrop" />
+            <RelativeLayout
+                android:id="@+id/relativeLayout8"
+                android:layout_width="match_parent"
+                android:alpha="0.3"
+                android:layout_height="@dimen/dd_dimen_360px"
+                android:background="@color/no_color_b0000000"
+                >
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/iv_tourguide_home_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/text_third"
+                    android:textSize="@dimen/text_size_36px" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_tourguide_home_title"
+                    android:layout_marginLeft="@dimen/dd_dimen_30px"
+                    android:layout_marginRight="@dimen/dd_dimen_30px"
+                    android:layout_marginTop="@dimen/dd_dimen_20px"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        style="@style/split_line"
+                        android:layout_width="@dimen/dd_dimen_60px"
+                        android:layout_height="@dimen/dd_dimen_1px"
+                        android:background="@color/White"></View>
+
+                    <TextView
+                        android:id="@+id/iv_tourguide_home_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/dd_dimen_10px"
+                        android:layout_marginRight="@dimen/dd_dimen_10px"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/text_third"
+                        android:textSize="@dimen/text_size_28px" />
+
+                    <View
+                        style="@style/split_line"
+                        android:layout_width="@dimen/dd_dimen_60px"
+                        android:layout_height="@dimen/dd_dimen_1px"
+                        android:background="@color/White"></View>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_tourguide_home_img"
+                android:paddingTop="@dimen/dd_dimen_50px">
+                <TextView
+                    android:id="@+id/iv_tourguide_home_audience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_tourguide_black_round"
+                    android:drawableLeft="@mipmap/icon_tourguide_headset"
+                    android:drawablePadding="@dimen/text_size_10px"
+                    android:maxWidth="@dimen/dd_dimen_190px"
+                    android:paddingBottom="@dimen/dd_dimen_10px"
+                    android:paddingLeft="@dimen/dd_dimen_20px"
+
+                    android:paddingRight="@dimen/dd_dimen_20px"
+                    android:paddingTop="@dimen/dd_dimen_10px"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dd_dimen_24px" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <View
+            style="@style/split_line"
+            android:layout_height="@dimen/dd_dimen_20px"
+            android:background="@color/White"></View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_recommend_nodata_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dd_dimen_100px"
+        android:paddingLeft="@dimen/dd_dimen_40px"
+        android:paddingRight="@dimen/dd_dimen_40px"
+        android:paddingTop="@dimen/dd_dimen_100px"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/item_recommend_nodata_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/error_empty_icon" />
+
+        <TextView
+            android:id="@+id/item_recommend_nodata_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dd_dimen_20px"
+            android:textColor="@color/neu_999999"
+            android:textSize="@dimen/text_size_30px" />
+    </LinearLayout>
+
+</LinearLayout>

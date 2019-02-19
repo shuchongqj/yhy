@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_ability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dd_dimen_30px"
+        android:paddingLeft="@dimen/dd_dimen_40px"
+        android:paddingRight="@dimen/dd_dimen_30px"
+        android:paddingTop="@dimen/dd_dimen_30px">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="机场接送"
+            android:textColor="@color/color_norm_636363"
+            android:textSize="@dimen/dd_dimen_30px" />
+
+
+        <ImageView
+            android:id="@+id/iv_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:src="@mipmap/ic_checked" />
+    </LinearLayout>
+
+    <View
+        style="@style/split_line"
+        android:layout_marginLeft="@dimen/dd_dimen_40px"
+        android:layout_marginRight="@dimen/dd_dimen_30px" />
+</LinearLayout>

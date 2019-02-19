@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+    
+    <!--Search-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/yhy_size_42px"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/yhy_size_15px"
+        android:layout_marginRight="@dimen/yhy_size_15px"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_circle_search_bar">
+
+            <ImageView
+                android:id="@+id/icon_search"
+                android:layout_width="@dimen/yhy_size_14px"
+                android:layout_height="@dimen/yhy_size_14px"
+                android:layout_marginTop="@dimen/yhy_size_1px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/yhy_size_12px"
+                android:src="@drawable/ic_search"/>
+
+            <TextView
+                android:id="@+id/search"
+                android:layout_toRightOf="@id/icon_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/yhy_size_14px"
+                android:textColor="@color/shape_line"
+                android:text="@string/search_1"
+                android:background="@color/transparent"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/yhy_size_42px">
+
+            <ImageView
+                android:id="@+id/im_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/icon_message" />
+
+            <TextView
+                android:id="@+id/message_num"
+                android:layout_toRightOf="@id/im_icon"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_ying_red_circle_fill"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="8dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--Indicator-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/tab_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/yhy_size_40px"
+            app:xTabMode="scrollable"
+            app:xTabTextSelectedBold="true"
+            app:xTabIndicatorColor="@color/red_win"
+            app:xTabIndicatorHeight="@dimen/yhy_size_3px"
+            app:xTabIndicatorWidth="25dp"
+            app:xTabSelectedTextColor="@color/tab_selected"
+            app:xTabTextColor="@color/black"
+            app:xTabTextSize="@dimen/yhy_size_16px"
+            app:xTabSelectedTextSize="@dimen/yhy_size_17px"
+            app:xTabDisplayNum="70"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/yhy_size_0.5px"
+        android:background="@color/neu_e0e0e0"/>
+
+    <!--ViewPager-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_circle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ac_bg_color">
+
+    <TextView
+        android:id="@+id/tv_choose_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/dd_dimen_30px"
+        android:text="@string/label_btn_send"
+        android:textColor="@color/neu_333333"
+        android:textSize="@dimen/dd_dimen_32px"
+        android:visibility="gone" />
+
+    <GridView
+        android:id="@+id/ngv_video_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dd_dimen_30px"
+        android:columnWidth="@dimen/dd_dimen_162px"
+        android:gravity="left"
+        android:layout_above="@+id/tv_choose_video"
+        android:horizontalSpacing="@dimen/dd_dimen_16px"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:background="@color/ac_bg_color"
+        android:verticalSpacing="@dimen/dd_dimen_20px">
+
+    </GridView>
+
+</RelativeLayout>

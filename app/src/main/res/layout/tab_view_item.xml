@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal|bottom">
+
+    <TextView
+        android:id="@+id/tab_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/yhy_size_12px"
+        android:textColor="@color/color_tab_text"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/yhy_size_14px"
+        tools:text="热门热门" />
+
+    <View
+        android:layout_width="@dimen/yhy_size_25px"
+        android:layout_height="@dimen/yhy_size_2px"
+        android:layout_below="@+id/tab_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/yhy_size_10px"
+        android:background="@drawable/tab_indicator_selector" />
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <!--Search-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/yhy_size_42px"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/yhy_size_15px"
+        android:layout_marginRight="@dimen/yhy_size_10px"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/yhy_size_10px"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_circle_search_bar">
+
+            <ImageView
+                android:id="@+id/icon_search"
+                android:layout_width="@dimen/yhy_size_14px"
+                android:layout_height="@dimen/yhy_size_14px"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/yhy_size_1px"
+                android:layout_marginLeft="@dimen/yhy_size_12px"
+                android:src="@drawable/ic_search"/>
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_toRightOf="@id/icon_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/yhy_size_6px"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/yhy_size_14px"
+                android:imeOptions="actionSearch"
+                android:textColor="@color/black"
+                android:hint="@string/search_1"
+                android:textColorHint="@color/live_text_color"
+                android:background="@color/transparent" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="@dimen/yhy_size_42px"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/search_cancel"
+            android:padding="@dimen/yhy_size_5px"
+            android:textColor="@color/text_focus_color"
+            android:textSize="@dimen/yhy_size_15px"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_video_replay_bg_img_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_200px">
+
+        <ImageView
+            android:id="@+id/item_video_replay_bg_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_gradient_white_black"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/item_video_replay_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@android:color/white"
+                android:textSize="9sp"/>
+
+            <TextView
+                android:id="@+id/item_video_replay_look_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/item_video_replay_look_num_label"
+                android:layout_alignBottom="@id/item_video_replay_nickname"
+                android:textColor="@android:color/white"
+                android:textSize="8sp"/>
+
+            <TextView
+                android:id="@+id/item_video_replay_look_num_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/item_video_replay_nickname"
+                android:layout_alignParentRight="true"
+                android:textColor="@android:color/white"
+                android:text="看过"
+                android:textSize="8sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_video_play_grid_item"/>
+
+        <TextView
+            android:id="@+id/item_video_replay_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/neu_333333"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+</LinearLayout>

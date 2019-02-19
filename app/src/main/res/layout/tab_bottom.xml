@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:orientation="horizontal"
+    android:id="@+id/ll">
+
+    <LinearLayout
+        android:id="@+id/ll_home_court"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/tab_bar_main_page" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主场"
+            android:textSize="10dp"
+            android:textColor="@color/tab_bar_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sport"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/tab_bar_club" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运动"
+            android:textSize="10dp"
+            android:textColor="@color/tab_bar_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <com.newyhy.boom.MyBoomMenuButton
+            android:id="@+id/main_tab_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:bmb_buttonEnum="textOutsideCircle"
+            app:bmb_piecePlaceEnum="piecePlace_share"
+            app:bmb_buttonPlaceEnum="buttonPlace_custom"
+            app:bmb_showMoveEaseEnum="outExpo"
+            app:bmb_showScaleEaseEnum="outExpo"
+            app:bmb_showRotateEaseEnum="outExpo"
+            app:bmb_hideMoveEaseEnum="inExpo"
+            app:bmb_hideScaleEaseEnum="inExpo"
+            app:bmb_boomInWholeScreen="true"
+            app:bmb_hideRotateEaseEnum="inExpo"
+            app:bmb_dotRadius="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:src="@mipmap/main_bottom_create" />
+
+        </com.newyhy.boom.MyBoomMenuButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_circle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/tab_bar_discover" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="圈子"
+            android:textSize="10dp"
+            android:textColor="@color/tab_bar_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_person"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_person"
+                android:layout_width="24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="24dp"
+                android:src="@drawable/tab_bar_personal_center" />
+
+            <ImageView
+                android:id="@+id/dot_person"
+                android:layout_width="@dimen/dd_dimen_20px"
+                android:layout_height="@dimen/dd_dimen_20px"
+                android:layout_alignLeft="@id/img_person"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/jkt_move_warning1"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_below="@id/img_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="我的"
+                android:textSize="10dp"
+                android:textColor="@color/tab_bar_text_color" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

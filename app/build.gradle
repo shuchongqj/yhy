@@ -1,0 +1,277 @@
+apply plugin: 'com.android.application'
+apply plugin: 'newlens'
+apply plugin: 'walle'
+apply plugin: 'com.alibaba.arouter'
+
+android {
+    useLibrary 'org.apache.http.legacy'
+
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        applicationId "com.quncao.lark"
+        versionCode 30208
+        versionName '3.2.5'
+        multiDexEnabled true //启用多dex打包
+
+
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a"
+        }
+        manifestPlaceholders = [
+                PUSH_PROVIDER   : "downloads.com.quncao.lark.debug",
+                BAIDU_KEY       : "B2dGs75tSowbqcHQENj7rGn2",
+                LARK_ENVIRONMENT: 0,
+                PACKAGE_NAME    : applicationId
+        ]
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+
+    dexOptions {
+        preDexLibraries = false //关闭预编译
+        javaMaxHeapSize "4g" //设置虚拟机堆内存空间大小,避免在编译期间内存溢出
+    }
+
+    //签名
+    signingConfigs {
+        release {
+            storeFile file("quncaotech.keystore")
+            storePassword "123456"
+            keyAlias "quncaotech"
+            keyPassword "123456"
+        }
+    }
+    repositories {
+        flatDir {
+//            dirs 'libs'
+            dirs '../qupai/libs', 'libs'
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            // 混淆文件的位置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+            // 移除无用的resource文件
+            shrinkResources false
+            //Zipalign优化
+            signingConfig signingConfigs.release
+            zipAlignEnabled true
+            buildConfigField("boolean", "HTTPS", "false")
+        }
+        release {
+            // 是否进行混淆
+            minifyEnabled true
+            // 混淆文件的位置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+            // 移除无用的resource文件
+            shrinkResources true
+            //Zipalign优化
+            zipAlignEnabled true
+            signingConfig signingConfigs.release
+            buildConfigField("boolean", "HTTPS", "false")
+
+        }
+    }
+
+    //移除lint检查的error
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+
+    flavorDimensions 'default'
+
+    productFlavors {
+
+        //开发环境
+        develop {
+            dimension 'default'
+            buildConfigField "int", "ENV_TYPE", "1"
+            targetSdkVersion 22
+            manifestPlaceholders = [
+                    app_name     : "鹰和鹰开发版",
+                    XG_ACCESS_ID : "2100295007",
+                    XG_ACCESS_KEY: "ABL5J8MP883Z",
+                    XG_MI_APP_ID : "2882303761517418091",
+                    XG_MI_APP_KEY : "5791741816091",
+                    XG_MZ_APP_ID : "114049",
+                    XG_MZ_APP_KEY : "7b5742bc23444ae3a4c0850044c47a20",
+                    WEB_API_PUBLIC_KEY : "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC8jbOIdkjYxK4LiyxU14B/FG5iXF6GlKMIUvFgSJuclpBcnyY0Tgc+aAlRBohR4hK5TzceljsSsq4B+v3yfb+QA3rsw8TU2vJ3xmSZc1/DmIxc/6Me8LNb6g+PLpTEn1FE8XYcPNg7rfyIgTkHhRWuul/CmJ2CGtOBvIPOXn0QTwIDAQAB",
+                    WEB_API_URL : "http://apialpha.yingheying.com/m.api",
+                    WEB_LOG_API_URL : "http://logtest.yingheying.com:8080/log.gif",
+                    IMAGE_URL : "http://imgdatabasetest.yingheying.com/",
+                    HW_APPID        : "10405445"
+
+            ]
+        }
+        //测试环境
+        check {
+            dimension 'default'
+            buildConfigField "int", "ENV_TYPE", "2"
+            targetSdkVersion 22
+            manifestPlaceholders = [
+                    app_name     : "鹰和鹰测试版",
+                    XG_ACCESS_ID : "2100295007",
+                    XG_ACCESS_KEY: "ABL5J8MP883Z",
+                    XG_MI_APP_ID : "2882303761517418091",
+                    XG_MI_APP_KEY : "5791741816091",
+                    XG_MZ_APP_ID : "114049",
+                    XG_MZ_APP_KEY : "7b5742bc23444ae3a4c0850044c47a20",
+                    WEB_API_PUBLIC_KEY : "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC8jbOIdkjYxK4LiyxU14B/FG5iXF6GlKMIUvFgSJuclpBcnyY0Tgc+aAlRBohR4hK5TzceljsSsq4B+v3yfb+QA3rsw8TU2vJ3xmSZc1/DmIxc/6Me8LNb6g+PLpTEn1FE8XYcPNg7rfyIgTkHhRWuul/CmJ2CGtOBvIPOXn0QTwIDAQAB",
+                    WEB_API_URL : "http://apitest.yingheying.com/m.api",
+                    WEB_LOG_API_URL : "http://logtest.yingheying.com:8080/log.gif",
+                    IMAGE_URL : "http://imgdatabasetest.yingheying.com/",
+                    HW_APPID        : "10405445"
+
+            ]
+        }
+
+        // 预发布环境
+        preBuild {
+            dimension 'default'
+            buildConfigField "int", "ENV_TYPE", "3"
+            targetSdkVersion 22
+            manifestPlaceholders = [
+                    app_name     : "鹰和鹰测试",
+                    XG_ACCESS_ID : "2100295007",
+                    XG_ACCESS_KEY: "ABL5J8MP883Z",
+                    XG_MI_APP_ID : "2882303761517418091",
+                    XG_MI_APP_KEY : "5791741816091",
+                    XG_MZ_APP_ID : "114049",
+                    XG_MZ_APP_KEY : "7b5742bc23444ae3a4c0850044c47a20",
+                    WEB_API_PUBLIC_KEY : "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDO7neDJKsm3BYwzLtU+2XtrIwheVZpaSLw/p2CNNCep70UDRCjLC1YxzzCcmaKHftb2z21eYes6THcw1yBsh0GsLVT/mgawpMfeDgdAj0abapSmqO5leCAnepesKNwe4AXV+pundefgBobt5gd0qLVnS5KCUnXiBGLOwQmjep/MwIDAQAB",
+                    WEB_API_URL : "http://apipre.yingheying.com/m.api",
+                    WEB_LOG_API_URL : "http://logtest.yingheying.com:8080/log.gif",
+                    IMAGE_URL : "http://imgdatabase.yingheying.com/",
+                    HW_APPID        : "10405445"
+            ]
+        }
+
+        //生产环境
+        product {
+            dimension 'default'
+            buildConfigField "int", "ENV_TYPE", "4"
+            targetSdkVersion 22
+            manifestPlaceholders = [
+                    app_name: "鹰和鹰",
+                    XG_ACCESS_ID : "2100294987",
+                    XG_ACCESS_KEY: "AN39HUK447QL",
+                    XG_MI_APP_ID : "2882303761517418091",
+                    XG_MI_APP_KEY : "5791741816091",
+                    XG_MZ_APP_ID : "114049",
+                    XG_MZ_APP_KEY : "7b5742bc23444ae3a4c0850044c47a20",
+                    WEB_API_PUBLIC_KEY : "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDO7neDJKsm3BYwzLtU+2XtrIwheVZpaSLw/p2CNNCep70UDRCjLC1YxzzCcmaKHftb2z21eYes6THcw1yBsh0GsLVT/mgawpMfeDgdAj0abapSmqO5leCAnepesKNwe4AXV+pundefgBobt5gd0qLVnS5KCUnXiBGLOwQmjep/MwIDAQAB",
+                    WEB_API_URL : "http://api.yingheying.com/m.api",
+                    WEB_LOG_API_URL : "http://applog.yingheying.com/log.gif",
+                    IMAGE_URL : "http://imgdatabase.yingheying.com/",
+                    HW_APPID        : "10405445"
+
+            ]
+        }
+
+
+    }
+
+    packagingOptions { //打包时排除的内容
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+
+}
+
+walle {
+    apkOutputFolder = new File("${project.buildDir}/outputs/channels")
+    apkFileNameFormat = '${appName}-${channel}-${buildType}-${versionName}.apk'
+    channelFile = new File("${project.getProjectDir()}/channel")
+}
+
+afterEvaluate {
+    tasks.matching {
+        it.name.startsWith('dex')
+    }.each { dx ->
+        if (dx.additionalParameters == null) {
+            dx.additionalParameters = []
+        }
+        dx.additionalParameters += '--multi-dex'
+    }
+}
+configurations {
+    sshAntTask
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation rootProject.ext.dependencies.constraint
+    implementation rootProject.ext.dependencies.cardviewV7
+    implementation rootProject.ext.dependencies.recyclerview
+    implementation rootProject.ext.dependencies.appcompatV7
+    implementation rootProject.ext.dependencies.supportV4
+    implementation rootProject.ext.dependencies.supportV13
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.google.guava:guava:22.0'
+    implementation 'com.github.lzyzsd:jsbridge:1.0.4'
+    implementation 'com.tencent.bugly:crashreport:2.6.6'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.38'
+    annotationProcessor 'com.google.auto.factory:auto-factory:1.0-beta2'
+    implementation 'com.alibaba:arouter-api:1.3.1'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.1.4'
+    implementation 'com.github.ksoichiro:android-observablescrollview:1.6.0'
+    //SmartRefreshLayout
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-5'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+    implementation 'com.meituan.android.walle:library:1.1.6'
+    implementation 'com.google.zxing:core:3.3.1'
+    implementation 'org.quanqi:CircularProgress:1.0.2'
+    implementation 'com.androidkun:XTabLayout:1.1.4'
+    implementation files('libs/umeng-onlineconfig_v1.0.0.jar')
+    implementation files('libs/SocialSDK_QQ_Full.jar')
+    implementation files('libs/open_sdk_r5923_lite.jar')
+    implementation files('libs/alipaySdk-20180403.jar')
+    implementation files('libs/wcs-android-sdk-1.6.4.jar')
+    implementation(name: 'LiteAVSDK_Smart_4.7.4395', ext: 'aar')
+    implementation project(':libservice')
+    implementation project(':libuser')
+    implementation project(':libimagecrop')
+    implementation project(':libcommon')
+    implementation project(':libpulltorefresh')
+    implementation project(':libgestureimageview')
+    implementation project(':libanalysis')
+    implementation project(':libstream')
+    implementation project(':libboombutton')
+    implementation project(':liblocation')
+    implementation project(':libimageloader')
+    implementation project(':librouter')
+    implementation project(':libnetwork')
+    implementation project(':module_push')
+    implementation project(':module_topic')
+    implementation project(':module_ui_common')
+    implementation project(':module_city_select')
+//    implementation project(':module_sport')
+}

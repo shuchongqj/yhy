@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_release_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dd_dimen_360px"
+                android:background="@mipmap/icon_default_750_360"
+                android:scaleType="centerCrop" />
+
+            <com.quanyan.yhy.ui.servicerelease.view.TextAndTextView
+                android:id="@+id/tat_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.quanyan.yhy.ui.servicerelease.view.TextAndTextView>
+
+            <com.quanyan.yhy.ui.servicerelease.view.TextAndEditView
+                android:id="@+id/tae_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.quanyan.yhy.ui.servicerelease.view.TextAndEditView>
+
+            <com.quanyan.yhy.ui.views.AppSettingItem
+                android:id="@+id/asi_destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.quanyan.yhy.ui.views.AppSettingItem>
+
+            <com.quanyan.yhy.ui.views.AppSettingItem
+                android:id="@+id/asi_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.quanyan.yhy.ui.views.AppSettingItem>
+
+            <include layout="@layout/lineorder_numchoose_item"></include>
+
+            <include layout="@layout/item_price_release"></include>
+
+            <com.quanyan.yhy.ui.views.AppSettingItem
+                android:id="@+id/asi_picture_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.quanyan.yhy.ui.views.AppSettingItem>
+
+            <com.quanyan.yhy.ui.views.AppSettingItem
+                android:id="@+id/asi_rule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.quanyan.yhy.ui.views.AppSettingItem>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_release"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_96px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ac_title_bg_color"
+        android:gravity="center"
+        android:padding="@dimen/margin_10dp"
+        android:text="@string/label_btn_publish"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_36px"></TextView>
+</RelativeLayout>
+

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/neu_cccccc"
+        android:paddingBottom="@dimen/dd_dimen_20px"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingRight="@dimen/dd_dimen_30px"
+        android:paddingTop="@dimen/dd_dimen_20px"
+        android:id="@+id/tv_refund_desc"
+        android:text="@string/unsubscribe_rules"
+        android:textColor="@color/neu_666666"
+        android:textSize="@dimen/dd_dimen_20px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/neu_f4f4f4"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dd_dimen_28px"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingRight="@dimen/dd_dimen_30px"
+        android:paddingTop="@dimen/dd_dimen_20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reminder"
+            android:textColor="@color/neu_666666"
+            android:textSize="@dimen/dd_dimen_22px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dd_dimen_20px"
+            android:layout_marginTop="@dimen/dd_dimen_10px"
+            android:text="@string/hotel_order_reminder"
+            android:textColor="@color/neu_666666"
+            android:textSize="@dimen/dd_dimen_20px" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_pay_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dd_dimen_16px"
+                    android:textColor="@color/neu_666666"
+                    android:textSize="@dimen/dd_dimen_20px" />
+
+                <TextView
+                    android:id="@+id/tv_delivery_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dd_dimen_10px"
+                    android:textColor="@color/neu_666666"
+                    android:textSize="@dimen/dd_dimen_20px" />
+
+                <TextView
+                    android:id="@+id/tv_finish_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dd_dimen_10px"
+                    android:textColor="@color/neu_666666"
+                    android:textSize="@dimen/dd_dimen_20px" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_refund"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_button_white"
+                android:paddingBottom="@dimen/dd_dimen_10px"
+                android:paddingLeft="@dimen/dd_dimen_20px"
+                android:paddingRight="@dimen/dd_dimen_20px"
+                android:paddingTop="@dimen/dd_dimen_10px"
+                android:text="@string/contact_merchant"
+                android:textColor="@color/neu_666666"
+                android:textSize="@dimen/text_size_24px" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

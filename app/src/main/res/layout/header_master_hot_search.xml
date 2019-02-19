@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dd_dimen_30px"
+   >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dd_dimen_26px"
+        android:text="@string/label_master_hot_search"
+        android:textColor="@color/neu_999999"/>
+
+    <com.quanyan.base.view.customview.NoScrollGridView
+        android:id="@+id/gv_hot_master_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dd_dimen_30px"
+        android:gravity="left"
+        android:horizontalSpacing="@dimen/dd_dimen_17px"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/dd_dimen_20px">
+
+    </com.quanyan.base.view.customview.NoScrollGridView>
+
+    <TextView
+        android:id="@+id/gv_hot_master_search_history_tv"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/dd_dimen_60px"
+        android:textSize="@dimen/dd_dimen_26px"
+        android:layout_height="wrap_content"
+        android:text="@string/label_master_history_search"
+        android:textColor="@color/neu_999999"/>
+</LinearLayout>

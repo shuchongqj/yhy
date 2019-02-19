@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/dd_dimen_72px"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_bottom_index"
+        android:layout_width="@dimen/dd_dimen_100px"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:text="A"
+        android:paddingTop="@dimen/dd_dimen_10px"
+        android:paddingBottom="@dimen/dd_dimen_10px"
+        android:textSize="@dimen/dd_dimen_26px"
+        android:textColor="@color/neu_666666"/>
+
+    <com.quanyan.yhy.view.HomeMenu_GridView
+        android:id="@+id/hg_bottom_cityname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="@dimen/dd_dimen_10px"
+        android:listSelector="@color/transparent"
+        android:numColumns="4">
+
+    </com.quanyan.yhy.view.HomeMenu_GridView>
+
+</LinearLayout>

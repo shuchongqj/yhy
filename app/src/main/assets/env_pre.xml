@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 预发环境 -->
+<envs>
+    <env>
+        <appId>1</appId>
+        <domainId>1000</domainId>
+        <logUrl> http://logpre.yingheying.com/a.gif</logUrl>
+        <apiUrl>http://apipre.yingheying.com/m.api</apiUrl>
+        <httpsApiUrl>http://apipre.yingheying.com/m.api</httpsApiUrl>
+        <imageUrl>http://imgdatabase.yingheying.com/</imageUrl>
+        <uploadUrl>http://filepre.yingheying.com/file/upload</uploadUrl>
+        <publicKey>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDO7neDJKsm3BYwzLtU+2XtrIwheVZpaSLw/p2CNNCep70UDRCjLC1YxzzCcmaKHftb2z21eYes6THcw1yBsh0GsLVT/mgawpMfeDgdAj0abapSmqO5leCAnepesKNwe4AXV+pundefgBobt5gd0qLVnS5KCUnXiBGLOwQmjep/MwIDAQAB</publicKey>
+        <crashLogUrl>http://filepre.yingheying.com/file/upload</crashLogUrl>
+        <vodUrl>http://vodpre.yingheying.com/</vodUrl>
+
+        <!-- 默认的域  -->
+        <defaultDomain>.yingheying.com</defaultDomain>
+        <liveShareUrl>http://mpre.yingheying.com/wxlive/#!/live/</liveShareUrl>
+    </env>
+</envs>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_norm_f4f4f4"
+            android:orientation="vertical">
+
+            <com.quanyan.yhy.ui.views.AppSettingItem
+                android:id="@+id/mine_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+<!--
+            <com.quanyan.yhy.ui.views.AppSettingItem
+                android:id="@+id/settings_common_visitors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+-->
+            <com.quanyan.yhy.ui.views.AppSettingItem
+                android:id="@+id/settings_common_addresses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.quanyan.yhy.ui.views.AppSettingItem
+                android:id="@+id/settings_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dd_dimen_20px"/>
+
+            <com.quanyan.yhy.ui.views.AppSettingItem
+                android:id="@+id/settings_im_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dd_dimen_20px" />
+
+            <com.quanyan.yhy.ui.views.AppSettingItem
+                android:id="@+id/settings_tel"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.quanyan.yhy.ui.views.AppSettingItem
+                android:id="@+id/settings_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.quanyan.yhy.ui.views.AppSettingItem
+                android:id="@+id/settings_upgrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.quanyan.yhy.ui.views.AppSettingItem
+                android:id="@+id/settings_custom_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.quanyan.yhy.ui.views.AppSettingItem
+                android:id="@+id/settings_clear_cache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dd_dimen_20px"/>
+
+            <com.quanyan.yhy.ui.views.AppSettingItem
+                android:id="@+id/settings_about_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.quanyan.yhy.ui.views.AppSettingItem
+                android:id="@+id/settings_prasize_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dd_dimen_30px"
+            android:layout_marginTop="@dimen/dd_dimen_30px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/settings_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:layout_marginRight="@dimen/dd_dimen_30px"
+                android:background="@drawable/button_main_background_selector"
+                android:gravity="center"
+                android:padding="@dimen/margin_10dp"
+                android:text="@string/label_btn_logout"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dd_dimen_34px"/>
+            <!-- 只是为了测试切换环境使用 -->
+            <TextView
+                android:id="@+id/settings_switch_env"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:layout_marginRight="@dimen/dd_dimen_30px"
+                android:layout_marginTop="@dimen/dd_dimen_10px"
+                android:background="@drawable/button_main_background_selector"
+                android:gravity="center"
+                android:padding="@dimen/margin_10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dd_dimen_34px"
+                android:visibility="gone"/>
+            <!-- 只是在测试显示imei -->
+            <TextView
+                android:id="@+id/settings_imei"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:layout_marginRight="@dimen/dd_dimen_30px"
+                android:layout_marginTop="@dimen/dd_dimen_10px"
+                android:background="@drawable/button_main_background_selector"
+                android:gravity="center"
+                android:padding="@dimen/margin_10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dd_dimen_34px"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

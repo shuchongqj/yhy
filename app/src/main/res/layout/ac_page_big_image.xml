@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:vp="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/black"
+             android:orientation="vertical">
+
+    <com.harwkin.nb.camera.PhotoViewGroupPager
+        android:id="@+id/vp_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"/>
+
+    <com.quanyan.base.view.customview.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/cpi_pictures_dot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"
+        vp:fillColor="@color/ac_title_bg_color"
+        vp:intervalDot="8dp"
+        vp:pageColor="@color/translucent_80_white"
+        vp:strokeWidth="0dp"/>
+
+    <TextView
+        android:id="@+id/vp_images_indicator_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="1/25"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_36px"
+        android:visibility="gone"/>
+</FrameLayout>

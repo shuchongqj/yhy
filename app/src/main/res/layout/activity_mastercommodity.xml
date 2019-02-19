@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:labelview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.quanyan.base.view.customview.stickyview.StickyNavLayout
+        android:id="@+id/clubs_detail_stickylayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@id/id_stickynavlayout_topview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/master_personal_topbg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dd_dimen_420px"
+                android:layout_marginBottom="20dp"
+                android:background="@mipmap/hotel_selecthome_childitem_bg"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/master_personal_head"
+                android:layout_width="@dimen/dd_dimen_96px"
+                android:layout_height="@dimen/dd_dimen_96px"
+                android:src="@mipmap/icon_default_128_128"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="148dp" />
+            <TextView
+                android:id="@+id/master_commodity_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/master_personal_head"
+                android:gravity="center_horizontal"
+                android:maxLength="15"
+                android:singleLine="true"
+                android:text="小明"
+                android:textColor="@color/title_middle_tv_text_color"
+                android:textSize="@dimen/dd_dimen_20px" />
+
+
+            <TextView
+                android:id="@+id/master_commodity_details_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/master_commodity_name"
+                android:layout_marginLeft="@dimen/dd_dimen_15px"
+                android:layout_marginRight="@dimen/dd_dimen_15px"
+                android:layout_marginTop="@dimen/dd_dimen_15px"
+                android:gravity="center"
+                android:text="3月3日，科考人员即将进入天坑探险。记者从广西河池市东兰县了解到，中国和来自法国的科考专家近日围绕东兰的地质资源开展了首次联合科考活动，探测地下洞穴长度达16.5公里，发现一座深度超过400米的天坑，为国内罕见。"
+                android:textColor="@color/title_middle_tv_text_color"
+                android:textSize="@dimen/dd_dimen_20px" />
+
+
+            <RelativeLayout
+                android:id="@+id/master_commodity_details_rl_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/master_commodity_details_name"
+                android:layout_marginLeft="@dimen/dd_dimen_15px"
+                android:layout_marginRight="@dimen/dd_dimen_15px"
+                android:layout_marginTop="@dimen/dd_dimen_15px">
+
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/master_commodity_price"
+                    android:layout_toLeftOf="@+id/master_commodity_price"
+                    android:gravity="center_horizontal"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:text="￥"
+                    android:textColor="@color/title_middle_tv_text_color"
+                    android:textSize="@dimen/dd_dimen_20px" />
+
+
+                <TextView
+                    android:id="@+id/master_commodity_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal|bottom"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:text="3000.00"
+                    android:textColor="@color/title_middle_tv_text_color"
+                    android:textSize="@dimen/dd_dimen_30px" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView7"
+                    android:layout_alignBottom="@+id/textView7"
+                    android:layout_toRightOf="@+id/master_commodity_price"
+                    android:gravity="center_horizontal"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:text="元/人"
+                    android:textColor="@color/title_middle_tv_text_color"
+                    android:textSize="@dimen/dd_dimen_20px" />
+
+            </RelativeLayout>
+
+
+            <com.quanyan.yhy.view.LabelView
+                android:id="@+id/tamaster_commodity_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/master_commodity_details_rl_price"
+                android:layout_marginBottom="@dimen/dd_dimen_30px"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:layout_marginRight="@dimen/dd_dimen_30px"
+                android:layout_marginTop="@dimen/dd_dimen_10px"
+                android:background="@color/white"
+                android:horizontalSpacing="@dimen/dd_dimen_10px"
+                labelview:horizontalPadding="@dimen/dd_dimen_20px"
+                labelview:verticalPadding="@dimen/dd_dimen_20px"></com.quanyan.yhy.view.LabelView>
+
+
+            <TextView
+                android:id="@+id/master_commodity_abstract_tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tamaster_commodity_label"
+                android:layout_marginLeft="@dimen/dd_dimen_15px"
+                android:layout_marginRight="@dimen/dd_dimen_15px"
+                android:layout_marginTop="@dimen/dd_dimen_15px"
+                android:text="习近平：国有企业发展既要“借东风”，也 要激发内生动力】习近平7日上午参加黑龙江省代 表团审议时，听到王波代表说到老工业基地结构性改革，他强调说，现在是市场经济，哪里有优势，哪里要素齐备，哪里就具有集聚的优势。对国有企业发展，政府 的作用更多体现在支持、扶持、杠杆作用，但没有现存的“金娃娃”摆在那里。在这种情况下，国有企业要深化改革，要“借东风”，激发内生动力，在竞争中增强 实力。要抓好东北老工业基地振兴各项政策的落实"
+                android:textColor="@color/title_middle_tv_text_color"
+                android:textSize="@dimen/dd_dimen_20px" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dd_dimen_2px"
+                android:layout_below="@id/master_commodity_abstract_tv_name"
+                android:background="@color/color_norm_f4f4f4"
+                android:orientation="vertical"></LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dd_dimen_40px"
+                android:layout_below="@id/LinearLayout1"
+                android:layout_marginLeft="@dimen/dd_dimen_15px"
+                android:layout_marginRight="@dimen/dd_dimen_15px"
+                android:layout_marginTop="@dimen/dd_dimen_15px">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:text="出发日期"
+                    android:textColor="@color/title_middle_tv_text_color"
+                    android:textSize="@dimen/dd_dimen_20px" />
+
+                <TextView
+                    android:id="@+id/master_commodity_abstract_tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/textView8"
+                    android:drawableRight="@mipmap/arrow_go"
+                    android:gravity="center_vertical"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:text="2016.1.1"
+                    android:textColor="@color/title_middle_tv_text_color"
+                    android:textSize="@dimen/dd_dimen_20px" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dd_dimen_20px"
+                android:layout_below="@id/RelativeLayout1"
+                android:background="@color/color_norm_f4f4f4"
+                android:orientation="vertical"></LinearLayout>
+        </RelativeLayout>
+
+
+
+        <com.quanyan.base.view.customview.tabscrollindicator.SlidingTabLayout
+            android:id="@id/id_stickynavlayout_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"></com.quanyan.base.view.customview.tabscrollindicator.SlidingTabLayout>
+
+        <com.mogujie.tt.ui.widget.CustomViewPager
+            android:id="@id/id_stickynavlayout_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_norm_f4f4f4"></com.mogujie.tt.ui.widget.CustomViewPager>
+    </com.quanyan.base.view.customview.stickyview.StickyNavLayout>
+
+    <include
+        layout="@layout/transparent_topbar" />
+
+</RelativeLayout>

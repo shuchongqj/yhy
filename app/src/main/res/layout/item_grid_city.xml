@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<LinearLayout
+        android:id="@+id/ll_locationerror"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dd_dimen_54px">
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/dd_dimen_24px"
+            android:paddingLeft="@dimen/dd_dimen_30px"
+            android:paddingRight="@dimen/dd_dimen_30px"
+            android:background="@drawable/city_item_history_bg_selector"
+            android:gravity="center"
+            android:textColor="@color/neu_333333"
+            android:text="@string/label_location_failed"/>
+
+    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/tv_grid_child"
+        android:layout_width="@dimen/dd_dimen_146px"
+        android:layout_height="@dimen/dd_dimen_54px"
+        android:textSize="@dimen/dd_dimen_24px"
+        android:textColor="@color/neu_333333"
+        android:singleLine="true"
+        android:background="@drawable/city_item_history_bg_selector"
+        android:gravity="center"/>
+
+</RelativeLayout>

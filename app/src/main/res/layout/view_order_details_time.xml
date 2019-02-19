@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_20px"
+        android:background="@color/neu_f4f4f4">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dd_dimen_28px"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingRight="@dimen/dd_dimen_30px"
+        android:paddingTop="@dimen/dd_dimen_20px">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_order_details_time"
+            android:textColor="@color/neu_666666"
+            android:textSize="@dimen/dd_dimen_20px" />
+
+        <TextView
+            android:id="@+id/tv_pay_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dd_dimen_16px"
+            android:textColor="@color/neu_666666"
+            android:textSize="@dimen/dd_dimen_20px" />
+
+        <TextView
+            android:id="@+id/tv_delivery_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dd_dimen_10px"
+            android:textColor="@color/neu_666666"
+            android:textSize="@dimen/dd_dimen_20px" />
+
+        <TextView
+            android:id="@+id/tv_finish_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dd_dimen_10px"
+            android:textColor="@color/neu_666666"
+            android:textSize="@dimen/dd_dimen_20px" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_refund"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_button_gray"
+        android:paddingBottom="@dimen/dd_dimen_10px"
+        android:paddingLeft="@dimen/dd_dimen_20px"
+        android:paddingRight="@dimen/dd_dimen_20px"
+        android:paddingTop="@dimen/dd_dimen_10px"
+        android:text="@string/contact_merchant"
+        android:textColor="@color/neu_666666"
+        android:textSize="@dimen/text_size_24px" />
+    </LinearLayout>
+</LinearLayout>

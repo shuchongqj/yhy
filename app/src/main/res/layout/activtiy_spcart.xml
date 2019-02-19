@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pullrefresh="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_norm_f4f4f4">
+
+    <RelativeLayout
+        android:id="@+id/rl_state01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <com.quanyan.yhy.ui.spcart.view.SpCartBottomView
+                android:id="@+id/sp_bttom_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <com.quanyan.yhy.ui.spcart.view.SpCartEditBottomView
+                android:id="@+id/sp_edit_bottom_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <com.quanyan.base.view.customview.pulltorefresh.PullToRefreshExpandableListView
+            android:id="@+id/pull_to_refresh_expand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/rl_bottom_view"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/neu_f4f4f4"
+            android:dividerPadding="@dimen/public_split_line_height"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:focusable="true"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none"
+            android:smoothScrollbar="true"
+            pullrefresh:ptrAnimationStyle="rotate"
+            pullrefresh:ptrMode="both"
+            pullrefresh:ptrShowIndicator='false' />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_state02"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_state02_topview"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dd_dimen_100px"
+            android:background="#ffe7b3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/spcart_bao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dd_dimen_10px"
+                    android:text="查看已添加到购物车的商品,"
+                    android:textColor="@color/neu_666666"
+                    android:textSize="@dimen/dd_dimen_30px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dd_dimen_10px"
+                    android:text="立即登录"
+                    android:textColor="#fa4619"
+                    android:textSize="@dimen/dd_dimen_30px" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dd_dimen_24px"
+                android:src="@mipmap/arrow_go" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dd_dimen_180px"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dd_dimen_140px"
+                    android:layout_height="@dimen/dd_dimen_140px"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/spcart_empty_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dd_dimen_40px"
+                    android:text="购物车空空如也~"
+                    android:textColor="@color/neu_333333"
+                    android:textSize="@dimen/dd_dimen_30px" />
+
+                <TextView
+                    android:id="@+id/tv_go_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dd_dimen_40px"
+                    android:background="@drawable/btn_orange_selector"
+                    android:paddingBottom="@dimen/dd_dimen_20px"
+                    android:paddingLeft="@dimen/dd_dimen_40px"
+                    android:paddingRight="@dimen/dd_dimen_40px"
+                    android:paddingTop="@dimen/dd_dimen_20px"
+                    android:text="去抢购"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dd_dimen_26px" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_30px"
+        android:text="@string/contact_custom_service"
+        android:visibility="gone"
+        android:textColor="#999999"
+        android:textSize="@dimen/text_size_24px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_22px"
+        android:visibility="gone"
+        android:text="@string/contact_custom_service_time"
+        android:textColor="#999999"
+        android:textSize="@dimen/text_size_24px" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/public_split_line_height"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dd_dimen_30px"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_merhchant_im"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/dd_dimen_30px"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_jx_custom_service" />
+
+                <TextView
+                    android:id="@+id/tv_merhchant_im"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dimen_10px"
+                    android:text="@string/contact_merchant_im"
+                    android:textColor="@color/neu_666666" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="@dimen/public_split_line_height"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dd_dimen_30px"
+            android:layout_marginTop="@dimen/dd_dimen_30px"
+            android:background="@color/divider"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/ll_merhchant_hotline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/dd_dimen_30px">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_jx_phone" />
+
+                <TextView
+                    android:id="@+id/tv_merhchant_hotline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dimen_10px"
+                    android:text="联系客服"
+                    android:textColor="@color/neu_666666" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<View
+            android:layout_width="@dimen/public_split_line_height"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dd_dimen_30px"
+            android:layout_marginTop="@dimen/dd_dimen_30px"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_custom_service"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/dd_dimen_30px">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_jx_custom_service" />
+
+                <TextView
+                    android:id="@+id/tv_hotel_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dimen_10px"
+                    android:text="@string/custom_service"
+                    android:textColor="@color/neu_666666" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/public_split_line_height"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dd_dimen_30px"
+            android:layout_marginTop="@dimen/dd_dimen_30px"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_hotline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/dd_dimen_30px">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_jx_phone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dimen_10px"
+                    android:text="@string/custom_hotline"
+                    android:textColor="@color/neu_666666" />
+            </LinearLayout>
+        </LinearLayout>-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/public_split_line_height"
+        android:background="@color/divider" />
+
+</LinearLayout>

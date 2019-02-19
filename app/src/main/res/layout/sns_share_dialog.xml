@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_50">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+
+        <LinearLayout
+            android:id="@+id/ll_share_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/login_gray" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="分享给朋友"
+                android:textColor="@color/title_right_btn_disbale_color"
+                android:textSize="@dimen/font_size_1" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/login_gray" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/dlg_sns_btn_label_wechat"
+            android:textColor="@color/text_focus_color"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/contentBtnLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible">
+
+            <!-- 微信 -->
+            <LinearLayout
+                android:id="@+id/share_dlg_item_wechat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="9dp"
+                android:layout_weight="1.0"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:src="@mipmap/login_wx_nor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:text="@string/dlg_sns_btn_label_wechat"
+                    android:textColor="@color/text_focus_color" />
+            </LinearLayout>
+            <!-- 朋友圈 -->
+
+            <LinearLayout
+                android:id="@+id/share_dlg_item_wxcircle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="9dp"
+                android:layout_weight="1.0"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:src="@mipmap/login_pyq_nor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:text="@string/dlg_sns_btn_label_wxcircle"
+                    android:textColor="@color/text_focus_color" />
+            </LinearLayout>
+            <!-- 短信平台 -->
+
+            <LinearLayout
+                android:id="@+id/share_dlg_item_sms"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="9dp"
+                android:layout_weight="1.0"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:focusable="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:text="@string/dlg_sns_btn_label_sms"
+                    android:textColor="@color/text_focus_color" />
+            </LinearLayout>
+
+            <!-- 新浪微博 -->
+            <LinearLayout
+                android:id="@+id/share_dlg_item_sina"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="9dp"
+                android:layout_weight="1.0"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:src="@mipmap/login_wb_nor"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:text="@string/dlg_sns_btn_label_sina"
+                    android:textColor="@color/text_focus_color" />
+            </LinearLayout>
+            <!-- QQ平台 -->
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/share_dlg_btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_sns_btn_cancel"
+            android:padding="10dp"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/start_set_text_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

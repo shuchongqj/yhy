@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dd_dimen_32px"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingRight="@dimen/dd_dimen_79px">
+
+        <TextView
+            android:id="@+id/tv_before"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_40px"
+            android:layout_marginBottom="@dimen/dd_dimen_20px"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:textColor="@color/neu_333333"
+            android:textSize="@dimen/dd_dimen_26px" />
+
+        <com.quanyan.base.view.customview.NoScrollGridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:verticalSpacing="@dimen/dd_dimen_20px"
+            android:horizontalSpacing="@dimen/dd_dimen_20px"
+            android:cacheColorHint="@color/transparent"
+            android:listSelector="@color/transparent">
+
+        </com.quanyan.base.view.customview.NoScrollGridView>
+
+    </LinearLayout>
+
+</FrameLayout>
+

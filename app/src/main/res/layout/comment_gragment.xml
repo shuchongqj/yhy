@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/live_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- 异常处理View -->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/error_view_contain"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+    <TextView
+        android:textColor="@color/neu_696969"
+        android:text="@string/no_comment"
+        android:gravity="center"
+        android:textSize="@dimen/yhy_size_15px"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</RelativeLayout>

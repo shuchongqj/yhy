@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/gv_bucket_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:horizontalSpacing="2dp"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="2dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_select_bucket"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_select_bucket"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="所有图片"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/arrow_up_icon"
+            android:textColor="#333F42" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/margin_main"
+    android:layout_marginRight="@dimen/margin_main"
+    android:background="@color/white">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@mipmap/go_offen"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="@dimen/margin_main"/>
+
+    <TextView android:id="@+id/ticket_venue_location"
+        style="@style/fontGrey_14"
+        android:text="dsf"
+        android:layout_marginTop="@dimen/margin_main"
+        android:layout_marginLeft="@dimen/margin_main"
+        android:drawableLeft="@mipmap/icon_address_small_gray"
+        android:drawablePadding="4dp"/>
+    <RelativeLayout android:layout_below="@id/ticket_venue_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ticket_info_layout"
+        android:layout_margin="@dimen/margin_main">
+        <TextView android:id="@+id/ticket_start_date1"
+            style="@style/fontBlack_14"
+            android:layout_centerVertical="true"
+            android:text="19:00"/>
+        <TextView android:id="@+id/ticket_fee1"
+            android:layout_toRightOf="@id/ticket_start_date1"
+            style="@style/fontGrey_14"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:text="20/人"/>
+
+        <TextView android:id="@+id/buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/buy"
+            android:textColor="@color/red_ying"
+            android:background="@drawable/background_ying_red_circle_round"/>
+    </RelativeLayout>
+    <View android:layout_below="@id/ticket_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/neu_ededed"/>
+
+</RelativeLayout>

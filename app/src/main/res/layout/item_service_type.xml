@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_100px"
+        android:background="@drawable/find_item_bg_selector"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:background="@mipmap/ic_my_setting"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/item_icon"
+            android:paddingLeft="@dimen/dd_dimen_30px">
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/iv_check_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_uncheck"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dd_dimen_30px"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:textSize="@dimen/text_size_30px"
+                android:text="运动摄影"
+                android:textColor="@color/neu_333333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_check_icon"
+                android:layout_marginRight="@dimen/dd_dimen_30px"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

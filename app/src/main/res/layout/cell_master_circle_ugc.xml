@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <!---->
+    <LinearLayout
+        android:id="@+id/cell_circle_guc_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@android:color/white"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dd_dimen_20px"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingRight="@dimen/dd_dimen_30px"
+        android:paddingTop="@dimen/dd_dimen_20px">
+
+        <include layout="@layout/cell_master_circle_common_top"/>
+
+        <!--<com.quanyan.yhy.view.JustifyTextView
+            android:id="@+id/cell_live_brief"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/dd_dimen_10px"
+            android:maxLength="200"
+            android:textColor="@color/neu_333333"
+            android:textSize="@dimen/text_size_32px"/>-->
+
+        <FrameLayout
+            android:id="@+id/cell_circle_ugc_pic_one_img_layout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="@dimen/dd_dimen_400px">
+            <ImageView
+                android:id="@+id/cell_circle_ugc_pic_one_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+        </FrameLayout>
+
+        <com.quanyan.base.view.customview.NoScrollGridView
+            android:id="@+id/cell_circle_ugc_pic_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/dd_dimen_10px"
+            android:numColumns="3"
+            android:paddingTop="@dimen/dd_dimen_20px"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp">
+
+        </com.quanyan.base.view.customview.NoScrollGridView>
+
+        <include layout="@layout/cell_master_circle_common_bottom"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/cell_circle_guc__line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_24px"
+        android:background="@color/neu_f4f4f4"
+        android:visibility="gone"/>
+</LinearLayout>

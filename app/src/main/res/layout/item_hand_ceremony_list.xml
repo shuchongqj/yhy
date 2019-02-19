@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/ic_handcere_grid_bg"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/cell_discovery_iv_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_300px"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/margin_5dp"
+        android:paddingLeft="@dimen/margin_5dp"
+        android:paddingTop="@dimen/dd_dimen_10px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cell_discovery_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="嘉华鲜花饼 云南特产 经典玫瑰饼 300g礼袋"
+            android:textColor="@color/color_norm_636363"
+            android:textSize="@dimen/dd_dimen_20px"/>
+
+        <View
+            style="@style/split_line"
+            android:paddingTop="@dimen/margin_5dp"
+            android:paddingBottom="@dimen/margin_5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cell_discovery_tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/label_money"
+                android:textColor="@color/main"
+                android:textSize="@dimen/dd_dimen_24px"
+                android:textStyle="bold"/>
+
+            <RatingBar
+                android:id="@+id/cell_discovery_rb_score"
+                style="@style/handcereRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:isIndicator="true"
+                android:max="5"
+                android:numStars="5"
+                android:rating="4"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

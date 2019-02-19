@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.quanyan.base.view.customview.pulltorefresh.PullToRefreshObserableScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_home_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:fadingEdge="none"
+    android:background="@color/neu_f4f4f4">
+
+    <LinearLayout
+        android:id="@+id/tab_home_parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</com.quanyan.base.view.customview.pulltorefresh.PullToRefreshObserableScrollView>

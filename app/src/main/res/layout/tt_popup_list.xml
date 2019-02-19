@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+    <!--<TextView-->
+    <!--android:id="@+id/delete_btn"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:clickable="true"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="@dimen/dd_dimen_25px"-->
+    <!--android:text="@string/del_photo"-->
+    <!--android:textColor="@color/neu_333333"-->
+    <!--android:textSize="14sp"-->
+    <!--android:visibility="gone" />-->
+
+    <!--<View style="@style/split_line"-->
+    <!--android:visibility="gone"/>-->
+
+    <TextView
+        android:id="@+id/speaker_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/dd_dimen_25px"
+        android:textColor="@color/neu_333333"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <View style="@style/split_line" />
+
+    <TextView
+        android:id="@+id/copy_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/dd_dimen_25px"
+        android:text="@string/copy"
+        android:textColor="@color/neu_333333"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <View style="@style/split_line" />
+
+ <!--   <TextView
+        android:id="@+id/resend_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/dd_dimen_25px"
+        android:text="@string/resend"
+        android:textColor="@color/neu_333333"
+        android:textSize="14sp"
+        android:visibility="gone" />-->
+
+    <View style="@style/split_line" />
+
+</LinearLayout>

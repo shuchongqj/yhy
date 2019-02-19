@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:paddingTop="@dimen/dd_dimen_20px">
+
+    <com.quanyan.yhy.view.LabelLayout
+        android:id="@+id/lb_comment_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dd_dimen_36px"
+        android:paddingRight="@dimen/dd_dimen_30px"/>
+
+    <View
+        style="@style/split_line"
+        android:layout_height="@dimen/dd_dimen_1px"
+        android:layout_marginTop="@dimen/dd_dimen_20px"></View>
+
+</LinearLayout>

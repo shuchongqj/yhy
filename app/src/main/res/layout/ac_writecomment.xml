@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none"
+        android:layout_marginBottom="@dimen/dd_dimen_100px"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_comment_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dd_dimen_20px"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:layout_marginRight="@dimen/dd_dimen_30px"
+                android:layout_marginTop="@dimen/dd_dimen_44px"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/add_comment_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:gravity="top|left"
+                    android:minHeight="@dimen/dd_dimen_100px"
+                    android:hint="@string/hint_comment_content"
+                    android:inputType="textMultiLine"
+                    android:maxLength="200"
+                    android:textColor="@color/neu_333333"
+                    android:textColorHint="@color/neu_999999"
+                    android:textSize="@dimen/text_size_28px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/add_comment_text_num_change"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/200字"
+                        android:textColor="@color/tv_color_grayBD"
+                        android:textSize="@dimen/dd_dimen_24px" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_pic_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll_comment_content"
+                android:layout_marginBottom="@dimen/dd_dimen_52px"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:layout_marginRight="@dimen/dd_dimen_30px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_photo_suggest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_photo_hint"
+                    android:textColor="@color/neu_999999"
+                    android:textSize="@dimen/text_size_28px" />
+                <com.quanyan.base.view.customview.NoScrollGridView
+                    android:id="@+id/add_comment_pic_list_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="@dimen/dd_dimen_162px"
+                    android:gravity="left"
+                    android:numColumns="3"
+                    android:scrollbars="none" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_div"
+                android:layout_below="@+id/ll_pic_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dd_dimen_20px"
+                android:background="@color/bg_grey"/>
+            <LinearLayout
+                android:layout_below="@+id/view_div"
+                android:id="@+id/ll_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_comment"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:layout_marginTop="@dimen/dd_dimen_30px"
+                android:paddingBottom="@dimen/dd_dimen_20px"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_switch"
+                    style="@style/SwitchCheckboxCommentTheme"
+                    android:checked="true"
+                    android:layout_height="@dimen/dd_dimen_30px"
+                    android:layout_width="@dimen/dd_dimen_50px"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dd_dimen_16px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/text_size_28px"
+                    android:textColor="@color/neu_999999"
+                    android:text="@string/label_name_unknow"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_96px"
+        android:background="@color/ac_title_bg_color"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/margin_10dp"
+        android:text="@string/label_comment_submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_36px"></TextView>
+</RelativeLayout>
+

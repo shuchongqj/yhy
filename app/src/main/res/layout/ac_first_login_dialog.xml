@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dd_dimen_590px"
+        android:layout_height="@dimen/dd_dimen_664px"
+        android:background="@mipmap/first_login_dialog_img">
+
+        <ImageView
+            android:id="@+id/iv_close_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/first_login_close_img"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dd_dimen_18px"/>
+
+        <TextView
+            android:id="@+id/tv_string_desc"
+            android:layout_width="@dimen/dd_dimen_320px"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dd_dimen_360px"
+            android:text=""
+            android:gravity="center_horizontal"
+            android:textColor="@color/first_login_desc"
+            android:textSize="@dimen/text_size_28px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dd_dimen_20px"
+            android:layout_marginBottom="@dimen/dd_dimen_44px"
+            android:gravity="center"
+            android:layout_above="@+id/rl_button_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/first_login_desc"
+            android:textSize="@dimen/text_size_40px"
+            android:textColor="@color/first_login_desc"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_button_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dd_dimen_54px"
+            android:layout_marginLeft="@dimen/dd_dimen_32px"
+            android:layout_marginRight="@dimen/dd_dimen_30px">
+
+            <ImageView
+                android:id="@+id/iv_back_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@mipmap/first_login_back_img"/>
+
+            <ImageView
+                android:id="@+id/iv_ped_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/first_login_ped_img"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

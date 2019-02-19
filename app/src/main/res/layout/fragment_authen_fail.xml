@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_custom_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neu_f4f4f4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_440px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dd_dimen_80px"
+            android:src="@mipmap/icon_auth_fail" />
+
+        <TextView
+            android:id="@+id/tv_authfaild_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dd_dimen_44px"
+            android:layout_marginRight="@dimen/dd_dimen_44px"
+            android:layout_marginTop="@dimen/dd_dimen_40px"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="4dp"
+            android:text="您上传的身份证信息与实名认证信息不,请核实身份证信息并重新上传"
+            android:textColor="@color/neu_333333"
+            android:textSize="@dimen/dd_dimen_30px"></TextView>
+    </LinearLayout>
+
+
+    <Button
+
+        android:id="@+id/btn_takephoto_agin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_86px"
+        android:layout_marginBottom="@dimen/dd_dimen_50px"
+        android:layout_marginLeft="@dimen/dd_dimen_25px"
+        android:layout_marginRight="@dimen/dd_dimen_25px"
+        android:layout_marginTop="@dimen/dd_dimen_80px"
+        android:background="@drawable/btn_orange_selector"
+        android:text="重新上传"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dd_dimen_36px" />
+</LinearLayout>

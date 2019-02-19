@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebView xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/purchase_note_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+</WebView>
+<!--
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/dd_dimen_40px"
+        android:paddingLeft="@dimen/dd_dimen_32px"
+        android:paddingRight="@dimen/dd_dimen_32px"
+        android:paddingTop="@dimen/dd_dimen_40px">
+
+        <TextView
+            android:id="@+id/purchase_notes_charge_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="【费用包括】"
+            android:textColor="@color/main"
+            android:textSize="@dimen/dd_dimen_24px"/>
+
+        <TextView
+            android:id="@+id/purchase_notes_charge_traffice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/purchase_notes_charge_title"
+            android:layout_marginLeft="@dimen/dd_dimen_24px"
+            android:layout_marginTop="@dimen/dd_dimen_27px"
+            android:text="交通"
+            android:textColor="@color/main"
+            android:textSize="@dimen/dd_dimen_24px"/>
+
+        <TextView
+            android:id="@+id/purchase_notes_charge_traffice_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/purchase_notes_charge_traffice_title"
+            android:layout_below="@id/purchase_notes_charge_title"
+            android:layout_marginLeft="@dimen/dd_dimen_24px"
+            android:layout_toRightOf="@id/purchase_notes_charge_traffice_title"
+            android:text="本团包含本产品往返昆明机票（具体航班以社团出票航班为准）"
+            android:textColor="@color/tv_color_gray63"
+            android:textSize="@dimen/dd_dimen_24px"/>
+
+        <TextView
+            android:id="@+id/purchase_notes_charge_accommondation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/purchase_notes_charge_traffice_content"
+            android:layout_marginLeft="@dimen/dd_dimen_24px"
+            android:layout_marginTop="@dimen/dd_dimen_15px"
+            android:text="住宿"
+            android:textColor="@color/main"
+            android:textSize="@dimen/dd_dimen_24px"/>
+
+        <TextView
+            android:id="@+id/purchase_notes_charge_accommondation_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/purchase_notes_charge_accommondation_title"
+            android:layout_below="@id/purchase_notes_charge_title"
+            android:layout_marginLeft="@dimen/dd_dimen_24px"
+            android:layout_toRightOf="@id/purchase_notes_charge_accommondation_title"
+            android:text="入住丹迪3星酒店，如果住宿变更为4星，每人+60元/人/晚，变更为5星每人+100元/人/晚"
+            android:textColor="@color/tv_color_gray63"
+            android:textSize="@dimen/dd_dimen_24px"/>
+
+        <TextView
+            android:id="@+id/purchase_notes_charge_ticket_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/purchase_notes_charge_accommondation_content"
+            android:layout_marginLeft="@dimen/dd_dimen_24px"
+            android:layout_marginTop="@dimen/dd_dimen_15px"
+            android:text="门票"
+            android:textColor="@color/main"
+            android:textSize="@dimen/dd_dimen_24px"/>
+
+        <TextView
+            android:id="@+id/purchase_notes_charge_ticket_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/purchase_notes_charge_ticket_title"
+            android:layout_below="@id/purchase_notes_charge_title"
+            android:layout_marginLeft="@dimen/dd_dimen_24px"
+            android:layout_toRightOf="@id/purchase_notes_charge_ticket_title"
+            android:text="行程所列景点首道大，小门票"
+            android:textColor="@color/tv_color_gray63"
+            android:textSize="@dimen/dd_dimen_24px"/>
+
+        <View
+            android:id="@+id/prchase_notes_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/purchase_notes_charge_ticket_content"
+            android:layout_marginBottom="@dimen/dd_dimen_40px"
+            android:layout_marginTop="@dimen/dd_dimen_40px"
+            android:background="@color/color_norm_f4f4f4"/>
+
+        <TextView
+            android:id="@+id/purchase_notes_charge_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prchase_notes_line1"
+            android:text="【费用包括】"
+            android:textColor="@color/main"
+            android:textSize="@dimen/dd_dimen_24px"/>
+
+        ；8<TextView
+            android:id="@+id/purchase_notes_charge2_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/purchase_notes_charge_ticket_content"
+            android:layout_below="@id/purchase_notes_charge_title2"
+            android:layout_marginTop="@dimen/dd_dimen_30px"
+            android:lineSpacingExtra="5dp"
+            android:text="1、因单男单女等原因无法拼房，需补齐单房差费用；\n2、九寨沟沟内午餐（可自带）；\n3、黄龙索道：上行80元/人，下行40元/人（可步行）；\n4、因天气或人为不可控制因素导致行程延迟或取消所产生的额外费用；"
+            android:textColor="@color/tv_color_gray63"
+            android:textSize="@dimen/dd_dimen_24px"/>
+
+        <View
+            android:id="@+id/prchase_notes_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/purchase_notes_charge2_content"
+            android:layout_marginBottom="@dimen/dd_dimen_40px"
+            android:layout_marginTop="@dimen/dd_dimen_40px"
+            android:background="@color/color_norm_f4f4f4"/>
+
+        <TextView
+            android:id="@+id/purchase_notes_charge_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prchase_notes_line2"
+            android:text="【费用包括】"
+            android:textColor="@color/main"
+            android:textSize="@dimen/dd_dimen_24px"/>
+
+        <TextView
+            android:id="@+id/purchase_notes_charge3_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/purchase_notes_charge_ticket_content"
+            android:layout_below="@id/purchase_notes_charge_title3"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginTop="@dimen/dd_dimen_30px"
+            android:text="如预定后临时有事，不能如期出行，本社承诺未消费验证，全款退还，不如一分钱，提前24小时告知，可免费延期一年内使用有效。"
+            android:textColor="@color/tv_color_gray63"
+            android:textSize="@dimen/dd_dimen_24px"/>
+    </RelativeLayout>
+</ScrollView>-->

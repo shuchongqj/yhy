@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/dd_dimen_10px"
+              android:paddingRight="@dimen/dd_dimen_10px">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_180px">
+
+        <ImageView
+            android:id="@+id/home_view_experience_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_180px"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dd_dimen_20px"
+            android:background="@color/transparent_black_50"
+            android:paddingRight="@dimen/dd_dimen_10px"
+            android:paddingTop="@dimen/dd_dimen_3px"
+            android:paddingBottom="@dimen/dd_dimen_3px"
+            android:paddingLeft="@dimen/dd_dimen_10px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/money_symbol"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_22px"/>
+            <TextView
+                android:id="@+id/home_view_experience_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dd_dimen_10px"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="$1000"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dd_dimen_26px"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/home_view_experience_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dd_dimen_10px"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="资深旅游咨询师"
+        android:textColor="@color/neu_333333"
+        android:textSize="@dimen/dd_dimen_26px"/>
+
+</LinearLayout>

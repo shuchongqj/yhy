@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.quanyan.base.view.customview.imgpager.ImgPagerView
+        android:id="@+id/ac_line_home_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.quanyan.base.view.customview.imgpager.ImgPagerView>
+
+    <LinearLayout
+        android:id="@+id/header_line_activity_hot_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dd_dimen_20px"
+        android:paddingBottom="@dimen/dd_dimen_20px"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="@dimen/dd_dimen_150px"
+            android:layout_height="@dimen/dd_dimen_1px"
+            android:layout_marginRight="@dimen/dd_dimen_40px"
+            android:background="@color/neu_cccccc"/>
+
+        <TextView
+            android:id="@+id/line_header_view_hot_city_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/neu_999999"
+            android:textSize="@dimen/text_size_28px"
+            android:text="热门城市"/>
+
+        <View
+            android:layout_width="@dimen/dd_dimen_150px"
+            android:layout_height="@dimen/dd_dimen_1px"
+            android:layout_marginLeft="@dimen/dd_dimen_40px"
+            android:background="@color/neu_cccccc"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingTop="@dimen/dd_dimen_20px"
+        android:paddingBottom="@dimen/dd_dimen_20px">
+
+        <include layout="@layout/no_scroll_gridview"/>
+    </LinearLayout>
+
+    <com.quanyan.yhy.ui.line.view.RecommendView
+        android:id="@+id/view_fun_recommand"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.quanyan.yhy.ui.line.view.RecommendView>
+
+    <com.quanyan.base.view.customview.NoScrollGridView
+        android:id="@+id/nsg_des_list"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:horizontalSpacing="@dimen/dd_dimen_20px"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingRight="@dimen/dd_dimen_30px"
+        android:paddingBottom="@dimen/dd_dimen_30px"
+        android:verticalSpacing="@dimen/dd_dimen_20px">
+
+    </com.quanyan.base.view.customview.NoScrollGridView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_20px"
+        android:background="@color/neu_f4f4f4"/>
+
+    <com.quanyan.yhy.ui.line.view.RecommendView
+        android:id="@+id/recommend_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.quanyan.yhy.ui.line.view.RecommendView>
+</merge>

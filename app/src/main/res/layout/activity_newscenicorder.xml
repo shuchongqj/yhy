@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orderbackground_f4f4f4"
+    android:fitsSystemWindows="true">
+
+    <com.quanyan.yhy.ui.order.HotelOrderBottomTabView
+        android:id="@+id/view_order_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/view_order_bottom"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/lineorder_top_include" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_select_date"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dd_dimen_110px"
+                android:background="@color/white"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dd_dimen_30px"
+                    android:text="@string/scenicorder_select_data"
+                    android:textColor="@color/order_666666"
+                    android:textSize="@dimen/dd_dimen_28px" />
+
+
+                <TextView
+                    android:id="@+id/hotelorder_starttime_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dd_dimen_230px"
+                    android:text="@string/label_default_choose_start_date"
+                    android:textColor="@color/order_999999"
+                    android:textSize="@dimen/dd_dimen_28px" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dd_dimen_30px"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dd_dimen_10px"
+                        android:src="@mipmap/arrow_go" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dd_dimen_2px"
+                android:background="@color/orderline_e1e1e1" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dd_dimen_110px"
+                android:background="@color/white">
+
+                <com.quanyan.yhy.ui.order.NumberChooseView
+                    android:id="@+id/nc_num_select1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dd_dimen_30px"
+                    android:layout_marginRight="15dip" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:layout_toLeftOf="@+id/nc_num_select1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dd_dimen_30px"
+                        android:text="购买数量"
+                        android:textColor="@color/order_666666"
+                        android:textSize="@dimen/dd_dimen_30px" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dd_dimen_230px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/unit_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/order_666666"
+                            android:textSize="@dimen/dd_dimen_30px" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dd_dimen_30px" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/select_linkman_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dd_dimen_110px"
+                    android:clickable="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dd_dimen_30px"
+                        android:text="@string/scenicorder_ctickets_infor"
+                        android:textColor="#666"
+                        android:textSize="@dimen/dd_dimen_30px" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dip"
+                        android:src="@mipmap/arrow_go" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_2px"
+                    android:background="@color/orderline_e1e1e1" />
+
+                <RelativeLayout
+                    android:id="@+id/name_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_95px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dd_dimen_30px"
+                        android:text="@string/scenicorder_ctickets_name"
+                        android:textColor="@color/order_666666"
+                        android:textSize="@dimen/dd_dimen_30px" />
+
+                    <EditText
+                        android:id="@+id/order_linkman_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dd_dimen_230px"
+                        android:layout_marginRight="@dimen/dd_dimen_24px"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="@string/scenicorder_ctickets_name_hint"
+                        android:maxLength="10"
+                        android:textColor="@color/order_999999"
+                        android:textColorHint="@color/order_999999"
+                        android:textSize="@dimen/dd_dimen_30px" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_2px"
+                    android:background="@color/orderline_e1e1e1" />
+
+                <RelativeLayout
+                    android:id="@+id/email_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_95px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dd_dimen_30px"
+                        android:text="@string/scenicorder_ctickets_tel"
+                        android:textColor="@color/order_666666"
+                        android:textSize="@dimen/dd_dimen_30px" />
+
+                    <EditText
+                        android:id="@+id/order_linkman_tel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dd_dimen_230px"
+                        android:layout_marginRight="@dimen/dd_dimen_24px"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="@string/scenicorder_ctickets_tel_hint"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textColor="@color/order_999999"
+                        android:textColorHint="@color/order_999999"
+                        android:textSize="@dimen/dd_dimen_30px" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_2px"
+                    android:background="@color/orderline_e1e1e1" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_coupon_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dd_dimen_110px"
+                    android:background="@drawable/scenic_top_translate_selector"
+                    android:clickable="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dd_dimen_30px"
+                            android:src="@mipmap/discount_coupon_image" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dd_dimen_20px"
+                            android:text="优惠券"
+                            android:textColor="#666"
+                            android:textSize="@dimen/dd_dimen_30px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_coupon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="#666"
+                            android:textSize="@dimen/dd_dimen_24px" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dd_dimen_5px"
+                            android:src="@mipmap/arrow_go" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_2px"
+                    android:background="@color/orderline_e1e1e1" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/scenic_othersrq_et"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dd_dimen_200px"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:layout_marginRight="@dimen/dd_dimen_20px"
+                android:layout_marginTop="@dimen/dd_dimen_20px"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/scenicorder_ctickets_remark"
+                android:maxLength="50"
+                android:paddingBottom="10dip"
+                android:paddingTop="3dip"
+                android:textColor="@color/order_666666"
+                android:textColorHint="@color/order_999999"
+                android:textSize="@dimen/dd_dimen_30px" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

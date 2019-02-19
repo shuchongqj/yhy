@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/yhy_size_6px"
+        android:background="#FF282828" />
+
+    <TextView
+        android:id="@+id/tv_his_replay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/yhy_size_15px"
+        android:layout_marginTop="@dimen/yhy_size_19px"
+        android:text="推荐视频"
+        android:textStyle="bold"
+        android:textColor="@color/live_text_color"
+        android:textSize="@dimen/yhy_size_14px" />
+
+    <TextView
+        android:id="@+id/tv_show_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/yhy_size_15px"
+        android:text="查看全部"
+        android:layout_marginTop="@dimen/yhy_size_19px"
+        android:textColor="@color/tab_unselect"
+        android:textSize="@dimen/yhy_size_13px" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/yhy_size_57px"
+        android:paddingLeft="@dimen/yhy_size_15px"
+        android:layout_marginBottom="@dimen/yhy_size_20px"
+        android:paddingRight="@dimen/yhy_size_15px">
+
+        <RelativeLayout
+            android:id="@+id/rv_1"
+            android:visibility="visible"
+            app:layout_constraintDimensionRatio="3:2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/middle"
+            android:layout_width="0dp"
+            android:layout_height="0dp" >
+            <com.newyhy.views.RoundImageView
+                android:id="@+id/iv_cover_1"
+                app:borderRadius="@dimen/yhy_size_2px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/yhy_size_2px"
+                />
+            <ImageView
+                android:background="@drawable/shadow"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/yhy_size_46px" />
+            <TextView
+                android:id="@+id/tv_anchor_name_1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/yhy_size_6px"
+                android:layout_marginBottom="@dimen/yhy_size_6px"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="8"
+                android:ellipsize="end"
+                android:textSize="@dimen/yhy_size_12px"
+                android:text=""/>
+            <TextView
+                android:id="@+id/live_first_item_tvAudienceNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/yhy_size_6px"
+                android:layout_marginBottom="@dimen/yhy_size_6px"
+                android:gravity="center"
+                android:maxLength="8"
+                android:ellipsize="end"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/yhy_size_12px" />
+            
+            <ImageView
+                android:layout_toLeftOf="@+id/live_first_item_tvAudienceNum"
+                android:src="@drawable/icon_read"
+                android:layout_marginRight="@dimen/yhy_size_6px"
+                android:layout_marginBottom="@dimen/yhy_size_8px"
+                android:layout_alignParentBottom="true"
+                android:layout_width="@dimen/yhy_size_14px"
+                android:layout_height="@dimen/yhy_size_10px" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_video_name_1"
+            android:layout_marginLeft="@dimen/yhy_size_15px"
+            app:layout_constraintTop_toBottomOf="@+id/rv_1"
+            android:text=""
+            android:maxLength="7"
+            android:ellipsize="end"
+            android:layout_marginTop="@dimen/yhy_size_8px"
+            android:textSize="@dimen/yhy_size_13px"
+            android:textColor="@color/live_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View android:id="@+id/middle"
+            android:layout_width="@dimen/yhy_size_11px"
+            android:layout_height="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rv_2"
+            app:layout_constraintLeft_toRightOf="@+id/middle"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintDimensionRatio="3:2"
+            android:layout_width="0dp"
+            android:layout_height="0dp" >
+            <com.newyhy.views.RoundImageView
+                android:id="@+id/iv_cover_2"
+                app:borderRadius="@dimen/yhy_size_2px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <ImageView
+                android:background="@drawable/shadow"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/yhy_size_46px" />
+            <TextView
+                android:id="@+id/tv_anchor_name_2"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/yhy_size_6px"
+                android:layout_marginBottom="@dimen/yhy_size_6px"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/yhy_size_12px"
+                android:maxLength="8"
+                android:ellipsize="end"
+                android:layout_height="wrap_content"
+                android:text=""/>
+            <TextView
+                android:id="@+id/live_second_item_tvAudienceNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/yhy_size_6px"
+                android:layout_marginBottom="@dimen/yhy_size_6px"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/yhy_size_12px" />
+            <ImageView
+                android:layout_toLeftOf="@+id/live_second_item_tvAudienceNum"
+                android:src="@drawable/icon_read"
+                android:layout_marginRight="@dimen/yhy_size_6px"
+                android:layout_marginBottom="@dimen/yhy_size_8px"
+                android:layout_alignParentBottom="true"
+                android:layout_width="@dimen/yhy_size_14px"
+                android:layout_height="@dimen/yhy_size_10px" />
+        </RelativeLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_video_name_2"
+            app:layout_constraintTop_toBottomOf="@+id/rv_2"
+            app:layout_constraintLeft_toRightOf="@+id/middle"
+            android:text=""
+            android:maxLength="7"
+            android:ellipsize="end"
+            android:layout_marginTop="@dimen/yhy_size_8px"
+            android:textSize="@dimen/yhy_size_13px"
+            android:textColor="@color/live_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/rv_3"
+            android:visibility="gone"
+            app:layout_constraintDimensionRatio="3:2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/middle"
+            app:layout_constraintTop_toBottomOf="@+id/tv_video_name_1"
+            android:layout_marginTop="@dimen/yhy_size_19px"
+            android:layout_width="0dp"
+            android:layout_height="0dp" >
+            <com.newyhy.views.RoundImageView
+                android:id="@+id/iv_cover_3"
+                app:borderRadius="@dimen/yhy_size_2px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <ImageView
+                android:background="@drawable/shadow"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/yhy_size_46px" />
+            <TextView
+                android:id="@+id/tv_anchor_name_3"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/yhy_size_6px"
+                android:layout_marginBottom="@dimen/yhy_size_6px"
+                android:textColor="@color/white"
+                android:textSize="@dimen/yhy_size_12px"
+                android:maxLength="7"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+            <TextView
+                android:id="@+id/live_third_item_tvAudienceNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/yhy_size_6px"
+                android:layout_marginBottom="@dimen/yhy_size_6px"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/yhy_size_12px" />
+            <ImageView
+                android:layout_toLeftOf="@+id/live_third_item_tvAudienceNum"
+                android:src="@drawable/icon_read"
+                android:layout_marginRight="@dimen/yhy_size_6px"
+                android:layout_marginBottom="@dimen/yhy_size_8px"
+                android:layout_alignParentBottom="true"
+                android:layout_width="@dimen/yhy_size_14px"
+                android:layout_height="@dimen/yhy_size_10px" />
+        </RelativeLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_video_name_3"
+            android:layout_marginLeft="@dimen/yhy_size_15px"
+            app:layout_constraintTop_toBottomOf="@+id/rv_3"
+            android:text=""
+            android:maxLength="8"
+            android:ellipsize="end"
+            android:layout_marginTop="@dimen/yhy_size_8px"
+            android:textSize="@dimen/yhy_size_13px"
+            android:textColor="@color/live_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rv_4"
+            app:layout_constraintDimensionRatio="3:2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/middle"
+            app:layout_constraintTop_toBottomOf="@+id/tv_video_name_1"
+            android:layout_marginTop="@dimen/yhy_size_19px"
+            android:layout_width="0dp"
+            android:layout_height="0dp" >
+            <com.newyhy.views.RoundImageView
+                android:id="@+id/iv_cover_4"
+                app:borderRadius="@dimen/yhy_size_2px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <ImageView
+                android:background="@drawable/shadow"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/yhy_size_46px" />
+            <TextView
+                android:id="@+id/tv_anchor_name_4"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/yhy_size_6px"
+                android:layout_marginBottom="@dimen/yhy_size_6px"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/yhy_size_12px"
+                android:maxLength="8"
+                android:ellipsize="end"
+                android:layout_height="wrap_content"
+                android:text=""/>
+            <TextView
+                android:id="@+id/live_fourth_item_tvAudienceNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/yhy_size_6px"
+                android:layout_marginBottom="@dimen/yhy_size_6px"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/yhy_size_12px" />
+            <ImageView
+                android:layout_toLeftOf="@+id/live_fourth_item_tvAudienceNum"
+                android:src="@drawable/icon_read"
+                android:layout_marginRight="@dimen/yhy_size_6px"
+                android:layout_marginBottom="@dimen/yhy_size_8px"
+                android:layout_alignParentBottom="true"
+                android:layout_width="@dimen/yhy_size_14px"
+                android:layout_height="@dimen/yhy_size_10px" />
+        </RelativeLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_video_name_4"
+            app:layout_constraintTop_toBottomOf="@+id/rv_4"
+            android:text=""
+            android:maxLength="7"
+            android:ellipsize="end"
+            android:layout_marginTop="@dimen/yhy_size_8px"
+            app:layout_constraintLeft_toRightOf="@id/middle"
+            android:textColor="@color/live_text_color"
+            android:textSize="@dimen/yhy_size_13px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:background="#FF282828"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/yhy_size_5px"/>
+
+</RelativeLayout>

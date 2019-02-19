@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:paddingBottom="@dimen/dd_dimen_20px"
+                android:paddingLeft="@dimen/dd_dimen_30px"
+                android:paddingRight="@dimen/dd_dimen_30px"
+                android:paddingTop="@dimen/dd_dimen_20px">
+
+    <ImageView
+        android:id="@+id/sa_iv_1"
+        android:layout_width="@dimen/dd_dimen_240px"
+        android:layout_height="@dimen/dd_dimen_180px"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/cell_plane_hotel_set_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dd_dimen_35px"
+        android:layout_toRightOf="@id/sa_iv_1"
+        android:singleLine="true"
+        android:text="北京-昆明"
+        android:textColor="@color/tv_color_gray6"
+        android:textSize="@dimen/text_size_30px"/>
+
+    <TextView
+        android:id="@+id/cell_plane_hotel_set_brief"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cell_plane_hotel_set_bottom_layout"
+        android:layout_alignLeft="@id/cell_plane_hotel_set_title"
+        android:layout_below="@id/cell_plane_hotel_set_title"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="北京直飞昆明大理丽江豪华 6日游【全5星级酒店、打吧接送】"
+        android:textColor="@color/tv_color_gray6"
+        android:textSize="@dimen/text_size_24px"/>
+
+    <LinearLayout
+        android:id="@+id/cell_plane_hotel_set_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sa_iv_1"
+        android:layout_alignLeft="@id/cell_plane_hotel_set_title"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="¥2999起"
+            android:singleLine="true"
+            android:textColor="@color/main"
+            android:textSize="@dimen/text_size_30px"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="¥2999"
+            android:singleLine="true"
+            android:textColor="@color/tv_color_gray9"
+            android:textSize="@dimen/text_size_24px"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:text="定金¥2999"
+            android:singleLine="true"
+            android:textColor="@color/tv_color_gray9"
+            android:textSize="@dimen/text_size_24px"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_1px"
+        android:background="@color/color_norm_eeeeee"
+        android:layout_below="@+id/sa_iv_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_readmore"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dd_dimen_25px">
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="13dp"
+            android:background="@color/main"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dd_dimen_15px"
+            android:text="房间设施"
+            android:textColor="@color/neu_333333"
+            android:textSize="@dimen/text_size_32px" />
+    </LinearLayout>
+
+
+    <com.quanyan.yhy.view.LabelView
+        android:id="@+id/gridview_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.quanyan.yhy.view.LabelView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_norm_f4f4f4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dd_dimen_25px">
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="13dp"
+            android:background="@color/main"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dd_dimen_15px"
+            android:text="特色服务"
+            android:textColor="@color/neu_333333"
+            android:textSize="@dimen/text_size_32px" />
+    </LinearLayout>
+
+
+    <com.quanyan.yhy.view.LabelView
+        android:id="@+id/gridview_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4">
+
+    </com.quanyan.yhy.view.LabelView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_norm_f4f4f4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dd_dimen_25px">
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="13dp"
+            android:background="@color/main"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dd_dimen_15px"
+            android:text="酒店设施"
+            android:textColor="@color/neu_333333"
+            android:textSize="@dimen/text_size_32px" />
+    </LinearLayout>
+
+
+    <com.quanyan.yhy.view.LabelView
+        android:id="@+id/gridview_hotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"></com.quanyan.yhy.view.LabelView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_norm_f4f4f4" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

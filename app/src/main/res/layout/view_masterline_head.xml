@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_topic_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_topic_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxWidth="@dimen/dd_dimen_400px"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dd_dimen_28px" />
+
+                <TextView
+                    android:id="@+id/tv_topic_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dd_dimen_10px"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dd_dimen_36px" />
+
+                <TextView
+                    android:id="@+id/tv_topic_subsubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dd_dimen_10px"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dd_dimen_32px" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_topic_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dd_dimen_30px"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:layout_marginTop="@dimen/dd_dimen_15px"
+            android:text="他们是遍布在各地的运动爱好者，他们知晓当地风土人情，带给你最好玩最地道的深度运动体验！他们乐于分享旅途的精彩。还在等什么？背上包，快跟他们一起出发吧！一路上，定会让你发现最亮眼的风景！"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dd_dimen_30px" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_20px"
+        android:background="@color/orderline_e1e1e1" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_90px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="精彩线路推荐"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dd_dimen_30px" />
+
+    </RelativeLayout>
+
+</LinearLayout>

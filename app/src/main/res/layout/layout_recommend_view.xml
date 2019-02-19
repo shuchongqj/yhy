@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/recommend_view1"
+        android:layout_width="@dimen/dd_dimen_8px"
+        android:layout_height="@dimen/dd_dimen_30px"
+        android:src="@drawable/scenicorder_title_image" />
+
+    <ImageView
+        android:id="@+id/recommend_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/arrow_go"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/recommend_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dd_dimen_20px"
+        android:layout_toLeftOf="@id/recommend_view2"
+        android:layout_toRightOf="@id/recommend_view1"
+        android:textColor="@color/neu_666666"
+        android:textSize="@dimen/text_size_32px"/>
+
+</merge>

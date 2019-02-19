@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_98px"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dd_dimen_70px"
+        android:paddingRight="@dimen/dd_dimen_70px">
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/neu_cccccc"
+            android:textSize="@dimen/dd_dimen_28px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cancel_order_cant_recovery"
+            android:textColor="@color/neu_666666"
+            android:textSize="@dimen/dd_dimen_32px" />
+
+        <TextView
+            android:id="@+id/tv_affirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/affirm"
+            android:textColor="@color/red_ying"
+            android:textSize="@dimen/dd_dimen_28px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_split_line_height"
+        android:background="#e0e0e0" />
+
+    <include layout="@layout/base_listview" />
+</LinearLayout>

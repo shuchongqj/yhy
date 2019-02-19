@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/title_normal_item">
+
+    </include>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_100px"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dd_dimen_30px">
+
+        <TextView
+            android:id="@+id/tv_name_label"
+            style="@style/fontType_30"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:minWidth="@dimen/dd_dimen_140px"
+            android:text="收件人" />
+
+        <LinearLayout
+            android:id="@+id/ll_name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:minWidth="@dimen/margin_50dp">
+
+            <View
+                style="@style/split_line"
+                android:layout_width="@dimen/margin_0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_20dp">
+
+            </View>
+
+            <TextView
+                android:layout_width="@dimen/margin_30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="必填"
+                style="@style/inputFontType_30" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/defaultFontType_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:gravity="left"
+            android:hint="@string/hint_person_name"
+            android:textCursorDrawable="@null"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:layout_toLeftOf="@+id/ll_name_value"
+            android:layout_toRightOf="@+id/tv_name_label"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/split_line"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"></View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_100px"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dd_dimen_30px">
+
+        <TextView
+            android:id="@+id/tv_phone_label"
+            style="@style/fontType_30"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:gravity="left"
+            android:minWidth="@dimen/dd_dimen_140px"
+            android:text="手机号" />
+
+        <LinearLayout
+            android:id="@+id/ll_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:minWidth="@dimen/margin_50dp">
+
+            <View
+                style="@style/split_line"
+                android:layout_width="@dimen/margin_0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_20dp">
+
+            </View>
+
+            <TextView
+                android:layout_width="@dimen/margin_30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="必填"
+                style="@style/inputFontType_30" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/defaultFontType_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_phone_label"
+            android:background="@color/transparent"
+            android:gravity="left"
+            android:hint="@string/hint_person_phone"
+            android:inputType="number"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textCursorDrawable="@null"
+            android:layout_toLeftOf="@+id/ll_phone"
+            />
+    </RelativeLayout>
+
+    <View
+        style="@style/split_line"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"></View>
+    <!--<View
+        style="@style/split_line"
+        android:layout_marginLeft="@dimen/margin_10dp"></View>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_100px"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/dd_dimen_30px">
+
+        <TextView
+            android:id="@+id/tv_post_code_label"
+            style="@style/fontType_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:minWidth="@dimen/dd_dimen_140px"
+            android:text="邮编" />
+
+        <LinearLayout
+            android:id="@+id/ll_post_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:minWidth="@dimen/margin_50dp">
+
+            <View
+                style="@style/split_line"
+                android:layout_width="@dimen/margin_0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_20dp">
+
+            </View>
+
+            <TextView
+                android:layout_width="@dimen/margin_30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="必填"
+                android:textSize="@dimen/dd_dimen_30px"
+                style="@style/inputFontType_30" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_post_code"
+            style="@style/defaultFontType_30"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_post_code_label"
+            android:background="@color/transparent"
+            android:gravity="left"
+            android:maxLength="6"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/ll_post_code"/>
+    </RelativeLayout>
+
+    <!--<View
+        style="@style/split_line"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"></View>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_100px"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dd_dimen_30px">
+
+        <TextView
+            android:id="@+id/tv_area_label"
+            style="@style/fontType_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:minWidth="@dimen/dd_dimen_140px"
+            android:text="所在地区" />
+
+        <RelativeLayout
+            android:id="@+id/ll_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:layout_toRightOf="@+id/tv_area_label">
+
+            <!-- <View
+                 style="@style/split_line"
+                 android:layout_width="@dimen/margin_0.5dp"
+                 android:layout_height="match_parent"
+                 android:layout_marginRight="@dimen/margin_20dp">
+
+             </View>-->
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                android:layout_width="@dimen/dd_dimen_30px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/arrow_go" />
+
+            <TextView
+                android:id="@+id/et_area"
+                style="@style/defaultFontType_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dd_dimen_10px"
+                android:layout_toLeftOf="@+id/iv_arrow"
+                android:background="@color/transparent"
+                android:gravity="left"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        style="@style/split_line"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dd_dimen_100px"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dd_dimen_26px"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingTop="@dimen/dd_dimen_26px">
+
+        <TextView
+            android:id="@+id/tv_address_label"
+            style="@style/fontType_30"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:gravity="left"
+            android:minWidth="@dimen/dd_dimen_140px"
+            android:text="详细地址" />
+
+        <LinearLayout
+            android:id="@+id/ll_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:minWidth="@dimen/margin_50dp">
+
+            <View
+                style="@style/split_line"
+                android:layout_width="@dimen/margin_0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_20dp">
+
+            </View>
+
+            <TextView
+                android:layout_width="@dimen/margin_30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="必填"
+                style="@style/inputFontType_30" />
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/et_address"
+            style="@style/defaultFontType_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:gravity="left"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:hint="@string/hint_detail_address"
+            android:maxLength="100"
+            android:textCursorDrawable="@null"
+            android:layout_toRightOf="@+id/tv_address_label"
+            android:layout_toLeftOf="@+id/ll_address"/>
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/margin_10dp"
+        android:paddingTop="@dimen/margin_10dp">
+
+        <TextView
+            android:id="@+id/tv_address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:gravity="right"
+            android:minWidth="@dimen/margin_60dp"
+            android:text="详细地址" />
+
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_address_label"
+            android:background="@color/transparent" />
+    </RelativeLayout>-->
+
+    <View
+        style="@style/split_line"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"></View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cb_is_default"
+            android:layout_width="@dimen/dd_dimen_45px"
+            android:layout_height="@dimen/dd_dimen_45px"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_checkbox"
+            android:button="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="设为默认地址"
+            android:paddingLeft="@dimen/dd_dimen_10px"
+            android:textColor="@color/neu_999999"
+            android:textSize="@dimen/dd_dimen_30px" />
+    </LinearLayout>
+
+    <!--<CheckBox
+        android:id="@+id/cb_is_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_10px"
+        android:text="设为默认地址"
+        style="@style/AddressCheckboxTheme"
+        android:textColor="@color/color_norm_bebebe"/>-->
+
+    <!--<Button
+        android:id="@+id/btn_finish"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_50dp"
+        android:background="@mipmap/btn_orange_selector"
+        android:text="完成"
+        android:textColor="@color/white" />-->
+
+</LinearLayout>

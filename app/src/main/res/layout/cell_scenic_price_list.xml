@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:bookable="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dd_dimen_20px"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingRight="@dimen/dd_dimen_30px"
+        android:paddingTop="@dimen/dd_dimen_20px">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cell_scenic_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dd_dimen_80px"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="七彩云南七彩云南七彩云南七彩云南七彩云南七彩云南七彩云南七彩云南七彩云南七彩云南七彩云南七彩云南"
+                android:textColor="@color/neu_333333"
+                android:textSize="@dimen/text_size_30px"/>
+
+            <LinearLayout
+                android:id="@+id/cell_scenic_detail_labels"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/cell_scenic_detail_title"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/view_scenic_ticket_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dd_dimen_20px"
+                    android:background="@drawable/shape_discount"
+                    android:paddingBottom="@dimen/dd_dimen_4px"
+                    android:paddingLeft="@dimen/dd_dimen_10px"
+                    android:paddingRight="@dimen/dd_dimen_10px"
+                    android:paddingTop="@dimen/dd_dimen_4px"
+                    android:text="满100减20"
+                    android:textColor="@color/neu_57b6e2"
+                    android:textSize="@dimen/text_size_16px"/>
+
+                <TextView
+                    android:id="@+id/view_scenic_ticket_today_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dd_dimen_20px"
+                    android:background="@drawable/shape_discount"
+                    android:paddingBottom="@dimen/dd_dimen_4px"
+                    android:paddingLeft="@dimen/dd_dimen_10px"
+                    android:paddingRight="@dimen/dd_dimen_10px"
+                    android:paddingTop="@dimen/dd_dimen_4px"
+                    android:text="今日可订"
+                    android:textColor="@color/neu_57b6e2"
+                    android:textSize="@dimen/text_size_16px"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dd_dimen_5px"
+                android:layout_below="@id/cell_scenic_detail_labels">
+                <TextView
+                    android:id="@+id/cell_scenic_detail_ticket_intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="票型说明"
+                    android:textColor="@color/neu_57b6e2"
+                    android:textSize="@dimen/text_size_26px"/>
+                <TextView
+                    android:id="@+id/cell_scenic_detail_travel_agent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="驴妈妈提供"
+                    android:maxLines="1"
+                    android:layout_toLeftOf="@id/cell_scenic_detail_ticket_intro"
+                    android:textColor="@color/neu_999999"
+                    android:textSize="@dimen/text_size_24px"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/dd_dimen_1px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dd_dimen_20px"
+            android:layout_marginRight="@dimen/dd_dimen_20px"
+            android:background="@color/neu_d4d4d4"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/dd_dimen_210px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cell_scenic_detail_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥200000.00"
+                android:maxLines="1"
+                android:textColor="@color/neu_fa4619"
+                android:textSize="@dimen/text_size_32px"/>
+
+            <TextView
+                android:id="@+id/cell_scenic_detail_original_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥20起"
+                android:maxLines="1"
+                android:textColor="@color/neu_cccccc"
+                android:textSize="@dimen/text_size_28px"/>
+
+            <TextView
+                android:id="@+id/cell_scenic_detail_booking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dd_dimen_5px"
+                android:background="@drawable/sl_booking"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dd_dimen_8px"
+                android:paddingLeft="@dimen/dd_dimen_32px"
+                android:paddingRight="@dimen/dd_dimen_32px"
+                android:paddingTop="@dimen/dd_dimen_8px"
+                android:text="预订"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_30px"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_1px"
+        android:background="@mipmap/ic_dash_line"/>
+</LinearLayout>

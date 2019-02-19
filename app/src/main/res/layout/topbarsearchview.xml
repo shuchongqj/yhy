@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/sm_action_bar_panel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <!-- 右边的button区域 -->
+            <LinearLayout
+                android:id="@+id/sm_title_bar_right_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- 右边的文本button -->
+                <TextView
+                    android:id="@+id/bh_title_bar_btn_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="48dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="取消"
+                    android:textColor="@color/main"
+                    android:textSize="16sp" />
+                <!-- 右边的图片button -->
+            </LinearLayout>
+
+            <!-- 中间的文本标题 -->
+
+            <LinearLayout
+                android:id="@+id/sm_title_content_panel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_toLeftOf="@+id/sm_title_bar_right_panel"
+                android:gravity="center">
+
+                <com.quanyan.yhy.view.ClearEditText
+                    android:id="@+id/search_clearedittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/master_top_bar_search"
+                    android:completionThreshold="1"
+                    android:drawableLeft="@mipmap/search"
+                    android:drawablePadding="10dp"
+                    android:dropDownVerticalOffset="1.0dip"
+                    android:editable="false"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="输入您感兴趣的景点"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text|textAutoComplete"
+                    android:maxLength="50"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginBottom="@dimen/dd_dimen_15px"
+                    android:layout_marginTop="@dimen/dd_dimen_15px"
+                    android:scaleType="centerInside"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dd_dimen_30px" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View style="@style/split_line" />
+
+    </LinearLayout>
+
+</LinearLayout>

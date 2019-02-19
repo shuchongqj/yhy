@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/home_top_search_location_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingRight="@dimen/dd_dimen_10px"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/home_top_search_location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/home_top_location_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dd_dimen_10px"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_home_nav_address_white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_master_search_layout"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/nav_master_search_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon_master_tab_nav_search"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/nav_master_im_message_layout"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/nav_master_im_message_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon_master_tab_im_message"/>
+
+        <TextView
+            android:id="@+id/nav_master_im_message_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_margin="8dp"
+            android:paddingBottom="@dimen/dd_dimen_2px"
+            android:paddingLeft="@dimen/dd_dimen_10px"
+            android:paddingRight="@dimen/dd_dimen_10px"
+            android:paddingTop="@dimen/dd_dimen_2px"
+            android:text="23"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_18px"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/top_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxWidth="@dimen/dd_dimen_200px"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_36px"/>
+
+    <LinearLayout
+        android:id="@+id/top_bar_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dd_dimen_20px"
+        android:layout_toLeftOf="@id/nav_master_im_message_layout"
+        android:layout_toRightOf="@id/home_top_search_location_layout"
+        android:background="@drawable/master_top_bar_search"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dd_dimen_10px"
+        android:paddingTop="@dimen/dd_dimen_10px"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/top_bar_search_image"
+            android:layout_width="@dimen/dd_dimen_25px"
+            android:layout_height="@dimen/dd_dimen_25px"
+            android:layout_marginLeft="@dimen/dd_dimen_20px"
+            android:src="@drawable/selector_home_nav_search_img"/>
+
+        <TextView
+            android:id="@+id/top_bar_search_text_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dd_dimen_20px"
+            android:text="@string/text_top_search_buymust_hint"
+            android:textColor="@color/tv_home_top_search_selector"
+            android:textSize="@dimen/dd_dimen_24px"/>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/dd_dimen_30px"
+              android:paddingRight="@dimen/dd_dimen_30px"
+              android:paddingTop="@dimen/dd_dimen_20px">
+
+    <TextView
+        android:id="@+id/ac_ticket_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="代理商"
+        android:textColor="@color/neu_333333"
+        android:textSize="@dimen/text_size_30px"
+        android:typeface="serif"/>
+
+    <com.quanyan.yhy.view.ExpandableTextView
+        android:id="@+id/ac_ticket_info_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dd_dimen_10px"
+        expandableTextView:animDuration="200"
+        expandableTextView:maxCollapsedLines="3">
+
+        <TextView
+            android:id="@id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="八达岭长城"
+            android:textColor="@color/neu_333333"
+            android:textSize="@dimen/text_size_28px"
+            android:typeface="serif"/>
+
+        <TextView
+            android:id="@id/expand_collapse_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:paddingRight="@dimen/dd_dimen_20px"
+            android:textSize="@dimen/dd_dimen_28px"
+            android:textColor="@color/neu_57b6e2"
+            android:background="@android:color/transparent"/>
+    </com.quanyan.yhy.view.ExpandableTextView>
+
+</LinearLayout>

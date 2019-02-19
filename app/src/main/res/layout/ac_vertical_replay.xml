@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.newyhy.views.TXVideoView
+        android:id="@+id/vertical_replay_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.newyhy.views.TXVideoView>
+
+    <include
+        android:id="@+id/vertical_tittle"
+        layout="@layout/vertical_tittle"/>
+
+    <RelativeLayout
+        android:id="@+id/fl_comment_zan"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/yhy_size_49px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_comment_zan_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/live_background">
+
+            <com.androidkun.xtablayout.XTabLayout
+                android:id="@+id/tab_comment_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:xTabMode="scrollable"
+                app:xTabIndicatorColor="@color/red_win"
+                app:xTabIndicatorHeight="@dimen/yhy_size_3px"
+                app:xTabIndicatorWidth="@dimen/yhy_size_25px"
+                app:xTabSelectedTextColor="@color/white"
+                android:layout_marginRight="@dimen/yhy_size_120px"
+                app:xTabTextColor="@color/tab_normal"
+                />
+
+            <TextView
+                android:id="@+id/tv_view_count"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/yhy_size_14px"
+                android:textColor="@color/tab_unselect"
+                android:textSize="@dimen/yhy_size_13px"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/gap_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/yhy_size_0.5px"
+                android:layout_below="@+id/tab_comment_zan"
+                android:background="#ff282828" />
+
+        </RelativeLayout>
+        <android.support.v4.view.ViewPager
+            android:layout_below="@+id/rl_comment_zan_view"
+            android:id="@+id/vp_comment_zan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/yhy_size_380px">
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_say_something"
+        android:background="@color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/yhy_size_49px">
+        
+        <View
+            android:background="@color/gap_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/yhy_size_0.5px"/>
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/et_comment"
+            android:background="@drawable/round_corner"
+            android:layout_marginLeft="@dimen/yhy_size_15px"
+            android:layout_marginRight="@dimen/yhy_size_160px"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/yhy_size_30px">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/yhy_size_8px"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_edit_text"
+                android:layout_width="@dimen/yhy_size_15px"
+                android:layout_height="@dimen/yhy_size_15px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/live_text_color"
+                android:text="想说点什么?"
+                android:layout_marginLeft="@dimen/yhy_size_31px"
+                android:textSize="@dimen/yhy_size_14px" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_zan"
+            android:src="@drawable/ic_un_zan"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/yhy_size_15px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/yhy_size_20px"
+            android:layout_width="@dimen/yhy_size_50px"
+            android:layout_height="@dimen/yhy_size_50px" />
+
+        <ImageView
+            android:id="@+id/iv_show_comment"
+            android:src="@drawable/ic_show_comment"
+            android:layout_toLeftOf="@+id/iv_zan"
+            android:layout_marginRight="@dimen/yhy_size_16px"
+            android:layout_marginLeft="@dimen/yhy_size_10px"
+            android:padding="@dimen/yhy_size_15px"
+            android:layout_width="@dimen/yhy_size_50px"
+            android:layout_height="@dimen/yhy_size_50px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

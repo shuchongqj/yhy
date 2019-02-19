@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dd_dimen_34px"
+    android:paddingTop="@dimen/dd_dimen_34px">
+
+    <TextView
+        android:id="@+id/tv_order_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:text="下单时间 :"
+        android:textColor="@color/neu_999999"
+        android:textSize="@dimen/text_size_24px" />
+
+    <TextView
+        android:id="@+id/tv_order_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_order_time"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:text="订单标号 :"
+        android:textColor="@color/neu_999999"
+        android:textSize="@dimen/text_size_24px" />
+
+    <TextView
+        android:id="@+id/tv_order_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_order_code"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dd_dimen_30px"
+        android:textColor="@color/main"
+        android:textSize="@dimen/text_size_24px" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_split_line_height"
+        android:layout_below="@+id/tv_order_status"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:background="@color/divider" />
+
+
+    <TextView
+        android:id="@+id/tv_close_reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:textColor="@color/neu_999999"
+        android:textSize="@dimen/text_size_24px"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_close_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_close_reason"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:textColor="@color/neu_999999"
+        android:textSize="@dimen/text_size_24px"
+        android:visibility="gone" />
+
+</RelativeLayout>

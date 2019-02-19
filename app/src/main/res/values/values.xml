@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="progress_bar_color">
+        <item>@color/white</item>
+        <item>@color/gray_D</item>
+    </array>
+</resources>

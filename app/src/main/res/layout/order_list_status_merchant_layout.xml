@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_merchant_info"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dd_dimen_80px"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/dd_dimen_30px"
+    android:paddingRight="@dimen/dd_dimen_30px">
+
+    <ImageView
+        android:id="@+id/image_merchant"
+        android:layout_width="@dimen/dd_dimen_60px"
+        android:layout_height="@dimen/dd_dimen_60px"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_shop_default_logo" />
+
+    <TextView
+        android:id="@+id/tv_merchant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dd_dimen_18px"
+        android:layout_toRightOf="@id/image_merchant"
+        android:ellipsize="end"
+        android:maxWidth="200dp"
+        android:singleLine="true"
+        android:textColor="@color/neu_999999"
+        android:textSize="@dimen/text_size_24px" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_merchant"
+        android:src="@mipmap/arrow_go" />
+
+    <TextView
+        android:id="@+id/tv_order_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/main"
+        android:textSize="@dimen/text_size_24px" />
+</RelativeLayout>

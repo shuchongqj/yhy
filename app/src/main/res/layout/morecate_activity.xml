@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_hall"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1.0"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_100px"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/clubhome_tv_tabevent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dd_dimen_10px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dd_dimen_15px"
+
+            android:paddingTop="@dimen/dd_dimen_15px"
+            android:text="人气"
+            android:textColor="@color/main"
+            android:textSize="@dimen/dd_dimen_30px" />
+
+        <View
+            android:layout_width="@dimen/dd_dimen_1px"
+            android:layout_height="@dimen/dd_dimen_20px"
+            android:layout_gravity="center_vertical"
+            android:background="@color/line_gray"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/clubhome_tv_tabclub"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dd_dimen_10px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dd_dimen_15px"
+            android:paddingTop="@dimen/dd_dimen_15px"
+            android:text="新晋"
+            android:textColor="@color/main"
+            android:textSize="@dimen/dd_dimen_30px"
+
+
+            />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/clubhome_iv_line"
+        android:layout_width="@dimen/dd_dimen_100px"
+        android:layout_height="@dimen/dd_dimen_3px"
+        android:layout_below="@+id/linearLayout1"
+        android:src="@color/main" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clubhome_iv_line"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/clubhome_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation"></android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+</LinearLayout>

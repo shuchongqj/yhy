@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_lable_comment"
+        android:background="@drawable/bg_disc_tab_selector"
+        android:paddingLeft="@dimen/dd_dimen_15px"
+        android:paddingRight="@dimen/dd_dimen_15px"
+        android:paddingTop="@dimen/dd_dimen_10px"
+        android:paddingBottom="@dimen/dd_dimen_10px"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/dd_dimen_30px"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:text="@string/comment_list_all"
+        android:textColor="@color/tv_white_orange_selector"
+        android:textSize="@dimen/text_size_32px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </TextView>
+
+</LinearLayout>

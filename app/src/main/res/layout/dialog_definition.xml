@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_100px"
+        android:gravity="center"
+        android:text="请选择直播清晰度"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="@dimen/yhy_size_17px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0.5dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/dialog_definition_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_100px"
+        android:gravity="center"
+        android:text="@string/standard_live"
+        android:background="#f9f9f9"
+        android:textColor="@color/neu_666666"
+        android:textSize="@dimen/yhy_size_17px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0.5dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/dialog_definition_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_100px"
+        android:gravity="center"
+        android:text="@string/hd_live"
+        android:background="#f9f9f9"
+        android:textColor="@color/neu_666666"
+        android:textSize="@dimen/yhy_size_17px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0.5dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/dialog_definition_3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_100px"
+        android:gravity="center"
+        android:text="@string/super_hd_live"
+        android:textColor="@color/neu_666666"
+        android:background="#f9f9f9"
+        android:textSize="@dimen/yhy_size_17px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0.5dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/dialog_definition_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_100px"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:visibility="gone"
+        android:textColor="@color/aux_67aef1"
+        android:textSize="@dimen/dd_dimen_28px" />
+</LinearLayout>

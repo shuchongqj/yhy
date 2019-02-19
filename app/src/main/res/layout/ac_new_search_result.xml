@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_pop_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/arrow_down_icon"
+            android:paddingLeft="@dimen/dd_dimen_30px"
+            android:paddingRight="@dimen/dd_dimen_30px"
+            android:paddingTop="@dimen/dd_dimen_10px"
+            android:paddingBottom="@dimen/dd_dimen_10px"/>
+
+        <com.quanyan.base.view.customview.tabscrollindicator.SlidingTabLayout
+            android:id="@+id/ac_new_search_sliding_tab"
+            android:background="#fafafa"
+            android:layout_toLeftOf="@+id/iv_pop_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.quanyan.base.view.customview.tabscrollindicator.SlidingTabLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ac_new_search_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

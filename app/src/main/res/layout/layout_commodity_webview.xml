@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebView
+    android:id="@id/id_stickynavlayout_innerscrollview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</WebView>
+<!--<ScrollView android:id="@id/id_stickynavlayout_innerscrollview"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/commodity_detail_webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </WebView>
+
+        <RelativeLayout
+            android:id="@+id/commodity_bottomview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dd_dimen_20px"
+            android:paddingLeft="@dimen/dd_dimen_30px"
+            android:paddingRight="@dimen/dd_dimen_30px"
+            android:paddingTop="@dimen/dd_dimen_20px">
+
+            <View
+                android:id="@+id/dash_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dd_dimen_1px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dd_dimen_30px"
+                android:layout_toLeftOf="@+id/dash_textview"
+                android:background="@color/tc_e1e1e1"/>
+
+            <TextView
+                android:id="@+id/dash_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/tv_product_detail_preview"
+                android:textColor="@color/neu_999999"
+                android:textSize="@dimen/text_size_24px"/>
+
+            <View
+                android:id="@+id/dash_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dd_dimen_1px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:layout_toRightOf="@id/dash_textview"
+                android:background="@color/tc_e1e1e1"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>-->

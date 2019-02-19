@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 测试环境 -->
+<envs>
+    <env>
+        <appId>1</appId>
+        <domainId>1000</domainId>
+        <logUrl> http://logtest.yingheying.com/a.gif</logUrl>
+        <apiUrl>http://apitest.yingheying.com/m.api</apiUrl>
+        <httpsApiUrl>http://apitest.yingheying.com/m.api</httpsApiUrl>
+        <imageUrl>http://imgdatabasetest.yingheying.com/</imageUrl>
+        <uploadUrl>http://filetest.yingheying.com/file/upload</uploadUrl>
+        <publicKey>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC8jbOIdkjYxK4LiyxU14B/FG5iXF6GlKMIUvFgSJuclpBcnyY0Tgc+aAlRBohR4hK5TzceljsSsq4B+v3yfb+QA3rsw8TU2vJ3xmSZc1/DmIxc/6Me8LNb6g+PLpTEn1FE8XYcPNg7rfyIgTkHhRWuul/CmJ2CGtOBvIPOXn0QTwIDAQAB</publicKey>
+        <crashLogUrl>http://api.test.yingheying.com/v1/tfs/</crashLogUrl>
+        <vodUrl>http://vodtest.yingheying.com/</vodUrl>
+
+        <!-- 默认的域  -->
+        <defaultDomain>.yingheying.com</defaultDomain>
+        <liveShareUrl>http://h5test.yingheying.com/wxlive/#!/live/</liveShareUrl>
+    </env>
+</envs>

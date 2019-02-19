@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_interest_dialog">
+
+    <ImageView
+        android:id="@+id/dialog_interest_head"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:paddingTop="15dp"
+        android:scaleType="fitStart"
+        android:src="@mipmap/ic_interest_head" />
+
+    <TextView
+        android:id="@+id/dialog_interest_skip"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="跳过"
+        android:textColor="#4a4a4a"
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/dialog_interest_panel_parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/dialog_interest_next"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_interest_head">
+
+        <RelativeLayout
+            android:id="@+id/dialog_interest_panel1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/dialog_interest_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="你的性别"
+                android:textColor="#999999"
+                android:textSize="16sp" />
+
+            <include
+                android:id="@+id/dialog_interest_sex_male"
+                layout="@layout/include_dialog_sex_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="70dp" />
+
+            <include
+                android:id="@+id/dialog_interest_sex_female"
+                layout="@layout/include_dialog_sex_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="90dp"
+                android:layout_marginTop="70dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/dialog_interest_panel2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/dialog_interest_panel1">
+
+            <TextView
+                android:id="@+id/dialog_interest_panel2_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:text="喜欢的运动"
+                android:textColor="#999999"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/dialog_interest_grid1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/dialog_interest_panel2_title"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dialog_interest_panel3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/dialog_interest_panel2">
+
+            <TextView
+                android:id="@+id/dialog_interest_panel3_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="你主要想用鹰和鹰"
+                android:textColor="#999999"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/dialog_interest_grid2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/dialog_interest_panel3_title"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/dialog_interest_next"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_button_interest_next"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="下一步"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

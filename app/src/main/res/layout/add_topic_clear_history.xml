@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/dd_dimen_20px"
+              android:paddingTop="@dimen/dd_dimen_20px">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/tt_delete_bar"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dd_dimen_20px"
+        android:text="清除历史"
+        android:textColor="@color/neu_999999"
+        android:textSize="@dimen/text_size_30px"/>
+</LinearLayout>

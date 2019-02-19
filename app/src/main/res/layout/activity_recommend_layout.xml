@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout  android:id="@+id/recommend_vene_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include layout="@layout/common_divider"/>
+
+    <LinearLayout android:id="@+id/recomment_empty_layout"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView android:id="@+id/start_sport_default_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sport_default_img"
+           />
+        <TextView
+            style="@style/fontGrey_14"
+
+            android:text="@string/create_default_ind"/>
+        <TextView android:id="@+id/create_sport"
+            style="@style/fontRed_14"
+            android:text="@string/create_sport"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/background_ying_red_circle_round"/>
+
+    </LinearLayout>
+</LinearLayout>

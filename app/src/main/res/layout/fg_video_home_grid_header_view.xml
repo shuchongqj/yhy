@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/view_master_video_home_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.quanyan.yhy.ui.line.view.RecommendView
+            android:id="@+id/fg_live_play_home_announcement_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.quanyan.yhy.ui.line.view.RecommendView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dd_dimen_30px"
+            android:paddingRight="@dimen/dd_dimen_30px">
+
+            <TextView
+                android:id="@+id/fg_live_play_home_announcement_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/neu_666666"
+                android:lineSpacingExtra="3dp"
+                android:includeFontPadding="false"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical">
+
+        <com.quanyan.yhy.ui.line.view.RecommendView
+            android:id="@+id/fg_live_play_home_replay_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.quanyan.yhy.ui.line.view.RecommendView>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ac_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.quanyan.yhy.ui.views.LoginInputView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_90px"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:layout_marginTop="@dimen/dd_dimen_80px"
+            android:background="@drawable/shape_bind_phone_transparent_text" />
+
+        <RelativeLayout
+            android:id="@+id/ll_validate_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_90px"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:layout_marginTop="@dimen/dd_dimen_30px"
+            android:background="@drawable/shape_bind_phone_transparent_text"
+            android:orientation="horizontal">
+
+            <com.quanyan.yhy.ui.views.LoginInputView
+                android:id="@+id/validate_code"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/dd_dimen_90px"
+                android:layout_marginTop="@dimen/dd_dimen_20px" />
+
+            <TextView
+                android:id="@+id/tv_get_validate_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:layout_marginRight="@dimen/dd_dimen_30px"
+                android:background="@drawable/button_get_validate_code_background_selector"
+                android:gravity="center"
+                android:minEms="5"
+                android:paddingBottom="@dimen/dd_dimen_10px"
+                android:paddingLeft="@dimen/dd_dimen_15px"
+                android:paddingRight="@dimen/dd_dimen_15px"
+                android:paddingTop="@dimen/dd_dimen_10px"
+                android:text="@string/req_dynamic_code"
+                android:enabled="false"
+                android:textColor="@color/neu_333333"
+                android:textSize="@dimen/text_size_24px" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_dispatch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_90px"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:layout_marginTop="@dimen/dd_dimen_30px"
+            android:layout_marginBottom="@dimen/dd_dimen_60px"
+            android:background="@drawable/shape_button_main_unclick"
+            android:enabled="false"
+            android:gravity="center"
+            android:padding="@dimen/dd_dimen_20px"
+            android:textColor="@color/transparent_black_50"
+            android:textSize="@dimen/dd_dimen_36px" />
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+           android:id="@+id/cell_travel_detail_pic"
+                android:layout_width="match_parent"
+           android:scaleType="centerCrop"
+                android:layout_height="match_parent">
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/cell_travel_detail_pic_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/cell_travel_detail_pic"
+        android:background="@color/translucent_20_dark"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/cell_travel_detail_pic_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="云南不愧是鲜花王国"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dd_dimen_24px"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/cell_travel_detail_pic_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/location"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="七彩云南"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dd_dimen_24px"/>
+    </RelativeLayout>-->
+
+</ImageView>

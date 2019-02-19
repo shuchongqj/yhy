@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dd_dimen_30px"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_handcere_grid_bg"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout">
+
+            <ImageView
+                android:id="@+id/iv_eat_product_bg"
+                android:layout_width="@dimen/dd_dimen_132px"
+                android:layout_height="@dimen/dd_dimen_132px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/dd_dimen_20px"
+                android:layout_marginTop="@dimen/dd_dimen_20px"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_default_150_150" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dd_dimen_132px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dd_dimen_30px"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_eat_product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dd_dimen_30px"
+                    android:layout_marginTop="@dimen/dd_dimen_10px"
+                    android:ellipsize="end"
+                    android:text="毛巾 "
+                    android:singleLine="true"
+                    android:textColor="@color/neu_333333"
+                    android:textSize="@dimen/text_size_30px" />
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_address_de"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/dd_dimen_10px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true">
+
+
+
+                    <TextView
+                        android:id="@+id/tv_eat_product_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:singleLine="true"
+                        android:text="秒杀"
+                        android:textColor="@color/neu_666666"
+                        android:textSize="@dimen/text_size_24px" />
+
+                    <TextView
+                        android:id="@+id/tv_eat_product_address2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:singleLine="true"
+                        android:text="120积分"
+                        android:textColor="@color/neu_666666"
+                        android:textSize="@dimen/text_size_24px"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/ll_address_de1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_alignParentLeft="true">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text="兑换码"
+                android:textColor="@color/neu_666666"
+                android:textSize="@dimen/text_size_24px"
+                android:id="@+id/textView2" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text="11111"
+                android:textColor="@color/neu_666666"
+                android:textSize="@dimen/text_size_24px"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text="2016.1.1过期"
+                android:textColor="@color/neu_666666"
+                android:textSize="@dimen/text_size_24px"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            style="@style/split_line"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/relativeLayout3"></View>
+
+        <View
+            style="@style/split_line"
+            android:layout_below="@+id/ll_address_de1"
+            android:layout_alignParentLeft="true"></View>
+    </RelativeLayout>
+
+
+</LinearLayout>

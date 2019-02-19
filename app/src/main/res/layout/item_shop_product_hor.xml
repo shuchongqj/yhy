@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ac_bg_color"
+    android:paddingBottom="@dimen/dd_dimen_5px"
+    android:paddingTop="@dimen/dd_dimen_5px">
+
+    <LinearLayout
+        android:layout_width="1.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:id="@+id/ll_product_1"
+        android:layout_marginRight="@dimen/margin_5dp">
+
+        <ImageView
+            android:id="@+id/iv_shop_product_bg_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_default_150_150" />
+
+        <TextView
+            android:id="@+id/tv_shop_product_name_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:minLines="2"
+            android:text="七彩云南一日游"
+            android:textColor="@color/color_norm_636363"
+            android:layout_marginLeft="@dimen/dd_dimen_10px"
+            android:layout_marginRight="@dimen/dd_dimen_10px"
+            android:textSize="@dimen/dd_dimen_25px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dd_dimen_10px"
+            android:layout_marginRight="@dimen/dd_dimen_10px">
+
+            <TextView
+                android:id="@+id/tv_shop_product_sales_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dd_dimen_15px"
+                android:singleLine="true"
+                android:text="@string/label_sales"
+                android:textColor="@color/gray"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/dd_dimen_25px" />
+
+            <TextView
+                android:id="@+id/tv_shop_product_price_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:text="@string/label_money"
+                android:textColor="@color/main"
+                android:textSize="@dimen/dd_dimen_25px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:id="@+id/ll_product_2">
+
+        <ImageView
+            android:id="@+id/iv_shop_product_bg_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_default_150_150" />
+
+        <TextView
+            android:id="@+id/tv_shop_product_name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:minLines="2"
+            android:text="七彩云南一日游"
+            android:textColor="@color/color_norm_636363"
+            android:textSize="@dimen/dd_dimen_25px"
+            android:layout_marginLeft="@dimen/dd_dimen_10px"
+            android:layout_marginRight="@dimen/dd_dimen_10px"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dd_dimen_10px"
+            android:layout_marginRight="@dimen/dd_dimen_10px">
+
+
+            <TextView
+                android:id="@+id/tv_shop_product_sales_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dd_dimen_15px"
+                android:singleLine="true"
+                android:text="@string/label_sales"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/dd_dimen_25px" />
+
+            <TextView
+                android:id="@+id/tv_shop_product_price_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:text="@string/label_money"
+                android:textColor="@color/main"
+                android:textSize="@dimen/dd_dimen_25px" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

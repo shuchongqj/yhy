@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/around_menu_selected"
+    android:gravity="center"
+    android:paddingBottom="@dimen/dd_dimen_20px"
+    android:paddingLeft="@dimen/dd_dimen_30px"
+    android:paddingRight="@dimen/dd_dimen_20px"
+    android:paddingTop="@dimen/dd_dimen_30px"
+    android:textSize="@dimen/dd_dimen_30px">
+
+
+</TextView>

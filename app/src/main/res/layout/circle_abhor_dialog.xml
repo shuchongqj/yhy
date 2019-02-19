@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/transparent">
+
+    <ImageView
+        android:id="@+id/up_arrow"
+        android:layout_width="@dimen/yhy_size_20px"
+        android:layout_height="@dimen/yhy_size_16px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/yhy_size_2px"
+        android:background="@drawable/layer_list_regular_triangle"/>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/yhy_size_8px"
+        android:orientation="vertical"
+        android:layout_below="@id/up_arrow"
+        android:background="@drawable/white_shape_drawable">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可选理由，精准屏蔽"
+                android:textColor="@color/gray_BE"
+                android:textSize="@dimen/yhy_size_14px"
+                android:layout_marginLeft="@dimen/yhy_size_5px"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/tv_abhor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="不感兴趣"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/yhy_size_14px"
+                android:layout_marginRight="@dimen/yhy_size_5px"
+                android:paddingRight="@dimen/yhy_size_15px"
+                android:paddingLeft="@dimen/yhy_size_15px"
+                android:paddingTop="@dimen/yhy_size_5px"
+                android:paddingBottom="@dimen/yhy_size_5px"
+                android:background="@drawable/circle_abhor_button_shape"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_reason"
+            android:layout_marginTop="@dimen/yhy_size_10px"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/down_arrow"
+        android:layout_width="@dimen/yhy_size_20px"
+        android:layout_height="@dimen/yhy_size_16px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/content"
+        android:layout_marginRight="@dimen/yhy_size_2px"
+        android:background="@drawable/layer_list_inverted_triangle"/>
+
+</RelativeLayout>

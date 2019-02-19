@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_20px"
+        android:background="@color/color_norm_f4f4f4"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_text_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/post_comment_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/dd_dimen_20px"
+            android:paddingTop="@dimen/dd_dimen_20px"
+            android:paddingLeft="@dimen/dd_dimen_30px"
+            android:text=""
+            android:maxLines="2"
+            android:minHeight="@dimen/dd_dimen_100px"
+            android:textColor="@color/neu_666666"
+            android:textColorHint="@color/neu_999999"
+            android:layout_marginRight="@dimen/dd_dimen_10px"
+            android:textSize="@dimen/dd_dimen_30px"/>
+
+        <ImageView
+            android:id="@+id/img_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dd_dimen_30px"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/btn_tips_close" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/dd_dimen_70px"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tv_max_size"
+                android:layout_width="@dimen/dd_dimen_70px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:text=""
+                android:textColor="@color/color_norm_bebebe"
+                android:textSize="@dimen/dd_dimen_24px" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_1px"
+        android:background="@color/neu_ededed" />
+
+    <TextView
+        android:id="@+id/tv_need_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_88px"
+        android:layout_marginRight="@dimen/dd_dimen_20px"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:text=""
+        android:visibility="gone"
+        android:textColor="@color/neu_999999"
+        android:textSize="@dimen/dd_dimen_24px" />
+
+    <TextView
+        android:id="@+id/tv_error_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/edit_text_widget"
+        android:layout_marginRight="10dp"
+        android:gravity="left"
+        android:padding="15dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/color_norm_bebebe"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_hint_post_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/edit_text_widget"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:padding="8dp"
+        android:textColor="@color/deep_s_gray"
+        android:visibility="gone"></TextView>
+
+</LinearLayout>

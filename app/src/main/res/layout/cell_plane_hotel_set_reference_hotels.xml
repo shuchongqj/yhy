@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="@android:color/white"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dd_dimen_160px"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingRight="@dimen/dd_dimen_30px">
+
+        <ImageView
+            android:id="@+id/plane_hotel_set_detail_refer_hotel_left_img"
+            android:layout_width="@dimen/dd_dimen_65px"
+            android:layout_height="@dimen/dd_dimen_65px"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/plane_hotel_set_detail_refer_hotel_right_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/arrow_go"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:layout_toLeftOf="@id/plane_hotel_set_detail_refer_hotel_right_img"
+            android:layout_toRightOf="@id/plane_hotel_set_detail_refer_hotel_left_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cell_planesetdetail_hotel_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/tv_color_gray63"
+                android:textSize="@dimen/dd_dimen_33px"/>
+
+            <TextView
+                android:id="@+id/cell_planesetdetail_hotel_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dd_dimen_27px"
+                android:singleLine="true"
+                android:textColor="@color/tv_color_grayBE"
+                android:textSize="@dimen/dd_dimen_21px"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

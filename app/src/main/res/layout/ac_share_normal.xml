@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_share_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_all"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/ll_other"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_1px"
+            android:background="@color/divider" />
+
+        <GridView
+            android:id="@+id/hg_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dd_dimen_80px"
+            android:layout_marginBottom="@dimen/dd_dimen_70px"
+            android:layout_marginLeft="@dimen/dd_dimen_60px"
+            android:layout_marginRight="@dimen/dd_dimen_60px"
+            android:stretchMode="spacingWidth"
+            android:columnWidth="@dimen/dd_dimen_120px"
+            android:scrollbars="none">
+        </GridView>
+
+        <CheckBox
+            android:id="@+id/cb_sync_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dd_dimen_20px"
+            android:button="@drawable/selector_share_checkbox"
+            android:paddingLeft="@dimen/dd_dimen_10px"
+            android:text="@string/label_sync_dynamic"
+            android:checked="false"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/neu_333333"
+            android:textSize="@dimen/dd_dimen_32px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_1px"
+            android:background="@color/divider" />
+
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_100px"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/label_title_bar_cancel"
+            android:textColor="@color/red_ying"
+            android:textSize="@dimen/dd_dimen_30px" />
+    </LinearLayout>
+</LinearLayout>

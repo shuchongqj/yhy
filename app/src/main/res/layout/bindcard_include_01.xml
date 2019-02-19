@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orderbackground_f4f4f4"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_include01_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_40px"
+        android:textColor="@color/neu_999999"
+        android:textSize="@dimen/dd_dimen_30px" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_100px"
+        android:layout_marginTop="@dimen/dd_dimen_40px"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:text="持卡人"
+            android:textColor="@color/neu_333333"
+            android:textSize="@dimen/dd_dimen_36px" />
+
+        <TextView
+            android:id="@+id/et_card_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_180px"
+            android:layout_marginRight="@dimen/dd_dimen_24px"
+            android:background="@null"
+            android:singleLine="true"
+            android:textColor="@color/neu_333333"
+            android:textColorHint="@color/neu_999999"
+            android:textSize="@dimen/dd_dimen_34px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_1px"
+        android:background="@color/orderline_e1e1e1" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_100px"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:text="卡号"
+            android:textColor="@color/neu_333333"
+            android:textSize="@dimen/dd_dimen_36px" />
+
+        <com.quanyan.yhy.ui.wallet.view.WalletXEditText
+            android:id="@+id/et_card_num"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dd_dimen_24px"
+            android:layout_marginLeft="@dimen/dd_dimen_180px"
+            android:background="@null"
+            android:hint="仅支持储蓄卡号"
+            android:inputType="number"
+            android:singleLine="true"
+            android:maxLength="23"
+            android:textColor="@color/neu_333333"
+            android:textColorHint="@color/neu_999999"
+            android:textSize="@dimen/dd_dimen_34px" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_next_01"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_100px"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginRight="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_100px"
+        android:background="@drawable/btn_orange_selector"
+        android:text="下一步"
+        android:textSize="@dimen/dd_dimen_34px" />
+
+</LinearLayout>

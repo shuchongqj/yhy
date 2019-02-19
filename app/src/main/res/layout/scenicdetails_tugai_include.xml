@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dip"
+            android:text="退改规定"
+            android:textColor="#636363"
+            android:textSize="@dimen/dd_dimen_36px" />
+
+
+        <TextView
+            android:id="@+id/scenicdetails_tuigai_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dip"
+            android:text="未检票时，退票将收取1元/张退票费，检票后一概不退不换，若遇人力不可抗拒因素，全额退款，门票也可退（顾客等于免费进去）"
+            android:textColor="#bebebe"
+            android:textSize="@dimen/dd_dimen_24px" />
+
+    </LinearLayout>
+</LinearLayout>

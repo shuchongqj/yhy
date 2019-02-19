@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/yhy_size_233px">
+
+        <com.newyhy.views.TXVideoView
+            android:id="@+id/horizontal_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.newyhy.views.TXVideoView>
+
+        <View
+            android:visibility="gone"
+            android:id="@+id/view_shadow"
+            android:background="@drawable/shape_shadow_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/yhy_size_70px"/>
+
+        <ImageView
+            android:id="@+id/ib_finish"
+            android:layout_width="@dimen/yhy_size_32px"
+            android:layout_height="@dimen/yhy_size_32px"
+            android:layout_marginLeft="@dimen/yhy_size_10px"
+            android:layout_marginStart="@dimen/yhy_size_10px"
+            android:layout_marginTop="@dimen/yhy_size_20px"
+            android:background="@null"
+            android:src="@mipmap/ic_live_back" />
+
+        <ImageView
+            android:id="@+id/ib_share"
+            android:layout_width="@dimen/yhy_size_32px"
+            android:layout_height="@dimen/yhy_size_32px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/yhy_size_10px"
+            android:layout_marginTop="@dimen/yhy_size_20px"
+            android:background="@null"
+            android:src="@mipmap/ic_live_share" />
+
+        <include
+            android:id="@+id/rl_video_tittle"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/yhy_size_20px"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/yhy_size_32px"
+            android:layout_marginRight="@dimen/dd_dimen_100px"
+            android:layout_marginLeft="@dimen/dd_dimen_100px"
+            layout="@layout/horizontal_video_tittle"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_person_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/yhy_size_60px"
+        android:layout_below="@+id/rl_video_view"
+        android:background="@color/live_background">
+
+        <ImageView
+            android:id="@+id/ib_anchor_head"
+            android:layout_width="@dimen/yhy_size_30px"
+            android:layout_height="@dimen/yhy_size_30px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/yhy_size_15px"
+            android:src="@mipmap/defauthead" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/yhy_size_11px"
+            android:layout_marginTop="@dimen/yhy_size_10px"
+            android:layout_toRightOf="@+id/ib_anchor_head"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="#cccccc"
+            android:textSize="@dimen/yhy_size_14px" />
+
+        <TextView
+            android:id="@+id/tv_publish_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/yhy_size_56px"
+            android:layout_marginTop="@dimen/yhy_size_30px"
+            android:text=""
+            android:textColor="#999999"
+            android:textSize="@dimen/yhy_size_11px" />
+
+
+        <TextView
+            android:id="@+id/tv_follow"
+            android:layout_width="@dimen/yhy_size_56px"
+            android:layout_height="@dimen/yhy_size_28px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/yhy_size_15px"
+            android:background="@drawable/un_follow_bg"
+            android:gravity="center"
+            android:text="+关注"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/yhy_size_12px" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/CoordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/yhy_size_50px"
+        android:layout_below="@+id/rl_person_info">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/live_background"
+                app:layout_scrollFlags="scroll">
+
+                <include
+                    layout="@layout/recommened_video"/>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/live_background">
+
+                <View
+                    android:id="@+id/gap"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/yhy_size_0.5px"
+                    android:background="#FF282828" />
+
+                <com.androidkun.xtablayout.XTabLayout
+                    android:id="@+id/tab_comment_zan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:xTabMode="scrollable"
+                    app:xTabIndicatorColor="@color/red_win"
+                    app:xTabIndicatorHeight="@dimen/yhy_size_3px"
+                    app:xTabSelectedTextColor="@color/white"
+                    app:xTabTextSelectedBold="true"
+                    app:xTabTextBold="false"
+                    android:layout_marginRight="@dimen/yhy_size_120px"
+                    app:xTabIndicatorWidth="@dimen/yhy_size_25px"
+                    app:xTabTextColor="@color/tab_normal"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_view_video_num"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/yhy_size_14px"
+                    android:textColor="@color/tab_unselect"
+                    android:textSize="@dimen/yhy_size_13px"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/yhy_size_2px"
+                    android:layout_below="@+id/tab_comment_zan"
+                    android:background="#ff282828" />
+            </RelativeLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/vp_comment_zan"
+            android:background="@color/live_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_say_something"
+        android:background="@color/live_background"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@color/circle_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/yhy_size_1px"/>
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/et_comment"
+            android:background="@drawable/round_corner"
+            android:layout_marginLeft="@dimen/yhy_size_15px"
+            android:layout_marginRight="@dimen/yhy_size_160px"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/yhy_size_5px"
+            android:layout_marginBottom="@dimen/yhy_size_5px"
+            android:layout_height="@dimen/yhy_size_30px">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/yhy_size_8px"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_edit_text"
+                android:layout_width="@dimen/yhy_size_15px"
+                android:layout_height="@dimen/yhy_size_15px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/live_text_color"
+                android:text="想说点什么?"
+                android:layout_marginLeft="@dimen/yhy_size_31px"
+                android:textSize="@dimen/yhy_size_14px" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_zan"
+            android:src="@drawable/ic_un_zan"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/yhy_size_15px"
+            android:layout_marginRight="@dimen/yhy_size_20px"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/yhy_size_50px"
+            android:layout_height="@dimen/yhy_size_50px" />
+
+        <ImageView
+            android:id="@+id/iv_show_comment"
+            android:src="@drawable/ic_show_comment"
+            android:layout_toLeftOf="@+id/iv_zan"
+            android:layout_marginRight="@dimen/yhy_size_17px"
+            android:layout_marginLeft="@dimen/yhy_size_10px"
+            android:padding="@dimen/yhy_size_15px"
+            android:layout_width="@dimen/yhy_size_50px"
+            android:layout_height="@dimen/yhy_size_50px" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:background="@color/live_background"
+        android:id="@+id/fl_all_video"
+        android:layout_below="@+id/rl_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/yhy_size_60px">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/yhy_size_14px"
+                android:textColor="@color/live_text_color"
+                android:text="全部回放"
+                android:layout_marginLeft="@dimen/yhy_size_15px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_arrow_down"
+                android:padding="@dimen/dd_dimen_40px"
+                android:src="@drawable/ic_arrow_down"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/yhy_size_70px"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="@dimen/yhy_size_60px"
+            android:id="@+id/gap_video"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/yhy_size_2px"
+            android:background="#FF282828" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_all_video"
+            android:layout_marginTop="@dimen/yhy_size_62px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+    </FrameLayout>
+
+</RelativeLayout>

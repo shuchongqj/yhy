@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              android:background="@android:color/white"
+                android:orientation="vertical">
+
+    <com.quanyan.pedometer.view.HeightWrapContentViewPager
+        android:id="@+id/home_header_view_grid_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.quanyan.pedometer.view.HeightWrapContentViewPager>
+
+    <com.quanyan.base.view.customview.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/home_header_grid_pager_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fillColor="@color/ac_title_bg_color"
+        android:paddingBottom="@dimen/dd_dimen_20px"
+        app:intervalDot="@dimen/dd_dimen_10px"
+        app:pageColor="@color/color_norm_eeeeee"
+        app:strokeWidth="0dp"/>
+</LinearLayout>

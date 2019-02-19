@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dd_dimen_20px"
+        android:paddingRight="@dimen/dd_dimen_20px"
+        android:paddingTop="@dimen/dd_dimen_20px">
+
+        <ImageView
+            android:id="@+id/item_home_week_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_360px"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dd_dimen_20px"
+            android:paddingTop="@dimen/dd_dimen_20px">
+
+            <TextView
+                android:id="@+id/item_home_week_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="行摄云南最佳观星摄影地指南"
+                android:textColor="@color/neu_666666"
+                android:textSize="@dimen/text_size_30px"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/dd_dimen_100px"
+                    android:layout_height="@dimen/dd_dimen_1px"
+                    android:background="@color/color_norm_eeeeee"/>
+
+                <TextView
+                    android:id="@+id/item_home_week_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dimen_20px"
+                    android:layout_marginRight="@dimen/dd_dimen_20px"
+                    android:text="十大摄影基地大推荐"
+                    android:textColor="@color/neu_999999"
+                    android:textSize="@dimen/text_size_24px"/>
+
+                <View
+                    android:layout_width="@dimen/dd_dimen_100px"
+                    android:layout_height="@dimen/dd_dimen_1px"
+                    android:background="@color/color_norm_eeeeee"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_20px"
+        android:background="@color/neu_f4f4f4"/>
+
+
+</LinearLayout>

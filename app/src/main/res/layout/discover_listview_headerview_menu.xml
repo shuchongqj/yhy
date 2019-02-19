@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_norm_ffffff"
+    android:orientation="vertical" >
+    <com.quanyan.yhy.view.HomeMenu_GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="0.0dip"
+        android:layout_marginTop="@dimen/dd_dimen_50px"
+        android:layout_marginBottom="@dimen/dd_dimen_50px"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:layout_marginLeft="@dimen/dd_dimen_10px"
+        android:layout_marginRight="@dimen/dd_dimen_10px"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0.0dip" />
+</LinearLayout>

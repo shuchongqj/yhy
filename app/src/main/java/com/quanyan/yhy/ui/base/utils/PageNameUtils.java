@@ -1,0 +1,438 @@
+package com.quanyan.yhy.ui.base.utils;
+
+import android.app.Activity;
+
+import com.harwkin.nb.camera.PageBigImageActivity;
+import com.harwkin.nb.camera.album.SelectMediaActivity;
+import com.mogujie.tt.ui.activity.ChatAcitivity;
+import com.mogujie.tt.ui.activity.MessageActivity;
+import com.mogujie.tt.ui.activity.MessageNotificationSettingActivity;
+import com.mogujie.tt.ui.activity.NotificationListActivity;
+import com.newyhy.activity.HomeMainTabActivity;
+import com.newyhy.activity.NewPushStreamHorizontalActivity;
+import com.newyhy.activity.NewPushStreamVerticalActivity;
+import com.quanyan.pedometer.PedoActivity;
+import com.quanyan.pedometer.ShareActivity;
+import com.quanyan.yhy.pay.PayActivity;
+import com.quanyan.yhy.ui.BombBoxActivity;
+
+import com.quanyan.yhy.ui.KickoutAcitivity;
+import com.quanyan.yhy.ui.LogoActivity;
+import com.quanyan.yhy.ui.ShareTableActivity;
+import com.quanyan.yhy.ui.UpdateAcitivity;
+import com.quanyan.yhy.ui.comment.CommentFragmentActivity;
+import com.quanyan.yhy.ui.comment.GoodsCommentListActivity;
+import com.quanyan.yhy.ui.comment.WriteCommentActivity;
+import com.quanyan.yhy.ui.common.AppSettingsActivity;
+import com.quanyan.yhy.ui.common.ComplaintListActivity;
+import com.quanyan.yhy.ui.common.FeedbackActivity;
+import com.quanyan.yhy.ui.common.FirstLoginDialogActivity;
+import com.quanyan.yhy.ui.common.LogisticsActivity;
+import com.quanyan.yhy.ui.common.WebViewActivity;
+import com.quanyan.yhy.ui.common.WeiXinPublicCodeActivity;
+import com.quanyan.yhy.ui.common.address.activity.AddOrUpdateAddressActivity;
+import com.quanyan.yhy.ui.common.address.activity.AddressListActivity;
+import com.quanyan.yhy.ui.common.address.activity.AreaSelectActivity;
+import com.quanyan.yhy.ui.common.calendar.CalendarSelectActivity;
+import com.quanyan.yhy.ui.common.city.CitySearchSelectActivity;
+import com.quanyan.yhy.ui.common.city.CitySelectActivity;
+import com.quanyan.yhy.ui.common.city.DestinationSelectActivity;
+import com.quanyan.yhy.ui.common.person.activity.AddOrUpdatePersonActivity;
+import com.quanyan.yhy.ui.common.person.activity.AddOrUpdateVisitorActivity;
+import com.quanyan.yhy.ui.common.person.activity.PersonListActivity;
+import com.quanyan.yhy.ui.common.person.activity.VisitorListActivity;
+import com.quanyan.yhy.ui.common.tourist.AddOrUpdateCodeActivity;
+import com.quanyan.yhy.ui.common.tourist.AddOrUpdateMimeTouristActivity;
+import com.quanyan.yhy.ui.common.tourist.AddOrUpdateOrderTouristActivity;
+import com.quanyan.yhy.ui.common.tourist.CommonUseTouristActivity;
+import com.quanyan.yhy.ui.consult.ConsultMasterReciveDialogActivity;
+import com.quanyan.yhy.ui.consult.ConsultUserReplyDialogActivity;
+import com.quanyan.yhy.ui.consult.MasterConsultActivity;
+import com.quanyan.yhy.ui.consult.QuickConsultActivity;
+import com.quanyan.yhy.ui.coupon.CouponActivity;
+import com.quanyan.yhy.ui.discovery.AddLiveAcitivty;
+import com.quanyan.yhy.ui.discovery.AddLocationSeach;
+import com.quanyan.yhy.ui.discovery.AddTopicSearch;
+import com.quanyan.yhy.ui.discovery.BlackSettingActivity;
+import com.quanyan.yhy.ui.discovery.LiveDetailActivity;
+import com.quanyan.yhy.ui.discovery.TopicDetailsActivity;
+import com.quanyan.yhy.ui.discovery.VideoListActivity;
+import com.quanyan.yhy.ui.discovery.VideoPlayActivity;
+import com.quanyan.yhy.ui.guide.GuideActivity;
+import com.quanyan.yhy.ui.home.AboutYiMayActivity;
+import com.quanyan.yhy.ui.home.GuGeMapLocationActivity;
+import com.quanyan.yhy.ui.integralmall.activity.MyOrderListActivity;
+import com.quanyan.yhy.ui.line.CommodityDetailActivity;
+import com.quanyan.yhy.ui.line.LineActivity;
+import com.quanyan.yhy.ui.line.LineSearchResultActivity;
+import com.quanyan.yhy.ui.lineabroad.DestinationAbroadActivity;
+import com.quanyan.yhy.ui.login.BindMobilePhoneActivity;
+import com.quanyan.yhy.ui.login.ChangePasswordActivity;
+import com.quanyan.yhy.ui.login.LoginActivity;
+import com.quanyan.yhy.ui.login.RegisterFindPasswrodActivity;
+import com.quanyan.yhy.ui.master.activity.AttentionListActivity;
+import com.quanyan.yhy.ui.master.activity.LineMasterActivity;
+import com.quanyan.yhy.ui.master.activity.MasterAdviceListActivity;
+import com.quanyan.yhy.ui.master.activity.MasterConsultHomeActivity;
+import com.quanyan.yhy.ui.master.activity.MasterHomepageActivity;
+import com.quanyan.yhy.ui.master.activity.MasterListActivity;
+import com.quanyan.yhy.ui.master.activity.SearchActivity;
+import com.quanyan.yhy.ui.mine.activity.MyTextActivity;
+import com.quanyan.yhy.ui.mine.activity.ServiceCenterActivity;
+import com.quanyan.yhy.ui.mine.activity.UserInfoUpdateActivity;
+import com.quanyan.yhy.ui.nineclub.BuyMustListActivity;
+import com.quanyan.yhy.ui.nineclub.EatGreatActivity;
+import com.quanyan.yhy.ui.nineclub.EatGreatDetailActivity;
+import com.quanyan.yhy.ui.nineclub.NineClubActivity;
+import com.quanyan.yhy.ui.nineclub.NineClubDetailListActivity;
+import com.quanyan.yhy.ui.order.OrderConfigActivity;
+import com.quanyan.yhy.ui.order.OrderCouponActivity;
+import com.quanyan.yhy.ui.order.PointOrderActivity;
+import com.quanyan.yhy.ui.order.ScenicOrderActivity;
+import com.quanyan.yhy.ui.personal.MineQrActivity;
+import com.quanyan.yhy.ui.servicerelease.AddServiceDetailActivity;
+import com.quanyan.yhy.ui.servicerelease.ExpertOrderDetailActivity;
+import com.quanyan.yhy.ui.servicerelease.ExpertOrderListActivity;
+import com.quanyan.yhy.ui.servicerelease.ManageServiceInfoAcitvity;
+import com.quanyan.yhy.ui.servicerelease.OrderCommentNewActivity;
+import com.quanyan.yhy.ui.servicerelease.PictureAndTextActivity;
+import com.quanyan.yhy.ui.servicerelease.ReleaseDestinationActivity;
+import com.quanyan.yhy.ui.servicerelease.ReleaseServiceActivity;
+import com.quanyan.yhy.ui.servicerelease.ServiceReleaseTypeActivity;
+import com.quanyan.yhy.ui.shop.ShopHomePageActivity;
+import com.quanyan.yhy.ui.shop.ShopInformationActivity;
+import com.quanyan.yhy.ui.shop.ShopLicenseActivity;
+import com.quanyan.yhy.ui.shop.ShopSelfCardActivity;
+import com.quanyan.yhy.ui.shop.ShopSimpleIntroduceActivity;
+import com.quanyan.yhy.ui.signed.activity.IntegralActivity;
+import com.quanyan.yhy.ui.signed.activity.TaskDescriptionActivity;
+import com.quanyan.yhy.ui.spcart.SPCartActivity;
+import com.quanyan.yhy.ui.spcart.SPCartOrderActivity;
+import com.quanyan.yhy.ui.spcart.SPCartPayActivity;
+import com.quanyan.yhy.ui.tab.homepage.order.MyOrderSortActivity;
+import com.quanyan.yhy.ui.tab.homepage.order.NormalOrderDetailsActivity;
+import com.quanyan.yhy.ui.tab.homepage.order.TravelOrderDetailsActivity;
+import com.quanyan.yhy.ui.wallet.activity.BindCardActivity;
+import com.quanyan.yhy.ui.wallet.activity.BindCardInforActivity;
+import com.quanyan.yhy.ui.wallet.activity.BindCradVCodeActivity;
+import com.quanyan.yhy.ui.wallet.activity.DetailAccountActivity;
+import com.quanyan.yhy.ui.wallet.activity.ForgetPasBindCardActivity;
+import com.quanyan.yhy.ui.wallet.activity.ForgetPasSelectCardActivity;
+import com.quanyan.yhy.ui.wallet.activity.IDAuthenticActivity;
+import com.quanyan.yhy.ui.wallet.activity.IDCardUploadActivity;
+import com.quanyan.yhy.ui.wallet.activity.PayPassWordManagerActivity;
+import com.quanyan.yhy.ui.wallet.activity.PrepaidOutAndInListActivity;
+import com.quanyan.yhy.ui.wallet.activity.RealNameAuthActivity;
+import com.quanyan.yhy.ui.wallet.activity.RechargeActivity;
+import com.quanyan.yhy.ui.wallet.activity.SelectCardActivity;
+import com.quanyan.yhy.ui.wallet.activity.SettingPayPassActivity;
+import com.quanyan.yhy.ui.wallet.activity.UpdatePassWordActivity;
+import com.quanyan.yhy.ui.wallet.activity.VerifyPassWordActivity;
+import com.quanyan.yhy.ui.wallet.activity.WalletActivity;
+import com.quanyan.yhy.ui.wallet.activity.WithDrawActivity;
+import com.quanyan.yhy.ui.wallet.activity.WithDrawDetailsActivity;
+import com.quanyan.yhy.ui.zxing.CaptureActivity;
+import com.videolibrary.client.activity.HorizontalVideoClientActivity;
+import com.videolibrary.client.activity.LiveListActivity;
+import com.videolibrary.puhser.activity.LiveCategoryActivity;
+import com.videolibrary.puhser.activity.LiveNoticeActivity;
+import com.videolibrary.puhser.activity.LiveRecordActivity;
+import com.videolibrary.puhser.activity.LiveSettingsActivity;
+import com.videolibrary.puhser.activity.PublishLiveActivity;
+
+import eu.janmuller.android.simplecropimage.CropImage;
+
+/**
+ * Created with Android Studio.
+ * Title:PageNameUtils
+ * Description:
+ * Copyright:Copyright (c) 2016
+ * Company:quanyan
+ * Author:鲍杰
+ * Date:2016-9-2
+ * Time:10:47
+ * Version 1.1.0
+ */
+
+public class PageNameUtils {
+
+    public static String getChineseName(Activity context){
+        String contextName = context.getClass().getName();
+        if(contextName.equals(HomeMainTabActivity.class.getName())){
+            return "app主页面";
+        }else if(contextName.equals(KickoutAcitivity.class.getName())){
+            return "踢出页面";
+        }else if(contextName.equals(BombBoxActivity.class.getName())){
+            return "首页弹框";
+        }else if(contextName.equals(UpdateAcitivity.class.getName())){
+            return "app版本更新";
+        }else if(contextName.equals(LogoActivity.class.getName())){
+            return "闪频-着陆页";
+        }else if(contextName.equals(GuideActivity.class.getName())){
+            return "app向导页";
+        }else if(contextName.equals(LoginActivity.class.getName())){
+            return "登录页面";
+        }else if(contextName.equals(MasterConsultActivity.class.getName())){
+            return "咨询师咨询申请提交页";
+        }else if(contextName.equals(QuickConsultActivity.class.getName())){
+            return "快速咨询申请提交页";
+        }else if(contextName.equals(ConsultMasterReciveDialogActivity.class.getName())){
+            return "咨询师接受到应答的提示框";
+        }else if(contextName.equals(ConsultUserReplyDialogActivity.class.getName())){
+            return "咨询师确定应答，用户的提醒窗口";
+        }else if(contextName.equals(RegisterFindPasswrodActivity.class.getName())){
+            return "注册与找回密码页面";
+        }else if(contextName.equals(ChangePasswordActivity.class.getName())){
+            return "密码修改页";
+        }else if(contextName.equals(SelectMediaActivity.class.getName())){
+            return "相册选择页";
+        }else if(contextName.equals(CropImage.class.getName())){
+            return "图片裁减";
+        }else if(contextName.equals(AttentionListActivity.class.getName())){
+            return "关注粉丝列表";
+        }else if(contextName.equals(LiveDetailActivity.class.getName())){
+            return "动态详情页";
+        }else if(contextName.equals(AddLiveAcitivty.class.getName())){
+            return "动态发布页";
+        }else if(contextName.equals(AddTopicSearch.class.getName())){
+            return "话题查询页面　发布消息的时候话题标签";
+        }else if(contextName.equals(AddLocationSeach.class.getName())){
+            return "添加位置 搜索";
+        }else if(contextName.equals(MyOrderSortActivity.class.getName())){
+            return "MyOrderSortActivity";
+        }else if(contextName.equals(TravelOrderDetailsActivity.class.getName())){
+            return "线路订单详情";
+        }else if(contextName.equals(NormalOrderDetailsActivity.class.getName())){
+            return "必买积分订单详情";
+        }else if(contextName.equals(ChatAcitivity.class.getName())){//我的-消息
+            return "我的消息列表页";
+        }else if(contextName.equals(MessageActivity.class.getName())){
+            return "聊天页面";
+        }else if(contextName.equals(NotificationListActivity.class.getName())){//通知互动
+            return "通知互动";
+        }else if(contextName.equals(MessageNotificationSettingActivity.class.getName())){
+            return "消息通知开关界面";
+        }else if(contextName.equals(AboutYiMayActivity.class.getName())){
+            return "quanyan（我的－关于我们）";
+        }else if(contextName.equals(CalendarSelectActivity.class.getName())){
+            return "酒店景区价格日历";
+        }else if(contextName.equals(ShareTableActivity.class.getName())){
+            return "商品详情点分享（积分除外）";
+        }else if(contextName.equals(CitySelectActivity.class.getName())){
+            return "出发地选择页";
+        }else if(contextName.equals(CitySearchSelectActivity.class.getName())){
+            return "CitySearchSelectActivity";
+        }else if(contextName.equals(DestinationSelectActivity.class.getName())){
+            return "目的地选择页、酒店景区";
+        }else if(contextName.equals(DestinationAbroadActivity.class.getName())){
+            return "首页搜索感兴趣商品";
+        }else if(contextName.equals(AddOrUpdatePersonActivity.class.getName())){
+            return "AddOrUpdatePersonActivity";
+        }else if(contextName.equals(AddOrUpdateVisitorActivity.class.getName())){
+            return "AddOrUpdateVisitorActivity";
+        }else if(contextName.equals(PersonListActivity.class.getName())){
+            return "PersonListActivity";
+        }else if(contextName.equals(VisitorListActivity.class.getName())){
+            return "VisitorListActivity";
+        }else if(contextName.equals(FeedbackActivity.class.getName())){
+            return "意见反馈";
+        }else if(contextName.equals(PageBigImageActivity.class.getName())){
+            return "大图浏览页";
+        }else if(contextName.equals(AddOrUpdateAddressActivity.class.getName())){
+            return "添加编辑地址";
+        }else if(contextName.equals(AddressListActivity.class.getName())){
+            return "地址列表";
+        }else if(contextName.equals(AreaSelectActivity.class.getName())){
+            return "居住地选择页";
+        }else if(contextName.equals(AppSettingsActivity.class.getName())){
+            return "设置页面";
+        }else if(contextName.equals(UserInfoUpdateActivity.class.getName())){
+            return "自己的个人主页（个人资料）";
+        }else if(contextName.equals(MyTextActivity.class.getName())){
+            return "文本编辑页面";
+        }else if(contextName.equals(WeiXinPublicCodeActivity.class.getName())){
+            return "微信公众号界面";
+        }else if(contextName.equals(ExpertOrderDetailActivity.class.getName())){
+            return "咨询师订单详情";
+        }else if(contextName.equals(PayActivity.class.getName())){
+            return "支付弹框界面";
+        }else if(contextName.equals(WebViewActivity.class.getName())){
+            return "H5浏览页";
+        }else if(contextName.equals(GuGeMapLocationActivity.class.getName())){
+            return "地图导航";
+        }else if(contextName.equals(CommodityDetailActivity.class.getName())){
+            return "线路详情页、商品";
+        }else if(contextName.equals(WriteCommentActivity.class.getName())){
+            return "写评价";
+        }else if(contextName.equals(CommentFragmentActivity.class.getName())){
+            return "评价列表";
+        }else if(contextName.equals(ShopHomePageActivity.class.getName())){
+            return "商铺的主页";
+        }else if(contextName.equals(MasterHomepageActivity.class.getName())){
+            return "咨询师主页";
+        }else if(contextName.equals(MasterAdviceListActivity.class.getName())){
+            return "更多咨询服务页";
+        }else if(contextName.equals(OrderConfigActivity.class.getName())){
+            return "订单确认支付";
+        }else if(contextName.equals(LineActivity.class.getName())){
+            return "线路首页（跟团，周边，自由行，同城，公用）";
+        }else if(contextName.equals(LineSearchResultActivity.class.getName())){
+            return "线路搜索结果页";
+        }else if(contextName.equals(MasterListActivity.class.getName())){
+            return "咨询师全部列表页";
+        }else if(contextName.equals(SearchActivity.class.getName())){
+            return "搜索关键字页面";
+        }else if(contextName.equals(EatGreatActivity.class.getName())){
+            return "美食列表页";
+        }else if(contextName.equals(EatGreatDetailActivity.class.getName())){
+            return "美食详情页";
+        }else if(contextName.equals(BuyMustListActivity.class.getName())){
+            return "必买列表页";
+        }else if(contextName.equals(NineClubActivity.class.getName())){
+            return "club列表页";
+        }else if(contextName.equals(NineClubDetailListActivity.class.getName())){
+            return "club详情页";
+        }else if(contextName.equals(ComplaintListActivity.class.getName())){
+            return "投诉列表";
+        }else if(contextName.equals(BlackSettingActivity.class.getName())){
+            return "屏蔽设置";
+        }else if(contextName.equals(VideoPlayActivity.class.getName())){
+            return "视频播放";
+        }else if(contextName.equals(VideoListActivity.class.getName())){
+            return "微视频列表";
+        }else if(contextName.equals(ScenicOrderActivity.class.getName())){
+            return "景区订单填写";
+        }else if(contextName.equals(CommonUseTouristActivity.class.getName())){
+            return "选择游客、我的常用游客";
+        }else if(contextName.equals(AddOrUpdateCodeActivity.class.getName())){
+            return "新增或者修改证件号";
+        }else if(contextName.equals(AddOrUpdateMimeTouristActivity.class.getName())){
+            return "我的添加编辑游客";
+        }else if(contextName.equals(AddOrUpdateOrderTouristActivity.class.getName())){
+            return "添加编辑游客";
+        }else if(contextName.equals(BindMobilePhoneActivity.class.getName())){
+            return "绑定手机号码";
+        }else if(contextName.equals(PedoActivity.class.getName())){
+            return "计步器首页";
+        }else if(contextName.equals(ShareActivity.class.getName())){
+            return "计步器分享界面";
+        }else if(contextName.equals(MyOrderListActivity.class.getName())){
+            return "我购买的订单";
+        }else if(contextName.equals(IntegralActivity.class.getName())){
+            return "我的积分";
+        }else if(contextName.equals(TaskDescriptionActivity.class.getName())){
+            return "签到任务说明";
+        }else if(contextName.equals(CouponActivity.class.getName())){
+            return "优惠券列表、商品详情优惠券";
+        }else if(contextName.equals(TopicDetailsActivity.class.getName())){
+            return "话题详情";
+        }else if(contextName.equals(PointOrderActivity.class.getName())){
+            return "积分商城下单";
+        }else if(contextName.equals(OrderCouponActivity.class.getName())){
+            return "订单选择优惠券";
+        }else if(contextName.equals(ServiceReleaseTypeActivity.class.getName())){
+            return "ServiceReleaseTypeActivity";
+        }else if(contextName.equals(ManageServiceInfoAcitvity.class.getName())){
+            return "服务管理";
+        }else if(contextName.equals(DetailAccountActivity.class.getName())){
+            return "钱包明细详情";
+        }else if(contextName.equals(PrepaidOutAndInListActivity.class.getName())){
+            return "钱包收支明细";
+        }else if(contextName.equals(ReleaseServiceActivity.class.getName())){
+            return "发布服务";
+        }else if(contextName.equals(ReleaseDestinationActivity.class.getName())){
+            return "发布服务选择服务区域";
+        }else if(contextName.equals(AddServiceDetailActivity.class.getName())){
+            return "发布服务服务详情";
+        }else if(contextName.equals(PictureAndTextActivity.class.getName())){
+            return "图文编辑页面";
+        }else if(contextName.equals(ExpertOrderListActivity.class.getName())){
+            return "我出售的订单";
+        }else if(contextName.equals(MasterConsultHomeActivity.class.getName())){
+            return "咨询咨询师首页";
+        }else if(contextName.equals(OrderCommentNewActivity.class.getName())){
+            return "咨询师咨询评价";
+        }else if(contextName.equals(LineMasterActivity.class.getName())){
+            return "线路咨询师列表";
+        }else if(contextName.equals(WalletActivity.class.getName())){
+            return "我的钱包";
+        }else if(contextName.equals(RealNameAuthActivity.class.getName())){
+            return "钱包实名认证";
+        }else if(contextName.equals(SettingPayPassActivity.class.getName())){
+            return "设置支付密码";
+        }else if(contextName.equals(RechargeActivity.class.getName())){
+            return "充值界面";
+        }else if(contextName.equals(WithDrawActivity.class.getName())){
+            return "提现";
+        }else if(contextName.equals(SelectCardActivity.class.getName())){
+            return "选择银行卡";
+        }else if(contextName.equals(VerifyPassWordActivity.class.getName())){
+            return "钱包密码验证";
+        }else if(contextName.equals(WithDrawDetailsActivity.class.getName())){
+            return "提现详情";
+        }else if(contextName.equals(PayPassWordManagerActivity.class.getName())){
+            return "钱包密码管理";
+        }else if(contextName.equals(UpdatePassWordActivity.class.getName())){
+            return "钱包修改密码";
+        }else if(contextName.equals(BindCardActivity.class.getName())){
+            return "绑定银行卡";
+        }else if(contextName.equals(ShopInformationActivity.class.getName())){
+            return "店铺介绍";
+        }else if(contextName.equals(ShopSimpleIntroduceActivity.class.getName())){
+            return "店铺简介";
+        }else if(contextName.equals(ShopLicenseActivity.class.getName())){
+            return "店铺工商执照";
+        }else if(contextName.equals(ShopSelfCardActivity.class.getName())){
+            return "店铺名片";
+        }else if(contextName.equals(FirstLoginDialogActivity.class.getName())){
+            return "积分裂变第一次登陆弹出框";
+        }else if(contextName.equals(CaptureActivity.class.getName())){
+            return "二维码扫码";
+        }else if(contextName.equals(MineQrActivity.class.getName())){
+            return "我的二维码";
+        }else if(contextName.equals(LogisticsActivity.class.getName())){
+            return "物流详情";
+        }else if(contextName.equals(PublishLiveActivity.class.getName())){
+            return "直播发布页";
+        }else if(contextName.equals(LiveSettingsActivity.class.getName())){
+            return "直播设置页";
+        }else if(contextName.equals(LiveCategoryActivity.class.getName())){
+            return "直播类别选择页";
+        }else if(contextName.equals(LiveNoticeActivity.class.getName())){
+            return "直播公告设置页";
+        }else if(contextName.equals(LiveRecordActivity.class.getName())){
+            return "我的直播历史记录页";
+        }else if(contextName.equals(HorizontalVideoClientActivity.class.getName())){
+            return "直播回放, 直播观看页";
+        }else if(contextName.equals(NewPushStreamHorizontalActivity.class.getName())){
+            return "直播推流页";
+        }else if(contextName.equals(NewPushStreamVerticalActivity.class.getName())){
+            return "直播推流页";
+        }else if(contextName.equals(LiveListActivity.class.getName())){
+            return "直播列表页";
+        }else if(contextName.equals(BindCardInforActivity.class.getName())){
+            return "绑定银行卡";
+        }else if(contextName.equals(BindCradVCodeActivity.class.getName())){
+            return "绑定银行卡获取验证码";
+        }else if(contextName.equals(ForgetPasBindCardActivity.class.getName())){
+            return "忘记密码绑定银行卡";
+        }else if(contextName.equals(ForgetPasSelectCardActivity.class.getName())){
+            return "忘记密码选择银行卡";
+        }else if(contextName.equals(IDCardUploadActivity.class.getName())){
+            return "身份证上传页";
+        }else if(contextName.equals(IDAuthenticActivity.class.getName())){
+            return "身份验证结果页";
+        }else if(contextName.equals(ServiceCenterActivity.class.getName())){
+            return "客服中心页面";
+        }else if(contextName.equals(SPCartActivity.class.getName())){
+            return "购物车界面";
+        }else if(contextName.equals(GoodsCommentListActivity.class.getName())){
+            return "评论商品列表界面";
+        }else if(contextName.equals(SPCartPayActivity.class.getName())){
+            return "购物车支付界面";
+        }else if(contextName.equals(SPCartOrderActivity.class.getName())){
+            return "购物车下单界面";
+        }
+        return contextName;
+    }
+}

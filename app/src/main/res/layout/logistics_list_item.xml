@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutLgInfo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="@dimen/dd_dimen_40px"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dd_dimen_20px">
+        <View
+            android:layout_width="@dimen/dd_dimen_2px"
+            android:layout_height="@dimen/dd_dimen_40px"
+            android:background="@color/neu_d8d8d8"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/v_line_top">
+        </View>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_line_dot"/>
+        <View
+            android:layout_width="@dimen/dd_dimen_2px"
+            android:layout_height="match_parent"
+            android:background="@color/neu_d8d8d8"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/v_line_bottom">
+        </View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_30px"
+        android:layout_marginLeft="@dimen/dd_dimen_30px">
+
+        <TextView
+            android:id="@+id/tvDeliveryStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:autoLink="phone"
+            android:textColorLink="@color/neu_57b6e2"
+            android:textColor="@color/neu_fb9b00"
+            android:textSize="@dimen/dd_dimen_28px"/>
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-10-12 14:33"
+            android:textColor="@color/neu_fb9b00"
+            android:layout_marginTop="@dimen/dd_dimen_10px"
+            android:textSize="@dimen/dd_dimen_22px" />
+
+        <View
+            android:layout_marginTop="@dimen/dd_dimen_20px"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_2px"
+            style="@style/split_line"></View>
+    </LinearLayout>
+
+</LinearLayout>

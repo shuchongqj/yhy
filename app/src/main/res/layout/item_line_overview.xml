@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/dd_dimen_10px"
+              android:paddingLeft="@dimen/dd_dimen_30px"
+              android:paddingRight="@dimen/dd_dimen_30px"
+              android:paddingTop="@dimen/dd_dimen_10px">
+    <!--android:background="@color/transparent_black_35"-->
+
+    <LinearLayout
+        android:id="@+id/item_line_overview_indicate_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/dd_dimen_20px">
+
+        <ImageView
+            android:id="@+id/item_line_overview_indicate_img"
+            android:layout_width="@dimen/dd_dimen_24px"
+            android:layout_height="@dimen/dd_dimen_24px"
+            android:scaleType="centerCrop"
+            android:src="@drawable/drawable_overview_indicate"/>
+
+        <View
+            android:id="@+id/tem_line_overview_left_line"
+            android:layout_width="@dimen/dd_dimen_1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dd_dimen_10px"
+            android:background="@android:color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_line_overview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打发打发的沙发"
+            android:textColor="@color/selector_item_line_overview_tv"
+            android:textSize="@dimen/text_size_26px"/>
+
+        <LinearLayout
+            android:id="@+id/item_line_overview_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dd_dimen_20px"
+            android:paddingTop="@dimen/dd_dimen_20px">
+
+            <TextView
+                android:id="@+id/item_line_overview_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打发打发的沙发"
+                android:textColor="@color/selector_item_line_overview_tv"
+                android:textSize="@dimen/text_size_24px"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

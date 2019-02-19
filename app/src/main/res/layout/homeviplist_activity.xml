@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/homeviplist_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.quanyan.base.view.customview.tabscrollindicator.SlidingTabLayout
+        android:id="@+id/home_vip_title_sliindicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.quanyan.base.view.customview.tabscrollindicator.SlidingTabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_vip_content_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

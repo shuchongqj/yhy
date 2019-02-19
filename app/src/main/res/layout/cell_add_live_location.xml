@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:paddingLeft="@dimen/dd_dimen_30px"
+              android:paddingRight="@dimen/dd_dimen_30px"
+              android:paddingTop="@dimen/dd_dimen_15px"
+              android:paddingBottom="@dimen/dd_dimen_15px"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cell_live_add_location_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/color_norm_636363"
+            android:textSize="@dimen/dd_dimen_30px"/>
+
+        <TextView
+            android:id="@+id/cell_live_add_location_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text=""
+            android:layout_marginTop="@dimen/dd_dimen_14px"
+            android:textColor="@color/color_norm_bebebe"
+            android:textSize="@dimen/dd_dimen_24px"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cell_live_add_location_img"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

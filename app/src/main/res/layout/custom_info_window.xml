@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dd_dimen_500px"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tt_bg_popup_massage"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dd_dimen_27px"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/dd_dimen_27px"
+        android:layout_marginTop="@dimen/dd_dimen_27px"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/win_hotel_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/color_norm_000000"
+            android:textSize="@dimen/dd_dimen_30px"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dd_dimen_10px"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/win_hotel_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="内容"
+                android:textColor="@color/color_norm_ffffff"
+                android:textSize="@dimen/dd_dimen_30px"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_1px"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/dd_dimen_27px"
+        android:layout_marginRight="@dimen/dd_dimen_27px"
+        android:layout_marginTop="@dimen/dd_dimen_22px"
+        android:background="@color/color_norm_eeeeee" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dd_dimen_27px"
+        android:layout_marginRight="@dimen/dd_dimen_27px"
+        android:layout_marginTop="@dimen/dd_dimen_15px"
+        android:paddingBottom="@dimen/dd_dimen_35px"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/win_hotel_snippet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:maxWidth="@dimen/dd_dimen_500px"
+            android:text=""
+            android:textColor="@color/color_norm_000000"
+            android:textSize="@dimen/dd_dimen_26px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_1px"
+        android:layout_marginLeft="@dimen/dd_dimen_27px"
+        android:layout_marginRight="@dimen/dd_dimen_27px"
+        android:layout_marginTop="@dimen/dd_dimen_28px"
+        android:background="@color/color_norm_eeeeee"
+        android:visibility="gone"/>
+
+</LinearLayout>

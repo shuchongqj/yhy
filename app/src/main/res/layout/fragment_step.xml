@@ -1,0 +1,261 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/neu_f4f4f4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/fg_step_previous_img_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dd_dimen_30px"
+                    android:paddingRight="@dimen/dd_dimen_10px">
+
+                    <ImageView
+                        android:id="@+id/fg_step_previous_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pedo_left_select"/>
+                </LinearLayout>
+
+                <com.quanyan.pedometer.view.HeightWrapContentViewPager
+                    android:id="@+id/fg_step_gradient_view_pager"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </com.quanyan.pedometer.view.HeightWrapContentViewPager>
+
+
+                <LinearLayout
+                    android:id="@+id/fg_step_next_img_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dd_dimen_10px"
+                    android:paddingRight="@dimen/dd_dimen_30px">
+
+                    <ImageView
+                        android:id="@+id/fg_step_next_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pedo_right_select"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ic_pedo_notice_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:padding="@dimen/dd_dimen_50px"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_pedo_notice"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dd_dimen_20px">
+
+                <TextView
+                    android:id="@+id/tvDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="0"
+                    android:textColor="#3b3228"
+                    android:textSize="@dimen/text_size_42px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dd_dimen_10px"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/label_pedometer_distance"
+                    android:textColor="@color/neu_666666"
+                    android:textSize="@dimen/text_size_24px"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dd_dimen_1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dd_dimen_20px"
+                android:layout_marginTop="@dimen/dd_dimen_5px"
+                android:background="@color/color_norm_eeeeee"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dd_dimen_20px">
+
+                <TextView
+                    android:id="@+id/tvCalorie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="0"
+                    android:textColor="#3b3228"
+                    android:textSize="@dimen/text_size_42px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dd_dimen_10px"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/label_pedometer_calories"
+                    android:textColor="@color/neu_666666"
+                    android:textSize="@dimen/text_size_24px"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dd_dimen_1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dd_dimen_20px"
+                android:layout_marginTop="@dimen/dd_dimen_5px"
+                android:background="@color/color_norm_eeeeee"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dd_dimen_20px">
+
+                <TextView
+                    android:id="@+id/tvFat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="0"
+                    android:textColor="#3b3228"
+                    android:textSize="@dimen/text_size_42px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dd_dimen_10px"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/label_pedometer_fats"
+                    android:textColor="@color/neu_666666"
+                    android:textSize="@dimen/text_size_24px"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dd_dimen_20px"
+            android:paddingLeft="@dimen/dd_dimen_30px"
+            android:paddingRight="@dimen/dd_dimen_30px"
+            android:paddingTop="@dimen/dd_dimen_20px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="今日走路赚钱"
+                    android:textColor="@color/neu_333333"
+                    android:textSize="@dimen/text_size_30px"/>
+
+                <TextView
+                    android:id="@+id/step_fg_point_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="0"
+                    android:textColor="@color/red_ying"
+                    android:textSize="@dimen/text_size_44px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="积分"
+                    android:textColor="@color/neu_333333"
+                    android:textSize="@dimen/text_size_30px"/>
+
+                <TextView
+                    android:id="@+id/step_fg_point_double_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dimen_10px"
+                    android:background="@drawable/sl_booking"
+                    android:paddingBottom="@dimen/dd_dimen_5px"
+                    android:paddingLeft="@dimen/dd_dimen_10px"
+                    android:paddingRight="@dimen/dd_dimen_10px"
+                    android:paddingTop="@dimen/dd_dimen_5px"
+                    android:text="已翻倍"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_20px"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/step_fg_point_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="前1000步奖励30积分，之后每2000步20积分"
+                android:textColor="@color/neu_999999"
+                android:textSize="@dimen/text_size_24px"/>
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/fg_step_webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </WebView>
+    </LinearLayout>
+</ScrollView>

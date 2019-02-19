@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="id_house_type_cell_top1" type="id"/>
+    <item name="id_house_type_cell_top2" type="id"/>
+    <item name="id_house_type_cell_top3" type="id"/>
+    <item name="id_house_type_cell_top4" type="id"/>
+    <item name="id_house_type_cell_top5" type="id"/>
+    <item name="id_house_type_cell_top6" type="id"/>
+    <item name="id_house_type_cell_top7" type="id"/>
+    <item name="id_house_type_cell_top8" type="id"/>
+    <item name="id_house_type_cell_top9" type="id"/>
+    <item name="id_house_type_cell_top10" type="id"/>
+    <item name="id_house_type_cell_top11" type="id"/>
+    <item name="id_house_type_cell_top12" type="id"/>
+    <item name="id_house_type_cell_top13" type="id"/>
+
+    <item name="id_house_type_cell_bottom1" type="id"/>
+    <item name="id_house_type_cell_bottom2" type="id"/>
+    <item name="id_house_type_cell_bottom3" type="id"/>
+    <item name="id_house_type_cell_bottom4" type="id"/>
+    <item name="id_house_type_cell_bottom5" type="id"/>
+    <item name="id_house_type_cell_bottom6" type="id"/>
+    <item name="id_house_type_cell_bottom7" type="id"/>
+    <item name="id_house_type_cell_bottom8" type="id"/>
+    <item name="id_house_type_cell_bottom9" type="id"/>
+    <item name="id_house_type_cell_bottom10" type="id"/>
+    <item name="id_house_type_cell_bottom11" type="id"/>
+    <item name="id_house_type_cell_bottom12" type="id"/>
+    <item name="id_house_type_cell_bottom13" type="id"/>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:focusable="false"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <!-- 头部网络错误提示 -->
+
+    <LinearLayout
+        android:id="@+id/sm_error_net_top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#fbe8e8"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:scaleType="center"
+            android:src="@mipmap/ic_send_fail"/>
+
+        <TextView
+            android:id="@+id/sm_error_net_top_text"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:maxEms="8"
+            android:singleLine="true"
+            android:text="@string/error_net_msg_text"
+            android:textColor="#6b4c49"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <!-- 内容区域 -->
+    <!--  android:background="@color/neu_f4f4f4"-->
+    <LinearLayout
+        android:id="@+id/sm_base_contaner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+
+</LinearLayout>

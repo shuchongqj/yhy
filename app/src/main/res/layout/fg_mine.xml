@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/profile_top_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/iv_head_icon"
+                        android:layout_width="@dimen/margin_80dp"
+                        android:layout_height="@dimen/margin_80dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="left|center_vertical"
+                        android:src="@mipmap/icon_default_128_128" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:layout_toRightOf="@+id/iv_head_icon"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/name_ll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/margin_5dp"
+                                android:singleLine="true"
+                                android:text="Dany"
+                                android:textColor="#535353"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/tv_mobile_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/margin_5dp"
+                                android:singleLine="true"
+                                android:text="18612345678"
+                                android:textColor="#535353"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/margin_30dp"
+                        android:layout_height="@dimen/margin_30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_10dp"
+                        android:id="@+id/iv_qr_code"
+                        android:src="@mipmap/ic_qr_code"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10dp"
+                android:background="@color/gray">
+                <TextView
+                    android:id="@+id/tv_my_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    android:singleLine="true"
+                    android:text="我的订单"
+                    android:gravity="center"
+                    android:layout_weight="1.0"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+                <View style="@style/split_line"
+                    android:layout_width="1.0dp"
+                    android:layout_height="match_parent">
+
+                </View>
+                <TextView
+                    android:id="@+id/tv_my_club"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    android:singleLine="true"
+                    android:text="我的俱乐部"
+                    android:gravity="center"
+                    android:layout_weight="1.0"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_healthy_funciotn_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View style="@style/split_line"></View>
+
+                <com.quanyan.yhy.ui.views.MineMenuItem
+                    android:id="@+id/menu_msg_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.quanyan.yhy.ui.views.MineMenuItem
+                    android:id="@+id/menu_my_wallets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.quanyan.yhy.ui.views.MineMenuItem
+                    android:id="@+id/menu_my_comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.quanyan.yhy.ui.views.MineMenuItem
+                    android:id="@+id/menu_my_discover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.quanyan.yhy.ui.views.MineMenuItem
+                    android:id="@+id/menu_my_fav"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.quanyan.yhy.ui.views.MineMenuItem
+                    android:id="@+id/menu_my_tracks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.quanyan.yhy.ui.views.MineMenuItem
+                    android:id="@+id/menu_call_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.quanyan.yhy.ui.views.MineMenuItem
+                    android:id="@+id/menu_my_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

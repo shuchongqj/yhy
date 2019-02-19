@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_home_recommend_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_300px"
+            android:scaleType="centerCrop" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dd_dimen_30px"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingRight="@dimen/dd_dimen_30px"
+        android:paddingTop="@dimen/dd_dimen_30px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/item_home_recommend_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@color/neu_666666"
+                android:textSize="@dimen/text_size_30px" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/money_symbol"
+                    android:textColor="@color/neu_fa4619"
+                    android:textSize="@dimen/text_size_24px" />
+
+                <TextView
+                    android:id="@+id/item_home_recommend_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dimen_8px"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textColor="@color/neu_fa4619"
+                    android:textSize="@dimen/text_size_30px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dimen_8px"
+                    android:singleLine="true"
+                    android:text="@string/money_start"
+                    android:textColor="@color/neu_fa4619"
+                    android:textSize="@dimen/text_size_24px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dd_dimen_10px">
+
+            <ImageView
+                android:id="@+id/iv_home_recommend_shop_head"
+                android:layout_width="@dimen/dd_dimen_60px"
+                android:layout_height="@dimen/dd_dimen_60px"
+                android:src="@mipmap/icon_default_128_128" />
+
+            <TextView
+                android:id="@+id/tv_home_recommend_shop_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dd_dimen_20px"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="@dimen/text_size_30px" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/split_line"
+        android:layout_height="@dimen/dd_dimen_20px"></View>
+</LinearLayout>

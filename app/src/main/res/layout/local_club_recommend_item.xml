@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <com.newyhy.views.RoundImageView
+        android:id="@+id/local_club_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:borderRadius="5dp"/>
+<TextView
+    style="@style/fontBlack_16"
+    android:id="@+id/club_name"
+    android:layout_width="100dp"
+    android:singleLine="true"
+  />
+    <TextView
+        style="@style/fontGrey_14"
+        android:id="@+id/pop_suituation"
+        />
+</LinearLayout>

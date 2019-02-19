@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dd_dimen_30px"
+    android:layout_marginRight="@dimen/dd_dimen_30px"
+    android:layout_marginTop="@dimen/dd_dimen_30px"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               >
+
+                <RelativeLayout
+                    android:id="@+id/rl_tab_hotel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_master_tab_hotile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:drawableLeft="@mipmap/icon_tab_hotel"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dd_dimen_30px"
+                        android:paddingTop="@dimen/dd_dimen_30px"
+                        android:drawablePadding="@dimen/dd_dimen_20px"
+                        android:text="@string/hotile_home_tab_text_hotel"
+                        android:textColor="@color/neu_666666"
+                        android:textSize="@dimen/dd_dimen_30px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_tab_lnn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_master_tab_lnn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:drawableLeft="@mipmap/icon_tab_lnn_not"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dd_dimen_30px"
+                        android:paddingTop="@dimen/dd_dimen_30px"
+                        android:drawablePadding="@dimen/dd_dimen_20px"
+                        android:text="@string/hotile_home_tab_text_inn"
+                        android:textColor="@color/neu_666666"
+                        android:textSize="@dimen/dd_dimen_30px" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dd_dimen_6px"
+                android:layout_below="@id/title_layout"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/img_tab_now"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dd_dimen_6px"
+                    android:layout_weight="1"
+                    android:background="@color/ac_title_bg_color"></ImageView>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dd_dimen_2px"
+            android:background="@color/orderline_e1e1e1" />
+
+
+    </LinearLayout>
+</ScrollView>

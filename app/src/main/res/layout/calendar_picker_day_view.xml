@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.quanyan.yhy.view.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_click"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dd_dimen_6px">
+
+    <TextView
+        android:id="@+id/tv_day_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="@dimen/dd_dimen_24px" />
+
+    <TextView
+        android:id="@+id/tv_day_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:ellipsize="middle"
+        android:gravity="right"
+        android:singleLine="true"
+        android:textSize="@dimen/dd_dimen_24px" />
+
+    <TextView
+        android:id="@+id/tv_day_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_day_bottom"
+        android:ellipsize="middle"
+        android:gravity="right"
+        android:singleLine="true"
+        android:textSize="@dimen/dd_dimen_18px" />
+
+
+</com.quanyan.yhy.view.SquareLayout>

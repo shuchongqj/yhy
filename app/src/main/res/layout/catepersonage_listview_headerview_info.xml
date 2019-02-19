@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_norm_ffffff"
+    android:layout_marginBottom="@dimen/dd_dimen_3px"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/home_listview_rl_vip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginRight="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_50px">
+
+        <TextView
+            android:id="@+id/tv_label_title_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Ta的信息"
+            android:textColor="@color/color_norm_636363"
+            android:textSize="@dimen/dd_dimen_30px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/cf_ll1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginRight="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cf_tv_newstitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="    常在地"
+            android:textColor="@color/color_norm_636363"
+            android:textSize="@dimen/dd_dimen_24px" />
+
+        <TextView
+            android:id="@+id/cf_tv_newsmessage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:textColor="@color/tab_title_normal"
+            android:textSize="@dimen/dd_dimen_24px" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cf_ll1"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginRight="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cf_tv_newstitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/label_travel_declaration"
+            android:textColor="@color/color_norm_636363"
+            android:textSize="@dimen/dd_dimen_24px" />
+
+
+        <TextView
+            android:id="@+id/cf_tv_newsmessage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:textColor="@color/tab_title_normal"
+            android:textSize="@dimen/dd_dimen_24px" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_25px"
+        ></RelativeLayout>
+    <LinearLayout
+        android:id="@+id/home_listview_rl_verify"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/home_listview_rl_vip2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:layout_marginTop="@dimen/dd_dimen_50px">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="验证信息"
+                android:textColor="@color/color_norm_636363"
+                android:textSize="@dimen/dd_dimen_30px" />
+
+        </RelativeLayout>
+
+
+        <com.quanyan.yhy.view.HomeMenu_GridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:layout_marginTop="@dimen/dd_dimen_20px"
+            android:horizontalSpacing="10.0dip"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0.0dip" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_20px"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dd_dimen_20px"
+            android:background="@color/color_norm_f4f4f4"
+            android:orientation="vertical">
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_20px"
+        android:background="@color/color_norm_f4f4f4"
+        android:orientation="vertical">
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ListView
+        android:id="@+id/ll_masterlist_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/divider"
+        android:dividerHeight="@dimen/dd_dimen_1px"
+        android:dividerPadding="@dimen/public_split_line_height"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:focusable="true"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"
+        android:smoothScrollbar="true"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/ll_footer_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_masterlist_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View style="@style/split_line"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dd_dimen_80px"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/dd_dimen_14px"
+            android:drawableRight="@mipmap/arrow_go"
+            android:gravity="center"
+            android:paddingTop="@dimen/dd_dimen_10px"
+            android:text="@string/label_more_scenic"
+            android:textColor="@color/neu_333333"
+            android:textSize="@dimen/dd_dimen_26px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dd_dimen_100px"
+        android:visibility="gone">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/error_view_image"
+            android:layout_width="@dimen/dd_dimen_120px"
+            android:layout_height="@dimen/dd_dimen_120px"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/error_empty_icon" />
+
+        <TextView
+            android:id="@+id/error_view_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dd_dimen_60px"
+            android:paddingRight="@dimen/dd_dimen_60px"
+            android:text="@string/scenic_home_empty"
+            android:textColor="@color/tv_color_gray6"
+            android:textSize="@dimen/dd_dimen_30px" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/rl_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tab_anchor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/yhy_size_36px"
+            android:background="@color/circle_popup_tips"
+            android:gravity="center"
+            android:textColor="@color/circle_text"
+            android:textSize="@dimen/yhy_size_14px"
+            android:visibility="gone"
+            android:text="已为您减少此类应用"/>
+
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnablePreviewInEditMode="true"
+            android:background="@color/neu_f4f4f4">
+            <!--srlAccentColor srlPrimaryColor 将会改变 Header 和 Footer 的主题颜色-->
+            <!--srlEnablePreviewInEditMode 可以开启和关闭预览功能-->
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:srlTextSizeTitle="12dp"
+                app:srlTextSizeTime="10dp"
+                app:srlDrawableProgressSize="14dp"
+                app:srlDrawableArrowSize="14dp"
+                android:background="@color/neu_f4f4f4"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/white">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_search"
+                    android:overScrollMode="never"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <!-- 异常处理View -->
+                <include layout="@layout/ugc_error_view"/>
+
+            </RelativeLayout>
+
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:srlTextSizeTitle="12dp"
+                app:srlDrawableProgressSize="14dp"
+                app:srlDrawableArrowSize="14dp"
+                android:background="@color/neu_f4f4f4"/>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tab_anchor_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/yhy_size_36px"
+        android:background="@color/circle_popup_tips"
+        android:gravity="center"
+        android:textColor="@color/circle_text"
+        android:textSize="@dimen/yhy_size_14px"
+        android:visibility="gone"
+        android:text="已为您减少此类应用"/>
+
+</RelativeLayout>
+
+

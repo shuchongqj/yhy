@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_header"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dd_dimen_20px"
+    android:paddingRight="@dimen/dd_dimen_20px"
+    android:paddingTop="@dimen/dd_dimen_10px"
+    android:paddingBottom="@dimen/dd_dimen_10px"
+    android:layout_marginRight="@dimen/dd_dimen_20px"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:textColor="@color/neu_333333"
+    android:textSize="@dimen/text_size_28px"
+    android:text="哈哈哈">
+
+</TextView>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dd_dimen_28px"
+        android:paddingRight="@dimen/dd_dimen_28px"
+        android:paddingTop="@dimen/dd_dimen_10px"
+        android:paddingBottom="@dimen/dd_dimen_10px"
+        android:layout_marginRight="@dimen/dd_dimen_20px"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/neu_666666"
+        android:textSize="@dimen/text_size_24px"
+        android:text="">
+
+    </TextView>
+
+</LinearLayout>

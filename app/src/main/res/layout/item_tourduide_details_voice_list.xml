@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/click_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dd_dimen_102px"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_100px"
+
+        android:layout_marginRight="@dimen/dd_dimen_30px"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_tourguide_logo_pic"
+            android:layout_width="@dimen/dd_dimen_100px"
+            android:layout_height="@dimen/dd_dimen_100px"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:id="@+id/iv_tourguide_logo_pic"
+                android:layout_width="@dimen/dd_dimen_50px"
+                android:layout_height="@dimen/dd_dimen_50px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:layout_marginRight="@dimen/dd_dimen_20px"
+                android:background="@mipmap/icon_tourguide_play_item" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/iv_tourguide_focus_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_tourguide_focus_time"
+            android:layout_toRightOf="@+id/rl_tourguide_logo_pic"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+
+            android:text="大风车"
+            android:textColor="@color/neu_333333"
+            android:textSize="@dimen/dd_dimen_26px" />
+
+
+        <TextView
+            android:id="@+id/iv_tourguide_focus_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:layout_marginRight="@dimen/dd_dimen_20px"
+            android:gravity="center_vertical"
+            android:text="20:13"
+            android:textColor="@color/neu_999999"
+            android:textSize="@dimen/dd_dimen_24px" />
+
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/music_progress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_4px"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginRight="@dimen/dd_dimen_30px"
+        android:indeterminate="false"
+        android:max="100"
+        android:maxHeight="@dimen/dd_dimen_2px"
+        android:minHeight="@dimen/dd_dimen_2px"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:progressDrawable="@drawable/seekbar_bg"
+        android:thumb="@null" />
+</LinearLayout>

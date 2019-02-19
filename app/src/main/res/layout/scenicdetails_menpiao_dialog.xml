@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/ticket_buy_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"
+        android:divider="#eee"
+        android:dividerHeight="1dip"
+        android:footerDividersEnabled="false"
+        android:listSelector="#00000000"
+        android:scrollbars="none" />
+
+    <ImageView
+        android:id="@+id/imageLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_above="@id/bottom_layout"
+        android:background="@color/gray_D" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/scenicdetails_menpiao_dialog_price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥0"
+                    android:textColor="@color/main"
+                    android:textSize="@dimen/dd_dimen_38px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="起"
+                    android:textColor="@color/main"
+                    android:textSize="@dimen/dd_dimen_24px" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/main">
+
+            <Button
+                android:id="@+id/ticket_buy_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/scenic_top_translate_selector"
+                android:text="立即预订"
+                android:textColor="#fff"
+                android:textSize="@dimen/dd_dimen_36px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

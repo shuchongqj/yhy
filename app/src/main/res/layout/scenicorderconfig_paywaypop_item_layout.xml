@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/pay_item_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_140px"
+        android:background="@drawable/scenic_top_translate_selector"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/payway_image"
+            android:layout_width="@dimen/dd_dimen_75px"
+            android:layout_height="@dimen/dd_dimen_75px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/payway_texttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_130px"
+            android:textColor="@color/neu_333333"
+            android:textSize="@dimen/dd_dimen_28px" />
+
+        <ImageView
+            android:id="@+id/pay_select_im"
+            android:layout_width="@dimen/dd_dimen_50px"
+            android:layout_height="@dimen/dd_dimen_50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_1px"
+        android:layout_marginLeft="@dimen/dd_dimen_24px"
+        android:background="@color/orderline_e1e1e1" />
+
+</LinearLayout>

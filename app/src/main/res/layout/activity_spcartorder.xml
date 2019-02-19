@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <com.quanyan.yhy.ui.spcart.view.SpcartOrderBottomView
+        android:id="@+id/order_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+    <ExpandableListView
+        android:id="@+id/expand"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/order_bottom"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/neu_f4f4f4"
+        android:dividerPadding="@dimen/public_split_line_height"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:focusable="true"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"
+        android:smoothScrollbar="true" />
+
+</RelativeLayout>

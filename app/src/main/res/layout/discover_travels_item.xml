@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/color_norm_ffffff"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/dd_dimen_10px">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/eventitem_iv_user"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_360px"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_default_215_150"/>
+
+    <TextView
+        android:id="@+id/eventitem_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/dd_dimen_30px"
+        android:textColor="@color/neu_333333"
+        android:textSize="@dimen/text_size_32px"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/eventitem_iv_user"
+        android:layout_marginBottom="@dimen/dd_dimen_20px"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dd_dimen_20px"
+        android:paddingRight="@dimen/dd_dimen_20px">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/eventitem_iv_logo"
+            android:layout_width="@dimen/dd_dimen_96px"
+            android:layout_height="@dimen/dd_dimen_96px"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_default_128_128"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/eventitem_iv_logo"
+            android:layout_alignTop="@id/eventitem_iv_logo"
+            android:layout_toRightOf="@id/eventitem_iv_logo"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dd_dimen_20px">
+
+            <TextView
+                android:id="@+id/eventitem_tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/dd_dimen_5px"
+                android:textColor="@color/neu_666666"
+                android:textSize="@dimen/text_size_28px"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/dd_dimen_15px"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dd_dimen_20px"
+                        android:layout_height="@dimen/dd_dimen_20px"
+                        android:src="@mipmap/ic_active_list_time"/>
+
+                    <TextView
+                        android:id="@+id/eventitem_tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/neu_999999"
+                        android:textSize="@dimen/text_size_24px"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dd_dimen_40px"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="@dimen/dd_dimen_25px"
+                        android:layout_height="@dimen/dd_dimen_25px"
+                        android:src="@mipmap/ic_change_password_eye"/>
+                    <TextView
+                        android:id="@+id/eventitem_tv_comments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:singleLine="true"
+                        android:textColor="@color/neu_999999"
+                        android:textSize="@dimen/text_size_24px"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dimen_40px"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="@dimen/dd_dimen_25px"
+                        android:layout_height="@dimen/dd_dimen_25px"
+                        android:src="@mipmap/ic_heart"/>
+                    <TextView
+                        android:id="@+id/eventitem_tv_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/neu_999999"
+                        android:textSize="@dimen/text_size_24px"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

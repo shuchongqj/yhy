@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@+id/textview"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:lineSpacingMultiplier="1.2"
+          android:text="邓明佳: 哈哈哈哈哈哈海东方圣地法搜ID号法搜ID号法搜ID分胡搜的符合"
+          android:textColor="@color/neu_ffaa00"
+          android:textSize="@dimen/dd_dimen_30px"/>

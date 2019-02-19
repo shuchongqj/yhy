@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="10dp"
+              android:paddingLeft="@dimen/dd_dimen_10px"
+              android:paddingRight="@dimen/dd_dimen_10px"
+              android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/view_home_live_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="100dp"
+            android:text="呃打发打发的说法是短发的沙发dafsdfasdfasdfasdfadsf电视发呆发呆舒服"
+            android:textColor="@color/neu_333333"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/view_home_live_item_title_right_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/view_home_live_item_title"
+            android:src="@mipmap/ic_live_home_tab_lable"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/view_home_live_item_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/neu_999999"
+        android:textSize="12sp"/>
+
+    <ImageView
+        android:id="@+id/view_home_live_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_228px"
+        android:scaleType="centerCrop"/>
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout android:id="@+id/card"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintDimensionRatio="3:2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_cover"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shape_shadow_bottom_circular_bead"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/yhy_size_30px" />
+
+            <TextView android:id="@+id/live_state"
+                android:layout_width="43dp"
+                android:layout_height="17dp"
+                android:text="直播中"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/yhy_size_5px"
+                android:layout_marginTop="@dimen/yhy_size_5px"
+                android:typeface="sans"
+                android:background="@drawable/circle_showtime_bg_living"
+                android:textSize="12dp"/>
+
+            <TextView android:id="@+id/tv_origin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/tv_saw_number"
+                android:layout_toStartOf="@+id/tv_saw_number"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:lines="1"
+                android:layout_marginLeft="@dimen/yhy_size_10px"
+                android:layout_marginBottom="@dimen/yhy_size_7px"
+                android:textSize="12dp"
+                android:typeface="sans"
+                android:text="cctv5" />
+
+            <TextView android:id="@+id/tv_saw_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_origin"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/white"
+                android:gravity="bottom"
+                android:layout_marginRight="@dimen/yhy_size_8px"
+                android:textSize="@dimen/yhy_size_12px"
+                android:typeface="sans"
+                android:text="12345" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_saw_number"
+                android:layout_alignTop="@+id/tv_saw_number"
+                android:layout_alignBottom="@+id/tv_saw_number">
+                <ImageView
+                    android:layout_marginRight="@dimen/yhy_size_5px"
+                    android:src="@mipmap/fire"
+                    android:scaleType="centerInside"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/yhy_size_11px"
+                    android:layout_height="@dimen/yhy_size_11px" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <TextView android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/card"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:lines="1"
+        android:textSize="@dimen/yhy_size_13px"
+        android:typeface="sans"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="@dimen/yhy_size_5px"
+        android:text="2018世界杯" />
+
+</android.support.constraint.ConstraintLayout>

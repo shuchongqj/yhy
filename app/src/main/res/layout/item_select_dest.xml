@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dd_dimen_158px"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_dest_name"
+            android:layout_width="@dimen/dd_dimen_142px"
+            android:layout_height="@dimen/dd_dimen_56px"
+            android:gravity="center"
+            android:paddingTop="@dimen/dd_dimen_10px"
+            android:paddingBottom="@dimen/dd_dimen_10px"
+            android:textColor="@color/main"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="@dimen/text_size_24px"
+            android:layout_marginTop="@dimen/dd_dimen_16px"
+            android:background="@drawable/shape_dest_select_bg"
+            android:text="辽宁"/>
+
+        <ImageView
+            android:id="@+id/iv_delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_dest_delete"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:paddingBottom="@dimen/dd_dimen_20px">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/but_tourguide_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_460px"
+            android:background="@mipmap/icon_masterhomepage_bg"
+            android:scaleType="centerCrop"
+            android:visibility="gone"></ImageView>
+
+
+        <ImageView
+            android:id="@+id/but_tourguide_silkbag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/but_tourguide_bg"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dd_dimen_60px"
+            android:src="@mipmap/icon_tourguide_silkbag"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_60px"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginRight="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_30px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:id="@+id/iv_tourguide_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:text="推荐经典线路"
+            android:textColor="@color/title_right_btn_text_color"
+            android:textSize="@dimen/text_size_32px" />
+
+        <TextView
+            android:id="@+id/iv_tourguide_reserve"
+            android:layout_width="@dimen/dd_dimen_240px"
+            android:layout_height="@dimen/dd_dimen_60px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/shape_tv_tourguide_premiere"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dd_dimen_8px"
+            android:paddingTop="@dimen/dd_dimen_8px"
+            android:singleLine="true"
+            android:text="预定门票"
+            android:textColor="@color/title_right_btn_text_color"
+            android:textSize="@dimen/dd_dimen_28px"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_tourguide_opening_white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_140px"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginRight="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_30px"
+        android:background="@drawable/shape_tv_tourguide_starting_point_bg"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_tourguide_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_40px"
+            android:background="@mipmap/icon_tourguide_play" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dd_dimen_120px"
+            android:layout_toRightOf="@+id/iv_tourguide_play"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/iv_tourguide_opening_white_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+
+                    android:singleLine="true"
+                    android:text="导游开场"
+                    android:textColor="@color/deep_ss_gray"
+                    android:textSize="@dimen/text_size_32px" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_tourguide_time"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:layout_marginRight="@dimen/dd_dimen_30px"
+                android:layout_marginTop="@dimen/dd_dimen_20px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/iv_tourguide_scenicname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/dd_dimen_10px"
+                    android:layout_marginRight="@dimen/dd_dimen_10px"
+                    android:singleLine="true"
+                    android:text="丽江古城"
+                    android:textColor="@color/tv_color_gray9"
+                    android:textSize="@dimen/text_size_26px" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/sb_tourguide_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:indeterminate="false"
+            android:max="100"
+            android:maxHeight="@dimen/dd_dimen_2px"
+            android:minHeight="@dimen/dd_dimen_2px"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:progressDrawable="@drawable/seekbar_bg"
+            android:thumb="@null" />
+
+        <TextView
+            android:id="@+id/iv_tourguide_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/linearLayout4"
+            android:layout_marginRight="@dimen/dd_dimen_20px"
+            android:singleLine="true"
+            android:text="20:20"
+            android:textColor="@color/tv_color_gray9"
+            android:textSize="@dimen/text_size_24px" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_tourguide_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rl_tourguide_opening_white"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginRight="@dimen/dd_dimen_30px"
+        android:background="@mipmap/icon_tourguide_shadow"
+        android:visibility="invisible" />
+
+</RelativeLayout>

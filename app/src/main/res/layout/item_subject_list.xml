@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_text"
+    android:background="@drawable/around_menu_selected"
+    android:padding="@dimen/dd_dimen_20px">
+
+    <TextView
+        android:id="@+id/tv_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dd_dimen_30px"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+    </TextView>
+</RelativeLayout>

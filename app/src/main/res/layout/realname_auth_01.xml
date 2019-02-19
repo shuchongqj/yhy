@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_40px"
+        android:text="请绑定账户本人的卡"
+        android:textColor="@color/neu_999999"
+        android:textSize="@dimen/dd_dimen_30px" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_100px"
+        android:layout_marginTop="@dimen/dd_dimen_40px"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:text="卡号"
+            android:textColor="@color/neu_333333"
+            android:textSize="@dimen/dd_dimen_36px" />
+
+        <com.quanyan.yhy.ui.wallet.view.WalletXEditText
+            android:id="@+id/et_card_num"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_180px"
+            android:layout_marginRight="@dimen/dd_dimen_24px"
+            android:hint="仅支持储蓄卡号"
+            android:maxLength="23"
+            android:inputType="number"
+            android:background="@null"
+            android:singleLine="true"
+            android:textColor="@color/neu_333333"
+            android:textColorHint="@color/neu_999999"
+            android:textSize="@dimen/dd_dimen_34px" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_next_01"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_100px"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginRight="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_100px"
+        android:background="@drawable/btn_pay_orange_selector"
+        android:text="下一步"
+        android:textSize="@dimen/dd_dimen_34px" />
+
+</LinearLayout>

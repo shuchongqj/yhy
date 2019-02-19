@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/alert_bg_color"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_4px"
+            android:visibility="gone"
+            android:background="@color/ac_title_bg_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_show_del"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/btn_del_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/alert_dlg_item_selector"
+                android:gravity="center"
+                android:text="@string/del_photo"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/alert_bg_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_take_video"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/btn_take_video"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/alert_dlg_item_selector"
+                android:gravity="center"
+                android:text="@string/take_video"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/alert_bg_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_take_video_draft"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/btn_take_video_draft"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/alert_dlg_item_selector"
+                android:gravity="center"
+                android:text="@string/take_video_draft"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/alert_bg_color" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/btn_delete_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/alert_dlg_item_selector"
+            android:gravity="center"
+            android:text="@string/delete_photo"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btn_take_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/alert_dlg_item_selector"
+            android:gravity="center"
+            android:text="@string/take_photo"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/alert_bg_color" />
+
+        <TextView
+            android:id="@+id/btn_pick_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/alert_dlg_item_selector"
+            android:gravity="center"
+            android:text="@string/select_from_gallery"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/alert_dlg_item_selector"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/red_ying"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/fg_discover_top_view"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingTop="@dimen/dd_dimen_20px">
+    <LinearLayout
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/dd_dimen_30px">
+
+    </LinearLayout>
+
+    <com.quanyan.base.view.customview.tabscrollindicator.SlidingTabLayout
+        android:id="@+id/discover_sliding_tab"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </com.quanyan.base.view.customview.tabscrollindicator.SlidingTabLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/discover_fragment_tab_circles"
+            android:layout_width="@dimen/dd_dimen_140px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_disc_tab_selector"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dd_dimen_8px"
+            android:paddingTop="@dimen/dd_dimen_8px"
+            android:text="@string/label_title_tab_circles"
+            android:textColor="@color/tv_white_orange_selector"
+            android:textSize="@dimen/text_size_28px"/>
+
+        <TextView
+            android:id="@+id/discover_fragment_tab_live"
+            android:layout_width="@dimen/dd_dimen_140px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_disc_tab_selector"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dd_dimen_8px"
+            android:paddingTop="@dimen/dd_dimen_8px"
+            android:text="@string/label_title_tab_live"
+            android:textColor="@color/tv_white_orange_selector"
+            android:textSize="@dimen/text_size_28px"/>
+
+        <TextView
+            android:id="@+id/discover_fragment_tab_travelnote"
+            android:layout_width="@dimen/dd_dimen_140px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_disc_tab_selector"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dd_dimen_8px"
+            android:paddingTop="@dimen/dd_dimen_8px"
+            android:text="@string/label_title_travelnote"
+            android:textColor="@color/tv_white_orange_selector"
+            android:textSize="@dimen/text_size_28px"/>
+    </LinearLayout>
+
+    <!--<TextView
+        android:id="@+id/discover_fragment_post_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dd_dimen_10px"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/dd_dimen_30px"
+        android:layout_centerVertical="true"
+        android:paddingTop="@dimen/dd_dimen_10px"
+        android:text="@string/top_right_publish_live"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_28px"/>-->
+
+    <LinearLayout
+        android:id="@+id/discover_fragment_post_live"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dd_dimen_30px">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@mipmap/ic_post_live"/>
+    </LinearLayout>
+
+</LinearLayout>

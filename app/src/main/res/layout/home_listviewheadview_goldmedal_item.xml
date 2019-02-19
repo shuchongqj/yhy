@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dd_dimen_30px"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingRight="@dimen/dd_dimen_30px"
+        android:paddingTop="@dimen/dd_dimen_30px">
+
+        <ImageView
+            android:id="@+id/sa_iv_1"
+            android:layout_width="@dimen/dd_dimen_128px"
+            android:layout_height="@dimen/dd_dimen_128px" />
+
+        <TextView
+            android:id="@+id/cell_plane_hotel_set_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:layout_marginTop="@dimen/dd_dimen_10px"
+            android:layout_toRightOf="@id/sa_iv_1"
+            android:singleLine="true"
+            android:textColor="@color/color_norm_636363"
+            android:textSize="@dimen/dd_dimen_30px" />
+
+
+
+        <LinearLayout
+            android:id="@+id/cell_plane_hotel_set_bottom_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/cell_plane_hotel_set_title"
+            android:layout_below="@id/cell_plane_hotel_set_title"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dd_dimen_10px">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_sex_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dd_dimen_35px"
+                android:background="@drawable/shape_sex_man_bg"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/iv_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+
+                    android:background="@mipmap/icon_sex_man_bg"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp" />
+
+                <TextView
+                    android:id="@+id/cf_tv_sex_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+
+                    android:layout_toEndOf="@+id/iv_sex"
+                    android:layout_toRightOf="@+id/iv_sex"
+                    android:gravity="center_vertical"
+                    android:text="0"
+                    android:textColor="@color/color_norm_ffffff"
+                    android:textSize="@dimen/dd_dimen_24px" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/cell_plane_hotel_set_brief"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_alignBottom="@+id/cell_plane_hotel_set_title"
+                android:layout_marginLeft="@dimen/dd_dimen_20px"
+                android:layout_toRightOf="@+id/cell_plane_hotel_set_title"
+                android:ellipsize="end"
+
+                android:singleLine="true"
+                android:textColor="@color/color_norm_bebebe"
+                android:textSize="@dimen/dd_dimen_24px" />
+            <RatingBar
+                android:id="@+id/eventitem_tv_car"
+                style="@style/handcereRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/cell_plane_hotel_set_bottom_layout"
+                android:layout_alignRight="@+id/cell_plane_hotel_set_bottom_layout"
+                android:layout_alignTop="@+id/cell_plane_hotel_set_brief"
+                android:layout_marginLeft="@dimen/dd_dimen_20px"
+                android:layout_marginTop="@dimen/dd_dimen_10px"
+                android:isIndicator="true"
+                android:max="5"
+                android:numStars="5"
+                android:orientation="horizontal"
+                android:rating="4"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/eventitem_tv_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cell_plane_hotel_set_bottom_layout"
+            android:layout_alignStart="@+id/cell_plane_hotel_set_bottom_layout"
+            android:layout_below="@+id/cell_plane_hotel_set_bottom_layout"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/dd_dimen_10px"
+            android:singleLine="true"
+
+            android:textColor="@color/color_norm_bebebe"
+            android:textSize="@dimen/dd_dimen_24px" />
+    </RelativeLayout>
+</LinearLayout>

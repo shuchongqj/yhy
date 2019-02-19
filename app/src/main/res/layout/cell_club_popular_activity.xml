@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/cell_club_popularact_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_360px"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dd_dimen_320px"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_price_label"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dd_dimen_15px"
+            android:paddingLeft="@dimen/dd_dimen_32px"
+            android:paddingRight="@dimen/dd_dimen_20px"
+            android:paddingTop="@dimen/dd_dimen_15px">
+
+            <TextView
+                android:id="@+id/cell_club_popularact_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="¥0"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dd_dimen_30px"/>
+
+            <TextView
+                android:id="@+id/cell_club_popularact_vip_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="起/会员"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dd_dimen_24px"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dd_dimen_30px"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingRight="@dimen/dd_dimen_20px"
+        android:paddingTop="@dimen/dd_dimen_309px">
+
+        <LinearLayout
+            android:id="@+id/cell_club_popularact_head_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cell_club_popularact_head"
+                android:layout_width="@dimen/dd_dimen_96px"
+                android:layout_height="@dimen/dd_dimen_96px"
+                android:src="@mipmap/icon_default_128_128"/>
+
+            <TextView
+                android:id="@+id/cell_club_popularact_name"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dd_dimen_12px"
+                android:singleLine="true"
+                android:gravity="center"
+                android:text="quanyan"
+                android:textColor="@color/neu_999999"
+                android:textSize="@dimen/text_size_24px"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/cell_club_popularact_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:layout_marginTop="@dimen/dd_dimen_75px"
+            android:layout_toLeftOf="@id/cell_club_popularact_head_layout"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cell_club_popularact_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/backgroud_club_active_status"
+                android:paddingBottom="2dp"
+                android:paddingLeft="3dp"
+                android:layout_marginLeft="@dimen/dd_dimen_10px"
+                android:paddingRight="3dp"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_24px"/>
+
+            <TextView
+                android:id="@+id/cell_club_popularact_title"
+                android:layout_toLeftOf="@id/cell_club_popularact_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/tv_color_gray63"
+                android:textSize="@dimen/text_size_30px"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/cell_club_popularact_title_layout"
+            android:layout_below="@id/cell_club_popularact_title_layout"
+            android:layout_marginTop="@dimen/dd_dimen_25px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/dd_dimen_25px"
+                android:layout_height="@dimen/dd_dimen_25px"
+                android:src="@mipmap/icon_club_list_member"/>
+            <TextView
+                android:id="@+id/cell_club_popularact_personnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dd_dimen_10px"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/neu_999999"
+                android:textSize="@dimen/text_size_24px"/>
+
+            <ImageView
+                android:layout_width="@dimen/dd_dimen_28px"
+                android:layout_height="@dimen/dd_dimen_28px"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:src="@mipmap/ic_active_list_time"/>
+            <TextView
+                android:id="@+id/cell_club_popularact_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dd_dimen_10px"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/neu_999999"
+                android:textSize="@dimen/text_size_24px"/>
+
+            <ImageView
+                android:layout_width="@dimen/dd_dimen_30px"
+                android:layout_height="@dimen/dd_dimen_30px"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:src="@mipmap/ic_location_indicat"/>
+
+            <TextView
+                android:id="@+id/cell_club_popularact_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dd_dimen_10px"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/neu_999999"
+                android:textSize="@dimen/text_size_24px"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

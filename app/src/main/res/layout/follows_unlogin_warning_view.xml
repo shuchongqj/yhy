@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/warning"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    >
+
+    <ImageView
+        android:layout_width="@dimen/dd_dimen_180px"
+        android:layout_height="@dimen/dd_dimen_180px"
+        android:src="@drawable/default_page_trends"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未登录,前往热门看看"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="前往热门"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:textSize="16sp"
+        android:textColor="@color/red_ying"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

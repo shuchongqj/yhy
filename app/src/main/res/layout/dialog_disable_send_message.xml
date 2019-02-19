@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_dlg_bg"
+    android:paddingBottom="@dimen/dd_dimen_40px"
+    android:paddingRight="@dimen/dd_dimen_20px"
+    android:paddingTop="@dimen/dd_dimen_20px">
+
+    <ImageView
+        android:id="@+id/icon_user_head"
+        android:layout_width="@dimen/dd_dimen_100px"
+        android:layout_height="@dimen/dd_dimen_100px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dd_dimen_28px"
+        android:background="@mipmap/icon_default_avatar" />
+
+    <TextView
+        android:id="@+id/user_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon_user_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dd_dimen_10px"
+        android:text="邓明佳"
+        android:textColor="@color/neu_666666"
+        android:textSize="@dimen/dd_dimen_30px" />
+
+    <TextView
+        android:id="@+id/tv_disable_send_message"
+        android:layout_width="@dimen/dd_dimen_162px"
+        android:layout_height="@dimen/dd_dimen_50px"
+        android:layout_below="@id/user_nickname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dd_dimen_40px"
+        android:background="@drawable/shape_publish_live_title_bg"
+        android:gravity="center"
+        android:text="禁止发言"
+        android:textColor="@color/neu_333333"
+        android:textSize="@dimen/dd_dimen_28px" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/margin_5dp"
+        android:src="@mipmap/ic_close" />
+</RelativeLayout>

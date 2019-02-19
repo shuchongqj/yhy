@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.videolibrary.widget.HorizontalVideoRootView
+            android:id="@+id/ac_video_client_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/yhy_size_230px"></com.videolibrary.widget.HorizontalVideoRootView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:background="@color/neu_f0f0f0"
+                android:orientation="vertical">
+
+                <com.quanyan.base.view.customview.tabscrollindicator.SlidingTabLayout
+                    android:id="@+id/ac_video_client_sliding_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </com.quanyan.base.view.customview.tabscrollindicator.SlidingTabLayout>
+
+                <View
+                    android:id="@+id/ac_video_client_play_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/divider"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ac_video_client_follow_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/ac_title_bg_color"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+ 关注"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_36px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/ac_video_client_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_horizaontal_live_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/yhy_size_230px"
+        android:background="@mipmap/finish_live_bg"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/ib_finish"
+            android:layout_width="@dimen/yhy_size_32px"
+            android:layout_height="@dimen/yhy_size_32px"
+            android:layout_marginLeft="@dimen/yhy_size_12px"
+            android:layout_marginTop="@dimen/yhy_size_4px"
+            android:background="@null"
+            android:src="@mipmap/ic_live_back" />
+
+        <TextView
+            android:id="@+id/tv_anchor_none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/yhy_size_29px"
+            android:text="主播暂时不在家,看TA的视频走一波~"
+            android:textColor="@color/white"
+            android:textSize="@dimen/yhy_size_15px" />
+
+        <RelativeLayout
+            android:id="@+id/rl_small_video"
+            android:layout_width="@dimen/yhy_size_142px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/yhy_size_68px">
+
+            <com.newyhy.views.RoundImageView
+                android:id="@+id/live_small_item_ivCover"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/yhy_size_91px"
+                android:scaleType="centerCrop"
+                android:background="@drawable/live_cover"
+                app:borderRadius="3dp" />
+
+            <ImageView
+                android:background="@drawable/shape_shadow_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/yhy_size_30px" />
+
+            <TextView
+                android:id="@+id/live_small_item_tvVideoType"
+                android:layout_width="@dimen/yhy_size_34px"
+                android:layout_height="@dimen/yhy_size_17px"
+                android:layout_marginLeft="@dimen/yhy_size_7px"
+                android:background="@drawable/commant_tag_video_red"
+                android:gravity="center"
+                android:text="直播"
+                android:textColor="@color/white"
+                android:textSize="@dimen/yhy_size_12px" />
+
+            <ImageView
+                android:id="@+id/live_first_item_ivPlayVideo"
+                android:layout_width="@dimen/yhy_size_34px"
+                android:layout_height="@dimen/yhy_size_34px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/yhy_size_30px"
+                android:src="@mipmap/video_icon_play_small" />
+
+            <TextView
+                android:id="@+id/live_small_item_tvAudienceNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/yhy_size_5px"
+                android:layout_marginTop="@dimen/yhy_size_5px"
+                android:drawableLeft="@mipmap/icon_read"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="10712"
+                android:textColor="@color/white"
+                android:textSize="@dimen/yhy_size_11px" />
+
+            <TextView
+                android:id="@+id/tv_horizontal_live_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/live_small_item_ivCover"
+                android:layout_marginTop="@dimen/yhy_size_10px"
+                android:text="视频名字"
+                android:textColor="@color/white"
+                android:textSize="@dimen/yhy_size_12px" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+   <!-- <FrameLayout
+        android:id="@+id/fm_horizontal_finish"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/finish_live_bg"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/ib_back"
+                android:layout_width="@dimen/yhy_size_32px"
+                android:layout_height="@dimen/yhy_size_32px"
+                android:layout_marginLeft="@dimen/yhy_size_10px"
+                android:layout_marginTop="@dimen/yhy_size_15px"
+                android:background="@null"
+                android:src="@mipmap/ic_live_back" />
+
+            <RelativeLayout
+                android:id="@+id/rl_first_video"
+                android:layout_width="@dimen/yhy_size_300px"
+                android:layout_height="@dimen/yhy_size_170px"
+                android:layout_marginLeft="@dimen/yhy_size_58px"
+                android:layout_marginTop="@dimen/yhy_size_47px">
+
+                <com.newyhy.views.RoundImageView
+                    android:id="@+id/live_first_item_ivCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/splash"
+                    app:borderRadius="3dp" />
+
+                <TextView
+                    android:id="@+id/live_first_item_tvVideoType"
+                    android:layout_width="@dimen/yhy_size_34px"
+                    android:layout_height="@dimen/yhy_size_17px"
+                    android:layout_marginLeft="@dimen/yhy_size_7px"
+                    android:background="@drawable/commant_tag_video_blue"
+                    android:gravity="center"
+                    android:text="直播"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/yhy_size_12px" />
+
+                <TextView
+                    android:id="@+id/live_first_item_tvAudienceNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/yhy_size_5px"
+                    android:layout_marginTop="@dimen/yhy_size_5px"
+                    android:drawableLeft="@mipmap/icon_read"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:text="10712"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/yhy_size_11px" />
+
+                <ImageView
+                    android:id="@+id/live_first_item_ivPlayVideo"
+                    android:layout_width="@dimen/yhy_size_45px"
+                    android:layout_height="@dimen/yhy_size_45px"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/video_icon_play_small" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_first_video"
+                android:layout_width="@dimen/yhy_size_300px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_first_video"
+                android:layout_marginLeft="@dimen/yhy_size_58px"
+                android:layout_marginTop="@dimen/yhy_size_11px"
+                android:text="直播视频名称"
+                android:textColor="@color/white"
+                android:textSize="@dimen/yhy_size_14px" />
+
+            <LinearLayout
+                android:layout_width="@dimen/yhy_size_300px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_first_video"
+                android:layout_marginLeft="@dimen/yhy_size_58px"
+                android:layout_marginTop="@dimen/yhy_size_22px">
+
+                <RelativeLayout
+                    android:id="@+id/rl_second_video"
+                    android:layout_width="@dimen/yhy_size_142px"
+                    android:layout_height="wrap_content">
+
+                    <com.newyhy.views.RoundImageView
+                        android:id="@+id/live_second_item_ivCover"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/yhy_size_91px"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/splash"
+                        app:borderRadius="3dp" />
+
+                    <TextView
+                        android:id="@+id/live_second_item_tvVideoType"
+                        android:layout_width="@dimen/yhy_size_34px"
+                        android:layout_height="@dimen/yhy_size_17px"
+                        android:layout_marginLeft="@dimen/yhy_size_7px"
+                        android:background="@drawable/commant_tag_video_red"
+                        android:gravity="center"
+                        android:text="直播"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/yhy_size_12px" />
+
+                    <TextView
+                        android:id="@+id/live_second_item_tvAudienceNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/yhy_size_5px"
+                        android:layout_marginTop="@dimen/yhy_size_5px"
+                        android:drawableLeft="@mipmap/icon_read"
+                        android:drawablePadding="6dp"
+                        android:gravity="center"
+                        android:text="10712"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/yhy_size_11px" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/live_second_item_ivCover"
+                        android:layout_marginTop="@dimen/yhy_size_10px"
+                        android:text="视频名字"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/yhy_size_12px" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_third_video"
+                    android:layout_width="@dimen/yhy_size_142px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/yhy_size_15px"
+                    android:layout_marginStart="@dimen/yhy_size_15px">
+
+                    <com.newyhy.views.RoundImageView
+                        android:id="@+id/live_third_item_ivCover"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/yhy_size_91px"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/splash"
+                        app:borderRadius="3dp" />
+
+                    <TextView
+                        android:id="@+id/live_third_item_tvVideoType"
+                        android:layout_width="@dimen/yhy_size_34px"
+                        android:layout_height="@dimen/yhy_size_17px"
+                        android:layout_marginLeft="@dimen/yhy_size_7px"
+                        android:background="@drawable/commant_tag_video_red"
+                        android:gravity="center"
+                        android:text="直播"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/yhy_size_12px" />
+
+                    <TextView
+                        android:id="@+id/live_third_item_tvAudienceNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/yhy_size_5px"
+                        android:layout_marginTop="@dimen/yhy_size_5px"
+                        android:drawableLeft="@mipmap/icon_read"
+                        android:drawablePadding="6dp"
+                        android:gravity="center"
+                        android:text="10712"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/yhy_size_11px" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/live_third_item_ivCover"
+                        android:layout_marginTop="@dimen/yhy_size_10px"
+                        android:text="视频名字"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/yhy_size_12px" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_anchor_head"
+                android:layout_width="@dimen/yhy_size_70px"
+                android:layout_height="@dimen/yhy_size_70px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/yhy_size_157px"
+                android:layout_marginTop="@dimen/yhy_size_114px"
+                android:src="@mipmap/head_protriat_default" />
+
+            <TextView
+                android:id="@+id/tv_anchor"
+                android:layout_width="@dimen/yhy_size_70px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_anchor_head"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/yhy_size_157px"
+                android:layout_marginTop="@dimen/yhy_size_11px"
+                android:text="猫咪小姐"
+                android:textColor="@color/white"
+                android:textSize="@dimen/yhy_size_12px" />
+
+
+            <TextView
+                android:id="@+id/tv_anchor_none_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_anchor"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/yhy_size_62px"
+                android:layout_marginTop="@dimen/yhy_size_29px"
+                android:text="主播暂时不在家,看TA的视频走一波~"
+                android:textColor="@color/white"
+                android:textSize="@dimen/yhy_size_15px" />
+        </RelativeLayout>
+
+    </FrameLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neu_f4f4f4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_180px"
+        android:background="@mipmap/icon_integral_bg">
+
+        <TextView
+            android:id="@+id/TextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:layout_marginTop="@dimen/dd_dimen_30px"
+            android:gravity="center_horizontal"
+            android:text="当前积分："
+            android:textColor="@color/color_norm_ffffff"
+            android:textSize="@dimen/dd_dimen_24px" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/TextView4"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dd_dimen_30px"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:gravity="bottom"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_integral_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center_horizontal"
+                android:text="——"
+                android:textColor="@color/color_norm_ffffff"
+                android:textSize="@dimen/dd_dimen_60px"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_integral_mall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/linearLayout9"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/linearLayout8"
+                android:layout_gravity="bottom"
+                android:background="@drawable/shape_tv_integral_go_complete"
+                android:paddingBottom="@dimen/dd_dimen_10px"
+                android:paddingLeft="@dimen/dd_dimen_15px"
+                android:paddingRight="@dimen/dd_dimen_15px"
+                android:paddingTop="@dimen/dd_dimen_10px"
+                android:text="去兑换"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dd_dimen_24px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="bottom"
+                android:src="@mipmap/arrow_go"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <com.quanyan.yhy.ui.discovery.view.SimpleViewPagerIndicator
+        android:id="@+id/order_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_88px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout4"
+        android:background="#ffffffff"
+        android:orientation="horizontal" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="533dp"
+        android:layout_above="@+id/tv_signed_integralrule"
+        android:layout_below="@+id/order_tab_bar"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+    <View
+        android:id="@+id/relativeLayout3"
+        style="@style/split_line"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/order_tab_bar"></View>
+
+    <TextView
+        android:id="@+id/tv_signed_integralrule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/White"
+        android:gravity="center"
+        android:text="@string/label_signed_integralrule"
+        android:textColor="@color/neu_ffaa00"
+        android:textSize="@dimen/dd_dimen_36px"
+        android:visibility="gone"></TextView>
+</RelativeLayout>

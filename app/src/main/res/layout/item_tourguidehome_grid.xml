@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/dd_dimen_240px">
+
+        <ImageView
+            android:id="@+id/iv_tourduide_scenic_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_250px"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_default_310_180" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_50px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bg_gradient_white_black">
+
+
+            <TextView
+                android:id="@+id/iv_tourduide_scenic_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/dd_dimen_10px"
+                android:layout_marginLeft="@dimen/dd_dimen_15px"
+            android:singleLine="true"
+                android:ellipsize="end"
+                android:text=""
+                android:textColor="@color/text_third"
+                android:textSize="@dimen/dd_dimen_24px"
+                android:layout_toLeftOf="@+id/iv_tourduide_scenic_audience" />
+
+            <TextView
+                android:id="@+id/iv_tourduide_scenic_audience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/dd_dimen_10px"
+                android:layout_marginRight="@dimen/dd_dimen_15px"
+                android:text=""
+                android:textColor="@color/text_third"
+                android:textSize="@dimen/dd_dimen_24px" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/iv_tourduide_scenic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/dd_dimen_10px"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text=""
+        android:textColor="@color/color_norm_333333"
+        android:textSize="@dimen/dd_dimen_30px" />
+
+</LinearLayout>

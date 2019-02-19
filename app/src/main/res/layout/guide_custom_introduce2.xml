@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_guide"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginRight="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_50px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_guise_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="纳西族禁忌"
+            android:textColor="@color/main"
+            android:textSize="@dimen/text_size_24px" />
+
+        <TextView
+            android:id="@+id/tv_guide_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_guise_title"
+            android:layout_marginTop="@dimen/dd_dimen_20px"
+            android:lineSpacingExtra="@dimen/dd_dimen_10px"
+            android:text="1、纳西族是一个及其信用讲义气的名族，纳西族是一个及其信用讲义气的名族。"
+            android:textColor="@color/tc_666666"
+            android:textSize="@dimen/text_size_24px" />
+    </LinearLayout>
+
+
+</LinearLayout>

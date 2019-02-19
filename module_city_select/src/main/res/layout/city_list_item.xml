@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/city_item_bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/yhy_size_25px"
+    android:paddingRight="@dimen/yhy_size_15px">
+
+    <TextView
+        android:id="@+id/tv_city_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/yhy_size_20px"
+        android:paddingBottom="@dimen/yhy_size_10px"
+        android:paddingTop="@dimen/yhy_size_10px"
+        android:textColor="@color/color_4A4A4A"
+        android:textSize="@dimen/yhy_size_15px"
+        tools:text="上海" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_DDDDDD" />
+</LinearLayout>

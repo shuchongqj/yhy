@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_topic_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dd_dimen_360px"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_default_310_180" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_topic_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxWidth="@dimen/dd_dimen_400px"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dd_dimen_36px" />
+
+                <TextView
+                    android:id="@+id/tv_topic_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dd_dimen_15px"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dd_dimen_30px" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_topic_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dd_dimen_30px"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:layout_marginRight="@dimen/dd_dimen_30px"
+            android:layout_marginTop="@dimen/dd_dimen_15px"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dd_dimen_30px" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_90px"
+        android:background="@color/orderline_e1e1e1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dd_dimen_30px"
+            android:text="全部讨论"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dd_dimen_30px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/emptyView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dd_dimen_120px">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/error_view_image"
+                android:layout_width="@dimen/dd_dimen_120px"
+                android:layout_height="@dimen/dd_dimen_120px"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/error_empty_icon" />
+
+            <TextView
+                android:id="@+id/error_view_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dd_dimen_60px"
+                android:paddingRight="@dimen/dd_dimen_60px"
+                android:text="此话题还没有动态"
+                android:textColor="@color/tv_color_gray6"
+                android:textSize="@dimen/dd_dimen_30px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orderbackground_f4f4f4"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_code_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_24px"
+        android:text="身份证"
+        android:textColor="@color/order_666666"
+        android:textSize="@dimen/dd_dimen_30px" />
+
+
+    <EditText
+        android:id="@+id/et_code_value"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dd_dimen_110px"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/dd_dimen_15px"
+        android:background="@color/white"
+        android:textCursorDrawable="@null"
+        android:hint="请输入身份证号码"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:singleLine="true"
+        android:textColor="@color/order_666666"
+        android:textColorHint="@color/order_999999"
+        android:textSize="@dimen/dd_dimen_28px" />
+
+</LinearLayout>

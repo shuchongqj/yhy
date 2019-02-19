@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_norm_ffffff"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dd_dimen_30px"
+    android:paddingRight="@dimen/dd_dimen_30px">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_130px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/eventitem_iv_logo"
+            android:layout_marginLeft="@dimen/dd_dimen_20px"
+            android:layout_marginStart="23dp"
+            android:layout_toEndOf="@+id/eventitem_iv_logo"
+            android:layout_toRightOf="@+id/eventitem_iv_logo"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/eventitem_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_norm_636363"
+                    android:textSize="@dimen/dd_dimen_30px" />
+
+                <TextView
+                    android:id="@+id/eventitem_tv_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dd_dimen_10px"
+                    android:background="@mipmap/icon_sex_woman"
+                    android:gravity="center_vertical|right"
+                    android:paddingLeft="@dimen/dd_dimen_35px"
+                    android:paddingRight="3dp"
+                    android:text="0"
+                    android:textColor="@color/color_norm_ffffff"
+                    android:textSize="@dimen/dd_dimen_21px" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dd_dimen_20px">
+
+                <TextView
+                    android:id="@+id/eventitem_tv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/color_norm_bebebe"
+                    android:textSize="@dimen/dd_dimen_24px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/eventitem_iv_logo"
+            android:layout_width="@dimen/dd_dimen_88px"
+            android:layout_height="@dimen/dd_dimen_88px"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_default_128_128" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/eventitem_iv_user"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dd_dimen_360px"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dd_dimen_65px"
+            android:layout_alignBottom="@+id/eventitem_iv_user"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/dd_dimen_30px"
+            android:background="@color/translucent_77"
+            android:orientation="horizontal"
+            android:padding="@dimen/dd_dimen_10px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:text="￥"
+                android:textColor="@color/color_norm_ffffff"
+                android:textSize="@dimen/dd_dimen_24px" />
+
+            <TextView
+                android:id="@+id/eventitem_iv_memberPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/color_norm_ffffff"
+                android:textSize="@dimen/dd_dimen_34px" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dd_dimen_10px"
+                android:text="起/会员"
+                android:textColor="@color/color_norm_ffffff"
+                android:textSize="@dimen/dd_dimen_20px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dd_dimen_20px"
+        android:paddingLeft="@dimen/dd_dimen_20px"
+        android:paddingTop="@dimen/dd_dimen_10px">
+
+        <TextView
+            android:id="@+id/eventitem_tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="@color/color_norm_636363"
+            android:textSize="@dimen/dd_dimen_24px" />
+
+        <TextView
+            android:id="@+id/eventitem_tv_message2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dd_dimen_10px"
+            android:drawableLeft="@mipmap/icon_label"
+            android:drawablePadding="@dimen/dd_dimen_20px"
+            android:singleLine="true"
+            android:textColor="@color/main"
+            android:textSize="@dimen/dd_dimen_24px" />
+    </LinearLayout>
+
+</LinearLayout>

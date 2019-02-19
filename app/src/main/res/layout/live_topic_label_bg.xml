@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@+id/live_search_label_tv"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:drawableLeft="@drawable/icon_label_selector"
+          android:drawablePadding="@dimen/dd_dimen_18px"
+          android:paddingBottom="@dimen/dd_dimen_20px"
+          android:paddingLeft="@dimen/dd_dimen_30px"
+          android:paddingRight="@dimen/dd_dimen_40px"
+          android:paddingTop="@dimen/dd_dimen_20px"
+          android:singleLine="true"
+          android:text="香港游"
+          android:textColor="@color/tv_gray_orange_press_selected"
+          android:textSize="@dimen/dd_dimen_30px">
+
+</TextView>

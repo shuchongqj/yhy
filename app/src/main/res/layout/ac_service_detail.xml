@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_all_contain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ac_bg_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/tv_finish_button"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_detail_contain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dd_dimen_90px"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dd_dimen_30px"
+                    android:text="@string/label_cost_des"
+                    android:textSize="@dimen/text_size_30px"
+                    android:textColor="@color/neu_666666"/>
+
+                <View
+                    android:visibility="gone"
+                    style="@style/split_line"></View>
+
+                <EditText
+                    android:id="@+id/et_cost_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/dd_dimen_210px"
+                    android:layout_marginLeft="@dimen/dd_dimen_30px"
+                    android:layout_marginRight="@dimen/dd_dimen_30px"
+                    android:padding="@dimen/dd_dimen_20px"
+                    android:gravity="left|top"
+                    android:textColor="@color/neu_999999"
+                    android:maxLength="500"
+                    android:textSize="@dimen/text_size_26px"
+                    android:background="@drawable/shape_select_minute"
+                    android:layout_marginBottom="@dimen/dd_dimen_50px"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/dd_dimen_20px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dd_dimen_90px"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dd_dimen_30px"
+                    android:text="@string/label_book_explain"
+                    android:textSize="@dimen/text_size_30px"
+                    android:textColor="@color/neu_666666"/>
+
+                <View
+                    android:visibility="gone"
+                    style="@style/split_line"></View>
+
+                <EditText
+                    android:id="@+id/et_book_explain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/dd_dimen_210px"
+                    android:layout_marginLeft="@dimen/dd_dimen_30px"
+                    android:layout_marginRight="@dimen/dd_dimen_30px"
+                    android:padding="@dimen/dd_dimen_20px"
+                    android:gravity="left|top"
+                    android:maxLength="500"
+                    android:textColor="@color/neu_999999"
+                    android:textSize="@dimen/text_size_26px"
+                    android:background="@drawable/shape_select_minute"
+                    android:layout_marginBottom="@dimen/dd_dimen_50px"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/dd_dimen_20px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title_text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dd_dimen_90px"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dd_dimen_30px"
+                    android:text="@string/label_back_rule"
+                    android:textSize="@dimen/text_size_30px"
+                    android:textColor="@color/neu_666666"/>
+
+                <View
+                    android:visibility="gone"
+                    style="@style/split_line"></View>
+
+                <EditText
+                    android:id="@+id/et_back_rule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dimen_30px"
+                    android:layout_marginRight="@dimen/dd_dimen_30px"
+                    android:minHeight="@dimen/dd_dimen_210px"
+                    android:padding="@dimen/dd_dimen_20px"
+                    android:gravity="left|top"
+                    android:maxLength="500"
+                    android:textColor="@color/neu_999999"
+                    android:textSize="@dimen/text_size_26px"
+                    android:background="@drawable/shape_select_minute"
+                    android:layout_marginBottom="@dimen/dd_dimen_50px"/>
+
+            </LinearLayout>-->
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_finish_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_96px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ac_title_bg_color"
+        android:gravity="center"
+        android:padding="@dimen/margin_10dp"
+        android:text="@string/label_btn_finish"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_36px"></TextView>
+</LinearLayout>

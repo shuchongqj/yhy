@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/base_drop_down_parent_layout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!--<com.yyydjk.library.DropDownMenu
+    android:id="@+id/dropDownMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:ddmenuTextSize="13sp" //tab字体大小
+    app:ddtextUnselectedColor="@color/drop_down_unselected" //tab未选中颜色
+    app:ddtextSelectedColor="@color/drop_down_selected" //tab选中颜色
+    app:dddividerColor="@color/gray"    //分割线颜色
+    app:ddunderlineColor="@color/gray"  //下划线颜色
+    app:ddmenuSelectedIcon="@mipmap/drop_down_selected_icon" //tab选中状态图标
+    app:ddmenuUnselectedIcon="@mipmap/drop_down_unselected_icon"//tab未选中状态图标
+    app:ddmaskColor="@color/mask_color"     //遮罩颜色，一般是半透明
+    app:ddmenuBackgroundColor="@color/white" //tab 背景颜色
+    />-->
+
+    <com.quanyan.base.view.customview.dropdownview.DropDownMenu
+        android:id="@+id/dropDownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dddividerColor="@color/orderline_e1e1e1"
+        app:ddmaskColor="@color/transparent_black_50"
+        app:ddmenuBackgroundColor="@color/white"
+        app:ddmenuSelectedIcon="@mipmap/arrow_up_icon"
+        app:ddmenuTextSize="@dimen/text_size_28px"
+        app:ddmenuUnselectedIcon="@mipmap/arrow_down_icon_normal"
+        app:ddtextSelectedColor="@color/neu_f64829"
+        app:ddtextUnselectedColor="@color/neu_666666"
+        app:ddunderlineColor="@color/orderline_e1e1e1"
+        android:orientation="vertical" />
+
+
+</LinearLayout>

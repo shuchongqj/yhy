@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/error_view_image"
+        android:layout_width="@dimen/dd_dimen_120px"
+        android:layout_height="@dimen/dd_dimen_120px"
+        android:src="@mipmap/error_empty_icon"/>
+
+    <TextView
+        android:id="@+id/error_view_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dd_dimen_60px"
+        android:paddingRight="@dimen/dd_dimen_60px"
+        android:text="@string/error_view_nodata_title"
+        android:textColor="@color/tv_color_gray6"
+        android:textSize="@dimen/dd_dimen_30px"/>
+
+    <TextView
+        android:id="@+id/error_view_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/error_view_nodata_content"
+        android:textColor="@color/tv_color_grayBE"
+        android:textSize="@dimen/dd_dimen_27px"/>
+
+    <TextView
+        android:id="@+id/error_view_load_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_color_stroke_bg"
+        android:textSize="@dimen/dd_dimen_28px"
+        android:textColor="@color/neu_666666"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dd_dimen_30px"
+        android:paddingRight="@dimen/dd_dimen_30px"
+        android:layout_marginTop="@dimen/dd_dimen_30px"
+        android:paddingTop="@dimen/dd_dimen_15px"
+        android:paddingBottom="@dimen/dd_dimen_15px"
+        android:text="@string/load_again"/>
+</merge>

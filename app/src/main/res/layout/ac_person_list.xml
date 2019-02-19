@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_person"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.quanyan.base.view.customview.pulltorefresh.PullToRefreshScrollDeleteListView
+        android:id="@+id/lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:background="@color/white"
+        android:cacheColorHint="@color/transparent"
+        android:focusable="true"
+        android:listSelector="@color/transparent"
+        android:divider="@color/divider"
+        android:padding="0dp"
+        android:scrollbars="none" />
+
+</LinearLayout>

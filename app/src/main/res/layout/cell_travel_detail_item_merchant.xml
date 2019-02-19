@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/dd_dimen_20px"
+              android:paddingLeft="@dimen/dd_dimen_50px"
+              android:paddingRight="@dimen/dd_dimen_50px">
+
+    <View
+        android:id="@+id/cell_in_travel_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/dd_dimen_40px"
+        android:background="@color/neu_f4f4f4"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/cell_travel_detail_item_merchant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/neu_666666"
+            android:textSize="@dimen/text_size_32px"/>
+        <ImageView
+            android:id="@+id/cell_travel_detail_item_merchant_name_img"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_more"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cell_travel_detail_item_merchant_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dd_dimen_33px"
+        android:text="「好玩就要说出来」"
+        android:textColor="@color/neu_666666"
+        android:textSize="@dimen/text_size_30px"/>
+
+    <!--<TextView
+        android:id="@+id/cell_travel_detail_item_merchant_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dd_dimen_21px"
+        android:lineSpacingExtra="1.5dp"
+        android:maxLines="4"
+        android:ellipsize="end"
+        android:text="简介"
+        android:layout_marginBottom="@dimen/dd_dimen_10px"
+        android:textColor="@color/neu_999999"
+        android:textSize="@dimen/text_size_28px"/>-->
+
+    <com.quanyan.yhy.view.JustifyTextView
+        android:id="@+id/cell_travel_detail_item_merchant_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dd_dimen_21px"
+        android:lineSpacingExtra="1.5dp"
+        android:maxLines="4"
+        android:ellipsize="end"
+        android:text=""
+        android:layout_marginBottom="@dimen/dd_dimen_10px"
+        android:textColor="@color/neu_999999"
+        android:textSize="@dimen/text_size_28px"/>
+
+    <include layout="@layout/no_scroll_gridview"/>
+</LinearLayout>

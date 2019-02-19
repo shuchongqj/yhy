@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_pullrefresh_listview_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_norm_f4f4f4">
+
+    <com.quanyan.base.view.customview.pulltorefresh.PullToRefreshObservableListView
+        android:id="@id/id_stickynavlayout_innerscrollview"
+        xmlns:pullrefresh="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/neu_f4f4f4"
+        android:dividerPadding="@dimen/public_split_line_height"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:focusable="true"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"
+        android:smoothScrollbar="true"
+        pullrefresh:ptrAnimationStyle="rotate"
+        pullrefresh:ptrMode="both"
+        pullrefresh:ptrShowIndicator='false'/>
+
+</LinearLayout>

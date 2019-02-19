@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    app:srlEnablePreviewInEditMode="true">
+    <!--srlAccentColor srlPrimaryColor 将会改变 Header 和 Footer 的主题颜色-->
+    <!--srlEnablePreviewInEditMode 可以开启和关闭预览功能-->
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/transparent"
+        app:srlDrawableArrowSize="14dp"
+        app:srlDrawableProgressSize="14dp"
+        app:srlTextSizeTime="10sp"
+        app:srlTextSizeTitle="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.newyhy.views.ObservableScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scroll_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/scroll_image_bg"
+                        android:scaleType="fitXY"
+                        android:layout_alignBottom="@+id/scroll_layout"
+                        android:layout_alignTop="@+id/scroll_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/scroll_layout"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/scroll_tool_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.newyhy.views.PopupButton
+                            android:id="@+id/location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="65dp"
+                            android:layout_marginLeft="16dp"
+                            android:background="#00000000"
+                            android:drawablePadding="10dp"
+                            android:drawableRight="@drawable/popup_btn_arrow_white"
+                            android:gravity="center"
+                            android:paddingTop="16dp"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/fragment_personal_btnChat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="30dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:src="@mipmap/icon_message_white" />
+
+                        <TextView
+                            android:id="@+id/personal_message_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@drawable/bg_white_circle_fill"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/red_ying"
+                            android:textSize="10sp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/fragment_sport_item1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/sport_football"
+                                    android:layout_width="34dp"
+                                    android:layout_height="34dp"
+                                    android:background="@mipmap/sports_icon_football" />
+
+                                <TextView
+                                    android:id="@+id/sport_item1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="足球"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/fragment_sport_item2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/sport_basketball"
+                                    android:layout_width="34dp"
+                                    android:layout_height="34dp"
+                                    android:background="@mipmap/sports_icon_basketball" />
+
+                                <TextView
+                                    android:id="@+id/sport_item2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="篮球"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/fragment_sport_item3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/sport_badminton"
+                                    android:layout_width="34dp"
+                                    android:layout_height="34dp"
+                                    android:background="@mipmap/sports_icon_badminton" />
+
+                                <TextView
+                                    android:id="@+id/sport_item3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="羽毛球"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/fragment_sport_item4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/sport_tennis"
+                                    android:layout_width="34dp"
+                                    android:layout_height="34dp"
+                                    android:background="@mipmap/sports_icon_tennis" />
+
+                                <TextView
+                                    android:id="@+id/sport_item4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:text="网球"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/scroll_act_layout"
+                            android:visibility="gone"
+                            android:background="#00000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/sport_act_1"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_gravity="center_vertical"
+                                android:scaleType="fitStart"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:id="@+id/sport_act_2"
+                                android:layout_width="0dp"
+                                android:scaleType="fitStart"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llyt_center_booth_one"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llyt_center_booth_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/fragment_sport_llPedometer"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/neu_f0f0f0"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_leftbanner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/fragment_sport_ivLeftBanner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="?attr/selectableItemBackground" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_rightbanner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/fragment_sport_ivBanner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="?attr/selectableItemBackground" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_step_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="26dp"
+                        android:layout_marginLeft="83dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/fragment_sport_tvPedometer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/red"
+                            android:textSize="28sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="步"
+                            android:textColor="@color/gray"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <!--直播视频-->
+                <LinearLayout
+                    android:id="@+id/llyt_live_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="精彩视频"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/fragment_sport_ivLiveList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="@dimen/margin_20dp"
+                            android:src="@mipmap/common_arrow_right" />
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/fragment_sport_live_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:clipToPadding="false"
+                        android:paddingLeft="7dp" />
+
+                </LinearLayout>
+
+                <!--健康咨询-->
+                <LinearLayout
+                    android:id="@+id/llyt_consult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="健康咨询"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/fragment_sport_ivConsultList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="@dimen/margin_20dp"
+                            android:src="@mipmap/common_arrow_right" />
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/fragment_sport_health_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="202dp"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:paddingLeft="7dp" />
+
+                </LinearLayout>
+
+                <!--场馆活动-->
+                <LinearLayout
+                    android:id="@+id/llyt_venue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="场馆活动"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/fragment_sport_ivVenueMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:padding="15dp"
+                            android:src="@mipmap/common_arrow_right" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/common_divider" />
+                    <!--
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/fragment_sport_venue_recyclerView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="140dp"
+                                    android:layout_marginTop="10dp" />
+
+                    -->
+                    <LinearLayout
+                        android:id="@+id/fragment_sport_llVenue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" />
+
+                </LinearLayout>
+
+                <!--积分商城-->
+                <LinearLayout
+                    android:id="@+id/llyt_mall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <!--android:layout_marginTop="10dp"-->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="积分商城"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/fragment_sport_ivIntegralMallMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="@dimen/margin_20dp"
+                            android:src="@mipmap/common_arrow_right" />
+                    </RelativeLayout>
+
+                    <!--<com.quanyan.yhy.ui.sport.MyGridView-->
+                    <!--android:id="@+id/fragment_sport_grdMall"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/neu_f0f0f0"-->
+                    <!--android:numColumns="2"-->
+                    <!--android:scrollbars="none" />-->
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/fragment_sport_grdMall"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/neu_f0f0f0"
+                        android:scrollbars="none">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.newyhy.views.ObservableScrollView>
+
+            <RelativeLayout
+                android:id="@+id/float_tool_bar"
+                android:visibility="gone"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.newyhy.views.PopupButton
+                    xmlns:popupbtn="http://schemas.android.com/tools"
+                    android:id="@+id/float_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="#fff"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/popup_btn_arrow_black"
+                    android:gravity="center"
+                    android:paddingTop="16dp"
+                    android:text=""
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                    popupbtn:normalBg="@drawable/shape2_right_angle"
+                    popupbtn:normalIcon="@mipmap/classify_icon_choose_black"
+                    popupbtn:pressBg="@drawable/shape2_right_angle"
+                    popupbtn:pressIcon="@mipmap/icon_arrow_up_red" />
+
+                <ImageView
+                    android:id="@+id/float_message_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="30dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:src="@mipmap/icon_message_white" />
+
+                <TextView
+                    android:id="@+id/float_court_message_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/bg_white_circle_fill"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/red_ying"
+                    android:textSize="10sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#999999"
+                    android:layout_alignBottom="@id/float_location"
+                    android:layout_height="1px"/>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/neu_f4f4f4"
+        app:srlDrawableArrowSize="14dp"
+        app:srlDrawableProgressSize="14dp"
+        app:srlTextSizeTitle="12sp" />
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

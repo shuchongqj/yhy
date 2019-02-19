@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/live_background"
+    android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/yhy_size_6px"
+            android:background="#FF282828" />
+
+        <TextView
+            android:id="@+id/tv_his_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/yhy_size_15px"
+            android:layout_marginTop="@dimen/yhy_size_19px"
+            android:textStyle="bold"
+            android:text="推荐视频"
+            android:textColor="@color/live_text_color"
+            android:textSize="@dimen/yhy_size_14px" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_video"
+        android:layout_marginTop="@dimen/yhy_size_40px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

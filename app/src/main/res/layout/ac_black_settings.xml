@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neu_ededed">
+    <com.quanyan.yhy.ui.views.BlackSettingItem
+        android:id="@+id/menu_black_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dd_dimen_30px"/>
+
+    <com.quanyan.yhy.ui.views.BlackSettingItem
+        android:id="@+id/menu_black_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dd_dimen_30px"/>
+</LinearLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="1dp"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/mine_header_view" />
+
+            <LinearLayout
+                android:id="@+id/ll_service_star_switch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dd_dimen_90px"
+                android:background="@color/white"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_below="@+id/rl_mine_head_contain"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dd_dimen_88px">
+
+                    <ImageView
+                        android:id="@+id/iv_icon_service_switch"
+                        android:layout_width="@dimen/dd_dimen_54px"
+                        android:layout_height="@dimen/dd_dimen_54px"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_service_switch"
+                        android:layout_marginLeft="@dimen/dd_dimen_30px"
+                        android:layout_marginRight="@dimen/dd_dimen_20px"/>
+
+                    <TextView
+                        android:id="@+id/tv_service_switch_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_icon_service_switch"
+                        android:textColor="@color/neu_333333"
+                        android:text="@string/label_btn_start_service"
+                        android:textSize="@dimen/text_size_30px" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_service_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:src="@mipmap/ic_stop_service"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dd_dimen_30px"
+                        android:padding="@dimen/dd_dimen_0px"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+                    <View
+                        style="@style/split_line"
+                        android:layout_marginLeft="@dimen/dd_dimen_30px"></View>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <com.quanyan.yhy.ui.views.MineMenuItem
+            android:id="@+id/item_publish_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <View
+                style="@style/split_line"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"></View>
+        </LinearLayout>
+
+        <com.quanyan.yhy.ui.views.MineMenuItem
+            android:id="@+id/item_my_publish_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_20px"
+            android:background="@color/color_norm_f4f4f4"/>
+
+        <com.quanyan.yhy.ui.views.MineMenuItem
+            android:id="@+id/item_my_assets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <View
+                style="@style/split_line"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"></View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dd_dimen_100px"
+            android:paddingRight="@dimen/dd_dimen_128px">
+
+            <com.quanyan.yhy.view.HomeMenu_GridView
+                android:id="@+id/grid_assets"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dd_dimen_120px"
+                android:background="@color/white"
+                android:horizontalSpacing="0.0dip"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0.0dip" />
+
+
+            <!--<View
+                android:id="@+id/item_division"
+                style="@style/split_line"></View>-->
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_20px"
+            android:background="@color/color_norm_f4f4f4"/>
+
+        <com.quanyan.yhy.ui.views.MineMenuItem
+            android:id="@+id/item_my_bought_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <View
+                style="@style/split_line"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"></View>
+        </LinearLayout>
+
+        <com.quanyan.yhy.ui.views.MineMenuItem
+            android:id="@+id/item_my_sold_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <View
+                style="@style/split_line"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"></View>
+        </LinearLayout>
+
+        <!--<com.quanyan.yhy.ui.views.MineMenuItem
+            android:id="@+id/item_my_live"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <View
+                style="@style/split_line"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"></View>
+        </LinearLayout>-->
+
+        <com.quanyan.yhy.ui.views.MineMenuItem
+            android:id="@+id/item_my_integral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <View
+                style="@style/split_line"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"></View>
+        </LinearLayout>
+
+        <com.quanyan.yhy.ui.views.MineMenuItem
+            android:id="@+id/item_my_live_record"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ll_live_split"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <View
+                style="@style/split_line"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"></View>
+        </LinearLayout>
+
+        <com.quanyan.yhy.ui.views.MineMenuItem
+            android:id="@+id/item_my_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View style="@style/split_line"></View>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dimen_20px"
+            android:background="@color/color_norm_f4f4f4"/>
+
+        <com.quanyan.yhy.ui.views.MineMenuItem
+            android:id="@+id/item_my_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View style="@style/split_line"></View>
+
+        <com.quanyan.yhy.ui.views.MineMenuItem
+            android:id="@+id/item_customer_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View style="@style/split_line"></View>
+
+    </LinearLayout>
+
+</ScrollView>

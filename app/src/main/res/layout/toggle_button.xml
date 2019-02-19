@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ToggleButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:background="@null"
+    android:drawablePadding="@dimen/dd_dimen_20px"
+    android:drawableRight="@mipmap/arrow_down_icon"
+    android:gravity="center"
+    android:padding="@dimen/dd_dimen_15px"
+    android:singleLine="true"
+    android:text="出游方式"
+    android:textColor="@color/main"
+    android:textOff="@null"
+    android:textOn="@null"
+
+
+    android:textSize="@dimen/dd_dimen_30px"
+
+
+    >
+
+</ToggleButton>

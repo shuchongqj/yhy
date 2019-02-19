@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_publish">发起直播</string>
+    <string name="tv_record_live">直播记录</string>
+    <string name="hint_publish_live">输入标题吧</string>
+    <string name="btn_live_start">开始直播</string>
+    <string name="toast_publish_empty_title">请输入标题</string>
+    <string name="toast_publish_empty_cover">请拍摄封面</string>
+    <string name="toast_publish_network">请检查网络环境</string>
+
+    <string-array name="video_client_tabs">
+        <item>聊天</item>
+        <item>主播</item>
+    </string-array>
+    <string-array name="video_client_tabs1">
+        <item>主播</item>
+    </string-array>
+</resources>

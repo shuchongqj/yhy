@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.25dp"
+        android:background="@drawable/shape_integralmall_item_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dd_dimen_20px">
+
+            <ImageView
+                android:id="@+id/iv_integralmall_logo_pic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dd_dimen_182px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_default_150_150" />
+
+            <ImageView
+                android:id="@+id/iv_integralmall_logo_soldout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/iv_integralmall_logo_pic"
+                android:layout_alignTop="@+id/iv_integralmall_logo_pic"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_integralmall_soldout"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_integralmall_logo_hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/iv_integralmall_logo_pic"
+                android:layout_alignTop="@+id/iv_integralmall_logo_pic"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_integralmall_hot"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dd_dimen_20px"
+            android:layout_marginLeft="@dimen/dd_dimen_20px"
+            android:layout_marginRight="@dimen/dd_dimen_20px"
+            android:layout_marginTop="@dimen/dd_dimen_20px">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_integralmall_title">
+                <TextView
+                    android:id="@+id/iv_integralmall_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="@color/color_norm_333333"
+                    android:textSize="@dimen/text_size_28px"
+                    android:text="                "/>
+                <TextView
+                    android:id="@+id/tv_global"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:text="全球购"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:background="@drawable/mall_golbe_tag"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+            <!--<TextView-->
+                <!--android:id="@+id/iv_integralmall_title"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:ellipsize="end"-->
+                <!--android:lines="2"-->
+                <!--android:textColor="@color/color_norm_333333"-->
+                <!--android:textSize="@dimen/text_size_28px" />-->
+
+            <LinearLayout
+                android:id="@+id/layout_integralmall_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_integralmall_title"
+                android:layout_marginTop="@dimen/dd_dimen_12px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/iv_integralmall_piclabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:text="@string/money_symbol"
+                    android:textColor="@color/neu_fa4619"
+                    android:textSize="@dimen/text_size_22px" />
+
+                <TextView
+                    android:id="@+id/iv_integralmall_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dimen_3px"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:textColor="@color/neu_fa4619"
+                    android:textSize="@dimen/text_size_32px" />
+
+                <TextView
+                    android:id="@+id/tv_qi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dimen_3px"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:textColor="@color/neu_999999"
+                    android:textSize="@dimen/text_size_22px"
+                    android:text="起"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/commodity_integralmal_market_pirce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:textColor="@color/neu_666666"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/text_size_22px" />
+                <!--<LinearLayout-->
+                <!--android:id="@+id/commodity_integralmal_market_pirce_layout"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginLeft="2dp"-->
+                <!--android:visibility="gone">-->
+
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="市场价: "&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="@color/neu_666666"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="@dimen/text_size_26px" />&ndash;&gt;-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/commodity_integralmal_market_pirce"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/neu_666666"-->
+                <!--android:gravity="bottom"-->
+                <!--android:textSize="@dimen/text_size_26px" />-->
+                <!--</LinearLayout>-->
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_integralmall_deduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_integralmall_money"
+                android:layout_marginTop="@dimen/dd_dimen_8px">
+
+                <TextView
+                    android:id="@+id/iv_integralmall_deductible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:text="积分可抵"
+                    android:textColor="@color/main"
+                    android:textSize="@dimen/text_size_22px" />
+
+                <TextView
+                    android:id="@+id/iv_integralmall_piclabeltwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dimen_3px"
+                    android:layout_toRightOf="@+id/iv_integralmall_deductible"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:text="@string/money_symbol"
+                    android:textColor="@color/main"
+                    android:textSize="@dimen/text_size_22px" />
+
+                <TextView
+                    android:id="@+id/iv_integralmall_deductible_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_integralmall_piclabeltwo"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/main"
+                    android:textSize="@dimen/text_size_22px" />
+
+                <TextView
+                    android:id="@+id/iv_integralmall_sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/neu_999999"
+                    android:textSize="@dimen/text_size_22px" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_integralmall_rob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_integralmall_deduction"
+                android:layout_marginLeft="@dimen/dd_dimen_3px"
+                android:layout_marginTop="@dimen/dd_dimen_20px"
+                android:background="@drawable/shape_tv_integral_rob_main"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dd_dimen_15px"
+                android:paddingTop="@dimen/dd_dimen_15px"
+                android:singleLine="true"
+                android:text="马上抢"
+
+                android:textColor="@color/White"
+                android:textSize="@dimen/text_size_28px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_10px"
+        android:layout_alignLeft="@+id/iv_hotel_logo_pic"
+        android:layout_alignParentBottom="true"
+        android:background="@color/neu_ededed"
+        android:visibility="gone"></View>
+</LinearLayout>

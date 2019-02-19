@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ac_bg_color">
+
+    <com.quanyan.yhy.ui.order.OrderBottomTabView
+        android:id="@+id/obt_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    </com.quanyan.yhy.ui.order.OrderBottomTabView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/obt_bottom"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dd_dimen_420px">
+
+                <ImageView
+                    android:id="@+id/iv_release_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dd_dimen_420px"
+                    android:background="@color/ac_bg_color"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:id="@+id/icon_photo_click"
+                    android:layout_width="@dimen/dd_dimen_180px"
+                    android:layout_height="@dimen/dd_dimen_180px"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/icon_click_photo"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_release_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dd_dimen_20px"
+                android:paddingLeft="@dimen/dd_dimen_30px"
+                android:paddingRight="@dimen/dd_dimen_30px"
+                android:paddingTop="@dimen/dd_dimen_20px">
+
+                <EditText
+                    android:id="@+id/add_release_goods_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dd_dimen_100px"
+                    android:background="@android:color/white"
+                    android:gravity="top|left"
+                    android:hint="@string/hint_release_goods_title"
+                    android:inputType="textMultiLine"
+                    android:maxLength="38"
+                    android:minHeight="@dimen/dd_dimen_60px"
+                    android:textColor="@color/neu_333333"
+                    android:paddingBottom="@dimen/dd_dimen_23px"
+                    android:textColorHint="@color/neu_999999"
+                    android:textSize="@dimen/text_size_28px"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBottom="@id/add_release_goods_title"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/add_release_goods_title_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/38"
+                        android:textColor="@color/tv_color_grayBD"
+                        android:textSize="@dimen/dd_dimen_24px"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View style="@style/split_line"></View>
+
+            <com.quanyan.yhy.ui.servicerelease.view.TextAndTextView
+                android:id="@+id/tat_goods_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dd_dimen_20px"></com.quanyan.yhy.ui.servicerelease.view.TextAndTextView>
+
+            <View style="@style/split_line"></View>
+
+            <com.quanyan.yhy.ui.views.ReleaseSettingItem
+                android:id="@+id/asi_goods_dest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+            </com.quanyan.yhy.ui.views.ReleaseSettingItem>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="@dimen/dd_dimen_20px"
+                android:background="@color/neu_f4f4f4"></View>
+
+            <!--<com.quanyan.yhy.ui.servicerelease.view.TextAndTextView
+                android:id="@+id/tat_goods_price"
+                android:layout_marginTop="@dimen/dd_dimen_20px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.quanyan.yhy.ui.servicerelease.view.TextAndTextView>-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dd_dimen_90px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_source_price_titile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dd_dimen_30px"
+                    android:text="@string/label_price_source"
+                    android:textColor="@color/neu_666666"
+                    android:textSize="@dimen/text_size_28px"/>
+
+                <TextView
+                    android:id="@+id/tv_source_price_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dd_dimen_30px"
+                    android:text="@string/label_price_integral"
+                    android:textColor="@color/neu_666666"
+                    android:textSize="@dimen/text_size_28px"/>
+
+                <EditText
+                    android:id="@+id/tv_source_integral_value"
+                    android:layout_width="@dimen/dd_dimen_500px"
+                    android:layout_height="@dimen/dd_dimen_60px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dd_dimen_5px"
+                    android:layout_toLeftOf="@+id/tv_source_price_minute"
+                    android:background="@color/white"
+                    android:gravity="center_vertical|right"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:paddingRight="@dimen/dd_dimen_10px"
+                    android:singleLine="true"
+                    android:textColor="@color/neu_333333"
+                    android:textColorHint="@color/neu_ccc"
+                    android:textSize="@dimen/text_size_30px"/>
+
+            </RelativeLayout>
+
+            <View style="@style/split_line"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dd_dimen_90px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_current_price_titile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dd_dimen_30px"
+                    android:text="@string/label_price_current"
+                    android:textColor="@color/neu_666666"
+                    android:textSize="@dimen/text_size_28px"/>
+
+                <TextView
+                    android:id="@+id/tv_current_price_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dd_dimen_30px"
+                    android:text="@string/label_price_integral"
+                    android:textColor="@color/neu_666666"
+                    android:textSize="@dimen/text_size_28px"/>
+
+                <EditText
+                    android:id="@+id/tv_current_integral_value"
+                    android:layout_width="@dimen/dd_dimen_500px"
+                    android:layout_height="@dimen/dd_dimen_60px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dd_dimen_5px"
+                    android:layout_toLeftOf="@+id/tv_current_price_minute"
+                    android:background="@color/white"
+                    android:gravity="center_vertical|right"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:paddingRight="@dimen/dd_dimen_10px"
+                    android:singleLine="true"
+                    android:textColor="@color/neu_333333"
+                    android:textColorHint="@color/neu_ccc"
+                    android:textSize="@dimen/text_size_30px"/>
+
+            </RelativeLayout>
+
+            <View style="@style/split_line"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dd_dimen_90px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_minute_titile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dd_dimen_30px"
+                    android:text="@string/label_minute_length"
+                    android:textColor="@color/neu_666666"
+                    android:textSize="@dimen/text_size_28px"/>
+
+                <TextView
+                    android:id="@+id/tv_minute_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dd_dimen_30px"
+                    android:text="@string/label_minute_time"
+                    android:textColor="@color/neu_666666"
+                    android:textSize="@dimen/text_size_28px"/>
+
+                <EditText
+                    android:id="@+id/et_minute_value"
+                    android:layout_width="@dimen/dd_dimen_500px"
+                    android:layout_height="@dimen/dd_dimen_60px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dd_dimen_5px"
+                    android:layout_toLeftOf="@+id/tv_minute_desc"
+                    android:background="@color/white"
+                    android:gravity="center_vertical|right"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:paddingRight="@dimen/dd_dimen_10px"
+                    android:singleLine="true"
+                    android:textColor="@color/neu_333333"
+                    android:textColorHint="@color/neu_ccc"
+                    android:textSize="@dimen/text_size_30px"/>
+
+            </RelativeLayout>
+
+            <View style="@style/split_line"></View>
+
+
+            <com.quanyan.yhy.ui.views.ReleaseSettingItem
+                android:id="@+id/asi_pic_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dd_dimen_20px">
+
+            </com.quanyan.yhy.ui.views.ReleaseSettingItem>
+
+            <com.quanyan.yhy.ui.views.ReleaseSettingItem
+                android:id="@+id/asi_ser_detail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dd_dimen_90px">
+
+            </com.quanyan.yhy.ui.views.ReleaseSettingItem>
+
+            <View style="@style/split_line"></View>
+            <!--<CheckBox
+                android:id="@+id/cb_is_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:layout_marginTop="@dimen/dd_dimen_30px"
+                android:button="@drawable/selector_checkbox"
+                android:paddingLeft="@dimen/dd_dimen_10px"
+                android:checked="true"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/neu_999999"
+                android:textSize="@dimen/dd_dimen_30px" />-->
+
+            <LinearLayout
+                android:id="@+id/ll_check_contain"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dd_dimen_80px"
+                android:layout_marginLeft="@dimen/dd_dimen_30px"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_is_default"
+                    android:layout_width="@dimen/dd_dimen_45px"
+                    android:layout_height="@dimen/dd_dimen_45px"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_checkbox"
+                    android:button="@null"
+                    android:checked="true"/>
+
+                <TextView
+                    android:id="@+id/tv_check_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/dd_dimen_10px"
+                    android:textColor="@color/neu_999999"
+                    android:textSize="@dimen/dd_dimen_30px"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!--<TextView
+        android:id="@+id/tv_release"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dimen_96px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ac_title_bg_color"
+        android:gravity="center"
+        android:padding="@dimen/margin_10dp"
+        android:text="@string/label_btn_publish"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_36px"></TextView>-->
+
+</RelativeLayout>

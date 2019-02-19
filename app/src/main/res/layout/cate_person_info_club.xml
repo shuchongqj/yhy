@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_norm_ffffff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dd_dimen_30px"
+    android:paddingRight="@dimen/dd_dimen_30px">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cell_person_info_club_head"
+            android:layout_width="@dimen/dd_dimen_100px"
+            android:layout_height="@dimen/dd_dimen_100px"
+            android:src="@mipmap/icon_default_128_128" />
+
+        <ImageView
+            android:id="@+id/iv_minster_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignRight="@+id/cell_person_info_club_head"
+            android:src="@mipmap/ic_minister_tag" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cell_person_info_club_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dd_dimen_20px"
+        android:singleLine="true"
+        android:maxEms="6"
+        android:text="@string/label_no_dynamic"
+        android:textColor="@color/color_norm_636363"
+        android:textSize="@dimen/dd_dimen_24px" />
+</LinearLayout>

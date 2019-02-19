@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ac_invitation_friends">
+        <item>邀请中</item>
+        <item>已成功邀请</item>
+    </string-array>
+    <string-array name="detail_pic_list_tabs">
+        <item>酒店</item>
+        <item>客房</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="commodity_tabs">
+        <item>图文介绍</item>
+        <item>商品详情</item>
+        <item>评价(%d)</item>
+    </string-array>
+    <string-array name="master_consult_tabs">
+        <item>图文介绍</item>
+        <item>服务详情</item>
+        <item>评价(%d)</item>
+    </string-array>
+    <string-array name="line_search_tabs">
+        <item>全部主题</item>
+        <item>智能排序</item>
+        <item>筛选</item>
+    </string-array>
+
+    <string-array name="master_detail_tabs">
+        <item>主页</item>
+        <item>商品</item>
+        <item>动态</item>
+    </string-array>
+
+    <string-array name="disc_tab">
+        <item>关注</item>
+        <item>热门</item>
+        <item>话题</item>
+        <!--<item>游记</item>-->
+    </string-array>
+    <!--订单类型，查询多点都好隔开-->
+    <string-array name="order_filter">
+        <item>全部|" "</item>
+        <item>跟团游|TOUR_LINE,TOUR_LINE_ABOARD</item>
+        <item>自由行|FREE_LINE,FREE_LINE_ABOARD</item>
+        <item>同城活动|CITY_ACTIVITY</item>
+        <item>景区门票|SCENIC</item>
+        <item>酒店|HOTEL</item>
+        <item>实物商品|NORMAL</item>
+        <item>咨询服务|PROCESS</item>
+    </string-array>
+
+
+    <string-array name="club_tabs">
+        <item>活动</item>
+        <!--<item>动态</item>-->
+        <item>粉丝</item>
+    </string-array>
+
+    <string-array name="fragment_mine_club_tabs">
+        <item>俱乐部</item>
+        <item>动态</item>
+    </string-array>
+
+    <string-array name="live_detail_tabs">
+        <item>评论 %s</item>
+        <item>点赞 %s</item>
+    </string-array>
+
+    <string-array name="way">
+        <item>全部方式</item>
+        <item>机+酒套餐</item>
+        <item>景+酒套餐</item>
+
+    </string-array>
+
+    <string-array name="id_type">
+        <item>身份证</item>
+        <item>护照</item>
+        <item>军人证</item>
+        <item>港澳通行证</item>
+    </string-array>
+
+    <string-array name="item_copy">
+        <item>复制</item>
+    </string-array>
+
+    <!--保存图片menu-->
+    <string-array name="save_bitmap_menu">
+        <item>保存图片</item>
+    </string-array>
+
+    <string-array name="weekday">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+
+    <string-array name="order_menu_array">
+        <item>运动订单</item>
+        <item>同城订单</item>
+        <item>景区订单</item>
+        <item>酒店订单</item>
+        <!--<item>伴手礼订单</item>-->
+    </string-array>
+
+    <string-array name="asset_menu_array">
+        <item>零钱</item>
+        <item>积分</item>
+        <item>优惠券</item>
+    </string-array>
+
+    <string-array name="order_tab_travel">
+        <item>全部</item>
+        <item>待付款</item>
+        <item>待确认</item>
+        <item>待使用</item>
+        <item>待评价</item>
+    </string-array>
+
+    <string-array name="order_tab_hotel">
+        <item>全部订单</item>
+        <item>待付款</item>
+        <item>待确认</item>
+        <item>预订成功</item>
+        <item>待评价</item>
+    </string-array>
+
+    <string-array name="order_tab_spot">
+        <item>全部订单</item>
+        <item>待付款</item>
+        <item>待确认</item>
+        <item>待使用</item>
+        <item>待评价</item>
+    </string-array>
+    <string-array name="integral_tab_travel">
+        <item>积分任务</item>
+        <item>积分明细</item>
+    </string-array>
+ <!--   <string-array name="order_tab_handceremony">
+        <item>全部订单</item>
+        <item>待付款</item>
+        <item>已付款</item>
+        <item>已发货</item>
+    </string-array>-->
+
+    <string-array name="order_tab_sell_activity">
+    <item>全部订单</item>
+    <item>待付款</item>
+    <item>待确认</item>
+    <item>已确认</item>
+    <item>已完成</item>
+</string-array>
+
+    <string-array name="order_my_tab_activity">
+        <item>全部订单</item>
+        <item>待支付</item>
+        <item>有效订单</item>
+        <item>待评价</item>
+
+    </string-array>
+    <string-array name="order_tab_activity">
+        <item>全部</item>
+        <item>待付款</item>
+        <item>待确认</item>
+        <item>待出行</item>
+        <item>待评价</item>
+    </string-array>
+    <string-array name="coupon_tab_activity">
+        <item>未使用</item>
+        <item>已使用</item>
+        <item>已过期</item>
+    </string-array>
+
+    <string-array name="gendar">
+        <item>男</item>
+        <item>女</item>
+        <!-- <item>其他</item>-->
+    </string-array>
+
+    <string-array name="sport_habit">
+        <item>足球</item>
+        <item>篮球</item>
+        <item>羽毛球</item>
+        <item>随便看看</item>
+    </string-array>
+
+    <string-array name="travel_days_count">
+        <item>1天</item>
+        <item>2天</item>
+        <item>3天</item>
+        <item>4天</item>
+        <item>5天</item>
+        <item>6天</item>
+        <item>7天</item>
+        <item>8天</item>
+        <item>9天</item>
+        <item>10天</item>
+        <item>11天</item>
+        <item>12天</item>
+        <item>13天</item>
+        <item>14天</item>
+        <item>15天</item>
+        <item>16天</item>
+        <item>17天</item>
+        <item>18天</item>
+        <item>19天</item>
+        <item>20天</item>
+        <item>20天以上</item>
+        <!-- <item>其他</item>-->
+    </string-array>
+
+    <string-array name="travel_persion_count">
+        <item>1人</item>
+        <item>2人</item>
+        <item>3人</item>
+        <item>4人</item>
+        <item>5人</item>
+        <item>6人</item>
+        <item>7人</item>
+        <item>8人</item>
+        <item>9人</item>
+        <item>10人</item>
+        <item>11人</item>
+        <item>12人</item>
+        <item>13人</item>
+        <item>14人</item>
+        <item>15人</item>
+        <item>16人</item>
+        <item>17人</item>
+        <item>18人</item>
+        <item>19人</item>
+        <item>20人</item>
+        <item>20人以上</item>
+        <!-- <item>其他</item>-->
+    </string-array>
+
+    <string-array name="constellation">
+        <item>白羊座</item>
+        <item>金牛座</item>
+        <item>巨蟹座</item>
+        <item>狮子座</item>
+        <item>处女座</item>
+        <item>天秤座</item>
+        <item>天蝎座</item>
+        <item>射手座</item>
+        <item>摩羯座</item>
+        <item>水瓶座</item>
+        <item>双鱼座</item>
+        <item>双子座</item>
+    </string-array>
+
+    <!--    <string-array name="vip_center_tabs">
+            <item>已享特惠</item>
+            <item>购买记录</item>
+        </string-array>-->
+    <string-array name="vip_center_tabs">
+        <item>已享特惠</item>
+    </string-array>
+
+    <string-array name="job">
+        <item>导游</item>
+        <item>司机</item>
+        <item>健身教练</item>
+        <item>咨询师</item>
+        <item>教师</item>
+    </string-array>
+
+    <string-array name="bank">
+        <item>建设银行</item>
+        <item>工商银行</item>
+        <item>农业银行</item>
+        <item>中国银行</item>
+        <item>交通银行</item>
+    </string-array>
+
+    <string-array name="cancel_order">
+        <item>出行时间有变化</item>
+        <item>不想买了</item>
+        <item>无法联系客服</item>
+        <item>重新下单</item>
+        <item>其他原因</item>
+    </string-array>
+
+    <string-array name="tab_message_center">
+        <item>消息</item>
+        <item>通知</item>
+        <item>互动</item>
+    </string-array>
+    
+    <string-array name="supper_comment">
+        <item>服务态度</item>
+        <item>专业能力</item>
+        <item>行程安排</item>
+    </string-array>
+
+    <string-array name="service_state">
+        <item>已发布</item>
+        <item>待发布</item>
+    </string-array>
+    <string-array name="service_introduce">
+        <item>图文介绍</item>
+        <item>服务详情</item>
+        <item>评价</item>
+    </string-array>
+
+    <string-array name="hotel_comment">
+        <item>酒店设施</item>
+        <item>服务质量</item>
+        <item>环境卫生</item>
+        <item>位置交通</item>
+    </string-array>
+
+    <string-array name="scenic_comment">
+        <item>景区环境</item>
+        <item>地理交通</item>
+        <item>服务配套</item>
+    </string-array>
+
+    <string-array name="travel_comment">
+        <item>导游服务</item>
+        <item>酒店住宿</item>
+        <item>餐饮安排</item>
+        <item>行程安排</item>
+        <item>景点活动</item>
+    </string-array>
+
+    <string-array name="comment_list">
+        <item>评价</item>
+        <item>咨询师评价</item>
+    </string-array>
+
+    <string-array name="label_hotel_introduction">
+        <item>酒店详情</item>
+        <item>服务设施</item>
+    </string-array>
+
+    <string-array name="comment_list_type">
+        <item>全部</item>
+        <item>有图</item>
+        <item>好评</item>
+        <item>差评</item>
+    </string-array>
+
+    <!-- 达人主页的TAB -->
+    <string-array name="master_tabs">
+        <item>动态</item>
+        <!--<item>文章</item>-->
+        <item>主页</item>
+        <item>服务</item>
+    </string-array>
+
+    <string-array name="city_destselect_titles">
+        <item>昆明</item>
+        <item>大理</item>
+        <item>丽江</item>
+        <item>腾冲</item>
+    </string-array>
+
+    <string-array name="eat_search_tabs">
+        <item>区域</item>
+        <item>价格</item>
+    </string-array>
+    <!-- 环境切换 -->
+    <string-array name="env_switch_env_array">
+        <item>@string/label_btn_switch_online</item>
+        <item>@string/label_btn_switch_pre</item>
+        <item>@string/label_btn_switch_test</item>
+        <!--<item>@string/label_btn_switch_second_test</item>-->
+        <!--<item>@string/label_btn_switch_pt</item>-->
+    </string-array>
+
+    <string-array name="complaint_menu">
+        <item>举报</item>
+        <item>屏蔽</item>
+    </string-array>
+
+    <string-array name="add_live_menu">
+        <item>小视频</item>
+        <item>拍照</item>
+        <item>相册</item>
+    </string-array>
+
+    <string-array name="menu_big_pic">
+        <item>保存到手机</item>
+    </string-array>
+
+    <!-- 新版圈子中的string-array -->
+    <string-array name="tab_circle">
+        <item>关注</item>
+        <item>推荐</item>
+        <item>直播</item>
+        <item>短视频</item>
+        <item>视频</item>
+        <item>动态</item>
+    </string-array>
+
+</resources>
